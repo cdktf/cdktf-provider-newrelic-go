@@ -723,7 +723,7 @@ type AlertChannelConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#name AlertChannel#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
+	// (Required) The type of channel. One of: (user, victorops, webhook, email, opsgenie, pagerduty, slack).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
@@ -3111,7 +3111,7 @@ type AlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#term AlertCondition#term}
 	Term interface{} `field:"required" json:"term" yaml:"term"`
-	// The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric).
+	// The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
@@ -80004,6 +80004,3002 @@ type NewrelicProviderConfig struct {
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic#synthetics_api_url NewrelicProvider#synthetics_api_url}.
 	SyntheticsApiUrl *string `field:"optional" json:"syntheticsApiUrl" yaml:"syntheticsApiUrl"`
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel}.
+type NotificationChannel interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	DestinationId() *string
+	SetDestinationId(val *string)
+	DestinationIdInput() *string
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Product() *string
+	SetProduct(val *string)
+	ProductInput() *string
+	Properties() NotificationChannelPropertiesList
+	PropertiesInput() interface{}
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutProperties(value interface{})
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProperties()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for NotificationChannel
+type jsiiProxy_NotificationChannel struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NotificationChannel) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) DestinationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) DestinationIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"destinationIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) Product() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"product",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) ProductInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"productInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) Properties() NotificationChannelPropertiesList {
+	var returns NotificationChannelPropertiesList
+	_jsii_.Get(
+		j,
+		"properties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) PropertiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"propertiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannel) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel} Resource.
+func NewNotificationChannel(scope constructs.Construct, id *string, config *NotificationChannelConfig) NotificationChannel {
+	_init_.Initialize()
+
+	j := jsiiProxy_NotificationChannel{}
+
+	_jsii_.Create(
+		"@cdktf/provider-newrelic.NotificationChannel",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel} Resource.
+func NewNotificationChannel_Override(n NotificationChannel, scope constructs.Construct, id *string, config *NotificationChannelConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-newrelic.NotificationChannel",
+		[]interface{}{scope, id, config},
+		n,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannel) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannel) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannel) SetDestinationId(val *string) {
+	_jsii_.Set(
+		j,
+		"destinationId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannel) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannel) SetName(val *string) {
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannel) SetProduct(val *string) {
+	_jsii_.Set(
+		j,
+		"product",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannel) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannel) SetType(val *string) {
+	_jsii_.Set(
+		j,
+		"type",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func NotificationChannel_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.NotificationChannel",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func NotificationChannel_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-newrelic.NotificationChannel",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		n,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (n *jsiiProxy_NotificationChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		n,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		n,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		n,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (n *jsiiProxy_NotificationChannel) PutProperties(value interface{}) {
+	_jsii_.InvokeVoid(
+		n,
+		"putProperties",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NotificationChannel) ResetId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationChannel) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationChannel) ResetProperties() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetProperties",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationChannel) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannel) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type NotificationChannelConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// (Required) The id of the destination.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#destination_id NotificationChannel#destination_id}
+	DestinationId *string `field:"required" json:"destinationId" yaml:"destinationId"`
+	// (Required) The name of the channel.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#name NotificationChannel#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// (Required) The type of the channel product. One of: (ALERTS, DISCUSSIONS, ERROR_TRACKING, NTFC, SHARING, PD, IINT).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#product NotificationChannel#product}
+	Product *string `field:"required" json:"product" yaml:"product"`
+	// (Required) The type of the channel. One of: (WEBHOOK, EMAIL, SERVICENOW_INCIDENTS, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#type NotificationChannel#type}
+	Type *string `field:"required" json:"type" yaml:"type"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#id NotificationChannel#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// properties block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#properties NotificationChannel#properties}
+	Properties interface{} `field:"optional" json:"properties" yaml:"properties"`
+}
+
+type NotificationChannelProperties struct {
+	// Notification channel property key.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#key NotificationChannel#key}
+	Key *string `field:"required" json:"key" yaml:"key"`
+	// Notification channel property value.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#value NotificationChannel#value}
+	Value *string `field:"required" json:"value" yaml:"value"`
+	// Notification channel property display key.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#display_value NotificationChannel#display_value}
+	DisplayValue *string `field:"optional" json:"displayValue" yaml:"displayValue"`
+	// Notification channel property label.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel#label NotificationChannel#label}
+	Label *string `field:"optional" json:"label" yaml:"label"`
+}
+
+type NotificationChannelPropertiesList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) NotificationChannelPropertiesOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for NotificationChannelPropertiesList
+type jsiiProxy_NotificationChannelPropertiesList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesList) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewNotificationChannelPropertiesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationChannelPropertiesList {
+	_init_.Initialize()
+
+	j := jsiiProxy_NotificationChannelPropertiesList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-newrelic.NotificationChannelPropertiesList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewNotificationChannelPropertiesList_Override(n NotificationChannelPropertiesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-newrelic.NotificationChannelPropertiesList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		n,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesList) SetInternalValue(val interface{}) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesList) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesList) SetWrapsSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesList) Get(index *float64) NotificationChannelPropertiesOutputReference {
+	var returns NotificationChannelPropertiesOutputReference
+
+	_jsii_.Invoke(
+		n,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type NotificationChannelPropertiesOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	DisplayValue() *string
+	SetDisplayValue(val *string)
+	DisplayValueInput() *string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	Key() *string
+	SetKey(val *string)
+	KeyInput() *string
+	Label() *string
+	SetLabel(val *string)
+	LabelInput() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Value() *string
+	SetValue(val *string)
+	ValueInput() *string
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDisplayValue()
+	ResetLabel()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for NotificationChannelPropertiesOutputReference
+type jsiiProxy_NotificationChannelPropertiesOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) DisplayValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) DisplayValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) Key() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"key",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) KeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) Label() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"label",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) LabelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"value",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) ValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueInput",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewNotificationChannelPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationChannelPropertiesOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_NotificationChannelPropertiesOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewNotificationChannelPropertiesOutputReference_Override(n NotificationChannelPropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-newrelic.NotificationChannelPropertiesOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		n,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetDisplayValue(val *string) {
+	_jsii_.Set(
+		j,
+		"displayValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetInternalValue(val interface{}) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetKey(val *string) {
+	_jsii_.Set(
+		j,
+		"key",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetLabel(val *string) {
+	_jsii_.Set(
+		j,
+		"label",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetValue(val *string) {
+	_jsii_.Set(
+		j,
+		"value",
+		val,
+	)
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		n,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		n,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) ResetDisplayValue() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDisplayValue",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) ResetLabel() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLabel",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination newrelic_notification_destination}.
+type NotificationDestination interface {
+	cdktf.TerraformResource
+	Auth() *map[string]*string
+	SetAuth(val *map[string]*string)
+	AuthInput() *map[string]*string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Properties() NotificationDestinationPropertiesList
+	PropertiesInput() interface{}
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutProperties(value interface{})
+	ResetAuth()
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProperties()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for NotificationDestination
+type jsiiProxy_NotificationDestination struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NotificationDestination) Auth() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"auth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) AuthInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"authInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) Properties() NotificationDestinationPropertiesList {
+	var returns NotificationDestinationPropertiesList
+	_jsii_.Get(
+		j,
+		"properties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) PropertiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"propertiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination newrelic_notification_destination} Resource.
+func NewNotificationDestination(scope constructs.Construct, id *string, config *NotificationDestinationConfig) NotificationDestination {
+	_init_.Initialize()
+
+	j := jsiiProxy_NotificationDestination{}
+
+	_jsii_.Create(
+		"@cdktf/provider-newrelic.NotificationDestination",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination newrelic_notification_destination} Resource.
+func NewNotificationDestination_Override(n NotificationDestination, scope constructs.Construct, id *string, config *NotificationDestinationConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-newrelic.NotificationDestination",
+		[]interface{}{scope, id, config},
+		n,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestination) SetAuth(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"auth",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestination) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestination) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestination) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestination) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestination) SetName(val *string) {
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestination) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestination) SetType(val *string) {
+	_jsii_.Set(
+		j,
+		"type",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func NotificationDestination_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.NotificationDestination",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func NotificationDestination_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-newrelic.NotificationDestination",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		n,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		n,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		n,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		n,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) PutProperties(value interface{}) {
+	_jsii_.InvokeVoid(
+		n,
+		"putProperties",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) ResetAuth() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAuth",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) ResetId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) ResetProperties() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetProperties",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestination) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type NotificationDestinationConfig struct {
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// (Required) The name of the destination.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#name NotificationDestination#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// (Required) The type of the destination. One of: (WEBHOOK, EMAIL, SERVICE_NOW, PAGERDUTY_ACCOUNT_INTEGRATION, PAGERDUTY_SERVICE_INTEGRATION).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#type NotificationDestination#type}
+	Type *string `field:"required" json:"type" yaml:"type"`
+	// A set of key-value pairs to represent a Notification destination auth.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#auth NotificationDestination#auth}
+	Auth *map[string]*string `field:"optional" json:"auth" yaml:"auth"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#id NotificationDestination#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// properties block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#properties NotificationDestination#properties}
+	Properties interface{} `field:"optional" json:"properties" yaml:"properties"`
+}
+
+type NotificationDestinationProperties struct {
+	// Notification destination property key.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#key NotificationDestination#key}
+	Key *string `field:"required" json:"key" yaml:"key"`
+	// Notification destination property value.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#value NotificationDestination#value}
+	Value *string `field:"required" json:"value" yaml:"value"`
+	// Notification destination property display key.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#display_value NotificationDestination#display_value}
+	DisplayValue *string `field:"optional" json:"displayValue" yaml:"displayValue"`
+	// Notification destination property label.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination#label NotificationDestination#label}
+	Label *string `field:"optional" json:"label" yaml:"label"`
+}
+
+type NotificationDestinationPropertiesList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) NotificationDestinationPropertiesOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for NotificationDestinationPropertiesList
+type jsiiProxy_NotificationDestinationPropertiesList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesList) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewNotificationDestinationPropertiesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationDestinationPropertiesList {
+	_init_.Initialize()
+
+	j := jsiiProxy_NotificationDestinationPropertiesList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-newrelic.NotificationDestinationPropertiesList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewNotificationDestinationPropertiesList_Override(n NotificationDestinationPropertiesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-newrelic.NotificationDestinationPropertiesList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		n,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesList) SetInternalValue(val interface{}) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesList) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesList) SetWrapsSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesList) Get(index *float64) NotificationDestinationPropertiesOutputReference {
+	var returns NotificationDestinationPropertiesOutputReference
+
+	_jsii_.Invoke(
+		n,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type NotificationDestinationPropertiesOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	DisplayValue() *string
+	SetDisplayValue(val *string)
+	DisplayValueInput() *string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	Key() *string
+	SetKey(val *string)
+	KeyInput() *string
+	Label() *string
+	SetLabel(val *string)
+	LabelInput() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Value() *string
+	SetValue(val *string)
+	ValueInput() *string
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDisplayValue()
+	ResetLabel()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for NotificationDestinationPropertiesOutputReference
+type jsiiProxy_NotificationDestinationPropertiesOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) DisplayValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) DisplayValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayValueInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) Key() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"key",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) KeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) Label() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"label",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) LabelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"value",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) ValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valueInput",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewNotificationDestinationPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationDestinationPropertiesOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_NotificationDestinationPropertiesOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewNotificationDestinationPropertiesOutputReference_Override(n NotificationDestinationPropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-newrelic.NotificationDestinationPropertiesOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		n,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) SetDisplayValue(val *string) {
+	_jsii_.Set(
+		j,
+		"displayValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) SetInternalValue(val interface{}) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) SetKey(val *string) {
+	_jsii_.Set(
+		j,
+		"key",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) SetLabel(val *string) {
+	_jsii_.Set(
+		j,
+		"label",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestinationPropertiesOutputReference) SetValue(val *string) {
+	_jsii_.Set(
+		j,
+		"value",
+		val,
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		n,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		n,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) ResetDisplayValue() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDisplayValue",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) ResetLabel() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLabel",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NotificationDestinationPropertiesOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
 }
 
 // Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition newrelic_nrql_alert_condition}.
