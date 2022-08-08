@@ -795,7 +795,7 @@ type AlertChannelConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#name AlertChannel#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// (Required) The type of channel. One of: (victorops, webhook, email, opsgenie, pagerduty, slack, user).
+	// (Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
@@ -3255,7 +3255,7 @@ type AlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#term AlertCondition#term}
 	Term interface{} `field:"required" json:"term" yaml:"term"`
-	// The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
+	// The type of condition. One of: (apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
