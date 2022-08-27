@@ -10,17 +10,17 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel}.
-type NotificationChannel interface {
+// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor}.
+type SyntheticsCertCheckMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
 	SetAccountId(val *float64)
 	AccountIdInput() *float64
-	Active() interface{}
-	SetActive(val interface{})
-	ActiveInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CertificateExpiration() *float64
+	SetCertificateExpiration(val *float64)
+	CertificateExpirationInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -35,9 +35,9 @@ type NotificationChannel interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DestinationId() *string
-	SetDestinationId(val *string)
-	DestinationIdInput() *string
+	Domain() *string
+	SetDomain(val *string)
+	DomainInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,16 +53,20 @@ type NotificationChannel interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocationsPrivate() *[]*string
+	SetLocationsPrivate(val *[]*string)
+	LocationsPrivateInput() *[]*string
+	LocationsPublic() *[]*string
+	SetLocationsPublic(val *[]*string)
+	LocationsPublicInput() *[]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Product() *string
-	SetProduct(val *string)
-	ProductInput() *string
-	Property() NotificationChannelPropertyList
-	PropertyInput() interface{}
+	Period() *string
+	SetPeriod(val *string)
+	PeriodInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -74,15 +78,16 @@ type NotificationChannel interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
+	Tag() SyntheticsCertCheckMonitorTagList
+	TagInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -108,12 +113,15 @@ type NotificationChannel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutProperty(value interface{})
-	ResetActive()
+	PutTag(value interface{})
+	ResetAccountId()
 	ResetId()
+	ResetLocationsPrivate()
+	ResetLocationsPublic()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTag()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -124,12 +132,12 @@ type NotificationChannel interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for NotificationChannel
-type jsiiProxy_NotificationChannel struct {
+// The jsii proxy struct for SyntheticsCertCheckMonitor
+type jsiiProxy_SyntheticsCertCheckMonitor struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_NotificationChannel) AccountId() *float64 {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) AccountId() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -139,7 +147,7 @@ func (j *jsiiProxy_NotificationChannel) AccountId() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) AccountIdInput() *float64 {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) AccountIdInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -149,27 +157,7 @@ func (j *jsiiProxy_NotificationChannel) AccountIdInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Active() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"active",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) ActiveInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"activeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -179,7 +167,27 @@ func (j *jsiiProxy_NotificationChannel) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Connection() interface{} {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) CertificateExpiration() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"certificateExpiration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) CertificateExpirationInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"certificateExpirationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -189,7 +197,7 @@ func (j *jsiiProxy_NotificationChannel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -199,7 +207,7 @@ func (j *jsiiProxy_NotificationChannel) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Count() *float64 {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -209,7 +217,7 @@ func (j *jsiiProxy_NotificationChannel) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) DependsOn() *[]*string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -219,27 +227,27 @@ func (j *jsiiProxy_NotificationChannel) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) DestinationId() *string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Domain() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"destinationId",
+		"domain",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) DestinationIdInput() *string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) DomainInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"destinationIdInput",
+		"domainInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -249,7 +257,7 @@ func (j *jsiiProxy_NotificationChannel) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Fqn() *string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -259,7 +267,7 @@ func (j *jsiiProxy_NotificationChannel) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) FriendlyUniqueId() *string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -269,7 +277,7 @@ func (j *jsiiProxy_NotificationChannel) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Id() *string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -279,7 +287,7 @@ func (j *jsiiProxy_NotificationChannel) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) IdInput() *string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -289,7 +297,7 @@ func (j *jsiiProxy_NotificationChannel) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -299,7 +307,47 @@ func (j *jsiiProxy_NotificationChannel) Lifecycle() *cdktf.TerraformResourceLife
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Name() *string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) LocationsPrivate() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"locationsPrivate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) LocationsPrivateInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"locationsPrivateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) LocationsPublic() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"locationsPublic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) LocationsPublicInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"locationsPublicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -309,7 +357,7 @@ func (j *jsiiProxy_NotificationChannel) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) NameInput() *string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) NameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -319,7 +367,7 @@ func (j *jsiiProxy_NotificationChannel) NameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Node() constructs.Node {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -329,47 +377,27 @@ func (j *jsiiProxy_NotificationChannel) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Product() *string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Period() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"product",
+		"period",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) ProductInput() *string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) PeriodInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"productInput",
+		"periodInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Property() NotificationChannelPropertyList {
-	var returns NotificationChannelPropertyList
-	_jsii_.Get(
-		j,
-		"property",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) PropertyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"propertyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -379,7 +407,7 @@ func (j *jsiiProxy_NotificationChannel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Provisioners() *[]interface{} {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
@@ -389,7 +417,7 @@ func (j *jsiiProxy_NotificationChannel) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) RawOverrides() interface{} {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -399,7 +427,7 @@ func (j *jsiiProxy_NotificationChannel) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Status() *string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Status() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -409,7 +437,37 @@ func (j *jsiiProxy_NotificationChannel) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) Tag() SyntheticsCertCheckMonitorTagList {
+	var returns SyntheticsCertCheckMonitorTagList
+	_jsii_.Get(
+		j,
+		"tag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) TagInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -419,7 +477,7 @@ func (j *jsiiProxy_NotificationChannel) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -429,7 +487,7 @@ func (j *jsiiProxy_NotificationChannel) TerraformMetaArguments() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) TerraformResourceType() *string {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -439,35 +497,15 @@ func (j *jsiiProxy_NotificationChannel) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Type() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"type",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_NotificationChannel) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel} Resource.
-func NewNotificationChannel(scope constructs.Construct, id *string, config *NotificationChannelConfig) NotificationChannel {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
+func NewSyntheticsCertCheckMonitor(scope constructs.Construct, id *string, config *SyntheticsCertCheckMonitorConfig) SyntheticsCertCheckMonitor {
 	_init_.Initialize()
 
-	j := jsiiProxy_NotificationChannel{}
+	j := jsiiProxy_SyntheticsCertCheckMonitor{}
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.NotificationChannel",
+		"@cdktf/provider-newrelic.SyntheticsCertCheckMonitor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -475,18 +513,18 @@ func NewNotificationChannel(scope constructs.Construct, id *string, config *Noti
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel} Resource.
-func NewNotificationChannel_Override(n NotificationChannel, scope constructs.Construct, id *string, config *NotificationChannelConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
+func NewSyntheticsCertCheckMonitor_Override(s SyntheticsCertCheckMonitor, scope constructs.Construct, id *string, config *SyntheticsCertCheckMonitorConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.NotificationChannel",
+		"@cdktf/provider-newrelic.SyntheticsCertCheckMonitor",
 		[]interface{}{scope, id, config},
-		n,
+		s,
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetAccountId(val *float64) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetAccountId(val *float64) {
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -494,15 +532,15 @@ func (j *jsiiProxy_NotificationChannel) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetActive(val interface{}) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetCertificateExpiration(val *float64) {
 	_jsii_.Set(
 		j,
-		"active",
+		"certificateExpiration",
 		val,
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetConnection(val interface{}) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
@@ -510,7 +548,7 @@ func (j *jsiiProxy_NotificationChannel) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetCount(val *float64) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -518,7 +556,7 @@ func (j *jsiiProxy_NotificationChannel) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -526,15 +564,15 @@ func (j *jsiiProxy_NotificationChannel) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetDestinationId(val *string) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetDomain(val *string) {
 	_jsii_.Set(
 		j,
-		"destinationId",
+		"domain",
 		val,
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -542,7 +580,7 @@ func (j *jsiiProxy_NotificationChannel) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetId(val *string) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
@@ -550,7 +588,7 @@ func (j *jsiiProxy_NotificationChannel) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -558,7 +596,23 @@ func (j *jsiiProxy_NotificationChannel) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetName(val *string) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetLocationsPrivate(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"locationsPrivate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetLocationsPublic(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"locationsPublic",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
@@ -566,15 +620,15 @@ func (j *jsiiProxy_NotificationChannel) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetProduct(val *string) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetPeriod(val *string) {
 	_jsii_.Set(
 		j,
-		"product",
+		"period",
 		val,
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -582,7 +636,7 @@ func (j *jsiiProxy_NotificationChannel) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -590,10 +644,10 @@ func (j *jsiiProxy_NotificationChannel) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetType(val *string) {
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) SetStatus(val *string) {
 	_jsii_.Set(
 		j,
-		"type",
+		"status",
 		val,
 	)
 }
@@ -615,13 +669,13 @@ func (j *jsiiProxy_NotificationChannel) SetType(val *string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NotificationChannel_IsConstruct(x interface{}) *bool {
+func SyntheticsCertCheckMonitor_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-newrelic.NotificationChannel",
+		"@cdktf/provider-newrelic.SyntheticsCertCheckMonitor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -630,30 +684,30 @@ func NotificationChannel_IsConstruct(x interface{}) *bool {
 	return returns
 }
 
-func NotificationChannel_TfResourceType() *string {
+func SyntheticsCertCheckMonitor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-newrelic.NotificationChannel",
+		"@cdktf/provider-newrelic.SyntheticsCertCheckMonitor",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) AddOverride(path *string, value interface{}) {
 	_jsii_.InvokeVoid(
-		n,
+		s,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -662,11 +716,11 @@ func (n *jsiiProxy_NotificationChannel) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -675,11 +729,11 @@ func (n *jsiiProxy_NotificationChannel) GetBooleanAttribute(terraformAttribute *
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -688,11 +742,11 @@ func (n *jsiiProxy_NotificationChannel) GetBooleanMapAttribute(terraformAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetListAttribute(terraformAttribute *string) *[]*string {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) GetListAttribute(terraformAttribute *string) *[]*string {
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -701,11 +755,11 @@ func (n *jsiiProxy_NotificationChannel) GetListAttribute(terraformAttribute *str
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) GetNumberAttribute(terraformAttribute *string) *float64 {
 	var returns *float64
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -714,11 +768,11 @@ func (n *jsiiProxy_NotificationChannel) GetNumberAttribute(terraformAttribute *s
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -727,11 +781,11 @@ func (n *jsiiProxy_NotificationChannel) GetNumberListAttribute(terraformAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -740,11 +794,11 @@ func (n *jsiiProxy_NotificationChannel) GetNumberMapAttribute(terraformAttribute
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetStringAttribute(terraformAttribute *string) *string {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) GetStringAttribute(terraformAttribute *string) *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -753,11 +807,11 @@ func (n *jsiiProxy_NotificationChannel) GetStringAttribute(terraformAttribute *s
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -766,11 +820,11 @@ func (n *jsiiProxy_NotificationChannel) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -779,51 +833,75 @@ func (n *jsiiProxy_NotificationChannel) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) OverrideLogicalId(newLogicalId *string) {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
-		n,
+		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) PutProperty(value interface{}) {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) PutTag(value interface{}) {
 	_jsii_.InvokeVoid(
-		n,
-		"putProperty",
+		s,
+		"putTag",
 		[]interface{}{value},
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) ResetActive() {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) ResetAccountId() {
 	_jsii_.InvokeVoid(
-		n,
-		"resetActive",
+		s,
+		"resetAccountId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) ResetId() {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) ResetId() {
 	_jsii_.InvokeVoid(
-		n,
+		s,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) ResetOverrideLogicalId() {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) ResetLocationsPrivate() {
 	_jsii_.InvokeVoid(
-		n,
+		s,
+		"resetLocationsPrivate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) ResetLocationsPublic() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLocationsPublic",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		s,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) SynthesizeAttributes() *map[string]interface{} {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) ResetTag() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTag",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -832,11 +910,11 @@ func (n *jsiiProxy_NotificationChannel) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) ToMetadata() interface{} {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -845,11 +923,11 @@ func (n *jsiiProxy_NotificationChannel) ToMetadata() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) ToString() *string {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -858,11 +936,11 @@ func (n *jsiiProxy_NotificationChannel) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) ToTerraform() interface{} {
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

@@ -10,19 +10,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination newrelic_notification_destination}.
-type NotificationDestination interface {
+// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor}.
+type SyntheticsBrokenLinksMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
 	SetAccountId(val *float64)
 	AccountIdInput() *float64
-	Active() interface{}
-	SetActive(val interface{})
-	ActiveInput() interface{}
-	AuthBasic() NotificationDestinationAuthBasicOutputReference
-	AuthBasicInput() *NotificationDestinationAuthBasic
-	AuthToken() NotificationDestinationAuthTokenOutputReference
-	AuthTokenInput() *NotificationDestinationAuthToken
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -47,22 +40,28 @@ type NotificationDestination interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Guid() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsUserAuthenticated() cdktf.IResolvable
-	LastSent() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocationsPrivate() *[]*string
+	SetLocationsPrivate(val *[]*string)
+	LocationsPrivateInput() *[]*string
+	LocationsPublic() *[]*string
+	SetLocationsPublic(val *[]*string)
+	LocationsPublicInput() *[]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Property() NotificationDestinationPropertyList
-	PropertyInput() interface{}
+	Period() *string
+	SetPeriod(val *string)
+	PeriodInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -74,15 +73,19 @@ type NotificationDestination interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Status() *string
+	SetStatus(val *string)
+	StatusInput() *string
+	Tag() SyntheticsBrokenLinksMonitorTagList
+	TagInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Type() *string
-	SetType(val *string)
-	TypeInput() *string
+	Uri() *string
+	SetUri(val *string)
+	UriInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -108,16 +111,15 @@ type NotificationDestination interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAuthBasic(value *NotificationDestinationAuthBasic)
-	PutAuthToken(value *NotificationDestinationAuthToken)
-	PutProperty(value interface{})
-	ResetActive()
-	ResetAuthBasic()
-	ResetAuthToken()
+	PutTag(value interface{})
+	ResetAccountId()
 	ResetId()
+	ResetLocationsPrivate()
+	ResetLocationsPublic()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTag()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -128,12 +130,12 @@ type NotificationDestination interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for NotificationDestination
-type jsiiProxy_NotificationDestination struct {
+// The jsii proxy struct for SyntheticsBrokenLinksMonitor
+type jsiiProxy_SyntheticsBrokenLinksMonitor struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_NotificationDestination) AccountId() *float64 {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) AccountId() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -143,7 +145,7 @@ func (j *jsiiProxy_NotificationDestination) AccountId() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) AccountIdInput() *float64 {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) AccountIdInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -153,67 +155,7 @@ func (j *jsiiProxy_NotificationDestination) AccountIdInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Active() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"active",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) ActiveInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"activeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) AuthBasic() NotificationDestinationAuthBasicOutputReference {
-	var returns NotificationDestinationAuthBasicOutputReference
-	_jsii_.Get(
-		j,
-		"authBasic",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) AuthBasicInput() *NotificationDestinationAuthBasic {
-	var returns *NotificationDestinationAuthBasic
-	_jsii_.Get(
-		j,
-		"authBasicInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) AuthToken() NotificationDestinationAuthTokenOutputReference {
-	var returns NotificationDestinationAuthTokenOutputReference
-	_jsii_.Get(
-		j,
-		"authToken",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) AuthTokenInput() *NotificationDestinationAuthToken {
-	var returns *NotificationDestinationAuthToken
-	_jsii_.Get(
-		j,
-		"authTokenInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -223,7 +165,7 @@ func (j *jsiiProxy_NotificationDestination) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Connection() interface{} {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -233,7 +175,7 @@ func (j *jsiiProxy_NotificationDestination) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -243,7 +185,7 @@ func (j *jsiiProxy_NotificationDestination) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Count() *float64 {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -253,7 +195,7 @@ func (j *jsiiProxy_NotificationDestination) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) DependsOn() *[]*string {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -263,7 +205,7 @@ func (j *jsiiProxy_NotificationDestination) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -273,7 +215,7 @@ func (j *jsiiProxy_NotificationDestination) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Fqn() *string {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -283,7 +225,7 @@ func (j *jsiiProxy_NotificationDestination) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) FriendlyUniqueId() *string {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -293,7 +235,17 @@ func (j *jsiiProxy_NotificationDestination) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Id() *string {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Guid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"guid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -303,7 +255,7 @@ func (j *jsiiProxy_NotificationDestination) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) IdInput() *string {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -313,27 +265,7 @@ func (j *jsiiProxy_NotificationDestination) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) IsUserAuthenticated() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"isUserAuthenticated",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) LastSent() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"lastSent",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -343,7 +275,47 @@ func (j *jsiiProxy_NotificationDestination) Lifecycle() *cdktf.TerraformResource
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Name() *string {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) LocationsPrivate() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"locationsPrivate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) LocationsPrivateInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"locationsPrivateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) LocationsPublic() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"locationsPublic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) LocationsPublicInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"locationsPublicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -353,7 +325,7 @@ func (j *jsiiProxy_NotificationDestination) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) NameInput() *string {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) NameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -363,7 +335,7 @@ func (j *jsiiProxy_NotificationDestination) NameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Node() constructs.Node {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -373,27 +345,27 @@ func (j *jsiiProxy_NotificationDestination) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Property() NotificationDestinationPropertyList {
-	var returns NotificationDestinationPropertyList
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Period() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"property",
+		"period",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) PropertyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) PeriodInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"propertyInput",
+		"periodInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -403,7 +375,7 @@ func (j *jsiiProxy_NotificationDestination) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Provisioners() *[]interface{} {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
@@ -413,7 +385,7 @@ func (j *jsiiProxy_NotificationDestination) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) RawOverrides() interface{} {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -423,7 +395,7 @@ func (j *jsiiProxy_NotificationDestination) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Status() *string {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Status() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -433,7 +405,37 @@ func (j *jsiiProxy_NotificationDestination) Status() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) StatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Tag() SyntheticsBrokenLinksMonitorTagList {
+	var returns SyntheticsBrokenLinksMonitorTagList
+	_jsii_.Get(
+		j,
+		"tag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) TagInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -443,7 +445,7 @@ func (j *jsiiProxy_NotificationDestination) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -453,7 +455,7 @@ func (j *jsiiProxy_NotificationDestination) TerraformMetaArguments() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) TerraformResourceType() *string {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -463,35 +465,35 @@ func (j *jsiiProxy_NotificationDestination) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Type() *string {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Uri() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"type",
+		"uri",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) TypeInput() *string {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) UriInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"typeInput",
+		"uriInput",
 		&returns,
 	)
 	return returns
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination newrelic_notification_destination} Resource.
-func NewNotificationDestination(scope constructs.Construct, id *string, config *NotificationDestinationConfig) NotificationDestination {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor} Resource.
+func NewSyntheticsBrokenLinksMonitor(scope constructs.Construct, id *string, config *SyntheticsBrokenLinksMonitorConfig) SyntheticsBrokenLinksMonitor {
 	_init_.Initialize()
 
-	j := jsiiProxy_NotificationDestination{}
+	j := jsiiProxy_SyntheticsBrokenLinksMonitor{}
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.NotificationDestination",
+		"@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -499,18 +501,18 @@ func NewNotificationDestination(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination newrelic_notification_destination} Resource.
-func NewNotificationDestination_Override(n NotificationDestination, scope constructs.Construct, id *string, config *NotificationDestinationConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor} Resource.
+func NewSyntheticsBrokenLinksMonitor_Override(s SyntheticsBrokenLinksMonitor, scope constructs.Construct, id *string, config *SyntheticsBrokenLinksMonitorConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.NotificationDestination",
+		"@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor",
 		[]interface{}{scope, id, config},
-		n,
+		s,
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetAccountId(val *float64) {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetAccountId(val *float64) {
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -518,15 +520,7 @@ func (j *jsiiProxy_NotificationDestination) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetActive(val interface{}) {
-	_jsii_.Set(
-		j,
-		"active",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NotificationDestination) SetConnection(val interface{}) {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
@@ -534,7 +528,7 @@ func (j *jsiiProxy_NotificationDestination) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetCount(val *float64) {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -542,7 +536,7 @@ func (j *jsiiProxy_NotificationDestination) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -550,7 +544,7 @@ func (j *jsiiProxy_NotificationDestination) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -558,7 +552,7 @@ func (j *jsiiProxy_NotificationDestination) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetId(val *string) {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
@@ -566,7 +560,7 @@ func (j *jsiiProxy_NotificationDestination) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -574,7 +568,23 @@ func (j *jsiiProxy_NotificationDestination) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetName(val *string) {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetLocationsPrivate(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"locationsPrivate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetLocationsPublic(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"locationsPublic",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
@@ -582,7 +592,15 @@ func (j *jsiiProxy_NotificationDestination) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetPeriod(val *string) {
+	_jsii_.Set(
+		j,
+		"period",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,7 +608,7 @@ func (j *jsiiProxy_NotificationDestination) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -598,10 +616,18 @@ func (j *jsiiProxy_NotificationDestination) SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetType(val *string) {
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetStatus(val *string) {
 	_jsii_.Set(
 		j,
-		"type",
+		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) SetUri(val *string) {
+	_jsii_.Set(
+		j,
+		"uri",
 		val,
 	)
 }
@@ -623,13 +649,13 @@ func (j *jsiiProxy_NotificationDestination) SetType(val *string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NotificationDestination_IsConstruct(x interface{}) *bool {
+func SyntheticsBrokenLinksMonitor_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-newrelic.NotificationDestination",
+		"@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -638,30 +664,30 @@ func NotificationDestination_IsConstruct(x interface{}) *bool {
 	return returns
 }
 
-func NotificationDestination_TfResourceType() *string {
+func SyntheticsBrokenLinksMonitor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-newrelic.NotificationDestination",
+		"@cdktf/provider-newrelic.SyntheticsBrokenLinksMonitor",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) AddOverride(path *string, value interface{}) {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) AddOverride(path *string, value interface{}) {
 	_jsii_.InvokeVoid(
-		n,
+		s,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -670,11 +696,11 @@ func (n *jsiiProxy_NotificationDestination) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -683,11 +709,11 @@ func (n *jsiiProxy_NotificationDestination) GetBooleanAttribute(terraformAttribu
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -696,11 +722,11 @@ func (n *jsiiProxy_NotificationDestination) GetBooleanMapAttribute(terraformAttr
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetListAttribute(terraformAttribute *string) *[]*string {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) GetListAttribute(terraformAttribute *string) *[]*string {
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -709,11 +735,11 @@ func (n *jsiiProxy_NotificationDestination) GetListAttribute(terraformAttribute 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) GetNumberAttribute(terraformAttribute *string) *float64 {
 	var returns *float64
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -722,11 +748,11 @@ func (n *jsiiProxy_NotificationDestination) GetNumberAttribute(terraformAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -735,11 +761,11 @@ func (n *jsiiProxy_NotificationDestination) GetNumberListAttribute(terraformAttr
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -748,11 +774,11 @@ func (n *jsiiProxy_NotificationDestination) GetNumberMapAttribute(terraformAttri
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetStringAttribute(terraformAttribute *string) *string {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) GetStringAttribute(terraformAttribute *string) *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -761,11 +787,11 @@ func (n *jsiiProxy_NotificationDestination) GetStringAttribute(terraformAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -774,11 +800,11 @@ func (n *jsiiProxy_NotificationDestination) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -787,83 +813,75 @@ func (n *jsiiProxy_NotificationDestination) InterpolationForAttribute(terraformA
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) OverrideLogicalId(newLogicalId *string) {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
-		n,
+		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) PutAuthBasic(value *NotificationDestinationAuthBasic) {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) PutTag(value interface{}) {
 	_jsii_.InvokeVoid(
-		n,
-		"putAuthBasic",
+		s,
+		"putTag",
 		[]interface{}{value},
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) PutAuthToken(value *NotificationDestinationAuthToken) {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ResetAccountId() {
 	_jsii_.InvokeVoid(
-		n,
-		"putAuthToken",
-		[]interface{}{value},
-	)
-}
-
-func (n *jsiiProxy_NotificationDestination) PutProperty(value interface{}) {
-	_jsii_.InvokeVoid(
-		n,
-		"putProperty",
-		[]interface{}{value},
-	)
-}
-
-func (n *jsiiProxy_NotificationDestination) ResetActive() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetActive",
+		s,
+		"resetAccountId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) ResetAuthBasic() {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ResetId() {
 	_jsii_.InvokeVoid(
-		n,
-		"resetAuthBasic",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NotificationDestination) ResetAuthToken() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetAuthToken",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NotificationDestination) ResetId() {
-	_jsii_.InvokeVoid(
-		n,
+		s,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) ResetOverrideLogicalId() {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ResetLocationsPrivate() {
 	_jsii_.InvokeVoid(
-		n,
+		s,
+		"resetLocationsPrivate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ResetLocationsPublic() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLocationsPublic",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		s,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) SynthesizeAttributes() *map[string]interface{} {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ResetTag() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTag",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -872,11 +890,11 @@ func (n *jsiiProxy_NotificationDestination) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) ToMetadata() interface{} {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -885,11 +903,11 @@ func (n *jsiiProxy_NotificationDestination) ToMetadata() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) ToString() *string {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -898,11 +916,11 @@ func (n *jsiiProxy_NotificationDestination) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) ToTerraform() interface{} {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		s,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

@@ -10,19 +10,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination newrelic_notification_destination}.
-type NotificationDestination interface {
+// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/workflow newrelic_workflow}.
+type Workflow interface {
 	cdktf.TerraformResource
 	AccountId() *float64
 	SetAccountId(val *float64)
 	AccountIdInput() *float64
-	Active() interface{}
-	SetActive(val interface{})
-	ActiveInput() interface{}
-	AuthBasic() NotificationDestinationAuthBasicOutputReference
-	AuthBasicInput() *NotificationDestinationAuthBasic
-	AuthToken() NotificationDestinationAuthTokenOutputReference
-	AuthTokenInput() *NotificationDestinationAuthToken
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -39,6 +32,16 @@ type NotificationDestination interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DestinationConfiguration() WorkflowDestinationConfigurationList
+	DestinationConfigurationInput() interface{}
+	DestinationsEnabled() interface{}
+	SetDestinationsEnabled(val interface{})
+	DestinationsEnabledInput() interface{}
+	Enrichments() WorkflowEnrichmentsOutputReference
+	EnrichmentsEnabled() interface{}
+	SetEnrichmentsEnabled(val interface{})
+	EnrichmentsEnabledInput() interface{}
+	EnrichmentsInput() *WorkflowEnrichments
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -50,19 +53,21 @@ type NotificationDestination interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsUserAuthenticated() cdktf.IResolvable
-	LastSent() *string
+	IssuesFilter() WorkflowIssuesFilterOutputReference
+	IssuesFilterInput() *WorkflowIssuesFilter
+	LastRun() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MutingRulesHandling() *string
+	SetMutingRulesHandling(val *string)
+	MutingRulesHandlingInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Property() NotificationDestinationPropertyList
-	PropertyInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -73,16 +78,16 @@ type NotificationDestination interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Type() *string
-	SetType(val *string)
-	TypeInput() *string
+	WorkflowEnabled() interface{}
+	SetWorkflowEnabled(val interface{})
+	WorkflowEnabledInput() interface{}
+	WorkflowId() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -108,16 +113,18 @@ type NotificationDestination interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAuthBasic(value *NotificationDestinationAuthBasic)
-	PutAuthToken(value *NotificationDestinationAuthToken)
-	PutProperty(value interface{})
-	ResetActive()
-	ResetAuthBasic()
-	ResetAuthToken()
+	PutDestinationConfiguration(value interface{})
+	PutEnrichments(value *WorkflowEnrichments)
+	PutIssuesFilter(value *WorkflowIssuesFilter)
+	ResetAccountId()
+	ResetDestinationsEnabled()
+	ResetEnrichments()
+	ResetEnrichmentsEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetWorkflowEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -128,12 +135,12 @@ type NotificationDestination interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for NotificationDestination
-type jsiiProxy_NotificationDestination struct {
+// The jsii proxy struct for Workflow
+type jsiiProxy_Workflow struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_NotificationDestination) AccountId() *float64 {
+func (j *jsiiProxy_Workflow) AccountId() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -143,7 +150,7 @@ func (j *jsiiProxy_NotificationDestination) AccountId() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) AccountIdInput() *float64 {
+func (j *jsiiProxy_Workflow) AccountIdInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -153,67 +160,7 @@ func (j *jsiiProxy_NotificationDestination) AccountIdInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Active() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"active",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) ActiveInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"activeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) AuthBasic() NotificationDestinationAuthBasicOutputReference {
-	var returns NotificationDestinationAuthBasicOutputReference
-	_jsii_.Get(
-		j,
-		"authBasic",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) AuthBasicInput() *NotificationDestinationAuthBasic {
-	var returns *NotificationDestinationAuthBasic
-	_jsii_.Get(
-		j,
-		"authBasicInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) AuthToken() NotificationDestinationAuthTokenOutputReference {
-	var returns NotificationDestinationAuthTokenOutputReference
-	_jsii_.Get(
-		j,
-		"authToken",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) AuthTokenInput() *NotificationDestinationAuthToken {
-	var returns *NotificationDestinationAuthToken
-	_jsii_.Get(
-		j,
-		"authTokenInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_Workflow) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -223,7 +170,7 @@ func (j *jsiiProxy_NotificationDestination) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Connection() interface{} {
+func (j *jsiiProxy_Workflow) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -233,7 +180,7 @@ func (j *jsiiProxy_NotificationDestination) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_Workflow) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -243,7 +190,7 @@ func (j *jsiiProxy_NotificationDestination) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Count() *float64 {
+func (j *jsiiProxy_Workflow) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -253,7 +200,7 @@ func (j *jsiiProxy_NotificationDestination) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) DependsOn() *[]*string {
+func (j *jsiiProxy_Workflow) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -263,7 +210,87 @@ func (j *jsiiProxy_NotificationDestination) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_Workflow) DestinationConfiguration() WorkflowDestinationConfigurationList {
+	var returns WorkflowDestinationConfigurationList
+	_jsii_.Get(
+		j,
+		"destinationConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) DestinationConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"destinationConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) DestinationsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"destinationsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) DestinationsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"destinationsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) Enrichments() WorkflowEnrichmentsOutputReference {
+	var returns WorkflowEnrichmentsOutputReference
+	_jsii_.Get(
+		j,
+		"enrichments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) EnrichmentsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enrichmentsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) EnrichmentsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enrichmentsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) EnrichmentsInput() *WorkflowEnrichments {
+	var returns *WorkflowEnrichments
+	_jsii_.Get(
+		j,
+		"enrichmentsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -273,7 +300,7 @@ func (j *jsiiProxy_NotificationDestination) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Fqn() *string {
+func (j *jsiiProxy_Workflow) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -283,7 +310,7 @@ func (j *jsiiProxy_NotificationDestination) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) FriendlyUniqueId() *string {
+func (j *jsiiProxy_Workflow) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -293,7 +320,7 @@ func (j *jsiiProxy_NotificationDestination) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Id() *string {
+func (j *jsiiProxy_Workflow) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -303,7 +330,7 @@ func (j *jsiiProxy_NotificationDestination) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) IdInput() *string {
+func (j *jsiiProxy_Workflow) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -313,27 +340,37 @@ func (j *jsiiProxy_NotificationDestination) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) IsUserAuthenticated() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Workflow) IssuesFilter() WorkflowIssuesFilterOutputReference {
+	var returns WorkflowIssuesFilterOutputReference
 	_jsii_.Get(
 		j,
-		"isUserAuthenticated",
+		"issuesFilter",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) LastSent() *string {
+func (j *jsiiProxy_Workflow) IssuesFilterInput() *WorkflowIssuesFilter {
+	var returns *WorkflowIssuesFilter
+	_jsii_.Get(
+		j,
+		"issuesFilterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) LastRun() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"lastSent",
+		"lastRun",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_Workflow) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -343,7 +380,27 @@ func (j *jsiiProxy_NotificationDestination) Lifecycle() *cdktf.TerraformResource
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Name() *string {
+func (j *jsiiProxy_Workflow) MutingRulesHandling() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mutingRulesHandling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) MutingRulesHandlingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mutingRulesHandlingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -353,7 +410,7 @@ func (j *jsiiProxy_NotificationDestination) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) NameInput() *string {
+func (j *jsiiProxy_Workflow) NameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -363,7 +420,7 @@ func (j *jsiiProxy_NotificationDestination) NameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Node() constructs.Node {
+func (j *jsiiProxy_Workflow) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -373,27 +430,7 @@ func (j *jsiiProxy_NotificationDestination) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Property() NotificationDestinationPropertyList {
-	var returns NotificationDestinationPropertyList
-	_jsii_.Get(
-		j,
-		"property",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) PropertyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"propertyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_Workflow) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -403,7 +440,7 @@ func (j *jsiiProxy_NotificationDestination) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Provisioners() *[]interface{} {
+func (j *jsiiProxy_Workflow) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
@@ -413,7 +450,7 @@ func (j *jsiiProxy_NotificationDestination) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) RawOverrides() interface{} {
+func (j *jsiiProxy_Workflow) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -423,17 +460,7 @@ func (j *jsiiProxy_NotificationDestination) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Status() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"status",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationDestination) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_Workflow) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -443,7 +470,7 @@ func (j *jsiiProxy_NotificationDestination) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_Workflow) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -453,7 +480,7 @@ func (j *jsiiProxy_NotificationDestination) TerraformMetaArguments() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) TerraformResourceType() *string {
+func (j *jsiiProxy_Workflow) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -463,35 +490,45 @@ func (j *jsiiProxy_NotificationDestination) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Type() *string {
-	var returns *string
+func (j *jsiiProxy_Workflow) WorkflowEnabled() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"type",
+		"workflowEnabled",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) TypeInput() *string {
+func (j *jsiiProxy_Workflow) WorkflowEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workflowEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) WorkflowId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"typeInput",
+		"workflowId",
 		&returns,
 	)
 	return returns
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination newrelic_notification_destination} Resource.
-func NewNotificationDestination(scope constructs.Construct, id *string, config *NotificationDestinationConfig) NotificationDestination {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/workflow newrelic_workflow} Resource.
+func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig) Workflow {
 	_init_.Initialize()
 
-	j := jsiiProxy_NotificationDestination{}
+	j := jsiiProxy_Workflow{}
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.NotificationDestination",
+		"@cdktf/provider-newrelic.Workflow",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -499,18 +536,18 @@ func NewNotificationDestination(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination newrelic_notification_destination} Resource.
-func NewNotificationDestination_Override(n NotificationDestination, scope constructs.Construct, id *string, config *NotificationDestinationConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/workflow newrelic_workflow} Resource.
+func NewWorkflow_Override(w Workflow, scope constructs.Construct, id *string, config *WorkflowConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.NotificationDestination",
+		"@cdktf/provider-newrelic.Workflow",
 		[]interface{}{scope, id, config},
-		n,
+		w,
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetAccountId(val *float64) {
+func (j *jsiiProxy_Workflow) SetAccountId(val *float64) {
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -518,15 +555,7 @@ func (j *jsiiProxy_NotificationDestination) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetActive(val interface{}) {
-	_jsii_.Set(
-		j,
-		"active",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NotificationDestination) SetConnection(val interface{}) {
+func (j *jsiiProxy_Workflow) SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
@@ -534,7 +563,7 @@ func (j *jsiiProxy_NotificationDestination) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetCount(val *float64) {
+func (j *jsiiProxy_Workflow) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -542,7 +571,7 @@ func (j *jsiiProxy_NotificationDestination) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Workflow) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -550,7 +579,23 @@ func (j *jsiiProxy_NotificationDestination) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Workflow) SetDestinationsEnabled(val interface{}) {
+	_jsii_.Set(
+		j,
+		"destinationsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Workflow) SetEnrichmentsEnabled(val interface{}) {
+	_jsii_.Set(
+		j,
+		"enrichmentsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Workflow) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -558,7 +603,7 @@ func (j *jsiiProxy_NotificationDestination) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetId(val *string) {
+func (j *jsiiProxy_Workflow) SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
@@ -566,7 +611,7 @@ func (j *jsiiProxy_NotificationDestination) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Workflow) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -574,7 +619,15 @@ func (j *jsiiProxy_NotificationDestination) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetName(val *string) {
+func (j *jsiiProxy_Workflow) SetMutingRulesHandling(val *string) {
+	_jsii_.Set(
+		j,
+		"mutingRulesHandling",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Workflow) SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
@@ -582,7 +635,7 @@ func (j *jsiiProxy_NotificationDestination) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Workflow) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -590,7 +643,7 @@ func (j *jsiiProxy_NotificationDestination) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Workflow) SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -598,10 +651,10 @@ func (j *jsiiProxy_NotificationDestination) SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetType(val *string) {
+func (j *jsiiProxy_Workflow) SetWorkflowEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
-		"type",
+		"workflowEnabled",
 		val,
 	)
 }
@@ -623,13 +676,13 @@ func (j *jsiiProxy_NotificationDestination) SetType(val *string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NotificationDestination_IsConstruct(x interface{}) *bool {
+func Workflow_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-newrelic.NotificationDestination",
+		"@cdktf/provider-newrelic.Workflow",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -638,30 +691,30 @@ func NotificationDestination_IsConstruct(x interface{}) *bool {
 	return returns
 }
 
-func NotificationDestination_TfResourceType() *string {
+func Workflow_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-newrelic.NotificationDestination",
+		"@cdktf/provider-newrelic.Workflow",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) AddOverride(path *string, value interface{}) {
+func (w *jsiiProxy_Workflow) AddOverride(path *string, value interface{}) {
 	_jsii_.InvokeVoid(
-		n,
+		w,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (w *jsiiProxy_Workflow) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -670,11 +723,11 @@ func (n *jsiiProxy_NotificationDestination) GetAnyMapAttribute(terraformAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_Workflow) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -683,11 +736,11 @@ func (n *jsiiProxy_NotificationDestination) GetBooleanAttribute(terraformAttribu
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (w *jsiiProxy_Workflow) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -696,11 +749,11 @@ func (n *jsiiProxy_NotificationDestination) GetBooleanMapAttribute(terraformAttr
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetListAttribute(terraformAttribute *string) *[]*string {
+func (w *jsiiProxy_Workflow) GetListAttribute(terraformAttribute *string) *[]*string {
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -709,11 +762,11 @@ func (n *jsiiProxy_NotificationDestination) GetListAttribute(terraformAttribute 
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (w *jsiiProxy_Workflow) GetNumberAttribute(terraformAttribute *string) *float64 {
 	var returns *float64
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -722,11 +775,11 @@ func (n *jsiiProxy_NotificationDestination) GetNumberAttribute(terraformAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (w *jsiiProxy_Workflow) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -735,11 +788,11 @@ func (n *jsiiProxy_NotificationDestination) GetNumberListAttribute(terraformAttr
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (w *jsiiProxy_Workflow) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -748,11 +801,11 @@ func (n *jsiiProxy_NotificationDestination) GetNumberMapAttribute(terraformAttri
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetStringAttribute(terraformAttribute *string) *string {
+func (w *jsiiProxy_Workflow) GetStringAttribute(terraformAttribute *string) *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -761,11 +814,11 @@ func (n *jsiiProxy_NotificationDestination) GetStringAttribute(terraformAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (w *jsiiProxy_Workflow) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -774,11 +827,11 @@ func (n *jsiiProxy_NotificationDestination) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_Workflow) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -787,83 +840,99 @@ func (n *jsiiProxy_NotificationDestination) InterpolationForAttribute(terraformA
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) OverrideLogicalId(newLogicalId *string) {
+func (w *jsiiProxy_Workflow) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
-		n,
+		w,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) PutAuthBasic(value *NotificationDestinationAuthBasic) {
+func (w *jsiiProxy_Workflow) PutDestinationConfiguration(value interface{}) {
 	_jsii_.InvokeVoid(
-		n,
-		"putAuthBasic",
+		w,
+		"putDestinationConfiguration",
 		[]interface{}{value},
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) PutAuthToken(value *NotificationDestinationAuthToken) {
+func (w *jsiiProxy_Workflow) PutEnrichments(value *WorkflowEnrichments) {
 	_jsii_.InvokeVoid(
-		n,
-		"putAuthToken",
+		w,
+		"putEnrichments",
 		[]interface{}{value},
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) PutProperty(value interface{}) {
+func (w *jsiiProxy_Workflow) PutIssuesFilter(value *WorkflowIssuesFilter) {
 	_jsii_.InvokeVoid(
-		n,
-		"putProperty",
+		w,
+		"putIssuesFilter",
 		[]interface{}{value},
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) ResetActive() {
+func (w *jsiiProxy_Workflow) ResetAccountId() {
 	_jsii_.InvokeVoid(
-		n,
-		"resetActive",
+		w,
+		"resetAccountId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) ResetAuthBasic() {
+func (w *jsiiProxy_Workflow) ResetDestinationsEnabled() {
 	_jsii_.InvokeVoid(
-		n,
-		"resetAuthBasic",
+		w,
+		"resetDestinationsEnabled",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) ResetAuthToken() {
+func (w *jsiiProxy_Workflow) ResetEnrichments() {
 	_jsii_.InvokeVoid(
-		n,
-		"resetAuthToken",
+		w,
+		"resetEnrichments",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) ResetId() {
+func (w *jsiiProxy_Workflow) ResetEnrichmentsEnabled() {
 	_jsii_.InvokeVoid(
-		n,
+		w,
+		"resetEnrichmentsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workflow) ResetId() {
+	_jsii_.InvokeVoid(
+		w,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) ResetOverrideLogicalId() {
+func (w *jsiiProxy_Workflow) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		n,
+		w,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) SynthesizeAttributes() *map[string]interface{} {
+func (w *jsiiProxy_Workflow) ResetWorkflowEnabled() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetWorkflowEnabled",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workflow) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -872,11 +941,11 @@ func (n *jsiiProxy_NotificationDestination) SynthesizeAttributes() *map[string]i
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) ToMetadata() interface{} {
+func (w *jsiiProxy_Workflow) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -885,11 +954,11 @@ func (n *jsiiProxy_NotificationDestination) ToMetadata() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) ToString() *string {
+func (w *jsiiProxy_Workflow) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -898,11 +967,11 @@ func (n *jsiiProxy_NotificationDestination) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationDestination) ToTerraform() interface{} {
+func (w *jsiiProxy_Workflow) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		w,
 		"toTerraform",
 		nil, // no parameters
 		&returns,
