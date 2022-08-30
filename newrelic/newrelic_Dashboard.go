@@ -10,8 +10,8 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel}.
-type NotificationChannel interface {
+// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard newrelic_dashboard}.
+type Dashboard interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -25,13 +25,16 @@ type NotificationChannel interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DashboardUrl() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DestinationId() *string
-	SetDestinationId(val *string)
-	DestinationIdInput() *string
+	Editable() *string
+	SetEditable(val *string)
+	EditableInput() *string
+	Filter() DashboardFilterOutputReference
+	FilterInput() *DashboardFilter
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -40,6 +43,12 @@ type NotificationChannel interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GridColumnCount() *float64
+	SetGridColumnCount(val *float64)
+	GridColumnCountInput() *float64
+	Icon() *string
+	SetIcon(val *string)
+	IconInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -47,16 +56,8 @@ type NotificationChannel interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Product() *string
-	SetProduct(val *string)
-	ProductInput() *string
-	Properties() NotificationChannelPropertiesList
-	PropertiesInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -73,9 +74,14 @@ type NotificationChannel interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Type() *string
-	SetType(val *string)
-	TypeInput() *string
+	Title() *string
+	SetTitle(val *string)
+	TitleInput() *string
+	Visibility() *string
+	SetVisibility(val *string)
+	VisibilityInput() *string
+	Widget() DashboardWidgetList
+	WidgetInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,12 +107,18 @@ type NotificationChannel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutProperties(value interface{})
+	PutFilter(value *DashboardFilter)
+	PutWidget(value interface{})
+	ResetEditable()
+	ResetFilter()
+	ResetGridColumnCount()
+	ResetIcon()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProperties()
+	ResetVisibility()
+	ResetWidget()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -117,12 +129,12 @@ type NotificationChannel interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for NotificationChannel
-type jsiiProxy_NotificationChannel struct {
+// The jsii proxy struct for Dashboard
+type jsiiProxy_Dashboard struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_NotificationChannel) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_Dashboard) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -132,7 +144,7 @@ func (j *jsiiProxy_NotificationChannel) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Connection() interface{} {
+func (j *jsiiProxy_Dashboard) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -142,7 +154,7 @@ func (j *jsiiProxy_NotificationChannel) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_Dashboard) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -152,7 +164,7 @@ func (j *jsiiProxy_NotificationChannel) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Count() *float64 {
+func (j *jsiiProxy_Dashboard) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -162,7 +174,17 @@ func (j *jsiiProxy_NotificationChannel) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) DependsOn() *[]*string {
+func (j *jsiiProxy_Dashboard) DashboardUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dashboardUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -172,27 +194,47 @@ func (j *jsiiProxy_NotificationChannel) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) DestinationId() *string {
+func (j *jsiiProxy_Dashboard) Editable() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"destinationId",
+		"editable",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) DestinationIdInput() *string {
+func (j *jsiiProxy_Dashboard) EditableInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"destinationIdInput",
+		"editableInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_Dashboard) Filter() DashboardFilterOutputReference {
+	var returns DashboardFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) FilterInput() *DashboardFilter {
+	var returns *DashboardFilter
+	_jsii_.Get(
+		j,
+		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -202,7 +244,7 @@ func (j *jsiiProxy_NotificationChannel) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Fqn() *string {
+func (j *jsiiProxy_Dashboard) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -212,7 +254,7 @@ func (j *jsiiProxy_NotificationChannel) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) FriendlyUniqueId() *string {
+func (j *jsiiProxy_Dashboard) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -222,7 +264,47 @@ func (j *jsiiProxy_NotificationChannel) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Id() *string {
+func (j *jsiiProxy_Dashboard) GridColumnCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"gridColumnCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) GridColumnCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"gridColumnCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) Icon() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"icon",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) IconInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iconInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -232,7 +314,7 @@ func (j *jsiiProxy_NotificationChannel) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) IdInput() *string {
+func (j *jsiiProxy_Dashboard) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -242,7 +324,7 @@ func (j *jsiiProxy_NotificationChannel) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_Dashboard) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -252,27 +334,7 @@ func (j *jsiiProxy_NotificationChannel) Lifecycle() *cdktf.TerraformResourceLife
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) Node() constructs.Node {
+func (j *jsiiProxy_Dashboard) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -282,47 +344,7 @@ func (j *jsiiProxy_NotificationChannel) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Product() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"product",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) ProductInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"productInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) Properties() NotificationChannelPropertiesList {
-	var returns NotificationChannelPropertiesList
-	_jsii_.Get(
-		j,
-		"properties",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) PropertiesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"propertiesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_Dashboard) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -332,7 +354,7 @@ func (j *jsiiProxy_NotificationChannel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Provisioners() *[]interface{} {
+func (j *jsiiProxy_Dashboard) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
@@ -342,7 +364,7 @@ func (j *jsiiProxy_NotificationChannel) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) RawOverrides() interface{} {
+func (j *jsiiProxy_Dashboard) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -352,7 +374,7 @@ func (j *jsiiProxy_NotificationChannel) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_Dashboard) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -362,7 +384,7 @@ func (j *jsiiProxy_NotificationChannel) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_Dashboard) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -372,7 +394,7 @@ func (j *jsiiProxy_NotificationChannel) TerraformMetaArguments() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) TerraformResourceType() *string {
+func (j *jsiiProxy_Dashboard) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -382,35 +404,75 @@ func (j *jsiiProxy_NotificationChannel) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Type() *string {
+func (j *jsiiProxy_Dashboard) Title() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"type",
+		"title",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) TypeInput() *string {
+func (j *jsiiProxy_Dashboard) TitleInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"typeInput",
+		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) Visibility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"visibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) VisibilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"visibilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) Widget() DashboardWidgetList {
+	var returns DashboardWidgetList
+	_jsii_.Get(
+		j,
+		"widget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dashboard) WidgetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"widgetInput",
 		&returns,
 	)
 	return returns
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel} Resource.
-func NewNotificationChannel(scope constructs.Construct, id *string, config *NotificationChannelConfig) NotificationChannel {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard newrelic_dashboard} Resource.
+func NewDashboard(scope constructs.Construct, id *string, config *DashboardConfig) Dashboard {
 	_init_.Initialize()
 
-	j := jsiiProxy_NotificationChannel{}
+	j := jsiiProxy_Dashboard{}
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.NotificationChannel",
+		"@cdktf/provider-newrelic.Dashboard",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -418,18 +480,18 @@ func NewNotificationChannel(scope constructs.Construct, id *string, config *Noti
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel} Resource.
-func NewNotificationChannel_Override(n NotificationChannel, scope constructs.Construct, id *string, config *NotificationChannelConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/dashboard newrelic_dashboard} Resource.
+func NewDashboard_Override(d Dashboard, scope constructs.Construct, id *string, config *DashboardConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.NotificationChannel",
+		"@cdktf/provider-newrelic.Dashboard",
 		[]interface{}{scope, id, config},
-		n,
+		d,
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetConnection(val interface{}) {
+func (j *jsiiProxy_Dashboard) SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
@@ -437,7 +499,7 @@ func (j *jsiiProxy_NotificationChannel) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetCount(val *float64) {
+func (j *jsiiProxy_Dashboard) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -445,7 +507,7 @@ func (j *jsiiProxy_NotificationChannel) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Dashboard) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -453,15 +515,15 @@ func (j *jsiiProxy_NotificationChannel) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetDestinationId(val *string) {
+func (j *jsiiProxy_Dashboard) SetEditable(val *string) {
 	_jsii_.Set(
 		j,
-		"destinationId",
+		"editable",
 		val,
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Dashboard) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -469,7 +531,23 @@ func (j *jsiiProxy_NotificationChannel) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetId(val *string) {
+func (j *jsiiProxy_Dashboard) SetGridColumnCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"gridColumnCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Dashboard) SetIcon(val *string) {
+	_jsii_.Set(
+		j,
+		"icon",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Dashboard) SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
@@ -477,7 +555,7 @@ func (j *jsiiProxy_NotificationChannel) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Dashboard) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -485,23 +563,7 @@ func (j *jsiiProxy_NotificationChannel) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetName(val *string) {
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NotificationChannel) SetProduct(val *string) {
-	_jsii_.Set(
-		j,
-		"product",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NotificationChannel) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Dashboard) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -509,7 +571,7 @@ func (j *jsiiProxy_NotificationChannel) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Dashboard) SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -517,10 +579,18 @@ func (j *jsiiProxy_NotificationChannel) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetType(val *string) {
+func (j *jsiiProxy_Dashboard) SetTitle(val *string) {
 	_jsii_.Set(
 		j,
-		"type",
+		"title",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Dashboard) SetVisibility(val *string) {
+	_jsii_.Set(
+		j,
+		"visibility",
 		val,
 	)
 }
@@ -542,13 +612,13 @@ func (j *jsiiProxy_NotificationChannel) SetType(val *string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NotificationChannel_IsConstruct(x interface{}) *bool {
+func Dashboard_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-newrelic.NotificationChannel",
+		"@cdktf/provider-newrelic.Dashboard",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -557,30 +627,30 @@ func NotificationChannel_IsConstruct(x interface{}) *bool {
 	return returns
 }
 
-func NotificationChannel_TfResourceType() *string {
+func Dashboard_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-newrelic.NotificationChannel",
+		"@cdktf/provider-newrelic.Dashboard",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_Dashboard) AddOverride(path *string, value interface{}) {
 	_jsii_.InvokeVoid(
-		n,
+		d,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_Dashboard) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -589,11 +659,11 @@ func (n *jsiiProxy_NotificationChannel) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_Dashboard) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -602,11 +672,11 @@ func (n *jsiiProxy_NotificationChannel) GetBooleanAttribute(terraformAttribute *
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_Dashboard) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -615,11 +685,11 @@ func (n *jsiiProxy_NotificationChannel) GetBooleanMapAttribute(terraformAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_Dashboard) GetListAttribute(terraformAttribute *string) *[]*string {
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -628,11 +698,11 @@ func (n *jsiiProxy_NotificationChannel) GetListAttribute(terraformAttribute *str
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_Dashboard) GetNumberAttribute(terraformAttribute *string) *float64 {
 	var returns *float64
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -641,11 +711,11 @@ func (n *jsiiProxy_NotificationChannel) GetNumberAttribute(terraformAttribute *s
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_Dashboard) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -654,11 +724,11 @@ func (n *jsiiProxy_NotificationChannel) GetNumberListAttribute(terraformAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_Dashboard) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -667,11 +737,11 @@ func (n *jsiiProxy_NotificationChannel) GetNumberMapAttribute(terraformAttribute
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_Dashboard) GetStringAttribute(terraformAttribute *string) *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -680,11 +750,11 @@ func (n *jsiiProxy_NotificationChannel) GetStringAttribute(terraformAttribute *s
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_Dashboard) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -693,11 +763,11 @@ func (n *jsiiProxy_NotificationChannel) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_Dashboard) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -706,51 +776,99 @@ func (n *jsiiProxy_NotificationChannel) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) OverrideLogicalId(newLogicalId *string) {
+func (d *jsiiProxy_Dashboard) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
-		n,
+		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) PutProperties(value interface{}) {
+func (d *jsiiProxy_Dashboard) PutFilter(value *DashboardFilter) {
 	_jsii_.InvokeVoid(
-		n,
-		"putProperties",
+		d,
+		"putFilter",
 		[]interface{}{value},
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) ResetId() {
+func (d *jsiiProxy_Dashboard) PutWidget(value interface{}) {
 	_jsii_.InvokeVoid(
-		n,
+		d,
+		"putWidget",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_Dashboard) ResetEditable() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEditable",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_Dashboard) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_Dashboard) ResetGridColumnCount() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGridColumnCount",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_Dashboard) ResetIcon() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIcon",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_Dashboard) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) ResetOverrideLogicalId() {
+func (d *jsiiProxy_Dashboard) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		n,
+		d,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) ResetProperties() {
+func (d *jsiiProxy_Dashboard) ResetVisibility() {
 	_jsii_.InvokeVoid(
-		n,
-		"resetProperties",
+		d,
+		"resetVisibility",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) SynthesizeAttributes() *map[string]interface{} {
+func (d *jsiiProxy_Dashboard) ResetWidget() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWidget",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_Dashboard) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -759,11 +877,11 @@ func (n *jsiiProxy_NotificationChannel) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) ToMetadata() interface{} {
+func (d *jsiiProxy_Dashboard) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -772,11 +890,11 @@ func (n *jsiiProxy_NotificationChannel) ToMetadata() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) ToString() *string {
+func (d *jsiiProxy_Dashboard) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -785,11 +903,11 @@ func (n *jsiiProxy_NotificationChannel) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) ToTerraform() interface{} {
+func (d *jsiiProxy_Dashboard) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

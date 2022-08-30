@@ -10,15 +10,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel}.
-type NotificationChannel interface {
-	cdktf.TerraformResource
+// Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component newrelic_plugin_component}.
+type DataNewrelicPluginComponent interface {
+	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	// Experimental.
-	Connection() interface{}
-	// Experimental.
-	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -29,9 +25,6 @@ type NotificationChannel interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DestinationId() *string
-	SetDestinationId(val *string)
-	DestinationIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -40,9 +33,8 @@ type NotificationChannel interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HealthStatus() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -52,19 +44,13 @@ type NotificationChannel interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Product() *string
-	SetProduct(val *string)
-	ProductInput() *string
-	Properties() NotificationChannelPropertiesList
-	PropertiesInput() interface{}
+	PluginId() *float64
+	SetPluginId(val *float64)
+	PluginIdInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
-	// Experimental.
-	Provisioners() *[]interface{}
-	// Experimental.
-	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -73,9 +59,6 @@ type NotificationChannel interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,12 +84,9 @@ type NotificationChannel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutProperties(value interface{})
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProperties()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -117,12 +97,12 @@ type NotificationChannel interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for NotificationChannel
-type jsiiProxy_NotificationChannel struct {
-	internal.Type__cdktfTerraformResource
+// The jsii proxy struct for DataNewrelicPluginComponent
+type jsiiProxy_DataNewrelicPluginComponent struct {
+	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_NotificationChannel) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_DataNewrelicPluginComponent) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -132,17 +112,7 @@ func (j *jsiiProxy_NotificationChannel) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Connection() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"connection",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_DataNewrelicPluginComponent) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -152,7 +122,7 @@ func (j *jsiiProxy_NotificationChannel) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Count() *float64 {
+func (j *jsiiProxy_DataNewrelicPluginComponent) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -162,7 +132,7 @@ func (j *jsiiProxy_NotificationChannel) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) DependsOn() *[]*string {
+func (j *jsiiProxy_DataNewrelicPluginComponent) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -172,27 +142,7 @@ func (j *jsiiProxy_NotificationChannel) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) DestinationId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"destinationId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) DestinationIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"destinationIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_DataNewrelicPluginComponent) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -202,7 +152,7 @@ func (j *jsiiProxy_NotificationChannel) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Fqn() *string {
+func (j *jsiiProxy_DataNewrelicPluginComponent) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -212,7 +162,7 @@ func (j *jsiiProxy_NotificationChannel) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) FriendlyUniqueId() *string {
+func (j *jsiiProxy_DataNewrelicPluginComponent) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -222,7 +172,17 @@ func (j *jsiiProxy_NotificationChannel) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Id() *string {
+func (j *jsiiProxy_DataNewrelicPluginComponent) HealthStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicPluginComponent) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -232,17 +192,7 @@ func (j *jsiiProxy_NotificationChannel) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_DataNewrelicPluginComponent) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -252,7 +202,7 @@ func (j *jsiiProxy_NotificationChannel) Lifecycle() *cdktf.TerraformResourceLife
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Name() *string {
+func (j *jsiiProxy_DataNewrelicPluginComponent) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -262,7 +212,7 @@ func (j *jsiiProxy_NotificationChannel) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) NameInput() *string {
+func (j *jsiiProxy_DataNewrelicPluginComponent) NameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -272,7 +222,7 @@ func (j *jsiiProxy_NotificationChannel) NameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Node() constructs.Node {
+func (j *jsiiProxy_DataNewrelicPluginComponent) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -282,47 +232,27 @@ func (j *jsiiProxy_NotificationChannel) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Product() *string {
-	var returns *string
+func (j *jsiiProxy_DataNewrelicPluginComponent) PluginId() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
-		"product",
+		"pluginId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) ProductInput() *string {
-	var returns *string
+func (j *jsiiProxy_DataNewrelicPluginComponent) PluginIdInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
-		"productInput",
+		"pluginIdInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Properties() NotificationChannelPropertiesList {
-	var returns NotificationChannelPropertiesList
-	_jsii_.Get(
-		j,
-		"properties",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) PropertiesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"propertiesInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_DataNewrelicPluginComponent) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -332,17 +262,7 @@ func (j *jsiiProxy_NotificationChannel) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Provisioners() *[]interface{} {
-	var returns *[]interface{}
-	_jsii_.Get(
-		j,
-		"provisioners",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) RawOverrides() interface{} {
+func (j *jsiiProxy_DataNewrelicPluginComponent) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -352,7 +272,7 @@ func (j *jsiiProxy_NotificationChannel) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_DataNewrelicPluginComponent) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -362,7 +282,7 @@ func (j *jsiiProxy_NotificationChannel) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_DataNewrelicPluginComponent) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -372,7 +292,7 @@ func (j *jsiiProxy_NotificationChannel) TerraformMetaArguments() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) TerraformResourceType() *string {
+func (j *jsiiProxy_DataNewrelicPluginComponent) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -382,35 +302,15 @@ func (j *jsiiProxy_NotificationChannel) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Type() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"type",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_NotificationChannel) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel} Resource.
-func NewNotificationChannel(scope constructs.Construct, id *string, config *NotificationChannelConfig) NotificationChannel {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component newrelic_plugin_component} Data Source.
+func NewDataNewrelicPluginComponent(scope constructs.Construct, id *string, config *DataNewrelicPluginComponentConfig) DataNewrelicPluginComponent {
 	_init_.Initialize()
 
-	j := jsiiProxy_NotificationChannel{}
+	j := jsiiProxy_DataNewrelicPluginComponent{}
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.NotificationChannel",
+		"@cdktf/provider-newrelic.DataNewrelicPluginComponent",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -418,26 +318,18 @@ func NewNotificationChannel(scope constructs.Construct, id *string, config *Noti
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel} Resource.
-func NewNotificationChannel_Override(n NotificationChannel, scope constructs.Construct, id *string, config *NotificationChannelConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/plugin_component newrelic_plugin_component} Data Source.
+func NewDataNewrelicPluginComponent_Override(d DataNewrelicPluginComponent, scope constructs.Construct, id *string, config *DataNewrelicPluginComponentConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.NotificationChannel",
+		"@cdktf/provider-newrelic.DataNewrelicPluginComponent",
 		[]interface{}{scope, id, config},
-		n,
+		d,
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetConnection(val interface{}) {
-	_jsii_.Set(
-		j,
-		"connection",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NotificationChannel) SetCount(val *float64) {
+func (j *jsiiProxy_DataNewrelicPluginComponent) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -445,7 +337,7 @@ func (j *jsiiProxy_NotificationChannel) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataNewrelicPluginComponent) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -453,15 +345,7 @@ func (j *jsiiProxy_NotificationChannel) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetDestinationId(val *string) {
-	_jsii_.Set(
-		j,
-		"destinationId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NotificationChannel) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataNewrelicPluginComponent) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -469,15 +353,7 @@ func (j *jsiiProxy_NotificationChannel) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetId(val *string) {
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NotificationChannel) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataNewrelicPluginComponent) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -485,7 +361,7 @@ func (j *jsiiProxy_NotificationChannel) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetName(val *string) {
+func (j *jsiiProxy_DataNewrelicPluginComponent) SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
@@ -493,34 +369,18 @@ func (j *jsiiProxy_NotificationChannel) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetProduct(val *string) {
+func (j *jsiiProxy_DataNewrelicPluginComponent) SetPluginId(val *float64) {
 	_jsii_.Set(
 		j,
-		"product",
+		"pluginId",
 		val,
 	)
 }
 
-func (j *jsiiProxy_NotificationChannel) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataNewrelicPluginComponent) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NotificationChannel) SetProvisioners(val *[]interface{}) {
-	_jsii_.Set(
-		j,
-		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NotificationChannel) SetType(val *string) {
-	_jsii_.Set(
-		j,
-		"type",
 		val,
 	)
 }
@@ -542,13 +402,13 @@ func (j *jsiiProxy_NotificationChannel) SetType(val *string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func NotificationChannel_IsConstruct(x interface{}) *bool {
+func DataNewrelicPluginComponent_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-newrelic.NotificationChannel",
+		"@cdktf/provider-newrelic.DataNewrelicPluginComponent",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -557,30 +417,30 @@ func NotificationChannel_IsConstruct(x interface{}) *bool {
 	return returns
 }
 
-func NotificationChannel_TfResourceType() *string {
+func DataNewrelicPluginComponent_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-newrelic.NotificationChannel",
+		"@cdktf/provider-newrelic.DataNewrelicPluginComponent",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataNewrelicPluginComponent) AddOverride(path *string, value interface{}) {
 	_jsii_.InvokeVoid(
-		n,
+		d,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataNewrelicPluginComponent) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -589,11 +449,11 @@ func (n *jsiiProxy_NotificationChannel) GetAnyMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataNewrelicPluginComponent) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -602,11 +462,11 @@ func (n *jsiiProxy_NotificationChannel) GetBooleanAttribute(terraformAttribute *
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataNewrelicPluginComponent) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -615,11 +475,11 @@ func (n *jsiiProxy_NotificationChannel) GetBooleanMapAttribute(terraformAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataNewrelicPluginComponent) GetListAttribute(terraformAttribute *string) *[]*string {
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -628,11 +488,11 @@ func (n *jsiiProxy_NotificationChannel) GetListAttribute(terraformAttribute *str
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataNewrelicPluginComponent) GetNumberAttribute(terraformAttribute *string) *float64 {
 	var returns *float64
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -641,11 +501,11 @@ func (n *jsiiProxy_NotificationChannel) GetNumberAttribute(terraformAttribute *s
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataNewrelicPluginComponent) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -654,11 +514,11 @@ func (n *jsiiProxy_NotificationChannel) GetNumberListAttribute(terraformAttribut
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataNewrelicPluginComponent) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -667,11 +527,11 @@ func (n *jsiiProxy_NotificationChannel) GetNumberMapAttribute(terraformAttribute
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataNewrelicPluginComponent) GetStringAttribute(terraformAttribute *string) *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -680,11 +540,11 @@ func (n *jsiiProxy_NotificationChannel) GetStringAttribute(terraformAttribute *s
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataNewrelicPluginComponent) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -693,11 +553,11 @@ func (n *jsiiProxy_NotificationChannel) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataNewrelicPluginComponent) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -706,51 +566,27 @@ func (n *jsiiProxy_NotificationChannel) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) OverrideLogicalId(newLogicalId *string) {
+func (d *jsiiProxy_DataNewrelicPluginComponent) OverrideLogicalId(newLogicalId *string) {
 	_jsii_.InvokeVoid(
-		n,
+		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) PutProperties(value interface{}) {
+func (d *jsiiProxy_DataNewrelicPluginComponent) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		n,
-		"putProperties",
-		[]interface{}{value},
-	)
-}
-
-func (n *jsiiProxy_NotificationChannel) ResetId() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NotificationChannel) ResetOverrideLogicalId() {
-	_jsii_.InvokeVoid(
-		n,
+		d,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) ResetProperties() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetProperties",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NotificationChannel) SynthesizeAttributes() *map[string]interface{} {
+func (d *jsiiProxy_DataNewrelicPluginComponent) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -759,11 +595,11 @@ func (n *jsiiProxy_NotificationChannel) SynthesizeAttributes() *map[string]inter
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) ToMetadata() interface{} {
+func (d *jsiiProxy_DataNewrelicPluginComponent) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -772,11 +608,11 @@ func (n *jsiiProxy_NotificationChannel) ToMetadata() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) ToString() *string {
+func (d *jsiiProxy_DataNewrelicPluginComponent) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -785,11 +621,11 @@ func (n *jsiiProxy_NotificationChannel) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NotificationChannel) ToTerraform() interface{} {
+func (d *jsiiProxy_DataNewrelicPluginComponent) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

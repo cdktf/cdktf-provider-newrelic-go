@@ -44,7 +44,7 @@ type NrqlAlertConditionConfig struct {
 	AggregationDelay *string `field:"optional" json:"aggregationDelay" yaml:"aggregationDelay"`
 	// The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for violations.
 	//
-	// Default is EVENT_FLOW.
+	// Default is CADENCE.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
 	AggregationMethod *string `field:"optional" json:"aggregationMethod" yaml:"aggregationMethod"`
