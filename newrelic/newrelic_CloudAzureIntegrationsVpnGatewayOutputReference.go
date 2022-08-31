@@ -199,6 +199,9 @@ func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) TerraformRes
 func NewCloudAzureIntegrationsVpnGatewayOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsVpnGatewayOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCloudAzureIntegrationsVpnGatewayOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewCloudAzureIntegrationsVpnGatewayOutputReference_Override(c CloudAzureInt
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetInternalValue(val *CloudAzureIntegrationsVpnGateway) {
+func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference)SetInternalValue(val *CloudAzureIntegrationsVpnGateway) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetMetricsPollingInterval(val *float64) {
+func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference)SetMetricsPollingInterval(val *float64) {
+	if err := j.validateSetMetricsPollingIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricsPollingInterval",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetMetricsPo
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetResourceGroups(val *[]*string) {
+func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference)SetResourceGroups(val *[]*string) {
+	if err := j.validateSetResourceGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resourceGroups",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetResourceG
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) ComputeFqn()
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetAnyMapAtt
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetBooleanAt
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetBooleanMa
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetListAttri
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetNumberAtt
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetNumberLis
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetNumberMap
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetStringAtt
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) Interpolatio
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) ResetResourc
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsVpnGatewayOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

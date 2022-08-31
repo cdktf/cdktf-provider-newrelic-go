@@ -197,6 +197,9 @@ func (j *jsiiProxy_AlertMutingRuleConditionOutputReference) TerraformResource() 
 func NewAlertMutingRuleConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlertMutingRuleConditionOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAlertMutingRuleConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AlertMutingRuleConditionOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewAlertMutingRuleConditionOutputReference_Override(a AlertMutingRuleCondit
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleConditionOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlertMutingRuleConditionOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_AlertMutingRuleConditionOutputReference) SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleConditionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlertMutingRuleConditionOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_AlertMutingRuleConditionOutputReference) SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleConditionOutputReference) SetInternalValue(val *AlertMutingRuleCondition) {
+func (j *jsiiProxy_AlertMutingRuleConditionOutputReference)SetInternalValue(val *AlertMutingRuleCondition) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_AlertMutingRuleConditionOutputReference) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleConditionOutputReference) SetOperator(val *string) {
+func (j *jsiiProxy_AlertMutingRuleConditionOutputReference)SetOperator(val *string) {
+	if err := j.validateSetOperatorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operator",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_AlertMutingRuleConditionOutputReference) SetOperator(val *str
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleConditionOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlertMutingRuleConditionOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_AlertMutingRuleConditionOutputReference) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleConditionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertMutingRuleConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -280,6 +301,9 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) ComputeFqn() *string
 }
 
 func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -293,6 +317,9 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetAnyMapAttribute(t
 }
 
 func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -306,6 +333,9 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetBooleanAttribute(
 }
 
 func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -319,6 +349,9 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetBooleanMapAttribu
 }
 
 func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -332,6 +365,9 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetListAttribute(ter
 }
 
 func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -345,6 +381,9 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetNumberAttribute(t
 }
 
 func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -358,6 +397,9 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetNumberListAttribu
 }
 
 func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -371,6 +413,9 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetNumberMapAttribut
 }
 
 func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -384,6 +429,9 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetStringAttribute(t
 }
 
 func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) InterpolationAsList(
 }
 
 func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) InterpolationForAttr
 }
 
 func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) PutConditions(value interface{}) {
+	if err := a.validatePutConditionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putConditions",
@@ -431,6 +485,9 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) PutConditions(value 
 }
 
 func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

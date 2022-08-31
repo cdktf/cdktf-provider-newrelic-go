@@ -111,6 +111,9 @@ func (j *jsiiProxy_NotificationChannelPropertiesList) WrapsSet() *bool {
 func NewNotificationChannelPropertiesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NotificationChannelPropertiesList {
 	_init_.Initialize()
 
+	if err := validateNewNotificationChannelPropertiesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NotificationChannelPropertiesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewNotificationChannelPropertiesList_Override(n NotificationChannelProperti
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationChannelPropertiesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_NotificationChannelPropertiesList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationChannelPropertiesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_NotificationChannelPropertiesList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationChannelPropertiesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_NotificationChannelPropertiesList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NotificationChannelPropertiesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesList) ComputeFqn() *string {
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesList) Get(index *float64) NotificationChannelPropertiesOutputReference {
+	if err := n.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns NotificationChannelPropertiesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesList) Get(index *float64) Notifi
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

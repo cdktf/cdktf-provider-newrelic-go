@@ -482,6 +482,9 @@ func (j *jsiiProxy_CloudAwsIntegrations) XRayInput() *CloudAwsIntegrationsXRay {
 func NewCloudAwsIntegrations(scope constructs.Construct, id *string, config *CloudAwsIntegrationsConfig) CloudAwsIntegrations {
 	_init_.Initialize()
 
+	if err := validateNewCloudAwsIntegrationsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAwsIntegrations{}
 
 	_jsii_.Create(
@@ -504,7 +507,10 @@ func NewCloudAwsIntegrations_Override(c CloudAwsIntegrations, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrations) SetAccountId(val *float64) {
+func (j *jsiiProxy_CloudAwsIntegrations)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -512,7 +518,10 @@ func (j *jsiiProxy_CloudAwsIntegrations) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrations) SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudAwsIntegrations)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -520,7 +529,7 @@ func (j *jsiiProxy_CloudAwsIntegrations) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrations) SetCount(val *float64) {
+func (j *jsiiProxy_CloudAwsIntegrations)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -528,7 +537,7 @@ func (j *jsiiProxy_CloudAwsIntegrations) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrations) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudAwsIntegrations)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -536,7 +545,7 @@ func (j *jsiiProxy_CloudAwsIntegrations) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrations) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudAwsIntegrations)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -544,7 +553,10 @@ func (j *jsiiProxy_CloudAwsIntegrations) SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrations) SetId(val *string) {
+func (j *jsiiProxy_CloudAwsIntegrations)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -552,7 +564,10 @@ func (j *jsiiProxy_CloudAwsIntegrations) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrations) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudAwsIntegrations)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -560,7 +575,10 @@ func (j *jsiiProxy_CloudAwsIntegrations) SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrations) SetLinkedAccountId(val *float64) {
+func (j *jsiiProxy_CloudAwsIntegrations)SetLinkedAccountId(val *float64) {
+	if err := j.validateSetLinkedAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"linkedAccountId",
@@ -568,7 +586,7 @@ func (j *jsiiProxy_CloudAwsIntegrations) SetLinkedAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrations) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudAwsIntegrations)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -576,7 +594,10 @@ func (j *jsiiProxy_CloudAwsIntegrations) SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrations) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudAwsIntegrations)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -604,6 +625,9 @@ func (j *jsiiProxy_CloudAwsIntegrations) SetProvisioners(val *[]interface{}) {
 func CloudAwsIntegrations_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCloudAwsIntegrations_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -628,6 +652,9 @@ func CloudAwsIntegrations_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -636,6 +663,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) AddOverride(path *string, value interfa
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -649,6 +679,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) GetAnyMapAttribute(terraformAttribute *
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -662,6 +695,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) GetBooleanAttribute(terraformAttribute 
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -675,6 +711,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) GetBooleanMapAttribute(terraformAttribu
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -688,6 +727,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) GetListAttribute(terraformAttribute *st
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -701,6 +743,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) GetNumberAttribute(terraformAttribute *
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -714,6 +759,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) GetNumberListAttribute(terraformAttribu
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -727,6 +775,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) GetNumberMapAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -740,6 +791,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) GetStringAttribute(terraformAttribute *
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -753,6 +807,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) GetStringMapAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -766,6 +823,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) InterpolationForAttribute(terraformAttr
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -774,6 +834,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) OverrideLogicalId(newLogicalId *string)
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) PutBilling(value *CloudAwsIntegrationsBilling) {
+	if err := c.validatePutBillingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putBilling",
@@ -782,6 +845,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) PutBilling(value *CloudAwsIntegrationsB
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) PutCloudtrail(value *CloudAwsIntegrationsCloudtrail) {
+	if err := c.validatePutCloudtrailParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCloudtrail",
@@ -790,6 +856,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) PutCloudtrail(value *CloudAwsIntegratio
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) PutHealth(value *CloudAwsIntegrationsHealth) {
+	if err := c.validatePutHealthParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putHealth",
@@ -798,6 +867,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) PutHealth(value *CloudAwsIntegrationsHe
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) PutTrustedAdvisor(value *CloudAwsIntegrationsTrustedAdvisor) {
+	if err := c.validatePutTrustedAdvisorParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putTrustedAdvisor",
@@ -806,6 +878,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) PutTrustedAdvisor(value *CloudAwsIntegr
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) PutVpc(value *CloudAwsIntegrationsVpc) {
+	if err := c.validatePutVpcParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putVpc",
@@ -814,6 +889,9 @@ func (c *jsiiProxy_CloudAwsIntegrations) PutVpc(value *CloudAwsIntegrationsVpc) 
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) PutXRay(value *CloudAwsIntegrationsXRay) {
+	if err := c.validatePutXRayParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putXRay",

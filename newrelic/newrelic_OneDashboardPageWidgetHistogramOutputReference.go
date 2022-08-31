@@ -326,6 +326,9 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) WidthInput() 
 func NewOneDashboardPageWidgetHistogramOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OneDashboardPageWidgetHistogramOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOneDashboardPageWidgetHistogramOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OneDashboardPageWidgetHistogramOutputReference{}
 
 	_jsii_.Create(
@@ -347,7 +350,10 @@ func NewOneDashboardPageWidgetHistogramOutputReference_Override(o OneDashboardPa
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetColumn(val *float64) {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetColumn(val *float64) {
+	if err := j.validateSetColumnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"column",
@@ -355,7 +361,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetColumn(val
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -363,7 +372,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -371,7 +383,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetHeight(val *float64) {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetHeight(val *float64) {
+	if err := j.validateSetHeightParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"height",
@@ -379,7 +394,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetHeight(val
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetIgnoreTimeRange(val interface{}) {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetIgnoreTimeRange(val interface{}) {
+	if err := j.validateSetIgnoreTimeRangeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ignoreTimeRange",
@@ -387,7 +405,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetIgnoreTime
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -395,7 +416,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetRow(val *float64) {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetRow(val *float64) {
+	if err := j.validateSetRowParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"row",
@@ -403,7 +427,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetRow(val *f
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -411,7 +438,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -419,7 +449,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetTitle(val *string) {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"title",
@@ -427,7 +460,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetTitle(val 
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) SetWidth(val *float64) {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetWidth(val *float64) {
+	if err := j.validateSetWidthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"width",
@@ -449,6 +485,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ComputeFqn() 
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -462,6 +501,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetAnyMapAttr
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -475,6 +517,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetBooleanAtt
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -488,6 +533,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetBooleanMap
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -501,6 +549,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetListAttrib
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -514,6 +565,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetNumberAttr
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -527,6 +581,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetNumberList
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -540,6 +597,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetNumberMapA
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -553,6 +613,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetStringAttr
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -579,6 +642,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) Interpolation
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -592,6 +658,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) Interpolation
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) PutNrqlQuery(value interface{}) {
+	if err := o.validatePutNrqlQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		o,
 		"putNrqlQuery",
@@ -624,6 +693,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetWidth() 
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

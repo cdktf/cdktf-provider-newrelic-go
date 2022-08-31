@@ -247,6 +247,9 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) TerraformReso
 func NewCloudAwsGovcloudIntegrationsElbOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsElbOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCloudAwsGovcloudIntegrationsElbOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewCloudAwsGovcloudIntegrationsElbOutputReference_Override(c CloudAwsGovclo
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetAwsRegions(val *[]*string) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference)SetAwsRegions(val *[]*string) {
+	if err := j.validateSetAwsRegionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsRegions",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetAwsRegions
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetFetchExtendedInventory(val interface{}) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference)SetFetchExtendedInventory(val interface{}) {
+	if err := j.validateSetFetchExtendedInventoryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fetchExtendedInventory",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetFetchExten
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetFetchTags(val interface{}) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference)SetFetchTags(val interface{}) {
+	if err := j.validateSetFetchTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fetchTags",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetFetchTags(
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetInternalValue(val *CloudAwsGovcloudIntegrationsElb) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference)SetInternalValue(val *CloudAwsGovcloudIntegrationsElb) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetMetricsPollingInterval(val *float64) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference)SetMetricsPollingInterval(val *float64) {
+	if err := j.validateSetMetricsPollingIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricsPollingInterval",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetMetricsPol
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -354,6 +384,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) ComputeFqn() 
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetAnyMapAttr
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetBooleanAtt
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetBooleanMap
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetListAttrib
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetNumberAttr
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetNumberList
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetNumberMapA
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetStringAttr
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) Interpolation
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) ResetMetricsP
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElbOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

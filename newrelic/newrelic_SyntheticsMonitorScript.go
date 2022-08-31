@@ -361,6 +361,9 @@ func (j *jsiiProxy_SyntheticsMonitorScript) TextInput() *string {
 func NewSyntheticsMonitorScript(scope constructs.Construct, id *string, config *SyntheticsMonitorScriptConfig) SyntheticsMonitorScript {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsMonitorScriptParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsMonitorScript{}
 
 	_jsii_.Create(
@@ -383,7 +386,10 @@ func NewSyntheticsMonitorScript_Override(s SyntheticsMonitorScript, scope constr
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScript) SetConnection(val interface{}) {
+func (j *jsiiProxy_SyntheticsMonitorScript)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -391,7 +397,7 @@ func (j *jsiiProxy_SyntheticsMonitorScript) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScript) SetCount(val *float64) {
+func (j *jsiiProxy_SyntheticsMonitorScript)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -399,7 +405,7 @@ func (j *jsiiProxy_SyntheticsMonitorScript) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScript) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SyntheticsMonitorScript)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -407,7 +413,7 @@ func (j *jsiiProxy_SyntheticsMonitorScript) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScript) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SyntheticsMonitorScript)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -415,7 +421,10 @@ func (j *jsiiProxy_SyntheticsMonitorScript) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScript) SetId(val *string) {
+func (j *jsiiProxy_SyntheticsMonitorScript)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -423,7 +432,10 @@ func (j *jsiiProxy_SyntheticsMonitorScript) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScript) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SyntheticsMonitorScript)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -431,7 +443,10 @@ func (j *jsiiProxy_SyntheticsMonitorScript) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScript) SetMonitorId(val *string) {
+func (j *jsiiProxy_SyntheticsMonitorScript)SetMonitorId(val *string) {
+	if err := j.validateSetMonitorIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"monitorId",
@@ -439,7 +454,7 @@ func (j *jsiiProxy_SyntheticsMonitorScript) SetMonitorId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScript) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SyntheticsMonitorScript)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -447,7 +462,10 @@ func (j *jsiiProxy_SyntheticsMonitorScript) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScript) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SyntheticsMonitorScript)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -455,7 +473,10 @@ func (j *jsiiProxy_SyntheticsMonitorScript) SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScript) SetText(val *string) {
+func (j *jsiiProxy_SyntheticsMonitorScript)SetText(val *string) {
+	if err := j.validateSetTextParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"text",
@@ -483,6 +504,9 @@ func (j *jsiiProxy_SyntheticsMonitorScript) SetText(val *string) {
 func SyntheticsMonitorScript_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSyntheticsMonitorScript_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -507,6 +531,9 @@ func SyntheticsMonitorScript_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -515,6 +542,9 @@ func (s *jsiiProxy_SyntheticsMonitorScript) AddOverride(path *string, value inte
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -528,6 +558,9 @@ func (s *jsiiProxy_SyntheticsMonitorScript) GetAnyMapAttribute(terraformAttribut
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -541,6 +574,9 @@ func (s *jsiiProxy_SyntheticsMonitorScript) GetBooleanAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -554,6 +590,9 @@ func (s *jsiiProxy_SyntheticsMonitorScript) GetBooleanMapAttribute(terraformAttr
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -567,6 +606,9 @@ func (s *jsiiProxy_SyntheticsMonitorScript) GetListAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -580,6 +622,9 @@ func (s *jsiiProxy_SyntheticsMonitorScript) GetNumberAttribute(terraformAttribut
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -593,6 +638,9 @@ func (s *jsiiProxy_SyntheticsMonitorScript) GetNumberListAttribute(terraformAttr
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -606,6 +654,9 @@ func (s *jsiiProxy_SyntheticsMonitorScript) GetNumberMapAttribute(terraformAttri
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -619,6 +670,9 @@ func (s *jsiiProxy_SyntheticsMonitorScript) GetStringAttribute(terraformAttribut
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -632,6 +686,9 @@ func (s *jsiiProxy_SyntheticsMonitorScript) GetStringMapAttribute(terraformAttri
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -645,6 +702,9 @@ func (s *jsiiProxy_SyntheticsMonitorScript) InterpolationForAttribute(terraformA
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -653,6 +713,9 @@ func (s *jsiiProxy_SyntheticsMonitorScript) OverrideLogicalId(newLogicalId *stri
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScript) PutLocation(value interface{}) {
+	if err := s.validatePutLocationParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putLocation",

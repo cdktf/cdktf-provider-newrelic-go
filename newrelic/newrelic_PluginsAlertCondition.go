@@ -546,6 +546,9 @@ func (j *jsiiProxy_PluginsAlertCondition) ValueFunctionInput() *string {
 func NewPluginsAlertCondition(scope constructs.Construct, id *string, config *PluginsAlertConditionConfig) PluginsAlertCondition {
 	_init_.Initialize()
 
+	if err := validateNewPluginsAlertConditionParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PluginsAlertCondition{}
 
 	_jsii_.Create(
@@ -568,7 +571,10 @@ func NewPluginsAlertCondition_Override(p PluginsAlertCondition, scope constructs
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetConnection(val interface{}) {
+func (j *jsiiProxy_PluginsAlertCondition)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -576,7 +582,7 @@ func (j *jsiiProxy_PluginsAlertCondition) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetCount(val *float64) {
+func (j *jsiiProxy_PluginsAlertCondition)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -584,7 +590,7 @@ func (j *jsiiProxy_PluginsAlertCondition) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PluginsAlertCondition)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -592,7 +598,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetEnabled(val interface{}) {
+func (j *jsiiProxy_PluginsAlertCondition)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -600,7 +609,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetEntities(val *[]*float64) {
+func (j *jsiiProxy_PluginsAlertCondition)SetEntities(val *[]*float64) {
+	if err := j.validateSetEntitiesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"entities",
@@ -608,7 +620,7 @@ func (j *jsiiProxy_PluginsAlertCondition) SetEntities(val *[]*float64) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PluginsAlertCondition)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -616,7 +628,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetId(val *string) {
+func (j *jsiiProxy_PluginsAlertCondition)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -624,7 +639,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PluginsAlertCondition)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -632,7 +650,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetMetric(val *string) {
+func (j *jsiiProxy_PluginsAlertCondition)SetMetric(val *string) {
+	if err := j.validateSetMetricParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metric",
@@ -640,7 +661,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetMetric(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetMetricDescription(val *string) {
+func (j *jsiiProxy_PluginsAlertCondition)SetMetricDescription(val *string) {
+	if err := j.validateSetMetricDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricDescription",
@@ -648,7 +672,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetMetricDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetName(val *string) {
+func (j *jsiiProxy_PluginsAlertCondition)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -656,7 +683,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetPluginGuid(val *string) {
+func (j *jsiiProxy_PluginsAlertCondition)SetPluginGuid(val *string) {
+	if err := j.validateSetPluginGuidParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pluginGuid",
@@ -664,7 +694,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetPluginGuid(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetPluginId(val *string) {
+func (j *jsiiProxy_PluginsAlertCondition)SetPluginId(val *string) {
+	if err := j.validateSetPluginIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pluginId",
@@ -672,7 +705,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetPluginId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetPolicyId(val *float64) {
+func (j *jsiiProxy_PluginsAlertCondition)SetPolicyId(val *float64) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyId",
@@ -680,7 +716,7 @@ func (j *jsiiProxy_PluginsAlertCondition) SetPolicyId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PluginsAlertCondition)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -688,7 +724,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PluginsAlertCondition)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -696,7 +735,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetRunbookUrl(val *string) {
+func (j *jsiiProxy_PluginsAlertCondition)SetRunbookUrl(val *string) {
+	if err := j.validateSetRunbookUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"runbookUrl",
@@ -704,7 +746,10 @@ func (j *jsiiProxy_PluginsAlertCondition) SetRunbookUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertCondition) SetValueFunction(val *string) {
+func (j *jsiiProxy_PluginsAlertCondition)SetValueFunction(val *string) {
+	if err := j.validateSetValueFunctionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"valueFunction",
@@ -732,6 +777,9 @@ func (j *jsiiProxy_PluginsAlertCondition) SetValueFunction(val *string) {
 func PluginsAlertCondition_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validatePluginsAlertCondition_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -756,6 +804,9 @@ func PluginsAlertCondition_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -764,6 +815,9 @@ func (p *jsiiProxy_PluginsAlertCondition) AddOverride(path *string, value interf
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -777,6 +831,9 @@ func (p *jsiiProxy_PluginsAlertCondition) GetAnyMapAttribute(terraformAttribute 
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -790,6 +847,9 @@ func (p *jsiiProxy_PluginsAlertCondition) GetBooleanAttribute(terraformAttribute
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -803,6 +863,9 @@ func (p *jsiiProxy_PluginsAlertCondition) GetBooleanMapAttribute(terraformAttrib
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -816,6 +879,9 @@ func (p *jsiiProxy_PluginsAlertCondition) GetListAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -829,6 +895,9 @@ func (p *jsiiProxy_PluginsAlertCondition) GetNumberAttribute(terraformAttribute 
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -842,6 +911,9 @@ func (p *jsiiProxy_PluginsAlertCondition) GetNumberListAttribute(terraformAttrib
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -855,6 +927,9 @@ func (p *jsiiProxy_PluginsAlertCondition) GetNumberMapAttribute(terraformAttribu
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -868,6 +943,9 @@ func (p *jsiiProxy_PluginsAlertCondition) GetStringAttribute(terraformAttribute 
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -881,6 +959,9 @@ func (p *jsiiProxy_PluginsAlertCondition) GetStringMapAttribute(terraformAttribu
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -894,6 +975,9 @@ func (p *jsiiProxy_PluginsAlertCondition) InterpolationForAttribute(terraformAtt
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
@@ -902,6 +986,9 @@ func (p *jsiiProxy_PluginsAlertCondition) OverrideLogicalId(newLogicalId *string
 }
 
 func (p *jsiiProxy_PluginsAlertCondition) PutTerm(value interface{}) {
+	if err := p.validatePutTermParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putTerm",

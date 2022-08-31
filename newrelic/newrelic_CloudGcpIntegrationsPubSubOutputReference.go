@@ -199,6 +199,9 @@ func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) TerraformResource(
 func NewCloudGcpIntegrationsPubSubOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudGcpIntegrationsPubSubOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCloudGcpIntegrationsPubSubOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudGcpIntegrationsPubSubOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewCloudGcpIntegrationsPubSubOutputReference_Override(c CloudGcpIntegration
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetFetchTags(val interface{}) {
+func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference)SetFetchTags(val interface{}) {
+	if err := j.validateSetFetchTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fetchTags",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetFetchTags(val i
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetInternalValue(val *CloudGcpIntegrationsPubSub) {
+func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference)SetInternalValue(val *CloudGcpIntegrationsPubSub) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetMetricsPollingInterval(val *float64) {
+func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference)SetMetricsPollingInterval(val *float64) {
+	if err := j.validateSetMetricsPollingIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricsPollingInterval",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetMetricsPollingI
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) ComputeFqn() *stri
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetAnyMapAttribute
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetBooleanAttribut
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetBooleanMapAttri
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetListAttribute(t
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetNumberAttribute
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetNumberListAttri
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetNumberMapAttrib
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetStringAttribute
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) InterpolationAsLis
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) ResetMetricsPollin
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsPubSubOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

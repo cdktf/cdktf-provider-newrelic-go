@@ -199,6 +199,9 @@ func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) Terraform
 func NewCloudAzureIntegrationsApiManagementOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsApiManagementOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCloudAzureIntegrationsApiManagementOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewCloudAzureIntegrationsApiManagementOutputReference_Override(c CloudAzure
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetInternalValue(val *CloudAzureIntegrationsApiManagement) {
+func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference)SetInternalValue(val *CloudAzureIntegrationsApiManagement) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetMetricsPollingInterval(val *float64) {
+func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference)SetMetricsPollingInterval(val *float64) {
+	if err := j.validateSetMetricsPollingIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricsPollingInterval",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetMetric
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetResourceGroups(val *[]*string) {
+func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference)SetResourceGroups(val *[]*string) {
+	if err := j.validateSetResourceGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resourceGroups",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetResour
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) ComputeFq
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetAnyMap
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetBoolea
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetBoolea
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetListAt
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetNumber
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetNumber
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetNumber
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetString
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) Interpola
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) ResetReso
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsApiManagementOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

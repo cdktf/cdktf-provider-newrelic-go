@@ -899,6 +899,9 @@ func (j *jsiiProxy_NrqlAlertCondition) WarningInput() *NrqlAlertConditionWarning
 func NewNrqlAlertCondition(scope constructs.Construct, id *string, config *NrqlAlertConditionConfig) NrqlAlertCondition {
 	_init_.Initialize()
 
+	if err := validateNewNrqlAlertConditionParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NrqlAlertCondition{}
 
 	_jsii_.Create(
@@ -921,7 +924,10 @@ func NewNrqlAlertCondition_Override(n NrqlAlertCondition, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetAccountId(val *float64) {
+func (j *jsiiProxy_NrqlAlertCondition)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -929,7 +935,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetAggregationDelay(val *string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetAggregationDelay(val *string) {
+	if err := j.validateSetAggregationDelayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"aggregationDelay",
@@ -937,7 +946,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetAggregationDelay(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetAggregationMethod(val *string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetAggregationMethod(val *string) {
+	if err := j.validateSetAggregationMethodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"aggregationMethod",
@@ -945,7 +957,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetAggregationMethod(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetAggregationTimer(val *string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetAggregationTimer(val *string) {
+	if err := j.validateSetAggregationTimerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"aggregationTimer",
@@ -953,7 +968,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetAggregationTimer(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetAggregationWindow(val *float64) {
+func (j *jsiiProxy_NrqlAlertCondition)SetAggregationWindow(val *float64) {
+	if err := j.validateSetAggregationWindowParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"aggregationWindow",
@@ -961,7 +979,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetAggregationWindow(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetBaselineDirection(val *string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetBaselineDirection(val *string) {
+	if err := j.validateSetBaselineDirectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"baselineDirection",
@@ -969,7 +990,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetBaselineDirection(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetCloseViolationsOnExpiration(val interface{}) {
+func (j *jsiiProxy_NrqlAlertCondition)SetCloseViolationsOnExpiration(val interface{}) {
+	if err := j.validateSetCloseViolationsOnExpirationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"closeViolationsOnExpiration",
@@ -977,7 +1001,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetCloseViolationsOnExpiration(val interf
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetConnection(val interface{}) {
+func (j *jsiiProxy_NrqlAlertCondition)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -985,7 +1012,7 @@ func (j *jsiiProxy_NrqlAlertCondition) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetCount(val *float64) {
+func (j *jsiiProxy_NrqlAlertCondition)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -993,7 +1020,7 @@ func (j *jsiiProxy_NrqlAlertCondition) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1001,7 +1028,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetDescription(val *string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -1009,7 +1039,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetEnabled(val interface{}) {
+func (j *jsiiProxy_NrqlAlertCondition)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -1017,7 +1050,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetExpirationDuration(val *float64) {
+func (j *jsiiProxy_NrqlAlertCondition)SetExpirationDuration(val *float64) {
+	if err := j.validateSetExpirationDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"expirationDuration",
@@ -1025,7 +1061,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetExpirationDuration(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetFillOption(val *string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetFillOption(val *string) {
+	if err := j.validateSetFillOptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fillOption",
@@ -1033,7 +1072,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetFillOption(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetFillValue(val *float64) {
+func (j *jsiiProxy_NrqlAlertCondition)SetFillValue(val *float64) {
+	if err := j.validateSetFillValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fillValue",
@@ -1041,7 +1083,7 @@ func (j *jsiiProxy_NrqlAlertCondition) SetFillValue(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NrqlAlertCondition)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1049,7 +1091,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetId(val *string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1057,7 +1102,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NrqlAlertCondition)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1065,7 +1113,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetName(val *string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1073,7 +1124,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetOpenViolationOnExpiration(val interface{}) {
+func (j *jsiiProxy_NrqlAlertCondition)SetOpenViolationOnExpiration(val interface{}) {
+	if err := j.validateSetOpenViolationOnExpirationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"openViolationOnExpiration",
@@ -1081,7 +1135,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetOpenViolationOnExpiration(val interfac
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetPolicyId(val *float64) {
+func (j *jsiiProxy_NrqlAlertCondition)SetPolicyId(val *float64) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyId",
@@ -1089,7 +1146,7 @@ func (j *jsiiProxy_NrqlAlertCondition) SetPolicyId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NrqlAlertCondition)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1097,7 +1154,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NrqlAlertCondition)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1105,7 +1165,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetRunbookUrl(val *string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetRunbookUrl(val *string) {
+	if err := j.validateSetRunbookUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"runbookUrl",
@@ -1113,7 +1176,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetRunbookUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetSlideBy(val *float64) {
+func (j *jsiiProxy_NrqlAlertCondition)SetSlideBy(val *float64) {
+	if err := j.validateSetSlideByParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"slideBy",
@@ -1121,7 +1187,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetSlideBy(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetType(val *string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -1129,7 +1198,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetValueFunction(val *string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetValueFunction(val *string) {
+	if err := j.validateSetValueFunctionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"valueFunction",
@@ -1137,7 +1209,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetValueFunction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetViolationTimeLimit(val *string) {
+func (j *jsiiProxy_NrqlAlertCondition)SetViolationTimeLimit(val *string) {
+	if err := j.validateSetViolationTimeLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"violationTimeLimit",
@@ -1145,7 +1220,10 @@ func (j *jsiiProxy_NrqlAlertCondition) SetViolationTimeLimit(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) SetViolationTimeLimitSeconds(val *float64) {
+func (j *jsiiProxy_NrqlAlertCondition)SetViolationTimeLimitSeconds(val *float64) {
+	if err := j.validateSetViolationTimeLimitSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"violationTimeLimitSeconds",
@@ -1173,6 +1251,9 @@ func (j *jsiiProxy_NrqlAlertCondition) SetViolationTimeLimitSeconds(val *float64
 func NrqlAlertCondition_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateNrqlAlertCondition_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1197,6 +1278,9 @@ func NrqlAlertCondition_TfResourceType() *string {
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
@@ -1205,6 +1289,9 @@ func (n *jsiiProxy_NrqlAlertCondition) AddOverride(path *string, value interface
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1218,6 +1305,9 @@ func (n *jsiiProxy_NrqlAlertCondition) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1231,6 +1321,9 @@ func (n *jsiiProxy_NrqlAlertCondition) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1244,6 +1337,9 @@ func (n *jsiiProxy_NrqlAlertCondition) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1257,6 +1353,9 @@ func (n *jsiiProxy_NrqlAlertCondition) GetListAttribute(terraformAttribute *stri
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1270,6 +1369,9 @@ func (n *jsiiProxy_NrqlAlertCondition) GetNumberAttribute(terraformAttribute *st
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1283,6 +1385,9 @@ func (n *jsiiProxy_NrqlAlertCondition) GetNumberListAttribute(terraformAttribute
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1296,6 +1401,9 @@ func (n *jsiiProxy_NrqlAlertCondition) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1309,6 +1417,9 @@ func (n *jsiiProxy_NrqlAlertCondition) GetStringAttribute(terraformAttribute *st
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1322,6 +1433,9 @@ func (n *jsiiProxy_NrqlAlertCondition) GetStringMapAttribute(terraformAttribute 
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1335,6 +1449,9 @@ func (n *jsiiProxy_NrqlAlertCondition) InterpolationForAttribute(terraformAttrib
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
@@ -1343,6 +1460,9 @@ func (n *jsiiProxy_NrqlAlertCondition) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) PutCritical(value *NrqlAlertConditionCritical) {
+	if err := n.validatePutCriticalParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"putCritical",
@@ -1351,6 +1471,9 @@ func (n *jsiiProxy_NrqlAlertCondition) PutCritical(value *NrqlAlertConditionCrit
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) PutNrql(value *NrqlAlertConditionNrql) {
+	if err := n.validatePutNrqlParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"putNrql",
@@ -1359,6 +1482,9 @@ func (n *jsiiProxy_NrqlAlertCondition) PutNrql(value *NrqlAlertConditionNrql) {
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) PutTerm(value interface{}) {
+	if err := n.validatePutTermParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"putTerm",
@@ -1367,6 +1493,9 @@ func (n *jsiiProxy_NrqlAlertCondition) PutTerm(value interface{}) {
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) PutWarning(value *NrqlAlertConditionWarning) {
+	if err := n.validatePutWarningParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"putWarning",

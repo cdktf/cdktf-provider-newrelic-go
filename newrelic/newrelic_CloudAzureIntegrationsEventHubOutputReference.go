@@ -199,6 +199,9 @@ func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) TerraformResou
 func NewCloudAzureIntegrationsEventHubOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudAzureIntegrationsEventHubOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCloudAzureIntegrationsEventHubOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAzureIntegrationsEventHubOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewCloudAzureIntegrationsEventHubOutputReference_Override(c CloudAzureInteg
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetInternalValue(val *CloudAzureIntegrationsEventHub) {
+func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference)SetInternalValue(val *CloudAzureIntegrationsEventHub) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetMetricsPollingInterval(val *float64) {
+func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference)SetMetricsPollingInterval(val *float64) {
+	if err := j.validateSetMetricsPollingIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricsPollingInterval",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetMetricsPoll
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetResourceGroups(val *[]*string) {
+func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference)SetResourceGroups(val *[]*string) {
+	if err := j.validateSetResourceGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resourceGroups",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetResourceGro
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) ComputeFqn() *
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetAnyMapAttri
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetBooleanAttr
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetBooleanMapA
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetListAttribu
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetNumberAttri
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetNumberListA
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetNumberMapAt
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetStringAttri
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) InterpolationA
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) ResetResourceG
 }
 
 func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -938,6 +938,9 @@ func (j *jsiiProxy_CloudGcpIntegrations) VpcAccessInput() *CloudGcpIntegrationsV
 func NewCloudGcpIntegrations(scope constructs.Construct, id *string, config *CloudGcpIntegrationsConfig) CloudGcpIntegrations {
 	_init_.Initialize()
 
+	if err := validateNewCloudGcpIntegrationsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudGcpIntegrations{}
 
 	_jsii_.Create(
@@ -960,7 +963,10 @@ func NewCloudGcpIntegrations_Override(c CloudGcpIntegrations, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrations) SetAccountId(val *float64) {
+func (j *jsiiProxy_CloudGcpIntegrations)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -968,7 +974,10 @@ func (j *jsiiProxy_CloudGcpIntegrations) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrations) SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudGcpIntegrations)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -976,7 +985,7 @@ func (j *jsiiProxy_CloudGcpIntegrations) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrations) SetCount(val *float64) {
+func (j *jsiiProxy_CloudGcpIntegrations)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -984,7 +993,7 @@ func (j *jsiiProxy_CloudGcpIntegrations) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrations) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudGcpIntegrations)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -992,7 +1001,7 @@ func (j *jsiiProxy_CloudGcpIntegrations) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrations) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudGcpIntegrations)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1000,7 +1009,10 @@ func (j *jsiiProxy_CloudGcpIntegrations) SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrations) SetId(val *string) {
+func (j *jsiiProxy_CloudGcpIntegrations)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1008,7 +1020,10 @@ func (j *jsiiProxy_CloudGcpIntegrations) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrations) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudGcpIntegrations)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1016,7 +1031,10 @@ func (j *jsiiProxy_CloudGcpIntegrations) SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrations) SetLinkedAccountId(val *float64) {
+func (j *jsiiProxy_CloudGcpIntegrations)SetLinkedAccountId(val *float64) {
+	if err := j.validateSetLinkedAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"linkedAccountId",
@@ -1024,7 +1042,7 @@ func (j *jsiiProxy_CloudGcpIntegrations) SetLinkedAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrations) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudGcpIntegrations)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1032,7 +1050,10 @@ func (j *jsiiProxy_CloudGcpIntegrations) SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrations) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudGcpIntegrations)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1060,6 +1081,9 @@ func (j *jsiiProxy_CloudGcpIntegrations) SetProvisioners(val *[]interface{}) {
 func CloudGcpIntegrations_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCloudGcpIntegrations_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1084,6 +1108,9 @@ func CloudGcpIntegrations_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -1092,6 +1119,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) AddOverride(path *string, value interfa
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1105,6 +1135,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) GetAnyMapAttribute(terraformAttribute *
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1118,6 +1151,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) GetBooleanAttribute(terraformAttribute 
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1131,6 +1167,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) GetBooleanMapAttribute(terraformAttribu
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1144,6 +1183,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) GetListAttribute(terraformAttribute *st
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1157,6 +1199,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) GetNumberAttribute(terraformAttribute *
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1170,6 +1215,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) GetNumberListAttribute(terraformAttribu
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1183,6 +1231,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) GetNumberMapAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1196,6 +1247,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) GetStringAttribute(terraformAttribute *
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1209,6 +1263,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) GetStringMapAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1222,6 +1279,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) InterpolationForAttribute(terraformAttr
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -1230,6 +1290,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) OverrideLogicalId(newLogicalId *string)
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutAppEngine(value *CloudGcpIntegrationsAppEngine) {
+	if err := c.validatePutAppEngineParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAppEngine",
@@ -1238,6 +1301,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutAppEngine(value *CloudGcpIntegration
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutBigQuery(value *CloudGcpIntegrationsBigQuery) {
+	if err := c.validatePutBigQueryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putBigQuery",
@@ -1246,6 +1312,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutBigQuery(value *CloudGcpIntegrations
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutBigTable(value *CloudGcpIntegrationsBigTable) {
+	if err := c.validatePutBigTableParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putBigTable",
@@ -1254,6 +1323,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutBigTable(value *CloudGcpIntegrations
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutComposer(value *CloudGcpIntegrationsComposer) {
+	if err := c.validatePutComposerParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putComposer",
@@ -1262,6 +1334,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutComposer(value *CloudGcpIntegrations
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutDataFlow(value *CloudGcpIntegrationsDataFlow) {
+	if err := c.validatePutDataFlowParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putDataFlow",
@@ -1270,6 +1345,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutDataFlow(value *CloudGcpIntegrations
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutDataProc(value *CloudGcpIntegrationsDataProc) {
+	if err := c.validatePutDataProcParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putDataProc",
@@ -1278,6 +1356,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutDataProc(value *CloudGcpIntegrations
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutDataStore(value *CloudGcpIntegrationsDataStore) {
+	if err := c.validatePutDataStoreParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putDataStore",
@@ -1286,6 +1367,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutDataStore(value *CloudGcpIntegration
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutFireBaseDatabase(value *CloudGcpIntegrationsFireBaseDatabase) {
+	if err := c.validatePutFireBaseDatabaseParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putFireBaseDatabase",
@@ -1294,6 +1378,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutFireBaseDatabase(value *CloudGcpInte
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutFireBaseHosting(value *CloudGcpIntegrationsFireBaseHosting) {
+	if err := c.validatePutFireBaseHostingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putFireBaseHosting",
@@ -1302,6 +1389,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutFireBaseHosting(value *CloudGcpInteg
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutFireBaseStorage(value *CloudGcpIntegrationsFireBaseStorage) {
+	if err := c.validatePutFireBaseStorageParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putFireBaseStorage",
@@ -1310,6 +1400,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutFireBaseStorage(value *CloudGcpInteg
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutFireStore(value *CloudGcpIntegrationsFireStore) {
+	if err := c.validatePutFireStoreParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putFireStore",
@@ -1318,6 +1411,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutFireStore(value *CloudGcpIntegration
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutFunctions(value *CloudGcpIntegrationsFunctions) {
+	if err := c.validatePutFunctionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putFunctions",
@@ -1326,6 +1422,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutFunctions(value *CloudGcpIntegration
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutInterconnect(value *CloudGcpIntegrationsInterconnect) {
+	if err := c.validatePutInterconnectParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putInterconnect",
@@ -1334,6 +1433,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutInterconnect(value *CloudGcpIntegrat
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutKubernetes(value *CloudGcpIntegrationsKubernetes) {
+	if err := c.validatePutKubernetesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putKubernetes",
@@ -1342,6 +1444,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutKubernetes(value *CloudGcpIntegratio
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutLoadBalancing(value *CloudGcpIntegrationsLoadBalancing) {
+	if err := c.validatePutLoadBalancingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putLoadBalancing",
@@ -1350,6 +1455,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutLoadBalancing(value *CloudGcpIntegra
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutMemCache(value *CloudGcpIntegrationsMemCache) {
+	if err := c.validatePutMemCacheParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putMemCache",
@@ -1358,6 +1466,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutMemCache(value *CloudGcpIntegrations
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutPubSub(value *CloudGcpIntegrationsPubSub) {
+	if err := c.validatePutPubSubParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putPubSub",
@@ -1366,6 +1477,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutPubSub(value *CloudGcpIntegrationsPu
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutRedis(value *CloudGcpIntegrationsRedis) {
+	if err := c.validatePutRedisParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRedis",
@@ -1374,6 +1488,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutRedis(value *CloudGcpIntegrationsRed
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutRouter(value *CloudGcpIntegrationsRouter) {
+	if err := c.validatePutRouterParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRouter",
@@ -1382,6 +1499,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutRouter(value *CloudGcpIntegrationsRo
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutRun(value *CloudGcpIntegrationsRun) {
+	if err := c.validatePutRunParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRun",
@@ -1390,6 +1510,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutRun(value *CloudGcpIntegrationsRun) 
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutSpanner(value *CloudGcpIntegrationsSpanner) {
+	if err := c.validatePutSpannerParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSpanner",
@@ -1398,6 +1521,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutSpanner(value *CloudGcpIntegrationsS
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutSql(value *CloudGcpIntegrationsSql) {
+	if err := c.validatePutSqlParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSql",
@@ -1406,6 +1532,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutSql(value *CloudGcpIntegrationsSql) 
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutStorage(value *CloudGcpIntegrationsStorage) {
+	if err := c.validatePutStorageParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putStorage",
@@ -1414,6 +1543,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutStorage(value *CloudGcpIntegrationsS
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutVirtualMachines(value *CloudGcpIntegrationsVirtualMachines) {
+	if err := c.validatePutVirtualMachinesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putVirtualMachines",
@@ -1422,6 +1554,9 @@ func (c *jsiiProxy_CloudGcpIntegrations) PutVirtualMachines(value *CloudGcpInteg
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) PutVpcAccess(value *CloudGcpIntegrationsVpcAccess) {
+	if err := c.validatePutVpcAccessParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putVpcAccess",

@@ -408,6 +408,9 @@ func (j *jsiiProxy_SyntheticsAlertCondition) TerraformResourceType() *string {
 func NewSyntheticsAlertCondition(scope constructs.Construct, id *string, config *SyntheticsAlertConditionConfig) SyntheticsAlertCondition {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsAlertConditionParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsAlertCondition{}
 
 	_jsii_.Create(
@@ -430,7 +433,10 @@ func NewSyntheticsAlertCondition_Override(s SyntheticsAlertCondition, scope cons
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetConnection(val interface{}) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -438,7 +444,7 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetCount(val *float64) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -446,7 +452,7 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -454,7 +460,10 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetEnabled(val interface{}) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -462,7 +471,7 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -470,7 +479,10 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetId(val *string) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -478,7 +490,10 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -486,7 +501,10 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetMonitorId(val *string) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetMonitorId(val *string) {
+	if err := j.validateSetMonitorIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"monitorId",
@@ -494,7 +512,10 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetMonitorId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetName(val *string) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -502,7 +523,10 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetPolicyId(val *float64) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetPolicyId(val *float64) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyId",
@@ -510,7 +534,7 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetPolicyId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -518,7 +542,10 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -526,7 +553,10 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_SyntheticsAlertCondition) SetRunbookUrl(val *string) {
+func (j *jsiiProxy_SyntheticsAlertCondition)SetRunbookUrl(val *string) {
+	if err := j.validateSetRunbookUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"runbookUrl",
@@ -554,6 +584,9 @@ func (j *jsiiProxy_SyntheticsAlertCondition) SetRunbookUrl(val *string) {
 func SyntheticsAlertCondition_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSyntheticsAlertCondition_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -578,6 +611,9 @@ func SyntheticsAlertCondition_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SyntheticsAlertCondition) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -586,6 +622,9 @@ func (s *jsiiProxy_SyntheticsAlertCondition) AddOverride(path *string, value int
 }
 
 func (s *jsiiProxy_SyntheticsAlertCondition) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -599,6 +638,9 @@ func (s *jsiiProxy_SyntheticsAlertCondition) GetAnyMapAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_SyntheticsAlertCondition) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -612,6 +654,9 @@ func (s *jsiiProxy_SyntheticsAlertCondition) GetBooleanAttribute(terraformAttrib
 }
 
 func (s *jsiiProxy_SyntheticsAlertCondition) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -625,6 +670,9 @@ func (s *jsiiProxy_SyntheticsAlertCondition) GetBooleanMapAttribute(terraformAtt
 }
 
 func (s *jsiiProxy_SyntheticsAlertCondition) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -638,6 +686,9 @@ func (s *jsiiProxy_SyntheticsAlertCondition) GetListAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_SyntheticsAlertCondition) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -651,6 +702,9 @@ func (s *jsiiProxy_SyntheticsAlertCondition) GetNumberAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_SyntheticsAlertCondition) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -664,6 +718,9 @@ func (s *jsiiProxy_SyntheticsAlertCondition) GetNumberListAttribute(terraformAtt
 }
 
 func (s *jsiiProxy_SyntheticsAlertCondition) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -677,6 +734,9 @@ func (s *jsiiProxy_SyntheticsAlertCondition) GetNumberMapAttribute(terraformAttr
 }
 
 func (s *jsiiProxy_SyntheticsAlertCondition) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -690,6 +750,9 @@ func (s *jsiiProxy_SyntheticsAlertCondition) GetStringAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_SyntheticsAlertCondition) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -703,6 +766,9 @@ func (s *jsiiProxy_SyntheticsAlertCondition) GetStringMapAttribute(terraformAttr
 }
 
 func (s *jsiiProxy_SyntheticsAlertCondition) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -716,6 +782,9 @@ func (s *jsiiProxy_SyntheticsAlertCondition) InterpolationForAttribute(terraform
 }
 
 func (s *jsiiProxy_SyntheticsAlertCondition) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataNewrelicAlertChannelConfigAList) WrapsSet() *bool {
 func NewDataNewrelicAlertChannelConfigAList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNewrelicAlertChannelConfigAList {
 	_init_.Initialize()
 
+	if err := validateNewDataNewrelicAlertChannelConfigAListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataNewrelicAlertChannelConfigAList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataNewrelicAlertChannelConfigAList_Override(d DataNewrelicAlertChannelC
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicAlertChannelConfigAList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataNewrelicAlertChannelConfigAList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataNewrelicAlertChannelConfigAList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicAlertChannelConfigAList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataNewrelicAlertChannelConfigAList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataNewrelicAlertChannelConfigAList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicAlertChannelConfigAList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataNewrelicAlertChannelConfigAList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataNewrelicAlertChannelConfigAList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataNewrelicAlertChannelConfigAList) Get(index *float64) DataNewrelicAlertChannelConfigAOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataNewrelicAlertChannelConfigAOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataNewrelicAlertChannelConfigAList) Get(index *float64) Data
 }
 
 func (d *jsiiProxy_DataNewrelicAlertChannelConfigAList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

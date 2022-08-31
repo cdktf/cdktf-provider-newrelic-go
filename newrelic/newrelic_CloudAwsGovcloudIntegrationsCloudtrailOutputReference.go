@@ -199,6 +199,9 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) Terraf
 func NewCloudAwsGovcloudIntegrationsCloudtrailOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsCloudtrailOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCloudAwsGovcloudIntegrationsCloudtrailOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewCloudAwsGovcloudIntegrationsCloudtrailOutputReference_Override(c CloudAw
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetAwsRegions(val *[]*string) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference)SetAwsRegions(val *[]*string) {
+	if err := j.validateSetAwsRegionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsRegions",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetAws
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetInternalValue(val *CloudAwsGovcloudIntegrationsCloudtrail) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference)SetInternalValue(val *CloudAwsGovcloudIntegrationsCloudtrail) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetInt
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetMetricsPollingInterval(val *float64) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference)SetMetricsPollingInterval(val *float64) {
+	if err := j.validateSetMetricsPollingIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricsPollingInterval",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetMet
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) Comput
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetAny
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetBoo
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetBoo
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetLis
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetNum
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetNum
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetNum
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetStr
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) Interp
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) ResetM
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsCloudtrailOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

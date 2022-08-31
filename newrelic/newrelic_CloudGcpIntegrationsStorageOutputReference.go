@@ -199,6 +199,9 @@ func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) TerraformResource
 func NewCloudGcpIntegrationsStorageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudGcpIntegrationsStorageOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCloudGcpIntegrationsStorageOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudGcpIntegrationsStorageOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewCloudGcpIntegrationsStorageOutputReference_Override(c CloudGcpIntegratio
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetFetchTags(val interface{}) {
+func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference)SetFetchTags(val interface{}) {
+	if err := j.validateSetFetchTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fetchTags",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetFetchTags(val 
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetInternalValue(val *CloudGcpIntegrationsStorage) {
+func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference)SetInternalValue(val *CloudGcpIntegrationsStorage) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetMetricsPollingInterval(val *float64) {
+func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference)SetMetricsPollingInterval(val *float64) {
+	if err := j.validateSetMetricsPollingIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricsPollingInterval",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetMetricsPolling
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudGcpIntegrationsStorageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) ComputeFqn() *str
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetAnyMapAttribut
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetBooleanAttribu
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetBooleanMapAttr
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetListAttribute(
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetNumberAttribut
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetNumberListAttr
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetNumberMapAttri
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetStringAttribut
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) InterpolationAsLi
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) ResetMetricsPolli
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsStorageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

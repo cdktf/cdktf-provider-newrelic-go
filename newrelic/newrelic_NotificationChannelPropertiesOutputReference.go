@@ -245,6 +245,9 @@ func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) ValueInput() *s
 func NewNotificationChannelPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationChannelPropertiesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNotificationChannelPropertiesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NotificationChannelPropertiesOutputReference{}
 
 	_jsii_.Create(
@@ -266,7 +269,10 @@ func NewNotificationChannelPropertiesOutputReference_Override(n NotificationChan
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -274,7 +280,10 @@ func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -282,7 +291,10 @@ func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetDisplayValue(val *string) {
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference)SetDisplayValue(val *string) {
+	if err := j.validateSetDisplayValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"displayValue",
@@ -290,7 +302,10 @@ func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetDisplayValue
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -298,7 +313,10 @@ func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetKey(val *string) {
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -306,7 +324,10 @@ func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetKey(val *str
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetLabel(val *string) {
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference)SetLabel(val *string) {
+	if err := j.validateSetLabelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"label",
@@ -314,7 +335,10 @@ func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetLabel(val *s
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -322,7 +346,10 @@ func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -330,7 +357,10 @@ func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_NotificationChannelPropertiesOutputReference) SetValue(val *string) {
+func (j *jsiiProxy_NotificationChannelPropertiesOutputReference)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -352,6 +382,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) ComputeFqn() *s
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -365,6 +398,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetAnyMapAttrib
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -378,6 +414,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetBooleanAttri
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -391,6 +430,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetBooleanMapAt
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -404,6 +446,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetListAttribut
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -417,6 +462,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetNumberAttrib
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -430,6 +478,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetNumberListAt
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -443,6 +494,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetNumberMapAtt
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -456,6 +510,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetStringAttrib
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -482,6 +539,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) InterpolationAs
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -511,6 +571,9 @@ func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) ResetLabel() {
 }
 
 func (n *jsiiProxy_NotificationChannelPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -409,6 +409,9 @@ func (j *jsiiProxy_SyntheticsSecureCredential) ValueInput() *string {
 func NewSyntheticsSecureCredential(scope constructs.Construct, id *string, config *SyntheticsSecureCredentialConfig) SyntheticsSecureCredential {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsSecureCredentialParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsSecureCredential{}
 
 	_jsii_.Create(
@@ -431,7 +434,10 @@ func NewSyntheticsSecureCredential_Override(s SyntheticsSecureCredential, scope 
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetConnection(val interface{}) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -439,7 +445,7 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetCount(val *float64) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -447,7 +453,10 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetCreatedAt(val *string) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetCreatedAt(val *string) {
+	if err := j.validateSetCreatedAtParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"createdAt",
@@ -455,7 +464,7 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetCreatedAt(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -463,7 +472,10 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetDescription(val *string) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -471,7 +483,7 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +491,10 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetId(val *string) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -487,7 +502,10 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetKey(val *string) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -495,7 +513,10 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetLastUpdated(val *string) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetLastUpdated(val *string) {
+	if err := j.validateSetLastUpdatedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lastUpdated",
@@ -503,7 +524,10 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetLastUpdated(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -511,7 +535,7 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -519,7 +543,10 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -527,7 +554,10 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetProvisioners(val *[]interface{
 	)
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) SetValue(val *string) {
+func (j *jsiiProxy_SyntheticsSecureCredential)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -555,6 +585,9 @@ func (j *jsiiProxy_SyntheticsSecureCredential) SetValue(val *string) {
 func SyntheticsSecureCredential_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSyntheticsSecureCredential_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -579,6 +612,9 @@ func SyntheticsSecureCredential_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SyntheticsSecureCredential) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -587,6 +623,9 @@ func (s *jsiiProxy_SyntheticsSecureCredential) AddOverride(path *string, value i
 }
 
 func (s *jsiiProxy_SyntheticsSecureCredential) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -600,6 +639,9 @@ func (s *jsiiProxy_SyntheticsSecureCredential) GetAnyMapAttribute(terraformAttri
 }
 
 func (s *jsiiProxy_SyntheticsSecureCredential) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -613,6 +655,9 @@ func (s *jsiiProxy_SyntheticsSecureCredential) GetBooleanAttribute(terraformAttr
 }
 
 func (s *jsiiProxy_SyntheticsSecureCredential) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -626,6 +671,9 @@ func (s *jsiiProxy_SyntheticsSecureCredential) GetBooleanMapAttribute(terraformA
 }
 
 func (s *jsiiProxy_SyntheticsSecureCredential) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -639,6 +687,9 @@ func (s *jsiiProxy_SyntheticsSecureCredential) GetListAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_SyntheticsSecureCredential) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -652,6 +703,9 @@ func (s *jsiiProxy_SyntheticsSecureCredential) GetNumberAttribute(terraformAttri
 }
 
 func (s *jsiiProxy_SyntheticsSecureCredential) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -665,6 +719,9 @@ func (s *jsiiProxy_SyntheticsSecureCredential) GetNumberListAttribute(terraformA
 }
 
 func (s *jsiiProxy_SyntheticsSecureCredential) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -678,6 +735,9 @@ func (s *jsiiProxy_SyntheticsSecureCredential) GetNumberMapAttribute(terraformAt
 }
 
 func (s *jsiiProxy_SyntheticsSecureCredential) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -691,6 +751,9 @@ func (s *jsiiProxy_SyntheticsSecureCredential) GetStringAttribute(terraformAttri
 }
 
 func (s *jsiiProxy_SyntheticsSecureCredential) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -704,6 +767,9 @@ func (s *jsiiProxy_SyntheticsSecureCredential) GetStringMapAttribute(terraformAt
 }
 
 func (s *jsiiProxy_SyntheticsSecureCredential) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -717,6 +783,9 @@ func (s *jsiiProxy_SyntheticsSecureCredential) InterpolationForAttribute(terrafo
 }
 
 func (s *jsiiProxy_SyntheticsSecureCredential) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

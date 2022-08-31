@@ -430,6 +430,9 @@ func (j *jsiiProxy_CloudAzureLinkAccount) TerraformResourceType() *string {
 func NewCloudAzureLinkAccount(scope constructs.Construct, id *string, config *CloudAzureLinkAccountConfig) CloudAzureLinkAccount {
 	_init_.Initialize()
 
+	if err := validateNewCloudAzureLinkAccountParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAzureLinkAccount{}
 
 	_jsii_.Create(
@@ -452,7 +455,10 @@ func NewCloudAzureLinkAccount_Override(c CloudAzureLinkAccount, scope constructs
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetAccountId(val *float64) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -460,7 +466,10 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetApplicationId(val *string) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetApplicationId(val *string) {
+	if err := j.validateSetApplicationIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"applicationId",
@@ -468,7 +477,10 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetApplicationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetClientSecret(val *string) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetClientSecret(val *string) {
+	if err := j.validateSetClientSecretParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientSecret",
@@ -476,7 +488,10 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetClientSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -484,7 +499,7 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetCount(val *float64) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -492,7 +507,7 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -500,7 +515,7 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -508,7 +523,10 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetForEach(val cdktf.ITerraformIterato
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetId(val *string) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -516,7 +534,10 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -524,7 +545,10 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetName(val *string) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -532,7 +556,7 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -540,7 +564,10 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetProvider(val cdktf.TerraformProvide
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -548,7 +575,10 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetSubscriptionId(val *string) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetSubscriptionId(val *string) {
+	if err := j.validateSetSubscriptionIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subscriptionId",
@@ -556,7 +586,10 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetSubscriptionId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) SetTenantId(val *string) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -584,6 +617,9 @@ func (j *jsiiProxy_CloudAzureLinkAccount) SetTenantId(val *string) {
 func CloudAzureLinkAccount_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCloudAzureLinkAccount_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -608,6 +644,9 @@ func CloudAzureLinkAccount_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CloudAzureLinkAccount) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -616,6 +655,9 @@ func (c *jsiiProxy_CloudAzureLinkAccount) AddOverride(path *string, value interf
 }
 
 func (c *jsiiProxy_CloudAzureLinkAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -629,6 +671,9 @@ func (c *jsiiProxy_CloudAzureLinkAccount) GetAnyMapAttribute(terraformAttribute 
 }
 
 func (c *jsiiProxy_CloudAzureLinkAccount) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -642,6 +687,9 @@ func (c *jsiiProxy_CloudAzureLinkAccount) GetBooleanAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_CloudAzureLinkAccount) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -655,6 +703,9 @@ func (c *jsiiProxy_CloudAzureLinkAccount) GetBooleanMapAttribute(terraformAttrib
 }
 
 func (c *jsiiProxy_CloudAzureLinkAccount) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -668,6 +719,9 @@ func (c *jsiiProxy_CloudAzureLinkAccount) GetListAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CloudAzureLinkAccount) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -681,6 +735,9 @@ func (c *jsiiProxy_CloudAzureLinkAccount) GetNumberAttribute(terraformAttribute 
 }
 
 func (c *jsiiProxy_CloudAzureLinkAccount) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -694,6 +751,9 @@ func (c *jsiiProxy_CloudAzureLinkAccount) GetNumberListAttribute(terraformAttrib
 }
 
 func (c *jsiiProxy_CloudAzureLinkAccount) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -707,6 +767,9 @@ func (c *jsiiProxy_CloudAzureLinkAccount) GetNumberMapAttribute(terraformAttribu
 }
 
 func (c *jsiiProxy_CloudAzureLinkAccount) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -720,6 +783,9 @@ func (c *jsiiProxy_CloudAzureLinkAccount) GetStringAttribute(terraformAttribute 
 }
 
 func (c *jsiiProxy_CloudAzureLinkAccount) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -733,6 +799,9 @@ func (c *jsiiProxy_CloudAzureLinkAccount) GetStringMapAttribute(terraformAttribu
 }
 
 func (c *jsiiProxy_CloudAzureLinkAccount) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -746,6 +815,9 @@ func (c *jsiiProxy_CloudAzureLinkAccount) InterpolationForAttribute(terraformAtt
 }
 
 func (c *jsiiProxy_CloudAzureLinkAccount) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

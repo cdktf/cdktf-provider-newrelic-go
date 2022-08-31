@@ -295,6 +295,9 @@ func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) TerraformResource() c
 func NewCloudAwsIntegrationsVpcOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudAwsIntegrationsVpcOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCloudAwsIntegrationsVpcOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAwsIntegrationsVpcOutputReference{}
 
 	_jsii_.Create(
@@ -316,7 +319,10 @@ func NewCloudAwsIntegrationsVpcOutputReference_Override(c CloudAwsIntegrationsVp
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetAwsRegions(val *[]*string) {
+func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference)SetAwsRegions(val *[]*string) {
+	if err := j.validateSetAwsRegionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsRegions",
@@ -324,7 +330,10 @@ func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetAwsRegions(val *[]
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -332,7 +341,10 @@ func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -340,7 +352,10 @@ func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetFetchNatGateway(val interface{}) {
+func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference)SetFetchNatGateway(val interface{}) {
+	if err := j.validateSetFetchNatGatewayParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fetchNatGateway",
@@ -348,7 +363,10 @@ func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetFetchNatGateway(va
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetFetchVpn(val interface{}) {
+func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference)SetFetchVpn(val interface{}) {
+	if err := j.validateSetFetchVpnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fetchVpn",
@@ -356,7 +374,10 @@ func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetFetchVpn(val inter
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetInternalValue(val *CloudAwsIntegrationsVpc) {
+func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference)SetInternalValue(val *CloudAwsIntegrationsVpc) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -364,7 +385,10 @@ func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetMetricsPollingInterval(val *float64) {
+func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference)SetMetricsPollingInterval(val *float64) {
+	if err := j.validateSetMetricsPollingIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricsPollingInterval",
@@ -372,7 +396,10 @@ func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetMetricsPollingInte
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetTagKey(val *string) {
+func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference)SetTagKey(val *string) {
+	if err := j.validateSetTagKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagKey",
@@ -380,7 +407,10 @@ func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetTagKey(val *string
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetTagValue(val *string) {
+func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference)SetTagValue(val *string) {
+	if err := j.validateSetTagValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagValue",
@@ -388,7 +418,10 @@ func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetTagValue(val *stri
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -396,7 +429,10 @@ func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudAwsIntegrationsVpcOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -418,6 +454,9 @@ func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) ComputeFqn() *string 
 }
 
 func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -431,6 +470,9 @@ func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetAnyMapAttribute(te
 }
 
 func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -444,6 +486,9 @@ func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetBooleanAttribute(t
 }
 
 func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -457,6 +502,9 @@ func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetBooleanMapAttribut
 }
 
 func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -470,6 +518,9 @@ func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetListAttribute(terr
 }
 
 func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -483,6 +534,9 @@ func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetNumberAttribute(te
 }
 
 func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -496,6 +550,9 @@ func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetNumberListAttribut
 }
 
 func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -509,6 +566,9 @@ func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetNumberMapAttribute
 }
 
 func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -522,6 +582,9 @@ func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetStringAttribute(te
 }
 
 func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -548,6 +611,9 @@ func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) InterpolationAsList()
 }
 
 func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -609,6 +675,9 @@ func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) ResetTagValue() {
 }
 
 func (c *jsiiProxy_CloudAwsIntegrationsVpcOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

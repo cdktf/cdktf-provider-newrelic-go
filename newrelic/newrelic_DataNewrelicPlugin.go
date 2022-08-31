@@ -273,6 +273,9 @@ func (j *jsiiProxy_DataNewrelicPlugin) TerraformResourceType() *string {
 func NewDataNewrelicPlugin(scope constructs.Construct, id *string, config *DataNewrelicPluginConfig) DataNewrelicPlugin {
 	_init_.Initialize()
 
+	if err := validateNewDataNewrelicPluginParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataNewrelicPlugin{}
 
 	_jsii_.Create(
@@ -295,7 +298,7 @@ func NewDataNewrelicPlugin_Override(d DataNewrelicPlugin, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicPlugin) SetCount(val *float64) {
+func (j *jsiiProxy_DataNewrelicPlugin)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -303,7 +306,7 @@ func (j *jsiiProxy_DataNewrelicPlugin) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicPlugin) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataNewrelicPlugin)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -311,7 +314,7 @@ func (j *jsiiProxy_DataNewrelicPlugin) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicPlugin) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataNewrelicPlugin)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -319,7 +322,10 @@ func (j *jsiiProxy_DataNewrelicPlugin) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicPlugin) SetGuid(val *string) {
+func (j *jsiiProxy_DataNewrelicPlugin)SetGuid(val *string) {
+	if err := j.validateSetGuidParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"guid",
@@ -327,7 +333,10 @@ func (j *jsiiProxy_DataNewrelicPlugin) SetGuid(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicPlugin) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataNewrelicPlugin)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -335,7 +344,7 @@ func (j *jsiiProxy_DataNewrelicPlugin) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicPlugin) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataNewrelicPlugin)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -363,6 +372,9 @@ func (j *jsiiProxy_DataNewrelicPlugin) SetProvider(val cdktf.TerraformProvider) 
 func DataNewrelicPlugin_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataNewrelicPlugin_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -387,6 +399,9 @@ func DataNewrelicPlugin_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataNewrelicPlugin) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -395,6 +410,9 @@ func (d *jsiiProxy_DataNewrelicPlugin) AddOverride(path *string, value interface
 }
 
 func (d *jsiiProxy_DataNewrelicPlugin) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -408,6 +426,9 @@ func (d *jsiiProxy_DataNewrelicPlugin) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (d *jsiiProxy_DataNewrelicPlugin) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -421,6 +442,9 @@ func (d *jsiiProxy_DataNewrelicPlugin) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (d *jsiiProxy_DataNewrelicPlugin) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -434,6 +458,9 @@ func (d *jsiiProxy_DataNewrelicPlugin) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DataNewrelicPlugin) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -447,6 +474,9 @@ func (d *jsiiProxy_DataNewrelicPlugin) GetListAttribute(terraformAttribute *stri
 }
 
 func (d *jsiiProxy_DataNewrelicPlugin) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -460,6 +490,9 @@ func (d *jsiiProxy_DataNewrelicPlugin) GetNumberAttribute(terraformAttribute *st
 }
 
 func (d *jsiiProxy_DataNewrelicPlugin) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -473,6 +506,9 @@ func (d *jsiiProxy_DataNewrelicPlugin) GetNumberListAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DataNewrelicPlugin) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -486,6 +522,9 @@ func (d *jsiiProxy_DataNewrelicPlugin) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (d *jsiiProxy_DataNewrelicPlugin) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -499,6 +538,9 @@ func (d *jsiiProxy_DataNewrelicPlugin) GetStringAttribute(terraformAttribute *st
 }
 
 func (d *jsiiProxy_DataNewrelicPlugin) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -512,6 +554,9 @@ func (d *jsiiProxy_DataNewrelicPlugin) GetStringMapAttribute(terraformAttribute 
 }
 
 func (d *jsiiProxy_DataNewrelicPlugin) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -525,6 +570,9 @@ func (d *jsiiProxy_DataNewrelicPlugin) InterpolationForAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataNewrelicPlugin) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

@@ -655,6 +655,9 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) UserIdInput() *string {
 func NewAlertChannelConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlertChannelConfigAOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAlertChannelConfigAOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AlertChannelConfigAOutputReference{}
 
 	_jsii_.Create(
@@ -676,7 +679,10 @@ func NewAlertChannelConfigAOutputReference_Override(a AlertChannelConfigAOutputR
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetApiKey(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetApiKey(val *string) {
+	if err := j.validateSetApiKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"apiKey",
@@ -684,7 +690,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetApiKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetAuthPassword(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetAuthPassword(val *string) {
+	if err := j.validateSetAuthPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authPassword",
@@ -692,7 +701,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetAuthPassword(val *stri
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetAuthType(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetAuthType(val *string) {
+	if err := j.validateSetAuthTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authType",
@@ -700,7 +712,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetAuthType(val *string) 
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetAuthUsername(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetAuthUsername(val *string) {
+	if err := j.validateSetAuthUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authUsername",
@@ -708,7 +723,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetAuthUsername(val *stri
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetBaseUrl(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetBaseUrl(val *string) {
+	if err := j.validateSetBaseUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"baseUrl",
@@ -716,7 +734,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetBaseUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetChannel(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetChannel(val *string) {
+	if err := j.validateSetChannelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"channel",
@@ -724,7 +745,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetChannel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -732,7 +756,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -740,7 +767,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetHeaders(val *map[string]*string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetHeaders(val *map[string]*string) {
+	if err := j.validateSetHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"headers",
@@ -748,7 +778,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetHeaders(val *map[strin
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetHeadersString(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetHeadersString(val *string) {
+	if err := j.validateSetHeadersStringParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"headersString",
@@ -756,7 +789,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetHeadersString(val *str
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetIncludeJsonAttachment(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetIncludeJsonAttachment(val *string) {
+	if err := j.validateSetIncludeJsonAttachmentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"includeJsonAttachment",
@@ -764,7 +800,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetIncludeJsonAttachment(
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetInternalValue(val *AlertChannelConfigA) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetInternalValue(val *AlertChannelConfigA) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -772,7 +811,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetInternalValue(val *Ale
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetKey(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetKey(val *string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"key",
@@ -780,7 +822,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetPayload(val *map[string]*string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetPayload(val *map[string]*string) {
+	if err := j.validateSetPayloadParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"payload",
@@ -788,7 +833,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetPayload(val *map[strin
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetPayloadString(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetPayloadString(val *string) {
+	if err := j.validateSetPayloadStringParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"payloadString",
@@ -796,7 +844,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetPayloadString(val *str
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetPayloadType(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetPayloadType(val *string) {
+	if err := j.validateSetPayloadTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"payloadType",
@@ -804,7 +855,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetPayloadType(val *strin
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetRecipients(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetRecipients(val *string) {
+	if err := j.validateSetRecipientsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"recipients",
@@ -812,7 +866,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetRecipients(val *string
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetRegion(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"region",
@@ -820,7 +877,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetRouteKey(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetRouteKey(val *string) {
+	if err := j.validateSetRouteKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"routeKey",
@@ -828,7 +888,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetRouteKey(val *string) 
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetServiceKey(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetServiceKey(val *string) {
+	if err := j.validateSetServiceKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serviceKey",
@@ -836,7 +899,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetServiceKey(val *string
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetTags(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetTags(val *string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tags",
@@ -844,7 +910,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetTags(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetTeams(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetTeams(val *string) {
+	if err := j.validateSetTeamsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"teams",
@@ -852,7 +921,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetTeams(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -860,7 +932,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -868,7 +943,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetUrl(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -876,7 +954,10 @@ func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertChannelConfigAOutputReference) SetUserId(val *string) {
+func (j *jsiiProxy_AlertChannelConfigAOutputReference)SetUserId(val *string) {
+	if err := j.validateSetUserIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userId",
@@ -898,6 +979,9 @@ func (a *jsiiProxy_AlertChannelConfigAOutputReference) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -911,6 +995,9 @@ func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetAnyMapAttribute(terraf
 }
 
 func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -924,6 +1011,9 @@ func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetBooleanAttribute(terra
 }
 
 func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -937,6 +1027,9 @@ func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetBooleanMapAttribute(te
 }
 
 func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -950,6 +1043,9 @@ func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetListAttribute(terrafor
 }
 
 func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -963,6 +1059,9 @@ func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetNumberAttribute(terraf
 }
 
 func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -976,6 +1075,9 @@ func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetNumberListAttribute(te
 }
 
 func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -989,6 +1091,9 @@ func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetNumberMapAttribute(ter
 }
 
 func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1002,6 +1107,9 @@ func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetStringAttribute(terraf
 }
 
 func (a *jsiiProxy_AlertChannelConfigAOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1028,6 +1136,9 @@ func (a *jsiiProxy_AlertChannelConfigAOutputReference) InterpolationAsList() cdk
 }
 
 func (a *jsiiProxy_AlertChannelConfigAOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1209,6 +1320,9 @@ func (a *jsiiProxy_AlertChannelConfigAOutputReference) ResetUserId() {
 }
 
 func (a *jsiiProxy_AlertChannelConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

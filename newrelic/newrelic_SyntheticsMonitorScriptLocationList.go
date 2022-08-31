@@ -111,6 +111,9 @@ func (j *jsiiProxy_SyntheticsMonitorScriptLocationList) WrapsSet() *bool {
 func NewSyntheticsMonitorScriptLocationList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsMonitorScriptLocationList {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsMonitorScriptLocationListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsMonitorScriptLocationList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSyntheticsMonitorScriptLocationList_Override(s SyntheticsMonitorScriptLo
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScriptLocationList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SyntheticsMonitorScriptLocationList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SyntheticsMonitorScriptLocationList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScriptLocationList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsMonitorScriptLocationList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SyntheticsMonitorScriptLocationList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScriptLocationList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsMonitorScriptLocationList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SyntheticsMonitorScriptLocationList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScriptLocationList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SyntheticsMonitorScriptLocationList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationList) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationList) Get(index *float64) SyntheticsMonitorScriptLocationOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SyntheticsMonitorScriptLocationOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationList) Get(index *float64) Synt
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

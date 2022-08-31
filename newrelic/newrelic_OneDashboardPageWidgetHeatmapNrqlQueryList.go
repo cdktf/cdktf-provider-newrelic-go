@@ -111,6 +111,9 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) WrapsSet() *bool 
 func NewOneDashboardPageWidgetHeatmapNrqlQueryList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetHeatmapNrqlQueryList {
 	_init_.Initialize()
 
+	if err := validateNewOneDashboardPageWidgetHeatmapNrqlQueryListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOneDashboardPageWidgetHeatmapNrqlQueryList_Override(o OneDashboardPageWi
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) ComputeFqn() *str
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) Get(index *float64) OneDashboardPageWidgetHeatmapNrqlQueryOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OneDashboardPageWidgetHeatmapNrqlQueryOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) Get(index *float6
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

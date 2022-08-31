@@ -385,6 +385,9 @@ func (j *jsiiProxy_NotificationDestination) TypeInput() *string {
 func NewNotificationDestination(scope constructs.Construct, id *string, config *NotificationDestinationConfig) NotificationDestination {
 	_init_.Initialize()
 
+	if err := validateNewNotificationDestinationParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NotificationDestination{}
 
 	_jsii_.Create(
@@ -407,7 +410,10 @@ func NewNotificationDestination_Override(n NotificationDestination, scope constr
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetAuth(val *map[string]*string) {
+func (j *jsiiProxy_NotificationDestination)SetAuth(val *map[string]*string) {
+	if err := j.validateSetAuthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"auth",
@@ -415,7 +421,10 @@ func (j *jsiiProxy_NotificationDestination) SetAuth(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetConnection(val interface{}) {
+func (j *jsiiProxy_NotificationDestination)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -423,7 +432,7 @@ func (j *jsiiProxy_NotificationDestination) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetCount(val *float64) {
+func (j *jsiiProxy_NotificationDestination)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -431,7 +440,7 @@ func (j *jsiiProxy_NotificationDestination) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NotificationDestination)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -439,7 +448,7 @@ func (j *jsiiProxy_NotificationDestination) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NotificationDestination)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -447,7 +456,10 @@ func (j *jsiiProxy_NotificationDestination) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetId(val *string) {
+func (j *jsiiProxy_NotificationDestination)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -455,7 +467,10 @@ func (j *jsiiProxy_NotificationDestination) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NotificationDestination)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -463,7 +478,10 @@ func (j *jsiiProxy_NotificationDestination) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetName(val *string) {
+func (j *jsiiProxy_NotificationDestination)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -471,7 +489,7 @@ func (j *jsiiProxy_NotificationDestination) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NotificationDestination)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -479,7 +497,10 @@ func (j *jsiiProxy_NotificationDestination) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NotificationDestination)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -487,7 +508,10 @@ func (j *jsiiProxy_NotificationDestination) SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination) SetType(val *string) {
+func (j *jsiiProxy_NotificationDestination)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -515,6 +539,9 @@ func (j *jsiiProxy_NotificationDestination) SetType(val *string) {
 func NotificationDestination_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateNotificationDestination_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -539,6 +566,9 @@ func NotificationDestination_TfResourceType() *string {
 }
 
 func (n *jsiiProxy_NotificationDestination) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
@@ -547,6 +577,9 @@ func (n *jsiiProxy_NotificationDestination) AddOverride(path *string, value inte
 }
 
 func (n *jsiiProxy_NotificationDestination) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -560,6 +593,9 @@ func (n *jsiiProxy_NotificationDestination) GetAnyMapAttribute(terraformAttribut
 }
 
 func (n *jsiiProxy_NotificationDestination) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -573,6 +609,9 @@ func (n *jsiiProxy_NotificationDestination) GetBooleanAttribute(terraformAttribu
 }
 
 func (n *jsiiProxy_NotificationDestination) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -586,6 +625,9 @@ func (n *jsiiProxy_NotificationDestination) GetBooleanMapAttribute(terraformAttr
 }
 
 func (n *jsiiProxy_NotificationDestination) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -599,6 +641,9 @@ func (n *jsiiProxy_NotificationDestination) GetListAttribute(terraformAttribute 
 }
 
 func (n *jsiiProxy_NotificationDestination) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -612,6 +657,9 @@ func (n *jsiiProxy_NotificationDestination) GetNumberAttribute(terraformAttribut
 }
 
 func (n *jsiiProxy_NotificationDestination) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -625,6 +673,9 @@ func (n *jsiiProxy_NotificationDestination) GetNumberListAttribute(terraformAttr
 }
 
 func (n *jsiiProxy_NotificationDestination) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -638,6 +689,9 @@ func (n *jsiiProxy_NotificationDestination) GetNumberMapAttribute(terraformAttri
 }
 
 func (n *jsiiProxy_NotificationDestination) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -651,6 +705,9 @@ func (n *jsiiProxy_NotificationDestination) GetStringAttribute(terraformAttribut
 }
 
 func (n *jsiiProxy_NotificationDestination) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -664,6 +721,9 @@ func (n *jsiiProxy_NotificationDestination) GetStringMapAttribute(terraformAttri
 }
 
 func (n *jsiiProxy_NotificationDestination) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -677,6 +737,9 @@ func (n *jsiiProxy_NotificationDestination) InterpolationForAttribute(terraformA
 }
 
 func (n *jsiiProxy_NotificationDestination) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",
@@ -685,6 +748,9 @@ func (n *jsiiProxy_NotificationDestination) OverrideLogicalId(newLogicalId *stri
 }
 
 func (n *jsiiProxy_NotificationDestination) PutProperties(value interface{}) {
+	if err := n.validatePutPropertiesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"putProperties",

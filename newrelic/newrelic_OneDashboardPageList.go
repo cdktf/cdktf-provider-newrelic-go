@@ -111,6 +111,9 @@ func (j *jsiiProxy_OneDashboardPageList) WrapsSet() *bool {
 func NewOneDashboardPageList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageList {
 	_init_.Initialize()
 
+	if err := validateNewOneDashboardPageListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OneDashboardPageList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOneDashboardPageList_Override(o OneDashboardPageList, terraformResource 
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OneDashboardPageList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OneDashboardPageList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OneDashboardPageList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OneDashboardPageList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OneDashboardPageList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OneDashboardPageList) SetTerraformResource(val cdktf.IInterpo
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OneDashboardPageList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OneDashboardPageList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OneDashboardPageList) Get(index *float64) OneDashboardPageOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OneDashboardPageOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OneDashboardPageList) Get(index *float64) OneDashboardPageOut
 }
 
 func (o *jsiiProxy_OneDashboardPageList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

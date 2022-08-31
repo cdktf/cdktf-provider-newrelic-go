@@ -111,6 +111,9 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetList) WrapsSet() *bool {
 func NewOneDashboardRawPageWidgetList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardRawPageWidgetList {
 	_init_.Initialize()
 
+	if err := validateNewOneDashboardRawPageWidgetListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OneDashboardRawPageWidgetList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOneDashboardRawPageWidgetList_Override(o OneDashboardRawPageWidgetList, 
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetList) SetInternalValue(val interface
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetList) Get(index *float64) OneDashboardRawPageWidgetOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OneDashboardRawPageWidgetOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetList) Get(index *float64) OneDashboa
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

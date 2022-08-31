@@ -111,6 +111,9 @@ func (j *jsiiProxy_AlertConditionTermList) WrapsSet() *bool {
 func NewAlertConditionTermList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlertConditionTermList {
 	_init_.Initialize()
 
+	if err := validateNewAlertConditionTermListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AlertConditionTermList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAlertConditionTermList_Override(a AlertConditionTermList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_AlertConditionTermList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AlertConditionTermList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AlertConditionTermList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlertConditionTermList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlertConditionTermList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AlertConditionTermList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlertConditionTermList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertConditionTermList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AlertConditionTermList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_AlertConditionTermList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AlertConditionTermList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AlertConditionTermList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AlertConditionTermList) Get(index *float64) AlertConditionTermOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AlertConditionTermOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AlertConditionTermList) Get(index *float64) AlertConditionTer
 }
 
 func (a *jsiiProxy_AlertConditionTermList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

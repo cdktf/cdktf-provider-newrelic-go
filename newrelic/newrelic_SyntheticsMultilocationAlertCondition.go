@@ -478,6 +478,9 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) WarningInput() *Synthe
 func NewSyntheticsMultilocationAlertCondition(scope constructs.Construct, id *string, config *SyntheticsMultilocationAlertConditionConfig) SyntheticsMultilocationAlertCondition {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsMultilocationAlertConditionParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsMultilocationAlertCondition{}
 
 	_jsii_.Create(
@@ -500,7 +503,10 @@ func NewSyntheticsMultilocationAlertCondition_Override(s SyntheticsMultilocation
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetConnection(val interface{}) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -508,7 +514,7 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetConnection(val inte
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetCount(val *float64) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -516,7 +522,7 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetCount(val *float64)
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -524,7 +530,10 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetDependsOn(val *[]*s
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetEnabled(val interface{}) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enabled",
@@ -532,7 +541,10 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetEnabled(val interfa
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetEntities(val *[]*string) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetEntities(val *[]*string) {
+	if err := j.validateSetEntitiesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"entities",
@@ -540,7 +552,7 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetEntities(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -548,7 +560,10 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetForEach(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetId(val *string) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -556,7 +571,10 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -564,7 +582,10 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetLifecycle(val *cdkt
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetName(val *string) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -572,7 +593,10 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetPolicyId(val *float64) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetPolicyId(val *float64) {
+	if err := j.validateSetPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyId",
@@ -580,7 +604,7 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetPolicyId(val *float
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -588,7 +612,10 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetProvider(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -596,7 +623,10 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetProvisioners(val *[
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetRunbookUrl(val *string) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetRunbookUrl(val *string) {
+	if err := j.validateSetRunbookUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"runbookUrl",
@@ -604,7 +634,10 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetRunbookUrl(val *str
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetViolationTimeLimitSeconds(val *float64) {
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition)SetViolationTimeLimitSeconds(val *float64) {
+	if err := j.validateSetViolationTimeLimitSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"violationTimeLimitSeconds",
@@ -632,6 +665,9 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) SetViolationTimeLimitS
 func SyntheticsMultilocationAlertCondition_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSyntheticsMultilocationAlertCondition_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -656,6 +692,9 @@ func SyntheticsMultilocationAlertCondition_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -664,6 +703,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) AddOverride(path *stri
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -677,6 +719,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetAnyMapAttribute(ter
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -690,6 +735,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetBooleanAttribute(te
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -703,6 +751,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetBooleanMapAttribute
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -716,6 +767,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetListAttribute(terra
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -729,6 +783,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetNumberAttribute(ter
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -742,6 +799,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetNumberListAttribute
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -755,6 +815,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetNumberMapAttribute(
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -768,6 +831,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetStringAttribute(ter
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -781,6 +847,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) GetStringMapAttribute(
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -794,6 +863,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) InterpolationForAttrib
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -802,6 +874,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) OverrideLogicalId(newL
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) PutCritical(value *SyntheticsMultilocationAlertConditionCritical) {
+	if err := s.validatePutCriticalParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putCritical",
@@ -810,6 +885,9 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) PutCritical(value *Syn
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) PutWarning(value *SyntheticsMultilocationAlertConditionWarning) {
+	if err := s.validatePutWarningParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putWarning",

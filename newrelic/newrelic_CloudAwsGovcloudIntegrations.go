@@ -818,6 +818,9 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) TerraformResourceType() *string
 func NewCloudAwsGovcloudIntegrations(scope constructs.Construct, id *string, config *CloudAwsGovcloudIntegrationsConfig) CloudAwsGovcloudIntegrations {
 	_init_.Initialize()
 
+	if err := validateNewCloudAwsGovcloudIntegrationsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAwsGovcloudIntegrations{}
 
 	_jsii_.Create(
@@ -840,7 +843,10 @@ func NewCloudAwsGovcloudIntegrations_Override(c CloudAwsGovcloudIntegrations, sc
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetAccountId(val *float64) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -848,7 +854,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -856,7 +865,7 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetCount(val *float64) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -864,7 +873,7 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -872,7 +881,7 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -880,7 +889,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetId(val *string) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -888,7 +900,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -896,7 +911,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetLinkedAccountId(val *float64) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetLinkedAccountId(val *float64) {
+	if err := j.validateSetLinkedAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"linkedAccountId",
@@ -904,7 +922,7 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetLinkedAccountId(val *float64
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -912,7 +930,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetProvider(val cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -940,6 +961,9 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) SetProvisioners(val *[]interfac
 func CloudAwsGovcloudIntegrations_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCloudAwsGovcloudIntegrations_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -964,6 +988,9 @@ func CloudAwsGovcloudIntegrations_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -972,6 +999,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) AddOverride(path *string, value
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -985,6 +1015,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetAnyMapAttribute(terraformAtt
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -998,6 +1031,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetBooleanAttribute(terraformAt
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1011,6 +1047,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetBooleanMapAttribute(terrafor
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1024,6 +1063,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetListAttribute(terraformAttri
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1037,6 +1079,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetNumberAttribute(terraformAtt
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1050,6 +1095,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetNumberListAttribute(terrafor
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1063,6 +1111,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetNumberMapAttribute(terraform
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1076,6 +1127,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetStringAttribute(terraformAtt
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1089,6 +1143,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) GetStringMapAttribute(terraform
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1102,6 +1159,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) InterpolationForAttribute(terra
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -1110,6 +1170,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) OverrideLogicalId(newLogicalId 
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutAlb(value *CloudAwsGovcloudIntegrationsAlb) {
+	if err := c.validatePutAlbParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAlb",
@@ -1118,6 +1181,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutAlb(value *CloudAwsGovcloudI
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutApiGateway(value *CloudAwsGovcloudIntegrationsApiGateway) {
+	if err := c.validatePutApiGatewayParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putApiGateway",
@@ -1126,6 +1192,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutApiGateway(value *CloudAwsGo
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutAutoScaling(value *CloudAwsGovcloudIntegrationsAutoScaling) {
+	if err := c.validatePutAutoScalingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAutoScaling",
@@ -1134,6 +1203,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutAutoScaling(value *CloudAwsG
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutAwsDirectConnect(value *CloudAwsGovcloudIntegrationsAwsDirectConnect) {
+	if err := c.validatePutAwsDirectConnectParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAwsDirectConnect",
@@ -1142,6 +1214,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutAwsDirectConnect(value *Clou
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutAwsStates(value *CloudAwsGovcloudIntegrationsAwsStates) {
+	if err := c.validatePutAwsStatesParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAwsStates",
@@ -1150,6 +1225,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutAwsStates(value *CloudAwsGov
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutCloudtrail(value *CloudAwsGovcloudIntegrationsCloudtrail) {
+	if err := c.validatePutCloudtrailParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCloudtrail",
@@ -1158,6 +1236,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutCloudtrail(value *CloudAwsGo
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutDynamoDb(value *CloudAwsGovcloudIntegrationsDynamoDb) {
+	if err := c.validatePutDynamoDbParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putDynamoDb",
@@ -1166,6 +1247,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutDynamoDb(value *CloudAwsGovc
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutEbs(value *CloudAwsGovcloudIntegrationsEbs) {
+	if err := c.validatePutEbsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEbs",
@@ -1174,6 +1258,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutEbs(value *CloudAwsGovcloudI
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutEc2(value *CloudAwsGovcloudIntegrationsEc2) {
+	if err := c.validatePutEc2Parameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEc2",
@@ -1182,6 +1269,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutEc2(value *CloudAwsGovcloudI
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutElasticSearch(value *CloudAwsGovcloudIntegrationsElasticSearch) {
+	if err := c.validatePutElasticSearchParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putElasticSearch",
@@ -1190,6 +1280,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutElasticSearch(value *CloudAw
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutElb(value *CloudAwsGovcloudIntegrationsElb) {
+	if err := c.validatePutElbParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putElb",
@@ -1198,6 +1291,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutElb(value *CloudAwsGovcloudI
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutEmr(value *CloudAwsGovcloudIntegrationsEmr) {
+	if err := c.validatePutEmrParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEmr",
@@ -1206,6 +1302,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutEmr(value *CloudAwsGovcloudI
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutIam(value *CloudAwsGovcloudIntegrationsIam) {
+	if err := c.validatePutIamParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putIam",
@@ -1214,6 +1313,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutIam(value *CloudAwsGovcloudI
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutLambda(value *CloudAwsGovcloudIntegrationsLambda) {
+	if err := c.validatePutLambdaParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putLambda",
@@ -1222,6 +1324,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutLambda(value *CloudAwsGovclo
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutRds(value *CloudAwsGovcloudIntegrationsRds) {
+	if err := c.validatePutRdsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRds",
@@ -1230,6 +1335,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutRds(value *CloudAwsGovcloudI
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutRedShift(value *CloudAwsGovcloudIntegrationsRedShift) {
+	if err := c.validatePutRedShiftParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRedShift",
@@ -1238,6 +1346,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutRedShift(value *CloudAwsGovc
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutRoute53(value *CloudAwsGovcloudIntegrationsRoute53) {
+	if err := c.validatePutRoute53Parameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRoute53",
@@ -1246,6 +1357,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutRoute53(value *CloudAwsGovcl
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutS3(value *CloudAwsGovcloudIntegrationsS3) {
+	if err := c.validatePutS3Parameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putS3",
@@ -1254,6 +1368,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutS3(value *CloudAwsGovcloudIn
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutSns(value *CloudAwsGovcloudIntegrationsSns) {
+	if err := c.validatePutSnsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSns",
@@ -1262,6 +1379,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutSns(value *CloudAwsGovcloudI
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrations) PutSqs(value *CloudAwsGovcloudIntegrationsSqs) {
+	if err := c.validatePutSqsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSqs",

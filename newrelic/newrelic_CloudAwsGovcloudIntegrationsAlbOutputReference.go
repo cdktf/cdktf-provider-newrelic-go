@@ -319,6 +319,9 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) TerraformReso
 func NewCloudAwsGovcloudIntegrationsAlbOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudAwsGovcloudIntegrationsAlbOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCloudAwsGovcloudIntegrationsAlbOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference{}
 
 	_jsii_.Create(
@@ -340,7 +343,10 @@ func NewCloudAwsGovcloudIntegrationsAlbOutputReference_Override(c CloudAwsGovclo
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetAwsRegions(val *[]*string) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference)SetAwsRegions(val *[]*string) {
+	if err := j.validateSetAwsRegionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsRegions",
@@ -348,7 +354,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetAwsRegions
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -356,7 +365,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -364,7 +376,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetFetchExtendedInventory(val interface{}) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference)SetFetchExtendedInventory(val interface{}) {
+	if err := j.validateSetFetchExtendedInventoryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fetchExtendedInventory",
@@ -372,7 +387,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetFetchExten
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetFetchTags(val interface{}) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference)SetFetchTags(val interface{}) {
+	if err := j.validateSetFetchTagsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"fetchTags",
@@ -380,7 +398,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetFetchTags(
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetInternalValue(val *CloudAwsGovcloudIntegrationsAlb) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference)SetInternalValue(val *CloudAwsGovcloudIntegrationsAlb) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -388,7 +409,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetLoadBalancerPrefixes(val *[]*string) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference)SetLoadBalancerPrefixes(val *[]*string) {
+	if err := j.validateSetLoadBalancerPrefixesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"loadBalancerPrefixes",
@@ -396,7 +420,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetLoadBalanc
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetMetricsPollingInterval(val *float64) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference)SetMetricsPollingInterval(val *float64) {
+	if err := j.validateSetMetricsPollingIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricsPollingInterval",
@@ -404,7 +431,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetMetricsPol
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetTagKey(val *string) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference)SetTagKey(val *string) {
+	if err := j.validateSetTagKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagKey",
@@ -412,7 +442,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetTagKey(val
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetTagValue(val *string) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference)SetTagValue(val *string) {
+	if err := j.validateSetTagValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tagValue",
@@ -420,7 +453,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetTagValue(v
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -428,7 +464,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -450,6 +489,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) ComputeFqn() 
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -463,6 +505,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetAnyMapAttr
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -476,6 +521,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetBooleanAtt
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -489,6 +537,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetBooleanMap
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -502,6 +553,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetListAttrib
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -515,6 +569,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetNumberAttr
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -528,6 +585,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetNumberList
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -541,6 +601,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetNumberMapA
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -554,6 +617,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetStringAttr
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -580,6 +646,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) Interpolation
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -649,6 +718,9 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) ResetTagValue
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAlbOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

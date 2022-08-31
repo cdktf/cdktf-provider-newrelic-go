@@ -673,6 +673,9 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) WidthInput() *float64 {
 func NewDashboardWidgetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DashboardWidgetOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetOutputReference{}
 
 	_jsii_.Create(
@@ -694,7 +697,10 @@ func NewDashboardWidgetOutputReference_Override(d DashboardWidgetOutputReference
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetAccountId(val *float64) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -702,7 +708,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetColumn(val *float64) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetColumn(val *float64) {
+	if err := j.validateSetColumnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"column",
@@ -710,7 +719,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetColumn(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -718,7 +730,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -726,7 +741,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetDrilldownDashboardId(val *float64) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetDrilldownDashboardId(val *float64) {
+	if err := j.validateSetDrilldownDashboardIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"drilldownDashboardId",
@@ -734,7 +752,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetDrilldownDashboardId(val *
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetDuration(val *float64) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetDuration(val *float64) {
+	if err := j.validateSetDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"duration",
@@ -742,7 +763,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetDuration(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetEndTime(val *float64) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetEndTime(val *float64) {
+	if err := j.validateSetEndTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"endTime",
@@ -750,7 +774,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetEndTime(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetEntityIds(val *[]*float64) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetEntityIds(val *[]*float64) {
+	if err := j.validateSetEntityIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"entityIds",
@@ -758,7 +785,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetEntityIds(val *[]*float64)
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetFacet(val *string) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetFacet(val *string) {
+	if err := j.validateSetFacetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"facet",
@@ -766,7 +796,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetFacet(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetHeight(val *float64) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetHeight(val *float64) {
+	if err := j.validateSetHeightParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"height",
@@ -774,7 +807,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetHeight(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -782,7 +818,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetLimit(val *float64) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetLimit(val *float64) {
+	if err := j.validateSetLimitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"limit",
@@ -790,7 +829,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetLimit(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetNotes(val *string) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetNotes(val *string) {
+	if err := j.validateSetNotesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notes",
@@ -798,7 +840,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetNotes(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetNrql(val *string) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetNrql(val *string) {
+	if err := j.validateSetNrqlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nrql",
@@ -806,7 +851,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetNrql(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetOrderBy(val *string) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetOrderBy(val *string) {
+	if err := j.validateSetOrderByParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"orderBy",
@@ -814,7 +862,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetOrderBy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetRow(val *float64) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetRow(val *float64) {
+	if err := j.validateSetRowParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"row",
@@ -822,7 +873,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetRow(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetSource(val *string) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetSource(val *string) {
+	if err := j.validateSetSourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"source",
@@ -830,7 +884,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -838,7 +895,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -846,7 +906,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetThresholdRed(val *float64) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetThresholdRed(val *float64) {
+	if err := j.validateSetThresholdRedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"thresholdRed",
@@ -854,7 +917,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetThresholdRed(val *float64)
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetThresholdYellow(val *float64) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetThresholdYellow(val *float64) {
+	if err := j.validateSetThresholdYellowParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"thresholdYellow",
@@ -862,7 +928,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetThresholdYellow(val *float
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetTitle(val *string) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"title",
@@ -870,7 +939,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetTitle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetVisualization(val *string) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetVisualization(val *string) {
+	if err := j.validateSetVisualizationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"visualization",
@@ -878,7 +950,10 @@ func (j *jsiiProxy_DashboardWidgetOutputReference) SetVisualization(val *string)
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetOutputReference) SetWidth(val *float64) {
+func (j *jsiiProxy_DashboardWidgetOutputReference)SetWidth(val *float64) {
+	if err := j.validateSetWidthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"width",
@@ -900,6 +975,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -913,6 +991,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) GetAnyMapAttribute(terraformA
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -926,6 +1007,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) GetBooleanAttribute(terraform
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -939,6 +1023,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) GetBooleanMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -952,6 +1039,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) GetListAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -965,6 +1055,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) GetNumberAttribute(terraformA
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -978,6 +1071,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) GetNumberListAttribute(terraf
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -991,6 +1087,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) GetNumberMapAttribute(terrafo
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1004,6 +1103,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) GetStringAttribute(terraformA
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1030,6 +1132,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) InterpolationAsList() cdktf.I
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1043,6 +1148,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) InterpolationForAttribute(pro
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) PutCompareWith(value interface{}) {
+	if err := d.validatePutCompareWithParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCompareWith",
@@ -1051,6 +1159,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) PutCompareWith(value interfac
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) PutMetric(value interface{}) {
+	if err := d.validatePutMetricParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMetric",
@@ -1195,6 +1306,9 @@ func (d *jsiiProxy_DashboardWidgetOutputReference) ResetWidth() {
 }
 
 func (d *jsiiProxy_DashboardWidgetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList) WrapsSet() *bool {
 func NewOneDashboardPageWidgetJsonNrqlQueryList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetJsonNrqlQueryList {
 	_init_.Initialize()
 
+	if err := validateNewOneDashboardPageWidgetJsonNrqlQueryListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOneDashboardPageWidgetJsonNrqlQueryList_Override(o OneDashboardPageWidge
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList) SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList) ComputeFqn() *string
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList) Get(index *float64) OneDashboardPageWidgetJsonNrqlQueryOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OneDashboardPageWidgetJsonNrqlQueryOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList) Get(index *float64) 
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetJsonNrqlQueryList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -318,6 +318,9 @@ func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) WeeklyRepeatDaysInput
 func NewAlertMutingRuleScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlertMutingRuleScheduleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAlertMutingRuleScheduleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AlertMutingRuleScheduleOutputReference{}
 
 	_jsii_.Create(
@@ -339,7 +342,10 @@ func NewAlertMutingRuleScheduleOutputReference_Override(a AlertMutingRuleSchedul
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -347,7 +353,10 @@ func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -355,7 +364,10 @@ func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetEndRepeat(val *string) {
+func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference)SetEndRepeat(val *string) {
+	if err := j.validateSetEndRepeatParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"endRepeat",
@@ -363,7 +375,10 @@ func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetEndRepeat(val *str
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetEndTime(val *string) {
+func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference)SetEndTime(val *string) {
+	if err := j.validateSetEndTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"endTime",
@@ -371,7 +386,10 @@ func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetEndTime(val *strin
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetInternalValue(val *AlertMutingRuleSchedule) {
+func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference)SetInternalValue(val *AlertMutingRuleSchedule) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -379,7 +397,10 @@ func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetRepeat(val *string) {
+func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference)SetRepeat(val *string) {
+	if err := j.validateSetRepeatParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repeat",
@@ -387,7 +408,10 @@ func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetRepeat(val *string
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetRepeatCount(val *float64) {
+func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference)SetRepeatCount(val *float64) {
+	if err := j.validateSetRepeatCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"repeatCount",
@@ -395,7 +419,10 @@ func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetRepeatCount(val *f
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetStartTime(val *string) {
+func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference)SetStartTime(val *string) {
+	if err := j.validateSetStartTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"startTime",
@@ -403,7 +430,10 @@ func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetStartTime(val *str
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -411,7 +441,10 @@ func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -419,7 +452,10 @@ func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetTerraformResource(
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetTimeZone(val *string) {
+func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference)SetTimeZone(val *string) {
+	if err := j.validateSetTimeZoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeZone",
@@ -427,7 +463,10 @@ func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetTimeZone(val *stri
 	)
 }
 
-func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference) SetWeeklyRepeatDays(val *[]*string) {
+func (j *jsiiProxy_AlertMutingRuleScheduleOutputReference)SetWeeklyRepeatDays(val *[]*string) {
+	if err := j.validateSetWeeklyRepeatDaysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"weeklyRepeatDays",
@@ -449,6 +488,9 @@ func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) ComputeFqn() *string 
 }
 
 func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -462,6 +504,9 @@ func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetAnyMapAttribute(te
 }
 
 func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -475,6 +520,9 @@ func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetBooleanAttribute(t
 }
 
 func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -488,6 +536,9 @@ func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetBooleanMapAttribut
 }
 
 func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -501,6 +552,9 @@ func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetListAttribute(terr
 }
 
 func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -514,6 +568,9 @@ func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetNumberAttribute(te
 }
 
 func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -527,6 +584,9 @@ func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetNumberListAttribut
 }
 
 func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -540,6 +600,9 @@ func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetNumberMapAttribute
 }
 
 func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -553,6 +616,9 @@ func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetStringAttribute(te
 }
 
 func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -579,6 +645,9 @@ func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) InterpolationAsList()
 }
 
 func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -640,6 +709,9 @@ func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) ResetWeeklyRepeatDays
 }
 
 func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

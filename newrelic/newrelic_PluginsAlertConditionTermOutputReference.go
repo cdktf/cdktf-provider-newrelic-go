@@ -268,6 +268,9 @@ func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) TimeFunctionInput()
 func NewPluginsAlertConditionTermOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PluginsAlertConditionTermOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewPluginsAlertConditionTermOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PluginsAlertConditionTermOutputReference{}
 
 	_jsii_.Create(
@@ -289,7 +292,10 @@ func NewPluginsAlertConditionTermOutputReference_Override(p PluginsAlertConditio
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PluginsAlertConditionTermOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -297,7 +303,10 @@ func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PluginsAlertConditionTermOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -305,7 +314,10 @@ func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetDuration(val *float64) {
+func (j *jsiiProxy_PluginsAlertConditionTermOutputReference)SetDuration(val *float64) {
+	if err := j.validateSetDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"duration",
@@ -313,7 +325,10 @@ func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetDuration(val *fl
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PluginsAlertConditionTermOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -321,7 +336,10 @@ func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetOperator(val *string) {
+func (j *jsiiProxy_PluginsAlertConditionTermOutputReference)SetOperator(val *string) {
+	if err := j.validateSetOperatorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operator",
@@ -329,7 +347,10 @@ func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetOperator(val *st
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetPriority(val *string) {
+func (j *jsiiProxy_PluginsAlertConditionTermOutputReference)SetPriority(val *string) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"priority",
@@ -337,7 +358,10 @@ func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetPriority(val *st
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PluginsAlertConditionTermOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -345,7 +369,10 @@ func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PluginsAlertConditionTermOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -353,7 +380,10 @@ func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetThreshold(val *float64) {
+func (j *jsiiProxy_PluginsAlertConditionTermOutputReference)SetThreshold(val *float64) {
+	if err := j.validateSetThresholdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"threshold",
@@ -361,7 +391,10 @@ func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetThreshold(val *f
 	)
 }
 
-func (j *jsiiProxy_PluginsAlertConditionTermOutputReference) SetTimeFunction(val *string) {
+func (j *jsiiProxy_PluginsAlertConditionTermOutputReference)SetTimeFunction(val *string) {
+	if err := j.validateSetTimeFunctionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeFunction",
@@ -383,6 +416,9 @@ func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) ComputeFqn() *strin
 }
 
 func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -396,6 +432,9 @@ func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetAnyMapAttribute(
 }
 
 func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +448,9 @@ func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetBooleanAttribute
 }
 
 func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -422,6 +464,9 @@ func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetBooleanMapAttrib
 }
 
 func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -435,6 +480,9 @@ func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetListAttribute(te
 }
 
 func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -448,6 +496,9 @@ func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetNumberAttribute(
 }
 
 func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -461,6 +512,9 @@ func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetNumberListAttrib
 }
 
 func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -474,6 +528,9 @@ func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetNumberMapAttribu
 }
 
 func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -487,6 +544,9 @@ func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetStringAttribute(
 }
 
 func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -513,6 +573,9 @@ func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) InterpolationAsList
 }
 
 func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -542,6 +605,9 @@ func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) ResetPriority() {
 }
 
 func (p *jsiiProxy_PluginsAlertConditionTermOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

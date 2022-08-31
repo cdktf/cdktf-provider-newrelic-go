@@ -222,6 +222,9 @@ func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) ValueInput() *floa
 func NewInfraAlertConditionWarningOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) InfraAlertConditionWarningOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewInfraAlertConditionWarningOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_InfraAlertConditionWarningOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewInfraAlertConditionWarningOutputReference_Override(i InfraAlertCondition
 	)
 }
 
-func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_InfraAlertConditionWarningOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_InfraAlertConditionWarningOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetDuration(val *float64) {
+func (j *jsiiProxy_InfraAlertConditionWarningOutputReference)SetDuration(val *float64) {
+	if err := j.validateSetDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"duration",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetDuration(val *f
 	)
 }
 
-func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetInternalValue(val *InfraAlertConditionWarning) {
+func (j *jsiiProxy_InfraAlertConditionWarningOutputReference)SetInternalValue(val *InfraAlertConditionWarning) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InfraAlertConditionWarningOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InfraAlertConditionWarningOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetTimeFunction(val *string) {
+func (j *jsiiProxy_InfraAlertConditionWarningOutputReference)SetTimeFunction(val *string) {
+	if err := j.validateSetTimeFunctionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"timeFunction",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetTimeFunction(va
 	)
 }
 
-func (j *jsiiProxy_InfraAlertConditionWarningOutputReference) SetValue(val *float64) {
+func (j *jsiiProxy_InfraAlertConditionWarningOutputReference)SetValue(val *float64) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -321,6 +348,9 @@ func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) ComputeFqn() *stri
 }
 
 func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetAnyMapAttribute
 }
 
 func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetBooleanAttribut
 }
 
 func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetBooleanMapAttri
 }
 
 func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetListAttribute(t
 }
 
 func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetNumberAttribute
 }
 
 func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetNumberListAttri
 }
 
 func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetNumberMapAttrib
 }
 
 func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetStringAttribute
 }
 
 func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) InterpolationAsLis
 }
 
 func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) ResetValue() {
 }
 
 func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

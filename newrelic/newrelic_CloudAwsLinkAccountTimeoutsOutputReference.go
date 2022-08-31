@@ -175,6 +175,9 @@ func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) TerraformResource
 func NewCloudAwsLinkAccountTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudAwsLinkAccountTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCloudAwsLinkAccountTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewCloudAwsLinkAccountTimeoutsOutputReference_Override(c CloudAwsLinkAccoun
 	)
 }
 
-func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) SetCreate(val *st
 	)
 }
 
-func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,6 +279,9 @@ func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) ComputeFqn() *str
 }
 
 func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetAnyMapAttribut
 }
 
 func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetBooleanAttribu
 }
 
 func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetBooleanMapAttr
 }
 
 func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetListAttribute(
 }
 
 func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetNumberAttribut
 }
 
 func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetNumberListAttr
 }
 
 func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetNumberMapAttri
 }
 
 func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetStringAttribut
 }
 
 func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) InterpolationAsLi
 }
 
 func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) ResetCreate() {
 }
 
 func (c *jsiiProxy_CloudAwsLinkAccountTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -496,6 +496,9 @@ func (j *jsiiProxy_NewrelicProvider) TerraformResourceType() *string {
 func NewNewrelicProvider(scope constructs.Construct, id *string, config *NewrelicProviderConfig) NewrelicProvider {
 	_init_.Initialize()
 
+	if err := validateNewNewrelicProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NewrelicProvider{}
 
 	_jsii_.Create(
@@ -518,7 +521,7 @@ func NewNewrelicProvider_Override(n NewrelicProvider, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetAccountId(val *float64) {
+func (j *jsiiProxy_NewrelicProvider)SetAccountId(val *float64) {
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -526,7 +529,7 @@ func (j *jsiiProxy_NewrelicProvider) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetAdminApiKey(val *string) {
+func (j *jsiiProxy_NewrelicProvider)SetAdminApiKey(val *string) {
 	_jsii_.Set(
 		j,
 		"adminApiKey",
@@ -534,7 +537,7 @@ func (j *jsiiProxy_NewrelicProvider) SetAdminApiKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetAlias(val *string) {
+func (j *jsiiProxy_NewrelicProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -542,7 +545,7 @@ func (j *jsiiProxy_NewrelicProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetApiKey(val *string) {
+func (j *jsiiProxy_NewrelicProvider)SetApiKey(val *string) {
 	_jsii_.Set(
 		j,
 		"apiKey",
@@ -550,7 +553,7 @@ func (j *jsiiProxy_NewrelicProvider) SetApiKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetApiUrl(val *string) {
+func (j *jsiiProxy_NewrelicProvider)SetApiUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"apiUrl",
@@ -558,7 +561,7 @@ func (j *jsiiProxy_NewrelicProvider) SetApiUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetCacertFile(val *string) {
+func (j *jsiiProxy_NewrelicProvider)SetCacertFile(val *string) {
 	_jsii_.Set(
 		j,
 		"cacertFile",
@@ -566,7 +569,7 @@ func (j *jsiiProxy_NewrelicProvider) SetCacertFile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetInfrastructureApiUrl(val *string) {
+func (j *jsiiProxy_NewrelicProvider)SetInfrastructureApiUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"infrastructureApiUrl",
@@ -574,7 +577,10 @@ func (j *jsiiProxy_NewrelicProvider) SetInfrastructureApiUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetInsecureSkipVerify(val interface{}) {
+func (j *jsiiProxy_NewrelicProvider)SetInsecureSkipVerify(val interface{}) {
+	if err := j.validateSetInsecureSkipVerifyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"insecureSkipVerify",
@@ -582,7 +588,7 @@ func (j *jsiiProxy_NewrelicProvider) SetInsecureSkipVerify(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetInsightsInsertKey(val *string) {
+func (j *jsiiProxy_NewrelicProvider)SetInsightsInsertKey(val *string) {
 	_jsii_.Set(
 		j,
 		"insightsInsertKey",
@@ -590,7 +596,7 @@ func (j *jsiiProxy_NewrelicProvider) SetInsightsInsertKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetInsightsInsertUrl(val *string) {
+func (j *jsiiProxy_NewrelicProvider)SetInsightsInsertUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"insightsInsertUrl",
@@ -598,7 +604,7 @@ func (j *jsiiProxy_NewrelicProvider) SetInsightsInsertUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetInsightsQueryUrl(val *string) {
+func (j *jsiiProxy_NewrelicProvider)SetInsightsQueryUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"insightsQueryUrl",
@@ -606,7 +612,7 @@ func (j *jsiiProxy_NewrelicProvider) SetInsightsQueryUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetNerdgraphApiUrl(val *string) {
+func (j *jsiiProxy_NewrelicProvider)SetNerdgraphApiUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"nerdgraphApiUrl",
@@ -614,7 +620,7 @@ func (j *jsiiProxy_NewrelicProvider) SetNerdgraphApiUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetRegion(val *string) {
+func (j *jsiiProxy_NewrelicProvider)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
@@ -622,7 +628,7 @@ func (j *jsiiProxy_NewrelicProvider) SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NewrelicProvider) SetSyntheticsApiUrl(val *string) {
+func (j *jsiiProxy_NewrelicProvider)SetSyntheticsApiUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"syntheticsApiUrl",
@@ -650,6 +656,9 @@ func (j *jsiiProxy_NewrelicProvider) SetSyntheticsApiUrl(val *string) {
 func NewrelicProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateNewrelicProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -674,6 +683,9 @@ func NewrelicProvider_TfResourceType() *string {
 }
 
 func (n *jsiiProxy_NewrelicProvider) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
@@ -682,6 +694,9 @@ func (n *jsiiProxy_NewrelicProvider) AddOverride(path *string, value interface{}
 }
 
 func (n *jsiiProxy_NewrelicProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",

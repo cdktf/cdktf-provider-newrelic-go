@@ -111,6 +111,9 @@ func (j *jsiiProxy_InsightsEventEventAttributeList) WrapsSet() *bool {
 func NewInsightsEventEventAttributeList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InsightsEventEventAttributeList {
 	_init_.Initialize()
 
+	if err := validateNewInsightsEventEventAttributeListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_InsightsEventEventAttributeList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewInsightsEventEventAttributeList_Override(i InsightsEventEventAttributeLi
 	)
 }
 
-func (j *jsiiProxy_InsightsEventEventAttributeList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_InsightsEventEventAttributeList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_InsightsEventEventAttributeList) SetInternalValue(val interfa
 	)
 }
 
-func (j *jsiiProxy_InsightsEventEventAttributeList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_InsightsEventEventAttributeList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_InsightsEventEventAttributeList) SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_InsightsEventEventAttributeList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InsightsEventEventAttributeList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_InsightsEventEventAttributeList) SetTerraformResource(val cdk
 	)
 }
 
-func (j *jsiiProxy_InsightsEventEventAttributeList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_InsightsEventEventAttributeList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (i *jsiiProxy_InsightsEventEventAttributeList) ComputeFqn() *string {
 }
 
 func (i *jsiiProxy_InsightsEventEventAttributeList) Get(index *float64) InsightsEventEventAttributeOutputReference {
+	if err := i.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns InsightsEventEventAttributeOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (i *jsiiProxy_InsightsEventEventAttributeList) Get(index *float64) Insights
 }
 
 func (i *jsiiProxy_InsightsEventEventAttributeList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

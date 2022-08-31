@@ -396,6 +396,9 @@ func (j *jsiiProxy_NrqlDropRule) TerraformResourceType() *string {
 func NewNrqlDropRule(scope constructs.Construct, id *string, config *NrqlDropRuleConfig) NrqlDropRule {
 	_init_.Initialize()
 
+	if err := validateNewNrqlDropRuleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NrqlDropRule{}
 
 	_jsii_.Create(
@@ -418,7 +421,10 @@ func NewNrqlDropRule_Override(n NrqlDropRule, scope constructs.Construct, id *st
 	)
 }
 
-func (j *jsiiProxy_NrqlDropRule) SetAccountId(val *float64) {
+func (j *jsiiProxy_NrqlDropRule)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -426,7 +432,10 @@ func (j *jsiiProxy_NrqlDropRule) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NrqlDropRule) SetAction(val *string) {
+func (j *jsiiProxy_NrqlDropRule)SetAction(val *string) {
+	if err := j.validateSetActionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"action",
@@ -434,7 +443,10 @@ func (j *jsiiProxy_NrqlDropRule) SetAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlDropRule) SetConnection(val interface{}) {
+func (j *jsiiProxy_NrqlDropRule)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -442,7 +454,7 @@ func (j *jsiiProxy_NrqlDropRule) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NrqlDropRule) SetCount(val *float64) {
+func (j *jsiiProxy_NrqlDropRule)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -450,7 +462,7 @@ func (j *jsiiProxy_NrqlDropRule) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NrqlDropRule) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NrqlDropRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -458,7 +470,10 @@ func (j *jsiiProxy_NrqlDropRule) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlDropRule) SetDescription(val *string) {
+func (j *jsiiProxy_NrqlDropRule)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -466,7 +481,7 @@ func (j *jsiiProxy_NrqlDropRule) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlDropRule) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NrqlDropRule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -474,7 +489,10 @@ func (j *jsiiProxy_NrqlDropRule) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_NrqlDropRule) SetId(val *string) {
+func (j *jsiiProxy_NrqlDropRule)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -482,7 +500,10 @@ func (j *jsiiProxy_NrqlDropRule) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlDropRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NrqlDropRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -490,7 +511,10 @@ func (j *jsiiProxy_NrqlDropRule) SetLifecycle(val *cdktf.TerraformResourceLifecy
 	)
 }
 
-func (j *jsiiProxy_NrqlDropRule) SetNrql(val *string) {
+func (j *jsiiProxy_NrqlDropRule)SetNrql(val *string) {
+	if err := j.validateSetNrqlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nrql",
@@ -498,7 +522,7 @@ func (j *jsiiProxy_NrqlDropRule) SetNrql(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NrqlDropRule) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NrqlDropRule)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -506,7 +530,10 @@ func (j *jsiiProxy_NrqlDropRule) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_NrqlDropRule) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NrqlDropRule)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -534,6 +561,9 @@ func (j *jsiiProxy_NrqlDropRule) SetProvisioners(val *[]interface{}) {
 func NrqlDropRule_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateNrqlDropRule_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -558,6 +588,9 @@ func NrqlDropRule_TfResourceType() *string {
 }
 
 func (n *jsiiProxy_NrqlDropRule) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
@@ -566,6 +599,9 @@ func (n *jsiiProxy_NrqlDropRule) AddOverride(path *string, value interface{}) {
 }
 
 func (n *jsiiProxy_NrqlDropRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -579,6 +615,9 @@ func (n *jsiiProxy_NrqlDropRule) GetAnyMapAttribute(terraformAttribute *string) 
 }
 
 func (n *jsiiProxy_NrqlDropRule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -592,6 +631,9 @@ func (n *jsiiProxy_NrqlDropRule) GetBooleanAttribute(terraformAttribute *string)
 }
 
 func (n *jsiiProxy_NrqlDropRule) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -605,6 +647,9 @@ func (n *jsiiProxy_NrqlDropRule) GetBooleanMapAttribute(terraformAttribute *stri
 }
 
 func (n *jsiiProxy_NrqlDropRule) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -618,6 +663,9 @@ func (n *jsiiProxy_NrqlDropRule) GetListAttribute(terraformAttribute *string) *[
 }
 
 func (n *jsiiProxy_NrqlDropRule) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -631,6 +679,9 @@ func (n *jsiiProxy_NrqlDropRule) GetNumberAttribute(terraformAttribute *string) 
 }
 
 func (n *jsiiProxy_NrqlDropRule) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -644,6 +695,9 @@ func (n *jsiiProxy_NrqlDropRule) GetNumberListAttribute(terraformAttribute *stri
 }
 
 func (n *jsiiProxy_NrqlDropRule) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -657,6 +711,9 @@ func (n *jsiiProxy_NrqlDropRule) GetNumberMapAttribute(terraformAttribute *strin
 }
 
 func (n *jsiiProxy_NrqlDropRule) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -670,6 +727,9 @@ func (n *jsiiProxy_NrqlDropRule) GetStringAttribute(terraformAttribute *string) 
 }
 
 func (n *jsiiProxy_NrqlDropRule) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -683,6 +743,9 @@ func (n *jsiiProxy_NrqlDropRule) GetStringMapAttribute(terraformAttribute *strin
 }
 
 func (n *jsiiProxy_NrqlDropRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -696,6 +759,9 @@ func (n *jsiiProxy_NrqlDropRule) InterpolationForAttribute(terraformAttribute *s
 }
 
 func (n *jsiiProxy_NrqlDropRule) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",

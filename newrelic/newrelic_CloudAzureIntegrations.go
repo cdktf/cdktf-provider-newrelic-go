@@ -1034,6 +1034,9 @@ func (j *jsiiProxy_CloudAzureIntegrations) VpnGatewayInput() *CloudAzureIntegrat
 func NewCloudAzureIntegrations(scope constructs.Construct, id *string, config *CloudAzureIntegrationsConfig) CloudAzureIntegrations {
 	_init_.Initialize()
 
+	if err := validateNewCloudAzureIntegrationsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAzureIntegrations{}
 
 	_jsii_.Create(
@@ -1056,7 +1059,10 @@ func NewCloudAzureIntegrations_Override(c CloudAzureIntegrations, scope construc
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrations) SetAccountId(val *float64) {
+func (j *jsiiProxy_CloudAzureIntegrations)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -1064,7 +1070,10 @@ func (j *jsiiProxy_CloudAzureIntegrations) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrations) SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudAzureIntegrations)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1072,7 +1081,7 @@ func (j *jsiiProxy_CloudAzureIntegrations) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrations) SetCount(val *float64) {
+func (j *jsiiProxy_CloudAzureIntegrations)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1080,7 +1089,7 @@ func (j *jsiiProxy_CloudAzureIntegrations) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrations) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudAzureIntegrations)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1088,7 +1097,7 @@ func (j *jsiiProxy_CloudAzureIntegrations) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrations) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudAzureIntegrations)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1096,7 +1105,10 @@ func (j *jsiiProxy_CloudAzureIntegrations) SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrations) SetId(val *string) {
+func (j *jsiiProxy_CloudAzureIntegrations)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1104,7 +1116,10 @@ func (j *jsiiProxy_CloudAzureIntegrations) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrations) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudAzureIntegrations)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1112,7 +1127,10 @@ func (j *jsiiProxy_CloudAzureIntegrations) SetLifecycle(val *cdktf.TerraformReso
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrations) SetLinkedAccountId(val *float64) {
+func (j *jsiiProxy_CloudAzureIntegrations)SetLinkedAccountId(val *float64) {
+	if err := j.validateSetLinkedAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"linkedAccountId",
@@ -1120,7 +1138,7 @@ func (j *jsiiProxy_CloudAzureIntegrations) SetLinkedAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrations) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudAzureIntegrations)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1128,7 +1146,10 @@ func (j *jsiiProxy_CloudAzureIntegrations) SetProvider(val cdktf.TerraformProvid
 	)
 }
 
-func (j *jsiiProxy_CloudAzureIntegrations) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudAzureIntegrations)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1156,6 +1177,9 @@ func (j *jsiiProxy_CloudAzureIntegrations) SetProvisioners(val *[]interface{}) {
 func CloudAzureIntegrations_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCloudAzureIntegrations_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1180,6 +1204,9 @@ func CloudAzureIntegrations_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -1188,6 +1215,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) AddOverride(path *string, value inter
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1201,6 +1231,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) GetAnyMapAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1214,6 +1247,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) GetBooleanAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1227,6 +1263,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) GetBooleanMapAttribute(terraformAttri
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1240,6 +1279,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) GetListAttribute(terraformAttribute *
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1253,6 +1295,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) GetNumberAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1266,6 +1311,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) GetNumberListAttribute(terraformAttri
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1279,6 +1327,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) GetNumberMapAttribute(terraformAttrib
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1292,6 +1343,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) GetStringAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1305,6 +1359,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) GetStringMapAttribute(terraformAttrib
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1318,6 +1375,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) InterpolationForAttribute(terraformAt
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -1326,6 +1386,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) OverrideLogicalId(newLogicalId *strin
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutApiManagement(value *CloudAzureIntegrationsApiManagement) {
+	if err := c.validatePutApiManagementParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putApiManagement",
@@ -1334,6 +1397,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutApiManagement(value *CloudAzureInt
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutAppGateway(value *CloudAzureIntegrationsAppGateway) {
+	if err := c.validatePutAppGatewayParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAppGateway",
@@ -1342,6 +1408,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutAppGateway(value *CloudAzureIntegr
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutAppService(value *CloudAzureIntegrationsAppService) {
+	if err := c.validatePutAppServiceParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putAppService",
@@ -1350,6 +1419,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutAppService(value *CloudAzureIntegr
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutContainers(value *CloudAzureIntegrationsContainers) {
+	if err := c.validatePutContainersParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putContainers",
@@ -1358,6 +1430,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutContainers(value *CloudAzureIntegr
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutCosmosDb(value *CloudAzureIntegrationsCosmosDb) {
+	if err := c.validatePutCosmosDbParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCosmosDb",
@@ -1366,6 +1441,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutCosmosDb(value *CloudAzureIntegrat
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutCostManagement(value *CloudAzureIntegrationsCostManagement) {
+	if err := c.validatePutCostManagementParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putCostManagement",
@@ -1374,6 +1452,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutCostManagement(value *CloudAzureIn
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutDataFactory(value *CloudAzureIntegrationsDataFactory) {
+	if err := c.validatePutDataFactoryParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putDataFactory",
@@ -1382,6 +1463,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutDataFactory(value *CloudAzureInteg
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutEventHub(value *CloudAzureIntegrationsEventHub) {
+	if err := c.validatePutEventHubParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putEventHub",
@@ -1390,6 +1474,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutEventHub(value *CloudAzureIntegrat
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutExpressRoute(value *CloudAzureIntegrationsExpressRoute) {
+	if err := c.validatePutExpressRouteParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putExpressRoute",
@@ -1398,6 +1485,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutExpressRoute(value *CloudAzureInte
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutFirewalls(value *CloudAzureIntegrationsFirewalls) {
+	if err := c.validatePutFirewallsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putFirewalls",
@@ -1406,6 +1496,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutFirewalls(value *CloudAzureIntegra
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutFrontDoor(value *CloudAzureIntegrationsFrontDoor) {
+	if err := c.validatePutFrontDoorParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putFrontDoor",
@@ -1414,6 +1507,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutFrontDoor(value *CloudAzureIntegra
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutFunctions(value *CloudAzureIntegrationsFunctions) {
+	if err := c.validatePutFunctionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putFunctions",
@@ -1422,6 +1518,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutFunctions(value *CloudAzureIntegra
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutKeyVault(value *CloudAzureIntegrationsKeyVault) {
+	if err := c.validatePutKeyVaultParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putKeyVault",
@@ -1430,6 +1529,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutKeyVault(value *CloudAzureIntegrat
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutLoadBalancer(value *CloudAzureIntegrationsLoadBalancer) {
+	if err := c.validatePutLoadBalancerParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putLoadBalancer",
@@ -1438,6 +1540,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutLoadBalancer(value *CloudAzureInte
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutLogicApps(value *CloudAzureIntegrationsLogicApps) {
+	if err := c.validatePutLogicAppsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putLogicApps",
@@ -1446,6 +1551,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutLogicApps(value *CloudAzureIntegra
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutMachineLearning(value *CloudAzureIntegrationsMachineLearning) {
+	if err := c.validatePutMachineLearningParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putMachineLearning",
@@ -1454,6 +1562,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutMachineLearning(value *CloudAzureI
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutMariaDb(value *CloudAzureIntegrationsMariaDb) {
+	if err := c.validatePutMariaDbParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putMariaDb",
@@ -1462,6 +1573,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutMariaDb(value *CloudAzureIntegrati
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutMysql(value *CloudAzureIntegrationsMysql) {
+	if err := c.validatePutMysqlParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putMysql",
@@ -1470,6 +1584,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutMysql(value *CloudAzureIntegration
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutPostgresql(value *CloudAzureIntegrationsPostgresql) {
+	if err := c.validatePutPostgresqlParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putPostgresql",
@@ -1478,6 +1595,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutPostgresql(value *CloudAzureIntegr
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutPowerBiDedicated(value *CloudAzureIntegrationsPowerBiDedicated) {
+	if err := c.validatePutPowerBiDedicatedParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putPowerBiDedicated",
@@ -1486,6 +1606,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutPowerBiDedicated(value *CloudAzure
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutRedisCache(value *CloudAzureIntegrationsRedisCache) {
+	if err := c.validatePutRedisCacheParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putRedisCache",
@@ -1494,6 +1617,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutRedisCache(value *CloudAzureIntegr
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutServiceBus(value *CloudAzureIntegrationsServiceBus) {
+	if err := c.validatePutServiceBusParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putServiceBus",
@@ -1502,6 +1628,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutServiceBus(value *CloudAzureIntegr
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutSql(value *CloudAzureIntegrationsSql) {
+	if err := c.validatePutSqlParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSql",
@@ -1510,6 +1639,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutSql(value *CloudAzureIntegrationsS
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutSqlManaged(value *CloudAzureIntegrationsSqlManaged) {
+	if err := c.validatePutSqlManagedParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putSqlManaged",
@@ -1518,6 +1650,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutSqlManaged(value *CloudAzureIntegr
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutStorage(value *CloudAzureIntegrationsStorage) {
+	if err := c.validatePutStorageParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putStorage",
@@ -1526,6 +1661,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutStorage(value *CloudAzureIntegrati
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutVirtualMachine(value *CloudAzureIntegrationsVirtualMachine) {
+	if err := c.validatePutVirtualMachineParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putVirtualMachine",
@@ -1534,6 +1672,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutVirtualMachine(value *CloudAzureIn
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutVirtualNetworks(value *CloudAzureIntegrationsVirtualNetworks) {
+	if err := c.validatePutVirtualNetworksParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putVirtualNetworks",
@@ -1542,6 +1683,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutVirtualNetworks(value *CloudAzureI
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutVms(value *CloudAzureIntegrationsVms) {
+	if err := c.validatePutVmsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putVms",
@@ -1550,6 +1694,9 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutVms(value *CloudAzureIntegrationsV
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) PutVpnGateway(value *CloudAzureIntegrationsVpnGateway) {
+	if err := c.validatePutVpnGatewayParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putVpnGateway",

@@ -222,6 +222,9 @@ func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) VsePasswordIn
 func NewSyntheticsMonitorScriptLocationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SyntheticsMonitorScriptLocationOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewSyntheticsMonitorScriptLocationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SyntheticsMonitorScriptLocationOutputReference{}
 
 	_jsii_.Create(
@@ -243,7 +246,10 @@ func NewSyntheticsMonitorScriptLocationOutputReference_Override(s SyntheticsMoni
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -251,7 +257,10 @@ func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -259,7 +268,10 @@ func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetHmac(val *string) {
+func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference)SetHmac(val *string) {
+	if err := j.validateSetHmacParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hmac",
@@ -267,7 +279,10 @@ func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetHmac(val *
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -275,7 +290,10 @@ func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetName(val *string) {
+func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -283,7 +301,10 @@ func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetName(val *
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -291,7 +312,10 @@ func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -299,7 +323,10 @@ func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetTerraformR
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) SetVsePassword(val *string) {
+func (j *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference)SetVsePassword(val *string) {
+	if err := j.validateSetVsePasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"vsePassword",
@@ -321,6 +348,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) ComputeFqn() 
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -334,6 +364,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetAnyMapAttr
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -347,6 +380,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetBooleanAtt
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -360,6 +396,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetBooleanMap
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -373,6 +412,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetListAttrib
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -386,6 +428,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetNumberAttr
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -399,6 +444,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetNumberList
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -412,6 +460,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetNumberMapA
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -425,6 +476,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetStringAttr
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -451,6 +505,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) Interpolation
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -480,6 +537,9 @@ func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) ResetVsePassw
 }
 
 func (s *jsiiProxy_SyntheticsMonitorScriptLocationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

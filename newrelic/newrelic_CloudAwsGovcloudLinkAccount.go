@@ -431,6 +431,9 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) TerraformResourceType() *string 
 func NewCloudAwsGovcloudLinkAccount(scope constructs.Construct, id *string, config *CloudAwsGovcloudLinkAccountConfig) CloudAwsGovcloudLinkAccount {
 	_init_.Initialize()
 
+	if err := validateNewCloudAwsGovcloudLinkAccountParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudAwsGovcloudLinkAccount{}
 
 	_jsii_.Create(
@@ -453,7 +456,10 @@ func NewCloudAwsGovcloudLinkAccount_Override(c CloudAwsGovcloudLinkAccount, scop
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetAccessKeyId(val *string) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetAccessKeyId(val *string) {
+	if err := j.validateSetAccessKeyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accessKeyId",
@@ -461,7 +467,10 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetAccessKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetAccountId(val *float64) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"accountId",
@@ -469,7 +478,10 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetAwsAccountId(val *string) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetAwsAccountId(val *string) {
+	if err := j.validateSetAwsAccountIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsAccountId",
@@ -477,7 +489,10 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetAwsAccountId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -485,7 +500,7 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetCount(val *float64) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -493,7 +508,7 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -501,7 +516,7 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -509,7 +524,10 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetId(val *string) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -517,7 +535,10 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -525,7 +546,10 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetMetricCollectionMode(val *string) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetMetricCollectionMode(val *string) {
+	if err := j.validateSetMetricCollectionModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricCollectionMode",
@@ -533,7 +557,10 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetMetricCollectionMode(val *str
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetName(val *string) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -541,7 +568,7 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -549,7 +576,10 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetProvider(val cdktf.TerraformP
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -557,7 +587,10 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetProvisioners(val *[]interface
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetSecretAccessKey(val *string) {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetSecretAccessKey(val *string) {
+	if err := j.validateSetSecretAccessKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"secretAccessKey",
@@ -585,6 +618,9 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SetSecretAccessKey(val *string) 
 func CloudAwsGovcloudLinkAccount_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCloudAwsGovcloudLinkAccount_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -609,6 +645,9 @@ func CloudAwsGovcloudLinkAccount_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -617,6 +656,9 @@ func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) AddOverride(path *string, value 
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -630,6 +672,9 @@ func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetAnyMapAttribute(terraformAttr
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -643,6 +688,9 @@ func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetBooleanAttribute(terraformAtt
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -656,6 +704,9 @@ func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetBooleanMapAttribute(terraform
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -669,6 +720,9 @@ func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetListAttribute(terraformAttrib
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -682,6 +736,9 @@ func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetNumberAttribute(terraformAttr
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -695,6 +752,9 @@ func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetNumberListAttribute(terraform
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -708,6 +768,9 @@ func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetNumberMapAttribute(terraformA
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -721,6 +784,9 @@ func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetStringAttribute(terraformAttr
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -734,6 +800,9 @@ func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) GetStringMapAttribute(terraformA
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -747,6 +816,9 @@ func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) InterpolationForAttribute(terraf
 }
 
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

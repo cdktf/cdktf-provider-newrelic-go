@@ -245,6 +245,9 @@ func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) TimeWindowInput() *Serv
 func NewServiceLevelObjectiveOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewServiceLevelObjectiveOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceLevelObjectiveOutputReference{}
 
 	_jsii_.Create(
@@ -266,7 +269,10 @@ func NewServiceLevelObjectiveOutputReference_Override(s ServiceLevelObjectiveOut
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceLevelObjectiveOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -274,7 +280,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceLevelObjectiveOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -282,7 +291,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetDescription(val *string) {
+func (j *jsiiProxy_ServiceLevelObjectiveOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -290,7 +302,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetDescription(val *str
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetInternalValue(val *ServiceLevelObjective) {
+func (j *jsiiProxy_ServiceLevelObjectiveOutputReference)SetInternalValue(val *ServiceLevelObjective) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -298,7 +313,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetInternalValue(val *S
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetName(val *string) {
+func (j *jsiiProxy_ServiceLevelObjectiveOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -306,7 +324,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetTarget(val *float64) {
+func (j *jsiiProxy_ServiceLevelObjectiveOutputReference)SetTarget(val *float64) {
+	if err := j.validateSetTargetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"target",
@@ -314,7 +335,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetTarget(val *float64)
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceLevelObjectiveOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -322,7 +346,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceLevelObjectiveOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -344,6 +371,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) ComputeFqn() *string {
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -357,6 +387,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetAnyMapAttribute(terr
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -370,6 +403,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetBooleanAttribute(ter
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -383,6 +419,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetBooleanMapAttribute(
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -396,6 +435,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetListAttribute(terraf
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -409,6 +451,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetNumberAttribute(terr
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -422,6 +467,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetNumberListAttribute(
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -435,6 +483,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetNumberMapAttribute(t
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -448,6 +499,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetStringAttribute(terr
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -474,6 +528,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) InterpolationAsList() c
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -487,6 +544,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) InterpolationForAttribu
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) PutTimeWindow(value *ServiceLevelObjectiveTimeWindow) {
+	if err := s.validatePutTimeWindowParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeWindow",
@@ -511,6 +571,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) ResetName() {
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

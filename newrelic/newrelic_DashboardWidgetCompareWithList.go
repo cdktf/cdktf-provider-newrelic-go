@@ -111,6 +111,9 @@ func (j *jsiiProxy_DashboardWidgetCompareWithList) WrapsSet() *bool {
 func NewDashboardWidgetCompareWithList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardWidgetCompareWithList {
 	_init_.Initialize()
 
+	if err := validateNewDashboardWidgetCompareWithListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DashboardWidgetCompareWithList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDashboardWidgetCompareWithList_Override(d DashboardWidgetCompareWithList
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetCompareWithList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DashboardWidgetCompareWithList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DashboardWidgetCompareWithList) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetCompareWithList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DashboardWidgetCompareWithList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DashboardWidgetCompareWithList) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetCompareWithList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DashboardWidgetCompareWithList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DashboardWidgetCompareWithList) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_DashboardWidgetCompareWithList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DashboardWidgetCompareWithList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DashboardWidgetCompareWithList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DashboardWidgetCompareWithList) Get(index *float64) DashboardWidgetCompareWithOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DashboardWidgetCompareWithOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DashboardWidgetCompareWithList) Get(index *float64) Dashboard
 }
 
 func (d *jsiiProxy_DashboardWidgetCompareWithList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

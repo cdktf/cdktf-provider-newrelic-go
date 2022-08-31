@@ -349,6 +349,9 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) WidthInput() *float
 func NewOneDashboardRawPageWidgetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OneDashboardRawPageWidgetOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewOneDashboardRawPageWidgetOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OneDashboardRawPageWidgetOutputReference{}
 
 	_jsii_.Create(
@@ -370,7 +373,10 @@ func NewOneDashboardRawPageWidgetOutputReference_Override(o OneDashboardRawPageW
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetColumn(val *float64) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetColumn(val *float64) {
+	if err := j.validateSetColumnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"column",
@@ -378,7 +384,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetColumn(val *floa
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -386,7 +395,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -394,7 +406,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetConfiguration(val *string) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetConfiguration(val *string) {
+	if err := j.validateSetConfigurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"configuration",
@@ -402,7 +417,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetConfiguration(va
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetHeight(val *float64) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetHeight(val *float64) {
+	if err := j.validateSetHeightParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"height",
@@ -410,7 +428,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetHeight(val *floa
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -418,7 +439,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetLinkedEntityGuids(val *[]*string) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetLinkedEntityGuids(val *[]*string) {
+	if err := j.validateSetLinkedEntityGuidsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"linkedEntityGuids",
@@ -426,7 +450,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetLinkedEntityGuid
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetRow(val *float64) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetRow(val *float64) {
+	if err := j.validateSetRowParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"row",
@@ -434,7 +461,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetRow(val *float64
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -442,7 +472,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -450,7 +483,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetTitle(val *string) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"title",
@@ -458,7 +494,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetTitle(val *strin
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetVisualizationId(val *string) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetVisualizationId(val *string) {
+	if err := j.validateSetVisualizationIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"visualizationId",
@@ -466,7 +505,10 @@ func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetVisualizationId(
 	)
 }
 
-func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference) SetWidth(val *float64) {
+func (j *jsiiProxy_OneDashboardRawPageWidgetOutputReference)SetWidth(val *float64) {
+	if err := j.validateSetWidthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"width",
@@ -488,6 +530,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) ComputeFqn() *strin
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -501,6 +546,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetAnyMapAttribute(
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -514,6 +562,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetBooleanAttribute
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -527,6 +578,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetBooleanMapAttrib
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -540,6 +594,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetListAttribute(te
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -553,6 +610,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetNumberAttribute(
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -566,6 +626,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetNumberListAttrib
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -579,6 +642,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetNumberMapAttribu
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -592,6 +658,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetStringAttribute(
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -618,6 +687,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) InterpolationAsList
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -655,6 +727,9 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) ResetWidth() {
 }
 
 func (o *jsiiProxy_OneDashboardRawPageWidgetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

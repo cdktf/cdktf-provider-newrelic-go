@@ -197,6 +197,9 @@ func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) UnitIn
 func NewServiceLevelObjectiveTimeWindowRollingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceLevelObjectiveTimeWindowRollingOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewServiceLevelObjectiveTimeWindowRollingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewServiceLevelObjectiveTimeWindowRollingOutputReference_Override(s Service
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetCount(val *float64) {
+func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference)SetCount(val *float64) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetCou
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetInternalValue(val *ServiceLevelObjectiveTimeWindowRolling) {
+func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference)SetInternalValue(val *ServiceLevelObjectiveTimeWindowRolling) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetInt
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) SetUnit(val *string) {
+func (j *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference)SetUnit(val *string) {
+	if err := j.validateSetUnitParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"unit",
@@ -288,6 +312,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) Comput
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetAny
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetBoo
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetBoo
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetLis
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetNum
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetNum
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetNum
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetStr
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) Interp
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) Interp
 }
 
 func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

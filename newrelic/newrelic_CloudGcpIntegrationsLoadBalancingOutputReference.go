@@ -175,6 +175,9 @@ func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) TerraformRe
 func NewCloudGcpIntegrationsLoadBalancingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudGcpIntegrationsLoadBalancingOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewCloudGcpIntegrationsLoadBalancingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewCloudGcpIntegrationsLoadBalancingOutputReference_Override(c CloudGcpInte
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) SetInternalValue(val *CloudGcpIntegrationsLoadBalancing) {
+func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference)SetInternalValue(val *CloudGcpIntegrationsLoadBalancing) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) SetInternal
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) SetMetricsPollingInterval(val *float64) {
+func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference)SetMetricsPollingInterval(val *float64) {
+	if err := j.validateSetMetricsPollingIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metricsPollingInterval",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) SetMetricsP
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,6 +279,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) ComputeFqn(
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetAnyMapAt
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetBooleanA
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetBooleanM
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetListAttr
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetNumberAt
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetNumberLi
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetNumberMa
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetStringAt
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) Interpolati
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) ResetMetric
 }
 
 func (c *jsiiProxy_CloudGcpIntegrationsLoadBalancingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

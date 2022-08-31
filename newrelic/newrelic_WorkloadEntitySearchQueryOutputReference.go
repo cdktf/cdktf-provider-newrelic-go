@@ -174,6 +174,9 @@ func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference) TerraformResource()
 func NewWorkloadEntitySearchQueryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkloadEntitySearchQueryOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewWorkloadEntitySearchQueryOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_WorkloadEntitySearchQueryOutputReference{}
 
 	_jsii_.Create(
@@ -195,7 +198,10 @@ func NewWorkloadEntitySearchQueryOutputReference_Override(w WorkloadEntitySearch
 	)
 }
 
-func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -203,7 +209,10 @@ func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -211,7 +220,10 @@ func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -219,7 +231,10 @@ func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference) SetQuery(val *string) {
+func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference)SetQuery(val *string) {
+	if err := j.validateSetQueryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"query",
@@ -227,7 +242,10 @@ func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference) SetQuery(val *strin
 	)
 }
 
-func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -235,7 +253,10 @@ func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkloadEntitySearchQueryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -257,6 +278,9 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) ComputeFqn() *strin
 }
 
 func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := w.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -270,6 +294,9 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetAnyMapAttribute(
 }
 
 func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -283,6 +310,9 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetBooleanAttribute
 }
 
 func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := w.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -296,6 +326,9 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetBooleanMapAttrib
 }
 
 func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := w.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -309,6 +342,9 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetListAttribute(te
 }
 
 func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := w.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -322,6 +358,9 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetNumberAttribute(
 }
 
 func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := w.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -335,6 +374,9 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetNumberListAttrib
 }
 
 func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := w.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -348,6 +390,9 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetNumberMapAttribu
 }
 
 func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := w.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -361,6 +406,9 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetStringAttribute(
 }
 
 func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := w.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -387,6 +435,9 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) InterpolationAsList
 }
 
 func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -400,6 +451,9 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) InterpolationForAtt
 }
 
 func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_NrqlAlertConditionTermList) WrapsSet() *bool {
 func NewNrqlAlertConditionTermList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NrqlAlertConditionTermList {
 	_init_.Initialize()
 
+	if err := validateNewNrqlAlertConditionTermListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NrqlAlertConditionTermList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewNrqlAlertConditionTermList_Override(n NrqlAlertConditionTermList, terraf
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertConditionTermList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NrqlAlertConditionTermList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_NrqlAlertConditionTermList) SetInternalValue(val interface{})
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertConditionTermList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NrqlAlertConditionTermList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_NrqlAlertConditionTermList) SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertConditionTermList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NrqlAlertConditionTermList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_NrqlAlertConditionTermList) SetTerraformResource(val cdktf.II
 	)
 }
 
-func (j *jsiiProxy_NrqlAlertConditionTermList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NrqlAlertConditionTermList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (n *jsiiProxy_NrqlAlertConditionTermList) ComputeFqn() *string {
 }
 
 func (n *jsiiProxy_NrqlAlertConditionTermList) Get(index *float64) NrqlAlertConditionTermOutputReference {
+	if err := n.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns NrqlAlertConditionTermOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (n *jsiiProxy_NrqlAlertConditionTermList) Get(index *float64) NrqlAlertCond
 }
 
 func (n *jsiiProxy_NrqlAlertConditionTermList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

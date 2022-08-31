@@ -111,6 +111,9 @@ func (j *jsiiProxy_OneDashboardPageWidgetBulletList) WrapsSet() *bool {
 func NewOneDashboardPageWidgetBulletList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OneDashboardPageWidgetBulletList {
 	_init_.Initialize()
 
+	if err := validateNewOneDashboardPageWidgetBulletListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OneDashboardPageWidgetBulletList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOneDashboardPageWidgetBulletList_Override(o OneDashboardPageWidgetBullet
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetBulletList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OneDashboardPageWidgetBulletList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetBulletList) SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetBulletList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OneDashboardPageWidgetBulletList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetBulletList) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetBulletList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OneDashboardPageWidgetBulletList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetBulletList) SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetBulletList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OneDashboardPageWidgetBulletList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetBulletList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetBulletList) Get(index *float64) OneDashboardPageWidgetBulletOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OneDashboardPageWidgetBulletOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetBulletList) Get(index *float64) OneDash
 }
 
 func (o *jsiiProxy_OneDashboardPageWidgetBulletList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(
