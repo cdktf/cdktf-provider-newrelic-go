@@ -23,7 +23,7 @@ type AlertChannelConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#name AlertChannel#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// (Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops).
+	// (Required) The type of channel. One of: (victorops, webhook, email, opsgenie, pagerduty, slack, user).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_channel#type AlertChannel#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
