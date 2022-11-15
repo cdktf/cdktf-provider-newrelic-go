@@ -44,6 +44,10 @@ func (s *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) validateInterpo
 	return nil
 }
 
+func (s *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) validatePutSelectParameters(value *ServiceLevelEventsValidEventsSelect) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

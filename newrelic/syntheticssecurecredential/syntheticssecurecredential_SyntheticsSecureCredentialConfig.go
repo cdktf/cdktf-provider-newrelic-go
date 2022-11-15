@@ -29,10 +29,10 @@ type SyntheticsSecureCredentialConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#value SyntheticsSecureCredential#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
-	// The time the secure credential was created.
+	// The New Relic account ID where you want to create the secure credential.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#created_at SyntheticsSecureCredential#created_at}
-	CreatedAt *string `field:"optional" json:"createdAt" yaml:"createdAt"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#account_id SyntheticsSecureCredential#account_id}
+	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
 	// The secure credential's description.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#description SyntheticsSecureCredential#description}

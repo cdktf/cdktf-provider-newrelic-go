@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v3
+module github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4
 
 go 1.18
 

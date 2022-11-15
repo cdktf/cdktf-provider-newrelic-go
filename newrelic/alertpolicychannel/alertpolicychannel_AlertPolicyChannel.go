@@ -2,10 +2,10 @@ package alertpolicychannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v3/alertpolicychannel/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/alertpolicychannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,6 +70,8 @@ type AlertPolicyChannel interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() AlertPolicyChannelTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -95,11 +97,13 @@ type AlertPolicyChannel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *AlertPolicyChannelTimeouts)
 	ResetAccountId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -350,6 +354,26 @@ func (j *jsiiProxy_AlertPolicyChannel) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertPolicyChannel) Timeouts() AlertPolicyChannelTimeoutsOutputReference {
+	var returns AlertPolicyChannelTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertPolicyChannel) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -722,6 +746,17 @@ func (a *jsiiProxy_AlertPolicyChannel) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AlertPolicyChannel) PutTimeouts(value *AlertPolicyChannelTimeouts) {
+	if err := a.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlertPolicyChannel) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -742,6 +777,14 @@ func (a *jsiiProxy_AlertPolicyChannel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertPolicyChannel) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

@@ -52,6 +52,10 @@ func (a *jsiiProxy_AlertPolicyChannel) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (a *jsiiProxy_AlertPolicyChannel) validatePutTimeoutsParameters(value *AlertPolicyChannelTimeouts) error {
+	return nil
+}
+
 func validateAlertPolicyChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }

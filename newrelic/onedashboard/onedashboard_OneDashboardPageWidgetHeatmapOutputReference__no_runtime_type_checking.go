@@ -64,6 +64,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetFilterCurrentDashboardParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetHeightParameters(val *float64) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetIgno
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetLinkedEntityGuidsParameters(val *[]*string) error {
 	return nil
 }
 

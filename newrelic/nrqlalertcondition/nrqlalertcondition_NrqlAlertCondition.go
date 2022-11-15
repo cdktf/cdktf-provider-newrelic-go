@@ -2,10 +2,10 @@ package nrqlalertcondition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v3/nrqlalertcondition/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/nrqlalertcondition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -119,6 +119,8 @@ type NrqlAlertCondition interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() NrqlAlertConditionTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -161,6 +163,7 @@ type NrqlAlertCondition interface {
 	PutCritical(value *NrqlAlertConditionCritical)
 	PutNrql(value *NrqlAlertConditionNrql)
 	PutTerm(value interface{})
+	PutTimeouts(value *NrqlAlertConditionTimeouts)
 	PutWarning(value *NrqlAlertConditionWarning)
 	ResetAccountId()
 	ResetAggregationDelay()
@@ -183,6 +186,7 @@ type NrqlAlertCondition interface {
 	ResetRunbookUrl()
 	ResetSlideBy()
 	ResetTerm()
+	ResetTimeouts()
 	ResetType()
 	ResetValueFunction()
 	ResetViolationTimeLimit()
@@ -788,6 +792,26 @@ func (j *jsiiProxy_NrqlAlertCondition) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertCondition) Timeouts() NrqlAlertConditionTimeoutsOutputReference {
+	var returns NrqlAlertConditionTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertCondition) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -1491,6 +1515,17 @@ func (n *jsiiProxy_NrqlAlertCondition) PutTerm(value interface{}) {
 	)
 }
 
+func (n *jsiiProxy_NrqlAlertCondition) PutTimeouts(value *NrqlAlertConditionTimeouts) {
+	if err := n.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NrqlAlertCondition) PutWarning(value *NrqlAlertConditionWarning) {
 	if err := n.validatePutWarningParameters(value); err != nil {
 		panic(err)
@@ -1650,6 +1685,14 @@ func (n *jsiiProxy_NrqlAlertCondition) ResetTerm() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTerm",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NrqlAlertCondition) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

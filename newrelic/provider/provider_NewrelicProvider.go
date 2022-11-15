@@ -2,10 +2,10 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v3/provider/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -81,7 +81,6 @@ type NewrelicProvider interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAdminApiKey()
 	ResetAlias()
-	ResetApiKey()
 	ResetApiUrl()
 	ResetCacertFile()
 	ResetInfrastructureApiUrl()
@@ -715,14 +714,6 @@ func (n *jsiiProxy_NewrelicProvider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetAlias",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NewrelicProvider) ResetApiKey() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetApiKey",
 		nil, // no parameters
 	)
 }

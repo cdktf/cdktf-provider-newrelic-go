@@ -52,7 +52,15 @@ func (n *jsiiProxy_NotificationDestination) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestination) validatePutPropertiesParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationDestination) validatePutAuthBasicParameters(value *NotificationDestinationAuthBasic) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationDestination) validatePutAuthTokenParameters(value *NotificationDestinationAuthToken) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationDestination) validatePutPropertyParameters(value interface{}) error {
 	return nil
 }
 
@@ -60,7 +68,11 @@ func validateNotificationDestination_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_NotificationDestination) validateSetAuthParameters(val *map[string]*string) error {
+func (j *jsiiProxy_NotificationDestination) validateSetAccountIdParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationDestination) validateSetActiveParameters(val interface{}) error {
 	return nil
 }
 
