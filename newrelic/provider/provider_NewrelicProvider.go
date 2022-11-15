@@ -81,6 +81,7 @@ type NewrelicProvider interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAdminApiKey()
 	ResetAlias()
+	ResetApiKey()
 	ResetApiUrl()
 	ResetCacertFile()
 	ResetInfrastructureApiUrl()
@@ -714,6 +715,14 @@ func (n *jsiiProxy_NewrelicProvider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetAlias",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NewrelicProvider) ResetApiKey() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetApiKey",
 		nil, // no parameters
 	)
 }

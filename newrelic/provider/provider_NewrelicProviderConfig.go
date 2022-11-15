@@ -4,14 +4,14 @@ package provider
 type NewrelicProviderConfig struct {
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic#account_id NewrelicProvider#account_id}.
 	AccountId *float64 `field:"required" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic#api_key NewrelicProvider#api_key}.
-	ApiKey *string `field:"required" json:"apiKey" yaml:"apiKey"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic#admin_api_key NewrelicProvider#admin_api_key}.
 	AdminApiKey *string `field:"optional" json:"adminApiKey" yaml:"adminApiKey"`
 	// Alias name.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic#alias NewrelicProvider#alias}
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic#api_key NewrelicProvider#api_key}.
+	ApiKey *string `field:"optional" json:"apiKey" yaml:"apiKey"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic#api_url NewrelicProvider#api_url}.
 	ApiUrl *string `field:"optional" json:"apiUrl" yaml:"apiUrl"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic#cacert_file NewrelicProvider#cacert_file}.

@@ -23,10 +23,6 @@ type DataNewrelicAlertChannelConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel#name DataNewrelicAlertChannel#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The New Relic account ID where you want to retrieve the alert channel.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel#account_id DataNewrelicAlertChannel#account_id}
-	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel#id DataNewrelicAlertChannel#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

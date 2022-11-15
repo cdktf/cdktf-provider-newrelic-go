@@ -56,10 +56,6 @@ func validateDataNewrelicAlertChannel_IsConstructParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicAlertChannel) validateSetAccountIdParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataNewrelicAlertChannel) validateSetIdParameters(val *string) error {
 	return nil
 }

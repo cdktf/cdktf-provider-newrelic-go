@@ -43,7 +43,7 @@ type NrqlAlertConditionConfig struct {
 	AggregationDelay *string `field:"optional" json:"aggregationDelay" yaml:"aggregationDelay"`
 	// The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for violations.
 	//
-	// Default is EVENT_FLOW.
+	// Default is CADENCE.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_method NrqlAlertCondition#aggregation_method}
 	AggregationMethod *string `field:"optional" json:"aggregationMethod" yaml:"aggregationMethod"`
@@ -116,10 +116,6 @@ type NrqlAlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#term NrqlAlertCondition#term}
 	Term interface{} `field:"optional" json:"term" yaml:"term"`
-	// timeouts block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#timeouts NrqlAlertCondition#timeouts}
-	Timeouts *NrqlAlertConditionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// The type of NRQL alert condition to create. Valid values are: 'static', 'baseline'.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#type NrqlAlertCondition#type}

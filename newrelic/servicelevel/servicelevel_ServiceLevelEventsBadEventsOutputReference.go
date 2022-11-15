@@ -32,8 +32,6 @@ type ServiceLevelEventsBadEventsOutputReference interface {
 	FromInput() *string
 	InternalValue() *ServiceLevelEventsBadEvents
 	SetInternalValue(val *ServiceLevelEventsBadEvents)
-	Select() ServiceLevelEventsBadEventsSelectOutputReference
-	SelectInput() *ServiceLevelEventsBadEventsSelect
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,8 +67,6 @@ type ServiceLevelEventsBadEventsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSelect(value *ServiceLevelEventsBadEventsSelect)
-	ResetSelect()
 	ResetWhere()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,26 +148,6 @@ func (j *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) InternalValue() *
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) Select() ServiceLevelEventsBadEventsSelectOutputReference {
-	var returns ServiceLevelEventsBadEventsSelectOutputReference
-	_jsii_.Get(
-		j,
-		"select",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) SelectInput() *ServiceLevelEventsBadEventsSelect {
-	var returns *ServiceLevelEventsBadEventsSelect
-	_jsii_.Get(
-		j,
-		"selectInput",
 		&returns,
 	)
 	return returns
@@ -506,25 +482,6 @@ func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) InterpolationForA
 	)
 
 	return returns
-}
-
-func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) PutSelect(value *ServiceLevelEventsBadEventsSelect) {
-	if err := s.validatePutSelectParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putSelect",
-		[]interface{}{value},
-	)
-}
-
-func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) ResetSelect() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetSelect",
-		nil, // no parameters
-	)
 }
 
 func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) ResetWhere() {

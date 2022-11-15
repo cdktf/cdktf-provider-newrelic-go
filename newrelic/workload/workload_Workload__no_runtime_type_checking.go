@@ -56,14 +56,6 @@ func (w *jsiiProxy_Workload) validatePutEntitySearchQueryParameters(value interf
 	return nil
 }
 
-func (w *jsiiProxy_Workload) validatePutStatusConfigAutomaticParameters(value *WorkloadStatusConfigAutomatic) error {
-	return nil
-}
-
-func (w *jsiiProxy_Workload) validatePutStatusConfigStaticParameters(value *WorkloadStatusConfigStatic) error {
-	return nil
-}
-
 func validateWorkload_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -73,10 +65,6 @@ func (j *jsiiProxy_Workload) validateSetAccountIdParameters(val *float64) error 
 }
 
 func (j *jsiiProxy_Workload) validateSetConnectionParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Workload) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 

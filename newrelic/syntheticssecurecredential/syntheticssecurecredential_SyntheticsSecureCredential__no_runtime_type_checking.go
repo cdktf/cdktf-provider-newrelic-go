@@ -56,11 +56,11 @@ func validateSyntheticsSecureCredential_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) validateSetAccountIdParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsSecureCredential) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsSecureCredential) validateSetCreatedAtParameters(val *string) error {
 	return nil
 }
 

@@ -27,10 +27,6 @@ type WorkloadConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#account_id Workload#account_id}
 	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
-	// Relevant information about the workload.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#description Workload#description}
-	Description *string `field:"optional" json:"description" yaml:"description"`
 	// A list of entity GUIDs manually assigned to this workload.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#entity_guids Workload#entity_guids}
@@ -48,13 +44,5 @@ type WorkloadConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#scope_account_ids Workload#scope_account_ids}
 	ScopeAccountIds *[]*float64 `field:"optional" json:"scopeAccountIds" yaml:"scopeAccountIds"`
-	// status_config_automatic block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#status_config_automatic Workload#status_config_automatic}
-	StatusConfigAutomatic *WorkloadStatusConfigAutomatic `field:"optional" json:"statusConfigAutomatic" yaml:"statusConfigAutomatic"`
-	// status_config_static block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#status_config_static Workload#status_config_static}
-	StatusConfigStatic *WorkloadStatusConfigStatic `field:"optional" json:"statusConfigStatic" yaml:"statusConfigStatic"`
 }
 

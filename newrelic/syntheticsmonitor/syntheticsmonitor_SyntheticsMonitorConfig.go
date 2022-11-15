@@ -19,6 +19,16 @@ type SyntheticsMonitorConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// The interval (in minutes) at which this monitor should run.
+	//
+	// Valid values are 1, 5, 10, 15, 30, 60, 360, 720, or 1440.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#frequency SyntheticsMonitor#frequency}
+	Frequency *float64 `field:"required" json:"frequency" yaml:"frequency"`
+	// The locations in which this monitor should be run.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#locations SyntheticsMonitor#locations}
+	Locations *[]*string `field:"required" json:"locations" yaml:"locations"`
 	// The title of this monitor.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#name SyntheticsMonitor#name}
@@ -27,61 +37,23 @@ type SyntheticsMonitorConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#status SyntheticsMonitor#status}
 	Status *string `field:"required" json:"status" yaml:"status"`
-	// The monitor type. Valid values are SIMPLE AND BROWSER.
+	// The monitor type. Valid values are SIMPLE, BROWSER, SCRIPT_BROWSER, and SCRIPT_API.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#type SyntheticsMonitor#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// ID of the newrelic account.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#account_id SyntheticsMonitor#account_id}
-	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
 	// Bypass HEAD request.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#bypass_head_request SyntheticsMonitor#bypass_head_request}
 	BypassHeadRequest interface{} `field:"optional" json:"bypassHeadRequest" yaml:"bypassHeadRequest"`
-	// custom_header block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#custom_header SyntheticsMonitor#custom_header}
-	CustomHeader interface{} `field:"optional" json:"customHeader" yaml:"customHeader"`
-	// Capture a screenshot during job execution.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#enable_screenshot_on_failure_and_script SyntheticsMonitor#enable_screenshot_on_failure_and_script}
-	EnableScreenshotOnFailureAndScript interface{} `field:"optional" json:"enableScreenshotOnFailureAndScript" yaml:"enableScreenshotOnFailureAndScript"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#id SyntheticsMonitor#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// The locations in which this monitor should be run.
+	// The base threshold (in seconds) to calculate the apdex score for use in the SLA report. (Default 7 seconds).
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#locations_private SyntheticsMonitor#locations_private}
-	LocationsPrivate *[]*string `field:"optional" json:"locationsPrivate" yaml:"locationsPrivate"`
-	// The locations in which this monitor should be run.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#locations_public SyntheticsMonitor#locations_public}
-	LocationsPublic *[]*string `field:"optional" json:"locationsPublic" yaml:"locationsPublic"`
-	// The interval at which this monitor should run.
-	//
-	// Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#period SyntheticsMonitor#period}
-	Period *string `field:"optional" json:"period" yaml:"period"`
-	// The runtime type that the monitor will run.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#runtime_type SyntheticsMonitor#runtime_type}
-	RuntimeType *string `field:"optional" json:"runtimeType" yaml:"runtimeType"`
-	// The specific version of the runtime type selected.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#runtime_type_version SyntheticsMonitor#runtime_type_version}
-	RuntimeTypeVersion *string `field:"optional" json:"runtimeTypeVersion" yaml:"runtimeTypeVersion"`
-	// The programing language that should execute the script.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#script_language SyntheticsMonitor#script_language}
-	ScriptLanguage *string `field:"optional" json:"scriptLanguage" yaml:"scriptLanguage"`
-	// tag block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#tag SyntheticsMonitor#tag}
-	Tag interface{} `field:"optional" json:"tag" yaml:"tag"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#sla_threshold SyntheticsMonitor#sla_threshold}
+	SlaThreshold *float64 `field:"optional" json:"slaThreshold" yaml:"slaThreshold"`
 	// Fail the monitor check if redirected.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor#treat_redirect_as_failure SyntheticsMonitor#treat_redirect_as_failure}

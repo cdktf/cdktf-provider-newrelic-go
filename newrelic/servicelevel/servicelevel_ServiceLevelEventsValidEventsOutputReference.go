@@ -32,8 +32,6 @@ type ServiceLevelEventsValidEventsOutputReference interface {
 	FromInput() *string
 	InternalValue() *ServiceLevelEventsValidEvents
 	SetInternalValue(val *ServiceLevelEventsValidEvents)
-	Select() ServiceLevelEventsValidEventsSelectOutputReference
-	SelectInput() *ServiceLevelEventsValidEventsSelect
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,8 +67,6 @@ type ServiceLevelEventsValidEventsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSelect(value *ServiceLevelEventsValidEventsSelect)
-	ResetSelect()
 	ResetWhere()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,26 +148,6 @@ func (j *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) Select() ServiceLevelEventsValidEventsSelectOutputReference {
-	var returns ServiceLevelEventsValidEventsSelectOutputReference
-	_jsii_.Get(
-		j,
-		"select",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) SelectInput() *ServiceLevelEventsValidEventsSelect {
-	var returns *ServiceLevelEventsValidEventsSelect
-	_jsii_.Get(
-		j,
-		"selectInput",
 		&returns,
 	)
 	return returns
@@ -506,25 +482,6 @@ func (s *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) InterpolationFo
 	)
 
 	return returns
-}
-
-func (s *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) PutSelect(value *ServiceLevelEventsValidEventsSelect) {
-	if err := s.validatePutSelectParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putSelect",
-		[]interface{}{value},
-	)
-}
-
-func (s *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) ResetSelect() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetSelect",
-		nil, // no parameters
-	)
 }
 
 func (s *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) ResetWhere() {

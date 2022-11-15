@@ -44,10 +44,6 @@ func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) validateInterpola
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) validatePutSelectParameters(value *ServiceLevelEventsBadEventsSelect) error {
-	return nil
-}
-
 func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

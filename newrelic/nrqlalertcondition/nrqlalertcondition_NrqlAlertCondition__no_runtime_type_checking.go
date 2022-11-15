@@ -64,10 +64,6 @@ func (n *jsiiProxy_NrqlAlertCondition) validatePutTermParameters(value interface
 	return nil
 }
 
-func (n *jsiiProxy_NrqlAlertCondition) validatePutTimeoutsParameters(value *NrqlAlertConditionTimeouts) error {
-	return nil
-}
-
 func (n *jsiiProxy_NrqlAlertCondition) validatePutWarningParameters(value *NrqlAlertConditionWarning) error {
 	return nil
 }

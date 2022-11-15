@@ -12,12 +12,6 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/notification_channel newrelic_notification_channel}.
 type NotificationChannel interface {
 	cdktf.TerraformResource
-	AccountId() *float64
-	SetAccountId(val *float64)
-	AccountIdInput() *float64
-	Active() interface{}
-	SetActive(val interface{})
-	ActiveInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -60,8 +54,8 @@ type NotificationChannel interface {
 	Product() *string
 	SetProduct(val *string)
 	ProductInput() *string
-	Property() NotificationChannelPropertyList
-	PropertyInput() interface{}
+	Properties() NotificationChannelPropertiesList
+	PropertiesInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -72,7 +66,6 @@ type NotificationChannel interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -107,13 +100,12 @@ type NotificationChannel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutProperty(value interface{})
-	ResetAccountId()
-	ResetActive()
+	PutProperties(value interface{})
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProperties()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -127,46 +119,6 @@ type NotificationChannel interface {
 // The jsii proxy struct for NotificationChannel
 type jsiiProxy_NotificationChannel struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_NotificationChannel) AccountId() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"accountId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) AccountIdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"accountIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) Active() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"active",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) ActiveInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"activeInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_NotificationChannel) CdktfStack() cdktf.TerraformStack {
@@ -349,21 +301,21 @@ func (j *jsiiProxy_NotificationChannel) ProductInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) Property() NotificationChannelPropertyList {
-	var returns NotificationChannelPropertyList
+func (j *jsiiProxy_NotificationChannel) Properties() NotificationChannelPropertiesList {
+	var returns NotificationChannelPropertiesList
 	_jsii_.Get(
 		j,
-		"property",
+		"properties",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationChannel) PropertyInput() interface{} {
+func (j *jsiiProxy_NotificationChannel) PropertiesInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"propertyInput",
+		"propertiesInput",
 		&returns,
 	)
 	return returns
@@ -394,16 +346,6 @@ func (j *jsiiProxy_NotificationChannel) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NotificationChannel) Status() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"status",
 		&returns,
 	)
 	return returns
@@ -486,28 +428,6 @@ func NewNotificationChannel_Override(n NotificationChannel, scope constructs.Con
 		"@cdktf/provider-newrelic.notificationChannel.NotificationChannel",
 		[]interface{}{scope, id, config},
 		n,
-	)
-}
-
-func (j *jsiiProxy_NotificationChannel)SetAccountId(val *float64) {
-	if err := j.validateSetAccountIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"accountId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NotificationChannel)SetActive(val interface{}) {
-	if err := j.validateSetActiveParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"active",
-		val,
 	)
 }
 
@@ -859,30 +779,14 @@ func (n *jsiiProxy_NotificationChannel) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
-func (n *jsiiProxy_NotificationChannel) PutProperty(value interface{}) {
-	if err := n.validatePutPropertyParameters(value); err != nil {
+func (n *jsiiProxy_NotificationChannel) PutProperties(value interface{}) {
+	if err := n.validatePutPropertiesParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
-		"putProperty",
+		"putProperties",
 		[]interface{}{value},
-	)
-}
-
-func (n *jsiiProxy_NotificationChannel) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetAccountId",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NotificationChannel) ResetActive() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetActive",
-		nil, // no parameters
 	)
 }
 
@@ -898,6 +802,14 @@ func (n *jsiiProxy_NotificationChannel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationChannel) ResetProperties() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetProperties",
 		nil, // no parameters
 	)
 }

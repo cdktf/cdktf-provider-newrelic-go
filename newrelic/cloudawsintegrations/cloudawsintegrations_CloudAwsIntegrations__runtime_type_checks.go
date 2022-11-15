@@ -133,29 +133,7 @@ func (c *jsiiProxy_CloudAwsIntegrations) validatePutCloudtrailParameters(value *
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrations) validatePutDocDbParameters(value *CloudAwsIntegrationsDocDb) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutHealthParameters(value *CloudAwsIntegrationsHealth) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (c *jsiiProxy_CloudAwsIntegrations) validatePutS3Parameters(value *CloudAwsIntegrationsS3) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

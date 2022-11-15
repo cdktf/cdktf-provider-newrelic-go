@@ -32,8 +32,6 @@ type ServiceLevelEventsGoodEventsOutputReference interface {
 	FromInput() *string
 	InternalValue() *ServiceLevelEventsGoodEvents
 	SetInternalValue(val *ServiceLevelEventsGoodEvents)
-	Select() ServiceLevelEventsGoodEventsSelectOutputReference
-	SelectInput() *ServiceLevelEventsGoodEventsSelect
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,8 +67,6 @@ type ServiceLevelEventsGoodEventsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSelect(value *ServiceLevelEventsGoodEventsSelect)
-	ResetSelect()
 	ResetWhere()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,26 +148,6 @@ func (j *jsiiProxy_ServiceLevelEventsGoodEventsOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceLevelEventsGoodEventsOutputReference) Select() ServiceLevelEventsGoodEventsSelectOutputReference {
-	var returns ServiceLevelEventsGoodEventsSelectOutputReference
-	_jsii_.Get(
-		j,
-		"select",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ServiceLevelEventsGoodEventsOutputReference) SelectInput() *ServiceLevelEventsGoodEventsSelect {
-	var returns *ServiceLevelEventsGoodEventsSelect
-	_jsii_.Get(
-		j,
-		"selectInput",
 		&returns,
 	)
 	return returns
@@ -506,25 +482,6 @@ func (s *jsiiProxy_ServiceLevelEventsGoodEventsOutputReference) InterpolationFor
 	)
 
 	return returns
-}
-
-func (s *jsiiProxy_ServiceLevelEventsGoodEventsOutputReference) PutSelect(value *ServiceLevelEventsGoodEventsSelect) {
-	if err := s.validatePutSelectParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putSelect",
-		[]interface{}{value},
-	)
-}
-
-func (s *jsiiProxy_ServiceLevelEventsGoodEventsOutputReference) ResetSelect() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetSelect",
-		nil, // no parameters
-	)
 }
 
 func (s *jsiiProxy_ServiceLevelEventsGoodEventsOutputReference) ResetWhere() {

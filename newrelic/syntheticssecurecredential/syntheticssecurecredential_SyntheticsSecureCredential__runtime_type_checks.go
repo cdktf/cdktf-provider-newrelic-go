@@ -119,14 +119,6 @@ func validateSyntheticsSecureCredential_IsConstructParameters(x interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsSecureCredential) validateSetAccountIdParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_SyntheticsSecureCredential) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -155,6 +147,14 @@ func (j *jsiiProxy_SyntheticsSecureCredential) validateSetConnectionParameters(v
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *cdktf.SSHProvisionerConnection, *cdktf.WinrmProvisionerConnection; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsSecureCredential) validateSetCreatedAtParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

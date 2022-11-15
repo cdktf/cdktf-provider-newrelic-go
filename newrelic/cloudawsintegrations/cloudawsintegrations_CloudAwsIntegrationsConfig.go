@@ -35,10 +35,6 @@ type CloudAwsIntegrationsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations#cloudtrail CloudAwsIntegrations#cloudtrail}
 	Cloudtrail *CloudAwsIntegrationsCloudtrail `field:"optional" json:"cloudtrail" yaml:"cloudtrail"`
-	// doc_db block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations#doc_db CloudAwsIntegrations#doc_db}
-	DocDb *CloudAwsIntegrationsDocDb `field:"optional" json:"docDb" yaml:"docDb"`
 	// health block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations#health CloudAwsIntegrations#health}
@@ -48,10 +44,6 @@ type CloudAwsIntegrationsConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// s3 block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations#s3 CloudAwsIntegrations#s3}
-	S3 *CloudAwsIntegrationsS3 `field:"optional" json:"s3" yaml:"s3"`
 	// trusted_advisor block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations#trusted_advisor CloudAwsIntegrations#trusted_advisor}

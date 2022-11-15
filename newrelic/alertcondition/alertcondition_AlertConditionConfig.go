@@ -39,7 +39,7 @@ type AlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#term AlertCondition#term}
 	Term interface{} `field:"required" json:"term" yaml:"term"`
-	// The type of condition. One of: (mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric).
+	// The type of condition. One of: (apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
@@ -70,7 +70,7 @@ type AlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#user_defined_metric AlertCondition#user_defined_metric}
 	UserDefinedMetric *string `field:"optional" json:"userDefinedMetric" yaml:"userDefinedMetric"`
-	// One of: (average, min, max, total, sample_size, percent, rate).
+	// One of: (average, min, max, total, sample_size).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#user_defined_value_function AlertCondition#user_defined_value_function}
 	UserDefinedValueFunction *string `field:"optional" json:"userDefinedValueFunction" yaml:"userDefinedValueFunction"`

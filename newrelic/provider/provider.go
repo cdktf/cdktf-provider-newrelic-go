@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdminApiKey", GoMethod: "ResetAdminApiKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApiKey", GoMethod: "ResetApiKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApiUrl", GoMethod: "ResetApiUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCacertFile", GoMethod: "ResetCacertFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInfrastructureApiUrl", GoMethod: "ResetInfrastructureApiUrl"},
