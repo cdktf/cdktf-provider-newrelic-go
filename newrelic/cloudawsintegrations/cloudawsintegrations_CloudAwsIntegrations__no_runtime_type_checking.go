@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package cloudawsintegrations
 
@@ -61,7 +60,15 @@ func (c *jsiiProxy_CloudAwsIntegrations) validatePutCloudtrailParameters(value *
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutDocDbParameters(value *CloudAwsIntegrationsDocDb) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutHealthParameters(value *CloudAwsIntegrationsHealth) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutS3Parameters(value *CloudAwsIntegrationsS3) error {
 	return nil
 }
 

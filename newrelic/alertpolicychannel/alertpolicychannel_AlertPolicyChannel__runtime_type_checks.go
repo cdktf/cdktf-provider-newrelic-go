@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package alertpolicychannel
 
@@ -107,6 +106,17 @@ func (a *jsiiProxy_AlertPolicyChannel) validateInterpolationForAttributeParamete
 func (a *jsiiProxy_AlertPolicyChannel) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AlertPolicyChannel) validatePutTimeoutsParameters(value *AlertPolicyChannelTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

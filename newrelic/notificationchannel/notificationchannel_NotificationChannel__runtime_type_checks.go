@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package notificationchannel
 
@@ -112,22 +111,22 @@ func (n *jsiiProxy_NotificationChannel) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (n *jsiiProxy_NotificationChannel) validatePutPropertiesParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationChannel) validatePutPropertyParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*NotificationChannelProperties:
-		value := value.(*[]*NotificationChannelProperties)
+	case *[]*NotificationChannelProperty:
+		value := value.(*[]*NotificationChannelProperty)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*NotificationChannelProperties:
-		value_ := value.([]*NotificationChannelProperties)
+	case []*NotificationChannelProperty:
+		value_ := value.([]*NotificationChannelProperty)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -136,7 +135,7 @@ func (n *jsiiProxy_NotificationChannel) validatePutPropertiesParameters(value in
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NotificationChannelProperties; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NotificationChannelProperty; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -146,6 +145,34 @@ func (n *jsiiProxy_NotificationChannel) validatePutPropertiesParameters(value in
 func validateNotificationChannel_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationChannel) validateSetAccountIdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationChannel) validateSetActiveParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

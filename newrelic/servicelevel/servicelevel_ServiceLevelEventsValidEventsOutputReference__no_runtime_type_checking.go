@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package servicelevel
 
@@ -42,6 +41,10 @@ func (s *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) validateGetStri
 }
 
 func (s *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceLevelEventsValidEventsOutputReference) validatePutSelectParameters(value *ServiceLevelEventsValidEventsSelect) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package alertpolicychannel
 
@@ -50,6 +49,10 @@ func (a *jsiiProxy_AlertPolicyChannel) validateInterpolationForAttributeParamete
 }
 
 func (a *jsiiProxy_AlertPolicyChannel) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertPolicyChannel) validatePutTimeoutsParameters(value *AlertPolicyChannelTimeouts) error {
 	return nil
 }
 

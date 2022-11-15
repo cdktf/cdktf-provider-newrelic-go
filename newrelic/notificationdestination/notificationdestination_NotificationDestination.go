@@ -12,9 +12,16 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/notification_destination newrelic_notification_destination}.
 type NotificationDestination interface {
 	cdktf.TerraformResource
-	Auth() *map[string]*string
-	SetAuth(val *map[string]*string)
-	AuthInput() *map[string]*string
+	AccountId() *float64
+	SetAccountId(val *float64)
+	AccountIdInput() *float64
+	Active() interface{}
+	SetActive(val interface{})
+	ActiveInput() interface{}
+	AuthBasic() NotificationDestinationAuthBasicOutputReference
+	AuthBasicInput() *NotificationDestinationAuthBasic
+	AuthToken() NotificationDestinationAuthTokenOutputReference
+	AuthTokenInput() *NotificationDestinationAuthToken
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -42,6 +49,7 @@ type NotificationDestination interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	LastSent() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -51,8 +59,8 @@ type NotificationDestination interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Properties() NotificationDestinationPropertiesList
-	PropertiesInput() interface{}
+	Property() NotificationDestinationPropertyList
+	PropertyInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -63,6 +71,7 @@ type NotificationDestination interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -97,13 +106,17 @@ type NotificationDestination interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutProperties(value interface{})
-	ResetAuth()
+	PutAuthBasic(value *NotificationDestinationAuthBasic)
+	PutAuthToken(value *NotificationDestinationAuthToken)
+	PutProperty(value interface{})
+	ResetAccountId()
+	ResetActive()
+	ResetAuthBasic()
+	ResetAuthToken()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProperties()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -119,21 +132,81 @@ type jsiiProxy_NotificationDestination struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_NotificationDestination) Auth() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_NotificationDestination) AccountId() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
-		"auth",
+		"accountId",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) AuthInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_NotificationDestination) AccountIdInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
-		"authInput",
+		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) Active() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"active",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) ActiveInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"activeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) AuthBasic() NotificationDestinationAuthBasicOutputReference {
+	var returns NotificationDestinationAuthBasicOutputReference
+	_jsii_.Get(
+		j,
+		"authBasic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) AuthBasicInput() *NotificationDestinationAuthBasic {
+	var returns *NotificationDestinationAuthBasic
+	_jsii_.Get(
+		j,
+		"authBasicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) AuthToken() NotificationDestinationAuthTokenOutputReference {
+	var returns NotificationDestinationAuthTokenOutputReference
+	_jsii_.Get(
+		j,
+		"authToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) AuthTokenInput() *NotificationDestinationAuthToken {
+	var returns *NotificationDestinationAuthToken
+	_jsii_.Get(
+		j,
+		"authTokenInput",
 		&returns,
 	)
 	return returns
@@ -239,6 +312,16 @@ func (j *jsiiProxy_NotificationDestination) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NotificationDestination) LastSent() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastSent",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationDestination) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -279,21 +362,21 @@ func (j *jsiiProxy_NotificationDestination) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) Properties() NotificationDestinationPropertiesList {
-	var returns NotificationDestinationPropertiesList
+func (j *jsiiProxy_NotificationDestination) Property() NotificationDestinationPropertyList {
+	var returns NotificationDestinationPropertyList
 	_jsii_.Get(
 		j,
-		"properties",
+		"property",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_NotificationDestination) PropertiesInput() interface{} {
+func (j *jsiiProxy_NotificationDestination) PropertyInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"propertiesInput",
+		"propertyInput",
 		&returns,
 	)
 	return returns
@@ -324,6 +407,16 @@ func (j *jsiiProxy_NotificationDestination) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns
@@ -409,13 +502,24 @@ func NewNotificationDestination_Override(n NotificationDestination, scope constr
 	)
 }
 
-func (j *jsiiProxy_NotificationDestination)SetAuth(val *map[string]*string) {
-	if err := j.validateSetAuthParameters(val); err != nil {
+func (j *jsiiProxy_NotificationDestination)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"auth",
+		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotificationDestination)SetActive(val interface{}) {
+	if err := j.validateSetActiveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"active",
 		val,
 	)
 }
@@ -746,21 +850,67 @@ func (n *jsiiProxy_NotificationDestination) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) PutProperties(value interface{}) {
-	if err := n.validatePutPropertiesParameters(value); err != nil {
+func (n *jsiiProxy_NotificationDestination) PutAuthBasic(value *NotificationDestinationAuthBasic) {
+	if err := n.validatePutAuthBasicParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		n,
-		"putProperties",
+		"putAuthBasic",
 		[]interface{}{value},
 	)
 }
 
-func (n *jsiiProxy_NotificationDestination) ResetAuth() {
+func (n *jsiiProxy_NotificationDestination) PutAuthToken(value *NotificationDestinationAuthToken) {
+	if err := n.validatePutAuthTokenParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
-		"resetAuth",
+		"putAuthToken",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) PutProperty(value interface{}) {
+	if err := n.validatePutPropertyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putProperty",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) ResetActive() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetActive",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) ResetAuthBasic() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAuthBasic",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) ResetAuthToken() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAuthToken",
 		nil, // no parameters
 	)
 }
@@ -777,14 +927,6 @@ func (n *jsiiProxy_NotificationDestination) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NotificationDestination) ResetProperties() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetProperties",
 		nil, // no parameters
 	)
 }

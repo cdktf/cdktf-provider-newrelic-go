@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datanewrelicalertchannel
 
@@ -54,6 +53,10 @@ func (d *jsiiProxy_DataNewrelicAlertChannel) validateOverrideLogicalIdParameters
 }
 
 func validateDataNewrelicAlertChannel_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataNewrelicAlertChannel) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }
 

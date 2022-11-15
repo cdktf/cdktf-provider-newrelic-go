@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package notificationchannel
 
@@ -53,11 +52,19 @@ func (n *jsiiProxy_NotificationChannel) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (n *jsiiProxy_NotificationChannel) validatePutPropertiesParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationChannel) validatePutPropertyParameters(value interface{}) error {
 	return nil
 }
 
 func validateNotificationChannel_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationChannel) validateSetAccountIdParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_NotificationChannel) validateSetActiveParameters(val interface{}) error {
 	return nil
 }
 

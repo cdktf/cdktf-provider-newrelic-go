@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package notificationdestination
 
@@ -112,22 +111,44 @@ func (n *jsiiProxy_NotificationDestination) validateOverrideLogicalIdParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestination) validatePutPropertiesParameters(value interface{}) error {
+func (n *jsiiProxy_NotificationDestination) validatePutAuthBasicParameters(value *NotificationDestinationAuthBasic) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (n *jsiiProxy_NotificationDestination) validatePutAuthTokenParameters(value *NotificationDestinationAuthToken) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (n *jsiiProxy_NotificationDestination) validatePutPropertyParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*NotificationDestinationProperties:
-		value := value.(*[]*NotificationDestinationProperties)
+	case *[]*NotificationDestinationProperty:
+		value := value.(*[]*NotificationDestinationProperty)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*NotificationDestinationProperties:
-		value_ := value.([]*NotificationDestinationProperties)
+	case []*NotificationDestinationProperty:
+		value_ := value.([]*NotificationDestinationProperty)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -136,7 +157,7 @@ func (n *jsiiProxy_NotificationDestination) validatePutPropertiesParameters(valu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NotificationDestinationProperties; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NotificationDestinationProperty; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -151,9 +172,29 @@ func validateNotificationDestination_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_NotificationDestination) validateSetAuthParameters(val *map[string]*string) error {
+func (j *jsiiProxy_NotificationDestination) validateSetAccountIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NotificationDestination) validateSetActiveParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

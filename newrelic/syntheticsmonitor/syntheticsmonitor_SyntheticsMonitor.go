@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_monitor newrelic_synthetics_monitor}.
 type SyntheticsMonitor interface {
 	cdktf.TerraformResource
+	AccountId() *float64
+	SetAccountId(val *float64)
+	AccountIdInput() *float64
 	BypassHeadRequest() interface{}
 	SetBypassHeadRequest(val interface{})
 	BypassHeadRequestInput() interface{}
@@ -27,19 +30,21 @@ type SyntheticsMonitor interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CustomHeader() SyntheticsMonitorCustomHeaderList
+	CustomHeaderInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableScreenshotOnFailureAndScript() interface{}
+	SetEnableScreenshotOnFailureAndScript(val interface{})
+	EnableScreenshotOnFailureAndScriptInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
-	Frequency() *float64
-	SetFrequency(val *float64)
-	FrequencyInput() *float64
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
@@ -49,14 +54,20 @@ type SyntheticsMonitor interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Locations() *[]*string
-	SetLocations(val *[]*string)
-	LocationsInput() *[]*string
+	LocationsPrivate() *[]*string
+	SetLocationsPrivate(val *[]*string)
+	LocationsPrivateInput() *[]*string
+	LocationsPublic() *[]*string
+	SetLocationsPublic(val *[]*string)
+	LocationsPublicInput() *[]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Period() *string
+	SetPeriod(val *string)
+	PeriodInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -67,12 +78,20 @@ type SyntheticsMonitor interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SlaThreshold() *float64
-	SetSlaThreshold(val *float64)
-	SlaThresholdInput() *float64
+	RuntimeType() *string
+	SetRuntimeType(val *string)
+	RuntimeTypeInput() *string
+	RuntimeTypeVersion() *string
+	SetRuntimeTypeVersion(val *string)
+	RuntimeTypeVersionInput() *string
+	ScriptLanguage() *string
+	SetScriptLanguage(val *string)
+	ScriptLanguageInput() *string
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
+	Tag() SyntheticsMonitorTagList
+	TagInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,12 +138,23 @@ type SyntheticsMonitor interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCustomHeader(value interface{})
+	PutTag(value interface{})
+	ResetAccountId()
 	ResetBypassHeadRequest()
+	ResetCustomHeader()
+	ResetEnableScreenshotOnFailureAndScript()
 	ResetId()
+	ResetLocationsPrivate()
+	ResetLocationsPublic()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSlaThreshold()
+	ResetPeriod()
+	ResetRuntimeType()
+	ResetRuntimeTypeVersion()
+	ResetScriptLanguage()
+	ResetTag()
 	ResetTreatRedirectAsFailure()
 	ResetUri()
 	ResetValidationString()
@@ -142,6 +172,26 @@ type SyntheticsMonitor interface {
 // The jsii proxy struct for SyntheticsMonitor
 type jsiiProxy_SyntheticsMonitor struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) AccountId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) AccountIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SyntheticsMonitor) BypassHeadRequest() interface{} {
@@ -204,11 +254,51 @@ func (j *jsiiProxy_SyntheticsMonitor) Count() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsMonitor) CustomHeader() SyntheticsMonitorCustomHeaderList {
+	var returns SyntheticsMonitorCustomHeaderList
+	_jsii_.Get(
+		j,
+		"customHeader",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) CustomHeaderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customHeaderInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsMonitor) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) EnableScreenshotOnFailureAndScript() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableScreenshotOnFailureAndScript",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) EnableScreenshotOnFailureAndScriptInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableScreenshotOnFailureAndScriptInput",
 		&returns,
 	)
 	return returns
@@ -229,26 +319,6 @@ func (j *jsiiProxy_SyntheticsMonitor) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SyntheticsMonitor) Frequency() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"frequency",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SyntheticsMonitor) FrequencyInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"frequencyInput",
 		&returns,
 	)
 	return returns
@@ -294,21 +364,41 @@ func (j *jsiiProxy_SyntheticsMonitor) Lifecycle() *cdktf.TerraformResourceLifecy
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsMonitor) Locations() *[]*string {
+func (j *jsiiProxy_SyntheticsMonitor) LocationsPrivate() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"locations",
+		"locationsPrivate",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsMonitor) LocationsInput() *[]*string {
+func (j *jsiiProxy_SyntheticsMonitor) LocationsPrivateInput() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
-		"locationsInput",
+		"locationsPrivateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) LocationsPublic() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"locationsPublic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) LocationsPublicInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"locationsPublicInput",
 		&returns,
 	)
 	return returns
@@ -344,6 +434,26 @@ func (j *jsiiProxy_SyntheticsMonitor) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsMonitor) Period() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"period",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) PeriodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"periodInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsMonitor) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -374,21 +484,61 @@ func (j *jsiiProxy_SyntheticsMonitor) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsMonitor) SlaThreshold() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SyntheticsMonitor) RuntimeType() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"slaThreshold",
+		"runtimeType",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_SyntheticsMonitor) SlaThresholdInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SyntheticsMonitor) RuntimeTypeInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"slaThresholdInput",
+		"runtimeTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) RuntimeTypeVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeTypeVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) RuntimeTypeVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeTypeVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) ScriptLanguage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scriptLanguage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) ScriptLanguageInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scriptLanguageInput",
 		&returns,
 	)
 	return returns
@@ -409,6 +559,26 @@ func (j *jsiiProxy_SyntheticsMonitor) StatusInput() *string {
 	_jsii_.Get(
 		j,
 		"statusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) Tag() SyntheticsMonitorTagList {
+	var returns SyntheticsMonitorTagList
+	_jsii_.Get(
+		j,
+		"tag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) TagInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tagInput",
 		&returns,
 	)
 	return returns
@@ -574,6 +744,17 @@ func NewSyntheticsMonitor_Override(s SyntheticsMonitor, scope constructs.Constru
 	)
 }
 
+func (j *jsiiProxy_SyntheticsMonitor)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsMonitor)SetBypassHeadRequest(val interface{}) {
 	if err := j.validateSetBypassHeadRequestParameters(val); err != nil {
 		panic(err)
@@ -612,21 +793,21 @@ func (j *jsiiProxy_SyntheticsMonitor)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitor)SetForEach(val cdktf.ITerraformIterator) {
-	_jsii_.Set(
-		j,
-		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SyntheticsMonitor)SetFrequency(val *float64) {
-	if err := j.validateSetFrequencyParameters(val); err != nil {
+func (j *jsiiProxy_SyntheticsMonitor)SetEnableScreenshotOnFailureAndScript(val interface{}) {
+	if err := j.validateSetEnableScreenshotOnFailureAndScriptParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"frequency",
+		"enableScreenshotOnFailureAndScript",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsMonitor)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
 		val,
 	)
 }
@@ -653,13 +834,24 @@ func (j *jsiiProxy_SyntheticsMonitor)SetLifecycle(val *cdktf.TerraformResourceLi
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitor)SetLocations(val *[]*string) {
-	if err := j.validateSetLocationsParameters(val); err != nil {
+func (j *jsiiProxy_SyntheticsMonitor)SetLocationsPrivate(val *[]*string) {
+	if err := j.validateSetLocationsPrivateParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"locations",
+		"locationsPrivate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsMonitor)SetLocationsPublic(val *[]*string) {
+	if err := j.validateSetLocationsPublicParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"locationsPublic",
 		val,
 	)
 }
@@ -671,6 +863,17 @@ func (j *jsiiProxy_SyntheticsMonitor)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsMonitor)SetPeriod(val *string) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"period",
 		val,
 	)
 }
@@ -694,13 +897,35 @@ func (j *jsiiProxy_SyntheticsMonitor)SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SyntheticsMonitor)SetSlaThreshold(val *float64) {
-	if err := j.validateSetSlaThresholdParameters(val); err != nil {
+func (j *jsiiProxy_SyntheticsMonitor)SetRuntimeType(val *string) {
+	if err := j.validateSetRuntimeTypeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"slaThreshold",
+		"runtimeType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsMonitor)SetRuntimeTypeVersion(val *string) {
+	if err := j.validateSetRuntimeTypeVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeTypeVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsMonitor)SetScriptLanguage(val *string) {
+	if err := j.validateSetScriptLanguageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scriptLanguage",
 		val,
 	)
 }
@@ -999,10 +1224,56 @@ func (s *jsiiProxy_SyntheticsMonitor) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SyntheticsMonitor) PutCustomHeader(value interface{}) {
+	if err := s.validatePutCustomHeaderParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCustomHeader",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) PutTag(value interface{}) {
+	if err := s.validatePutTagParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTag",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsMonitor) ResetBypassHeadRequest() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetBypassHeadRequest",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) ResetCustomHeader() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomHeader",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) ResetEnableScreenshotOnFailureAndScript() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnableScreenshotOnFailureAndScript",
 		nil, // no parameters
 	)
 }
@@ -1015,6 +1286,22 @@ func (s *jsiiProxy_SyntheticsMonitor) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_SyntheticsMonitor) ResetLocationsPrivate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLocationsPrivate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) ResetLocationsPublic() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLocationsPublic",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsMonitor) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1023,10 +1310,42 @@ func (s *jsiiProxy_SyntheticsMonitor) ResetOverrideLogicalId() {
 	)
 }
 
-func (s *jsiiProxy_SyntheticsMonitor) ResetSlaThreshold() {
+func (s *jsiiProxy_SyntheticsMonitor) ResetPeriod() {
 	_jsii_.InvokeVoid(
 		s,
-		"resetSlaThreshold",
+		"resetPeriod",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) ResetRuntimeType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRuntimeType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) ResetRuntimeTypeVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRuntimeTypeVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) ResetScriptLanguage() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetScriptLanguage",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) ResetTag() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTag",
 		nil, // no parameters
 	)
 }

@@ -28,6 +28,9 @@ type OneDashboardPageWidgetHeatmapOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FilterCurrentDashboard() interface{}
+	SetFilterCurrentDashboard(val interface{})
+	FilterCurrentDashboardInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Height() *float64
@@ -39,6 +42,9 @@ type OneDashboardPageWidgetHeatmapOutputReference interface {
 	IgnoreTimeRangeInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LinkedEntityGuids() *[]*string
+	SetLinkedEntityGuids(val *[]*string)
+	LinkedEntityGuidsInput() *[]*string
 	NrqlQuery() OneDashboardPageWidgetHeatmapNrqlQueryList
 	NrqlQueryInput() interface{}
 	Row() *float64
@@ -83,8 +89,10 @@ type OneDashboardPageWidgetHeatmapOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNrqlQuery(value interface{})
+	ResetFilterCurrentDashboard()
 	ResetHeight()
 	ResetIgnoreTimeRange()
+	ResetLinkedEntityGuids()
 	ResetWidth()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -146,6 +154,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) FilterCurrentDashboard() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterCurrentDashboard",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) FilterCurrentDashboardInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterCurrentDashboardInput",
 		&returns,
 	)
 	return returns
@@ -216,6 +244,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) LinkedEntityGuids() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"linkedEntityGuids",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) LinkedEntityGuidsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"linkedEntityGuidsInput",
 		&returns,
 	)
 	return returns
@@ -382,6 +430,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference)SetComplexObject
 	)
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference)SetFilterCurrentDashboard(val interface{}) {
+	if err := j.validateSetFilterCurrentDashboardParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filterCurrentDashboard",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference)SetHeight(val *float64) {
 	if err := j.validateSetHeightParameters(val); err != nil {
 		panic(err)
@@ -411,6 +470,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference)SetInternalValue
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference)SetLinkedEntityGuids(val *[]*string) {
+	if err := j.validateSetLinkedEntityGuidsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"linkedEntityGuids",
 		val,
 	)
 }
@@ -667,6 +737,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) PutNrqlQuery(va
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) ResetFilterCurrentDashboard() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFilterCurrentDashboard",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) ResetHeight() {
 	_jsii_.InvokeVoid(
 		o,
@@ -679,6 +757,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) ResetIgnoreTime
 	_jsii_.InvokeVoid(
 		o,
 		"resetIgnoreTimeRange",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) ResetLinkedEntityGuids() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLinkedEntityGuids",
 		nil, // no parameters
 	)
 }

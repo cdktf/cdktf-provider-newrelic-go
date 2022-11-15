@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package nrqlalertcondition
 
@@ -62,6 +61,10 @@ func (n *jsiiProxy_NrqlAlertCondition) validatePutNrqlParameters(value *NrqlAler
 }
 
 func (n *jsiiProxy_NrqlAlertCondition) validatePutTermParameters(value interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NrqlAlertCondition) validatePutTimeoutsParameters(value *NrqlAlertConditionTimeouts) error {
 	return nil
 }
 

@@ -35,6 +35,8 @@ type CloudAwsIntegrations interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DocDb() CloudAwsIntegrationsDocDbOutputReference
+	DocDbInput() *CloudAwsIntegrationsDocDb
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -67,6 +69,8 @@ type CloudAwsIntegrations interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	S3() CloudAwsIntegrationsS3OutputReference
+	S3Input() *CloudAwsIntegrationsS3
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -106,18 +110,22 @@ type CloudAwsIntegrations interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBilling(value *CloudAwsIntegrationsBilling)
 	PutCloudtrail(value *CloudAwsIntegrationsCloudtrail)
+	PutDocDb(value *CloudAwsIntegrationsDocDb)
 	PutHealth(value *CloudAwsIntegrationsHealth)
+	PutS3(value *CloudAwsIntegrationsS3)
 	PutTrustedAdvisor(value *CloudAwsIntegrationsTrustedAdvisor)
 	PutVpc(value *CloudAwsIntegrationsVpc)
 	PutXRay(value *CloudAwsIntegrationsXRay)
 	ResetAccountId()
 	ResetBilling()
 	ResetCloudtrail()
+	ResetDocDb()
 	ResetHealth()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetS3()
 	ResetTrustedAdvisor()
 	ResetVpc()
 	ResetXRay()
@@ -241,6 +249,26 @@ func (j *jsiiProxy_CloudAwsIntegrations) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) DocDb() CloudAwsIntegrationsDocDbOutputReference {
+	var returns CloudAwsIntegrationsDocDbOutputReference
+	_jsii_.Get(
+		j,
+		"docDb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) DocDbInput() *CloudAwsIntegrationsDocDb {
+	var returns *CloudAwsIntegrationsDocDb
+	_jsii_.Get(
+		j,
+		"docDbInput",
 		&returns,
 	)
 	return returns
@@ -381,6 +409,26 @@ func (j *jsiiProxy_CloudAwsIntegrations) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) S3() CloudAwsIntegrationsS3OutputReference {
+	var returns CloudAwsIntegrationsS3OutputReference
+	_jsii_.Get(
+		j,
+		"s3",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) S3Input() *CloudAwsIntegrationsS3 {
+	var returns *CloudAwsIntegrationsS3
+	_jsii_.Get(
+		j,
+		"s3Input",
 		&returns,
 	)
 	return returns
@@ -854,6 +902,17 @@ func (c *jsiiProxy_CloudAwsIntegrations) PutCloudtrail(value *CloudAwsIntegratio
 	)
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) PutDocDb(value *CloudAwsIntegrationsDocDb) {
+	if err := c.validatePutDocDbParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDocDb",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) PutHealth(value *CloudAwsIntegrationsHealth) {
 	if err := c.validatePutHealthParameters(value); err != nil {
 		panic(err)
@@ -861,6 +920,17 @@ func (c *jsiiProxy_CloudAwsIntegrations) PutHealth(value *CloudAwsIntegrationsHe
 	_jsii_.InvokeVoid(
 		c,
 		"putHealth",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) PutS3(value *CloudAwsIntegrationsS3) {
+	if err := c.validatePutS3Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putS3",
 		[]interface{}{value},
 	)
 }
@@ -922,6 +992,14 @@ func (c *jsiiProxy_CloudAwsIntegrations) ResetCloudtrail() {
 	)
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) ResetDocDb() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDocDb",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) ResetHealth() {
 	_jsii_.InvokeVoid(
 		c,
@@ -942,6 +1020,14 @@ func (c *jsiiProxy_CloudAwsIntegrations) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetS3() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetS3",
 		nil, // no parameters
 	)
 }

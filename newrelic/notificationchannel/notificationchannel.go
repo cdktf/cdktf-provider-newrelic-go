@@ -11,6 +11,10 @@ func init() {
 		"@cdktf/provider-newrelic.notificationChannel.NotificationChannel",
 		reflect.TypeOf((*NotificationChannel)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},
+			_jsii_.MemberProperty{JsiiProperty: "activeInput", GoGetter: "ActiveInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -41,15 +45,17 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "product", GoGetter: "Product"},
 			_jsii_.MemberProperty{JsiiProperty: "productInput", GoGetter: "ProductInput"},
-			_jsii_.MemberProperty{JsiiProperty: "properties", GoGetter: "Properties"},
-			_jsii_.MemberProperty{JsiiProperty: "propertiesInput", GoGetter: "PropertiesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "property", GoGetter: "Property"},
+			_jsii_.MemberProperty{JsiiProperty: "propertyInput", GoGetter: "PropertyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
-			_jsii_.MemberMethod{JsiiMethod: "putProperties", GoMethod: "PutProperties"},
+			_jsii_.MemberMethod{JsiiMethod: "putProperty", GoMethod: "PutProperty"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetActive", GoMethod: "ResetActive"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetProperties", GoMethod: "ResetProperties"},
+			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
@@ -71,12 +77,12 @@ func init() {
 		reflect.TypeOf((*NotificationChannelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-newrelic.notificationChannel.NotificationChannelProperties",
-		reflect.TypeOf((*NotificationChannelProperties)(nil)).Elem(),
+		"@cdktf/provider-newrelic.notificationChannel.NotificationChannelProperty",
+		reflect.TypeOf((*NotificationChannelProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-newrelic.notificationChannel.NotificationChannelPropertiesList",
-		reflect.TypeOf((*NotificationChannelPropertiesList)(nil)).Elem(),
+		"@cdktf/provider-newrelic.notificationChannel.NotificationChannelPropertyList",
+		reflect.TypeOf((*NotificationChannelPropertyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -90,14 +96,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_NotificationChannelPropertiesList{}
+			j := jsiiProxy_NotificationChannelPropertyList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-newrelic.notificationChannel.NotificationChannelPropertiesOutputReference",
-		reflect.TypeOf((*NotificationChannelPropertiesOutputReference)(nil)).Elem(),
+		"@cdktf/provider-newrelic.notificationChannel.NotificationChannelPropertyOutputReference",
+		reflect.TypeOf((*NotificationChannelPropertyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -132,7 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_NotificationChannelPropertiesOutputReference{}
+			j := jsiiProxy_NotificationChannelPropertyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

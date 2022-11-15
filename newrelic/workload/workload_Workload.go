@@ -32,6 +32,9 @@ type Workload interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	EntityGuids() *[]*string
 	SetEntityGuids(val *[]*string)
 	EntityGuidsInput() *[]*string
@@ -72,6 +75,10 @@ type Workload interface {
 	ScopeAccountIds() *[]*float64
 	SetScopeAccountIds(val *[]*float64)
 	ScopeAccountIdsInput() *[]*float64
+	StatusConfigAutomatic() WorkloadStatusConfigAutomaticOutputReference
+	StatusConfigAutomaticInput() *WorkloadStatusConfigAutomatic
+	StatusConfigStatic() WorkloadStatusConfigStaticOutputReference
+	StatusConfigStaticInput() *WorkloadStatusConfigStatic
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -105,7 +112,10 @@ type Workload interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEntitySearchQuery(value interface{})
+	PutStatusConfigAutomatic(value *WorkloadStatusConfigAutomatic)
+	PutStatusConfigStatic(value *WorkloadStatusConfigStatic)
 	ResetAccountId()
+	ResetDescription()
 	ResetEntityGuids()
 	ResetEntitySearchQuery()
 	ResetId()
@@ -113,6 +123,8 @@ type Workload interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetScopeAccountIds()
+	ResetStatusConfigAutomatic()
+	ResetStatusConfigStatic()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -203,6 +215,26 @@ func (j *jsiiProxy_Workload) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workload) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workload) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -408,6 +440,46 @@ func (j *jsiiProxy_Workload) ScopeAccountIdsInput() *[]*float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Workload) StatusConfigAutomatic() WorkloadStatusConfigAutomaticOutputReference {
+	var returns WorkloadStatusConfigAutomaticOutputReference
+	_jsii_.Get(
+		j,
+		"statusConfigAutomatic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workload) StatusConfigAutomaticInput() *WorkloadStatusConfigAutomatic {
+	var returns *WorkloadStatusConfigAutomatic
+	_jsii_.Get(
+		j,
+		"statusConfigAutomaticInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workload) StatusConfigStatic() WorkloadStatusConfigStaticOutputReference {
+	var returns WorkloadStatusConfigStaticOutputReference
+	_jsii_.Get(
+		j,
+		"statusConfigStatic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workload) StatusConfigStaticInput() *WorkloadStatusConfigStatic {
+	var returns *WorkloadStatusConfigStatic
+	_jsii_.Get(
+		j,
+		"statusConfigStaticInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Workload) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -512,6 +584,17 @@ func (j *jsiiProxy_Workload)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Workload)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -837,10 +920,40 @@ func (w *jsiiProxy_Workload) PutEntitySearchQuery(value interface{}) {
 	)
 }
 
+func (w *jsiiProxy_Workload) PutStatusConfigAutomatic(value *WorkloadStatusConfigAutomatic) {
+	if err := w.validatePutStatusConfigAutomaticParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putStatusConfigAutomatic",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Workload) PutStatusConfigStatic(value *WorkloadStatusConfigStatic) {
+	if err := w.validatePutStatusConfigStaticParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putStatusConfigStatic",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Workload) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workload) ResetDescription() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetDescription",
 		nil, // no parameters
 	)
 }
@@ -881,6 +994,22 @@ func (w *jsiiProxy_Workload) ResetScopeAccountIds() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetScopeAccountIds",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workload) ResetStatusConfigAutomatic() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetStatusConfigAutomatic",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Workload) ResetStatusConfigStatic() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetStatusConfigStatic",
 		nil, // no parameters
 	)
 }

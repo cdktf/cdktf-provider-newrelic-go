@@ -12,6 +12,7 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential newrelic_synthetics_secure_credential}.
 type DataNewrelicSyntheticsSecureCredential interface {
 	cdktf.TerraformDataSource
+	AccountId() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -20,7 +21,6 @@ type DataNewrelicSyntheticsSecureCredential interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
-	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -103,6 +103,16 @@ type jsiiProxy_DataNewrelicSyntheticsSecureCredential struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) AccountId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -128,16 +138,6 @@ func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
 		&returns,
 	)
 	return returns

@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel newrelic_alert_channel}.
 type DataNewrelicAlertChannel interface {
 	cdktf.TerraformDataSource
+	AccountId() *float64
+	SetAccountId(val *float64)
+	AccountIdInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() DataNewrelicAlertChannelConfigAList
@@ -84,6 +87,7 @@ type DataNewrelicAlertChannel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -101,6 +105,26 @@ type DataNewrelicAlertChannel interface {
 // The jsii proxy struct for DataNewrelicAlertChannel
 type jsiiProxy_DataNewrelicAlertChannel struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataNewrelicAlertChannel) AccountId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicAlertChannel) AccountIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataNewrelicAlertChannel) CdktfStack() cdktf.TerraformStack {
@@ -340,6 +364,17 @@ func NewDataNewrelicAlertChannel_Override(d DataNewrelicAlertChannel, scope cons
 		"@cdktf/provider-newrelic.dataNewrelicAlertChannel.DataNewrelicAlertChannel",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataNewrelicAlertChannel)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 
@@ -633,6 +668,14 @@ func (d *jsiiProxy_DataNewrelicAlertChannel) OverrideLogicalId(newLogicalId *str
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataNewrelicAlertChannel) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

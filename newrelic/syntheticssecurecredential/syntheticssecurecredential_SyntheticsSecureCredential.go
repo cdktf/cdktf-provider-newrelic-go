@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential newrelic_synthetics_secure_credential}.
 type SyntheticsSecureCredential interface {
 	cdktf.TerraformResource
+	AccountId() *float64
+	SetAccountId(val *float64)
+	AccountIdInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -24,9 +27,6 @@ type SyntheticsSecureCredential interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
-	CreatedAt() *string
-	SetCreatedAt(val *string)
-	CreatedAtInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -101,7 +101,7 @@ type SyntheticsSecureCredential interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetCreatedAt()
+	ResetAccountId()
 	ResetDescription()
 	ResetId()
 	ResetLastUpdated()
@@ -121,6 +121,26 @@ type SyntheticsSecureCredential interface {
 // The jsii proxy struct for SyntheticsSecureCredential
 type jsiiProxy_SyntheticsSecureCredential struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SyntheticsSecureCredential) AccountId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsSecureCredential) AccountIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SyntheticsSecureCredential) CdktfStack() cdktf.TerraformStack {
@@ -158,26 +178,6 @@ func (j *jsiiProxy_SyntheticsSecureCredential) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SyntheticsSecureCredential) CreatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAt",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SyntheticsSecureCredential) CreatedAtInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"createdAtInput",
 		&returns,
 	)
 	return returns
@@ -433,6 +433,17 @@ func NewSyntheticsSecureCredential_Override(s SyntheticsSecureCredential, scope 
 	)
 }
 
+func (j *jsiiProxy_SyntheticsSecureCredential)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SyntheticsSecureCredential)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -448,17 +459,6 @@ func (j *jsiiProxy_SyntheticsSecureCredential)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SyntheticsSecureCredential)SetCreatedAt(val *string) {
-	if err := j.validateSetCreatedAtParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createdAt",
 		val,
 	)
 }
@@ -792,10 +792,10 @@ func (s *jsiiProxy_SyntheticsSecureCredential) OverrideLogicalId(newLogicalId *s
 	)
 }
 
-func (s *jsiiProxy_SyntheticsSecureCredential) ResetCreatedAt() {
+func (s *jsiiProxy_SyntheticsSecureCredential) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		s,
-		"resetCreatedAt",
+		"resetAccountId",
 		nil, // no parameters
 	)
 }

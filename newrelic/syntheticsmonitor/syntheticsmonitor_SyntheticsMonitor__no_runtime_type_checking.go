@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package syntheticsmonitor
 
@@ -53,7 +52,19 @@ func (s *jsiiProxy_SyntheticsMonitor) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsMonitor) validatePutCustomHeaderParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) validatePutTagParameters(value interface{}) error {
+	return nil
+}
+
 func validateSyntheticsMonitor_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }
 
@@ -65,7 +76,7 @@ func (j *jsiiProxy_SyntheticsMonitor) validateSetConnectionParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsMonitor) validateSetFrequencyParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsMonitor) validateSetEnableScreenshotOnFailureAndScriptParameters(val interface{}) error {
 	return nil
 }
 
@@ -77,7 +88,11 @@ func (j *jsiiProxy_SyntheticsMonitor) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsMonitor) validateSetLocationsParameters(val *[]*string) error {
+func (j *jsiiProxy_SyntheticsMonitor) validateSetLocationsPrivateParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) validateSetLocationsPublicParameters(val *[]*string) error {
 	return nil
 }
 
@@ -85,11 +100,23 @@ func (j *jsiiProxy_SyntheticsMonitor) validateSetNameParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsMonitor) validateSetPeriodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsMonitor) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsMonitor) validateSetSlaThresholdParameters(val *float64) error {
+func (j *jsiiProxy_SyntheticsMonitor) validateSetRuntimeTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) validateSetRuntimeTypeVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) validateSetScriptLanguageParameters(val *string) error {
 	return nil
 }
 
