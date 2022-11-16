@@ -60,6 +60,14 @@ func validateOneDashboard_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOneDashboard_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOneDashboard_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OneDashboard) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

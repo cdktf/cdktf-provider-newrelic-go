@@ -64,6 +64,14 @@ func validateSyntheticsMultilocationAlertCondition_IsConstructParameters(x inter
 	return nil
 }
 
+func validateSyntheticsMultilocationAlertCondition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSyntheticsMultilocationAlertCondition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

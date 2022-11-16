@@ -60,6 +60,14 @@ func validateAlertCondition_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAlertCondition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAlertCondition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertCondition) validateSetConditionScopeParameters(val *string) error {
 	return nil
 }

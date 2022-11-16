@@ -64,6 +64,14 @@ func validateSyntheticsMonitor_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSyntheticsMonitor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSyntheticsMonitor_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsMonitor) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

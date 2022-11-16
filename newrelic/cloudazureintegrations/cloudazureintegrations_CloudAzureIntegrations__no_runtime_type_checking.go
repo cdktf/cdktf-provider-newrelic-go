@@ -172,6 +172,14 @@ func validateCloudAzureIntegrations_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudAzureIntegrations_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudAzureIntegrations_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAzureIntegrations) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataNewrelicAlertPolicy_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataNewrelicAlertPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataNewrelicAlertPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicAlertPolicy) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

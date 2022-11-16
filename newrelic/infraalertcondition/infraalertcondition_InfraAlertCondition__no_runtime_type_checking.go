@@ -64,6 +64,14 @@ func validateInfraAlertCondition_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateInfraAlertCondition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateInfraAlertCondition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_InfraAlertCondition) validateSetComparisonParameters(val *string) error {
 	return nil
 }

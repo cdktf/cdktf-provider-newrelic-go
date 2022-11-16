@@ -56,6 +56,14 @@ func validateCloudGcpLinkAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudGcpLinkAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudGcpLinkAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudGcpLinkAccount) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

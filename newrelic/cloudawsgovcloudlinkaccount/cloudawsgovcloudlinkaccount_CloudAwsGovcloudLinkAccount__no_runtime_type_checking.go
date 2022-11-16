@@ -56,6 +56,14 @@ func validateCloudAwsGovcloudLinkAccount_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateCloudAwsGovcloudLinkAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudAwsGovcloudLinkAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) validateSetAccessKeyIdParameters(val *string) error {
 	return nil
 }

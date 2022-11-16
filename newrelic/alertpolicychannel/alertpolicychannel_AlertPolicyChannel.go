@@ -2,10 +2,10 @@ package alertpolicychannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/alertpolicychannel/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/alertpolicychannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -546,6 +546,44 @@ func AlertPolicyChannel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AlertPolicyChannel_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAlertPolicyChannel_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AlertPolicyChannel_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAlertPolicyChannel_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.alertPolicyChannel.AlertPolicyChannel",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateCloudAzureLinkAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudAzureLinkAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudAzureLinkAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAzureLinkAccount) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

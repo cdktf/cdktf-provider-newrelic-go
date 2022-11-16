@@ -2,10 +2,10 @@ package workflow
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/workflow/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/workflow/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -719,6 +719,44 @@ func Workflow_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-newrelic.workflow.Workflow",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Workflow_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWorkflow_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.workflow.Workflow",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Workflow_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWorkflow_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.workflow.Workflow",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

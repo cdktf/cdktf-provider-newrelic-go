@@ -56,6 +56,14 @@ func validateSyntheticsSecureCredential_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateSyntheticsSecureCredential_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSyntheticsSecureCredential_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsSecureCredential) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

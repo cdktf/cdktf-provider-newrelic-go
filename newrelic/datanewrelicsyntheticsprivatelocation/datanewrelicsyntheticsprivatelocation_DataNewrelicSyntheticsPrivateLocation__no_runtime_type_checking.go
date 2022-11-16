@@ -56,6 +56,14 @@ func validateDataNewrelicSyntheticsPrivateLocation_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataNewrelicSyntheticsPrivateLocation_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataNewrelicSyntheticsPrivateLocation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

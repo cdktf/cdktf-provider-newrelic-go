@@ -136,6 +136,14 @@ func validateCloudAwsGovcloudIntegrations_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateCloudAwsGovcloudIntegrations_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudAwsGovcloudIntegrations_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAwsGovcloudIntegrations) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

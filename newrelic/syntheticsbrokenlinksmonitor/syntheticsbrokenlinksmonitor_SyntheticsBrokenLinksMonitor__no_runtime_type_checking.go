@@ -60,6 +60,14 @@ func validateSyntheticsBrokenLinksMonitor_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateSyntheticsBrokenLinksMonitor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSyntheticsBrokenLinksMonitor_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

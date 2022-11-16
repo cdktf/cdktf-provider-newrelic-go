@@ -119,6 +119,22 @@ func validateSyntheticsSecureCredential_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateSyntheticsSecureCredential_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSyntheticsSecureCredential_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsSecureCredential) validateSetAccountIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

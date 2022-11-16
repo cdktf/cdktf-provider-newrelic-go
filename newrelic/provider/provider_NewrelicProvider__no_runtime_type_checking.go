@@ -16,6 +16,14 @@ func validateNewrelicProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNewrelicProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNewrelicProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NewrelicProvider) validateSetInsecureSkipVerifyParameters(val interface{}) error {
 	return nil
 }

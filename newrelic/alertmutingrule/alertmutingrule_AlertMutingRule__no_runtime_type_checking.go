@@ -64,6 +64,14 @@ func validateAlertMutingRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAlertMutingRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAlertMutingRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertMutingRule) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package onedashboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/onedashboard/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/onedashboard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -603,6 +603,44 @@ func OneDashboard_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-newrelic.oneDashboard.OneDashboard",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OneDashboard_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOneDashboard_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboard",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OneDashboard_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOneDashboard_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboard",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -60,6 +60,14 @@ func validateDataNewrelicEntity_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataNewrelicEntity_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataNewrelicEntity_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicEntity) validateSetDomainParameters(val *string) error {
 	return nil
 }

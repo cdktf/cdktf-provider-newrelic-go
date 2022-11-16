@@ -64,6 +64,14 @@ func validateEntityTags_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEntityTags_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEntityTags_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EntityTags) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

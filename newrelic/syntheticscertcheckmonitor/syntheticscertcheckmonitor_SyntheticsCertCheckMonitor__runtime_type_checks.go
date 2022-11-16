@@ -150,6 +150,22 @@ func validateSyntheticsCertCheckMonitor_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateSyntheticsCertCheckMonitor_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSyntheticsCertCheckMonitor_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetAccountIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -68,6 +68,14 @@ func validateNotificationDestination_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateNotificationDestination_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNotificationDestination_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationDestination) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateNrqlDropRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNrqlDropRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNrqlDropRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NrqlDropRule) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

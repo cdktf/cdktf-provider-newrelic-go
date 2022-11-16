@@ -2,10 +2,10 @@ package syntheticsmultilocationalertcondition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/syntheticsmultilocationalertcondition/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/syntheticsmultilocationalertcondition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -672,6 +672,44 @@ func SyntheticsMultilocationAlertCondition_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertCondition",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SyntheticsMultilocationAlertCondition_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSyntheticsMultilocationAlertCondition_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertCondition",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SyntheticsMultilocationAlertCondition_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSyntheticsMultilocationAlertCondition_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.syntheticsMultilocationAlertCondition.SyntheticsMultilocationAlertCondition",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

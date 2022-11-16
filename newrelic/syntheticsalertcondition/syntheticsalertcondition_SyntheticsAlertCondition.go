@@ -2,10 +2,10 @@ package syntheticsalertcondition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/syntheticsalertcondition/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/syntheticsalertcondition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -591,6 +591,44 @@ func SyntheticsAlertCondition_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SyntheticsAlertCondition_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSyntheticsAlertCondition_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SyntheticsAlertCondition_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSyntheticsAlertCondition_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.syntheticsAlertCondition.SyntheticsAlertCondition",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

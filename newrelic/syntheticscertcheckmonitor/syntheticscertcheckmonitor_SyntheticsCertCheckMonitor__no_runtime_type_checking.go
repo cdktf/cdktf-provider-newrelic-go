@@ -60,6 +60,14 @@ func validateSyntheticsCertCheckMonitor_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateSyntheticsCertCheckMonitor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSyntheticsCertCheckMonitor_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

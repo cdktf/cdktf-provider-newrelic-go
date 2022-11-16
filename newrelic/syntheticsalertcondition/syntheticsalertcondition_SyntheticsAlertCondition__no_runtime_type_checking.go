@@ -56,6 +56,14 @@ func validateSyntheticsAlertCondition_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateSyntheticsAlertCondition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSyntheticsAlertCondition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsAlertCondition) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateServiceLevel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServiceLevel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceLevel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceLevel) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

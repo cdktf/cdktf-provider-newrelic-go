@@ -2,10 +2,10 @@ package datanewrelicentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/datanewrelicentity/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/datanewrelicentity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -576,6 +576,44 @@ func DataNewrelicEntity_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataNewrelicEntity_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataNewrelicEntity_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataNewrelicEntity_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataNewrelicEntity_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

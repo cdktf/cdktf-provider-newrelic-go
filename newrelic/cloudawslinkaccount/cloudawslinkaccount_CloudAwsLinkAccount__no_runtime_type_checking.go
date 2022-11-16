@@ -60,6 +60,14 @@ func validateCloudAwsLinkAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudAwsLinkAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudAwsLinkAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAwsLinkAccount) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

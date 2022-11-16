@@ -60,6 +60,14 @@ func validateNotificationChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNotificationChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNotificationChannel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotificationChannel) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package nrqldroprule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/nrqldroprule/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/nrqldroprule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -568,6 +568,44 @@ func NrqlDropRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-newrelic.nrqlDropRule.NrqlDropRule",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NrqlDropRule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNrqlDropRule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.nrqlDropRule.NrqlDropRule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func NrqlDropRule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateNrqlDropRule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.nrqlDropRule.NrqlDropRule",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateApplicationSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApplicationSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApplicationSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetAppApdexThresholdParameters(val *float64) error {
 	return nil
 }

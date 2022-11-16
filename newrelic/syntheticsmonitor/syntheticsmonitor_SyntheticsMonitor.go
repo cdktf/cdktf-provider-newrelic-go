@@ -2,10 +2,10 @@ package syntheticsmonitor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/syntheticsmonitor/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/syntheticsmonitor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1024,6 +1024,44 @@ func SyntheticsMonitor_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SyntheticsMonitor_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSyntheticsMonitor_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SyntheticsMonitor_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSyntheticsMonitor_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.syntheticsMonitor.SyntheticsMonitor",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

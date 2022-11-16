@@ -56,6 +56,14 @@ func validateDataNewrelicKeyTransaction_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataNewrelicKeyTransaction_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataNewrelicKeyTransaction_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicKeyTransaction) validateSetIdParameters(val *string) error {
 	return nil
 }

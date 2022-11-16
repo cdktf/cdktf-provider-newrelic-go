@@ -60,6 +60,14 @@ func validateAlertPolicyChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAlertPolicyChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAlertPolicyChannel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertPolicyChannel) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }

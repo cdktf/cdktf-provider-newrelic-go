@@ -56,6 +56,14 @@ func validateDataNewrelicSyntheticsSecureCredential_IsConstructParameters(x inte
 	return nil
 }
 
+func validateDataNewrelicSyntheticsSecureCredential_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataNewrelicSyntheticsSecureCredential_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) validateSetIdParameters(val *string) error {
 	return nil
 }

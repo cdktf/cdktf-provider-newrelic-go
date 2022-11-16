@@ -2,10 +2,10 @@ package datanewrelickeytransaction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v4/datanewrelickeytransaction/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/datanewrelickeytransaction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -403,6 +403,44 @@ func DataNewrelicKeyTransaction_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataNewrelicKeyTransaction_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataNewrelicKeyTransaction_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataNewrelicKeyTransaction_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataNewrelicKeyTransaction_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)
