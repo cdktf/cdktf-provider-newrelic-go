@@ -1,19 +1,20 @@
-package datanewrelicentity
+package datanewrelicobfuscationexpression
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/datanewrelicentity/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/datanewrelicobfuscationexpression/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/entity newrelic_entity}.
-type DataNewrelicEntity interface {
+// Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/obfuscation_expression newrelic_obfuscation_expression}.
+type DataNewrelicObfuscationExpression interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
-	ApplicationId() *float64
+	SetAccountId(val *float64)
+	AccountIdInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -26,9 +27,6 @@ type DataNewrelicEntity interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Domain() *string
-	SetDomain(val *string)
-	DomainInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -37,13 +35,9 @@ type DataNewrelicEntity interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Guid() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IgnoreCase() interface{}
-	SetIgnoreCase(val interface{})
-	IgnoreCaseInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -59,18 +53,12 @@ type DataNewrelicEntity interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	ServingApmApplicationId() *float64
-	Tag() DataNewrelicEntityTagList
-	TagInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -96,15 +84,11 @@ type DataNewrelicEntity interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTag(value interface{})
-	ResetDomain()
+	ResetAccountId()
 	ResetId()
-	ResetIgnoreCase()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTag()
-	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -115,12 +99,12 @@ type DataNewrelicEntity interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for DataNewrelicEntity
-type jsiiProxy_DataNewrelicEntity struct {
+// The jsii proxy struct for DataNewrelicObfuscationExpression
+type jsiiProxy_DataNewrelicObfuscationExpression struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) AccountId() *float64 {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) AccountId() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -130,17 +114,17 @@ func (j *jsiiProxy_DataNewrelicEntity) AccountId() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) ApplicationId() *float64 {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) AccountIdInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"applicationId",
+		"accountIdInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -150,7 +134,7 @@ func (j *jsiiProxy_DataNewrelicEntity) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -160,7 +144,7 @@ func (j *jsiiProxy_DataNewrelicEntity) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) Count() *float64 {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -170,7 +154,7 @@ func (j *jsiiProxy_DataNewrelicEntity) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) DependsOn() *[]*string {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -180,27 +164,7 @@ func (j *jsiiProxy_DataNewrelicEntity) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) Domain() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"domain",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicEntity) DomainInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"domainInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicEntity) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -210,7 +174,7 @@ func (j *jsiiProxy_DataNewrelicEntity) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) Fqn() *string {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -220,7 +184,7 @@ func (j *jsiiProxy_DataNewrelicEntity) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) FriendlyUniqueId() *string {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -230,17 +194,7 @@ func (j *jsiiProxy_DataNewrelicEntity) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) Guid() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"guid",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicEntity) Id() *string {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -250,7 +204,7 @@ func (j *jsiiProxy_DataNewrelicEntity) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) IdInput() *string {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -260,27 +214,7 @@ func (j *jsiiProxy_DataNewrelicEntity) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) IgnoreCase() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"ignoreCase",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicEntity) IgnoreCaseInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"ignoreCaseInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicEntity) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -290,7 +224,7 @@ func (j *jsiiProxy_DataNewrelicEntity) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) Name() *string {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -300,7 +234,7 @@ func (j *jsiiProxy_DataNewrelicEntity) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) NameInput() *string {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) NameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -310,7 +244,7 @@ func (j *jsiiProxy_DataNewrelicEntity) NameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) Node() constructs.Node {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -320,7 +254,7 @@ func (j *jsiiProxy_DataNewrelicEntity) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -330,7 +264,7 @@ func (j *jsiiProxy_DataNewrelicEntity) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) RawOverrides() interface{} {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -340,37 +274,7 @@ func (j *jsiiProxy_DataNewrelicEntity) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) ServingApmApplicationId() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"servingApmApplicationId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicEntity) Tag() DataNewrelicEntityTagList {
-	var returns DataNewrelicEntityTagList
-	_jsii_.Get(
-		j,
-		"tag",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicEntity) TagInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"tagInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicEntity) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -380,7 +284,7 @@ func (j *jsiiProxy_DataNewrelicEntity) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -390,7 +294,7 @@ func (j *jsiiProxy_DataNewrelicEntity) TerraformMetaArguments() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) TerraformResourceType() *string {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -400,38 +304,18 @@ func (j *jsiiProxy_DataNewrelicEntity) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) Type() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"type",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DataNewrelicEntity) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/entity newrelic_entity} Data Source.
-func NewDataNewrelicEntity(scope constructs.Construct, id *string, config *DataNewrelicEntityConfig) DataNewrelicEntity {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/obfuscation_expression newrelic_obfuscation_expression} Data Source.
+func NewDataNewrelicObfuscationExpression(scope constructs.Construct, id *string, config *DataNewrelicObfuscationExpressionConfig) DataNewrelicObfuscationExpression {
 	_init_.Initialize()
 
-	if err := validateNewDataNewrelicEntityParameters(scope, id, config); err != nil {
+	if err := validateNewDataNewrelicObfuscationExpressionParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataNewrelicEntity{}
+	j := jsiiProxy_DataNewrelicObfuscationExpression{}
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity",
+		"@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,18 +323,29 @@ func NewDataNewrelicEntity(scope constructs.Construct, id *string, config *DataN
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/entity newrelic_entity} Data Source.
-func NewDataNewrelicEntity_Override(d DataNewrelicEntity, scope constructs.Construct, id *string, config *DataNewrelicEntityConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/obfuscation_expression newrelic_obfuscation_expression} Data Source.
+func NewDataNewrelicObfuscationExpression_Override(d DataNewrelicObfuscationExpression, scope constructs.Construct, id *string, config *DataNewrelicObfuscationExpressionConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity",
+		"@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression",
 		[]interface{}{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicEntity)SetCount(val *float64) {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataNewrelicObfuscationExpression)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -458,7 +353,7 @@ func (j *jsiiProxy_DataNewrelicEntity)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicEntity)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -466,18 +361,7 @@ func (j *jsiiProxy_DataNewrelicEntity)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicEntity)SetDomain(val *string) {
-	if err := j.validateSetDomainParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"domain",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataNewrelicEntity)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -485,7 +369,7 @@ func (j *jsiiProxy_DataNewrelicEntity)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicEntity)SetId(val *string) {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -496,18 +380,7 @@ func (j *jsiiProxy_DataNewrelicEntity)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicEntity)SetIgnoreCase(val interface{}) {
-	if err := j.validateSetIgnoreCaseParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ignoreCase",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataNewrelicEntity)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -518,7 +391,7 @@ func (j *jsiiProxy_DataNewrelicEntity)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicEntity)SetName(val *string) {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -529,21 +402,10 @@ func (j *jsiiProxy_DataNewrelicEntity)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicEntity)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataNewrelicObfuscationExpression)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataNewrelicEntity)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
 		val,
 	)
 }
@@ -565,16 +427,16 @@ func (j *jsiiProxy_DataNewrelicEntity)SetType(val *string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataNewrelicEntity_IsConstruct(x interface{}) *bool {
+func DataNewrelicObfuscationExpression_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataNewrelicEntity_IsConstructParameters(x); err != nil {
+	if err := validateDataNewrelicObfuscationExpression_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity",
+		"@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -584,16 +446,16 @@ func DataNewrelicEntity_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataNewrelicEntity_IsTerraformDataSource(x interface{}) *bool {
+func DataNewrelicObfuscationExpression_IsTerraformDataSource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataNewrelicEntity_IsTerraformDataSourceParameters(x); err != nil {
+	if err := validateDataNewrelicObfuscationExpression_IsTerraformDataSourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity",
+		"@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -603,16 +465,16 @@ func DataNewrelicEntity_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataNewrelicEntity_IsTerraformElement(x interface{}) *bool {
+func DataNewrelicObfuscationExpression_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataNewrelicEntity_IsTerraformElementParameters(x); err != nil {
+	if err := validateDataNewrelicObfuscationExpression_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity",
+		"@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,18 +483,18 @@ func DataNewrelicEntity_IsTerraformElement(x interface{}) *bool {
 	return returns
 }
 
-func DataNewrelicEntity_TfResourceType() *string {
+func DataNewrelicObfuscationExpression_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntity",
+		"@cdktf/provider-newrelic.dataNewrelicObfuscationExpression.DataNewrelicObfuscationExpression",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) AddOverride(path *string, value interface{}) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
@@ -643,7 +505,7 @@ func (d *jsiiProxy_DataNewrelicEntity) AddOverride(path *string, value interface
 	)
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -659,7 +521,7 @@ func (d *jsiiProxy_DataNewrelicEntity) GetAnyMapAttribute(terraformAttribute *st
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -675,7 +537,7 @@ func (d *jsiiProxy_DataNewrelicEntity) GetBooleanAttribute(terraformAttribute *s
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -691,7 +553,7 @@ func (d *jsiiProxy_DataNewrelicEntity) GetBooleanMapAttribute(terraformAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -707,7 +569,7 @@ func (d *jsiiProxy_DataNewrelicEntity) GetListAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -723,7 +585,7 @@ func (d *jsiiProxy_DataNewrelicEntity) GetNumberAttribute(terraformAttribute *st
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -739,7 +601,7 @@ func (d *jsiiProxy_DataNewrelicEntity) GetNumberListAttribute(terraformAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -755,7 +617,7 @@ func (d *jsiiProxy_DataNewrelicEntity) GetNumberMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -771,7 +633,7 @@ func (d *jsiiProxy_DataNewrelicEntity) GetStringAttribute(terraformAttribute *st
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -787,7 +649,7 @@ func (d *jsiiProxy_DataNewrelicEntity) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -803,7 +665,7 @@ func (d *jsiiProxy_DataNewrelicEntity) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) OverrideLogicalId(newLogicalId *string) {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) OverrideLogicalId(newLogicalId *string) {
 	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
@@ -814,26 +676,15 @@ func (d *jsiiProxy_DataNewrelicEntity) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) PutTag(value interface{}) {
-	if err := d.validatePutTagParameters(value); err != nil {
-		panic(err)
-	}
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
-		"putTag",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataNewrelicEntity) ResetDomain() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetDomain",
+		"resetAccountId",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) ResetId() {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
@@ -841,15 +692,7 @@ func (d *jsiiProxy_DataNewrelicEntity) ResetId() {
 	)
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) ResetIgnoreCase() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIgnoreCase",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataNewrelicEntity) ResetOverrideLogicalId() {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
@@ -857,23 +700,7 @@ func (d *jsiiProxy_DataNewrelicEntity) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) ResetTag() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTag",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataNewrelicEntity) ResetType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetType",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataNewrelicEntity) SynthesizeAttributes() *map[string]interface{} {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -886,7 +713,7 @@ func (d *jsiiProxy_DataNewrelicEntity) SynthesizeAttributes() *map[string]interf
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) ToMetadata() interface{} {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
@@ -899,7 +726,7 @@ func (d *jsiiProxy_DataNewrelicEntity) ToMetadata() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) ToString() *string {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -912,7 +739,7 @@ func (d *jsiiProxy_DataNewrelicEntity) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) ToTerraform() interface{} {
+func (d *jsiiProxy_DataNewrelicObfuscationExpression) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(

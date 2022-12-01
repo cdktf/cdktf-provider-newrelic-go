@@ -35,7 +35,7 @@ type SyntheticsMultilocationAlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_multilocation_alert_condition#policy_id SyntheticsMultilocationAlertCondition#policy_id}
 	PolicyId *float64 `field:"required" json:"policyId" yaml:"policyId"`
-	// The maximum number of seconds a violation can remain open before being closed by the system.
+	// The maximum number of seconds an incident can remain open before being closed by the system.
 	//
 	// Must be one of: 0, 3600, 7200, 14400, 28800, 43200, 86400
 	//

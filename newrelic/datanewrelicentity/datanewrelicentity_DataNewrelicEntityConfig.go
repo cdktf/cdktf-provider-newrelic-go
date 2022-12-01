@@ -43,7 +43,7 @@ type DataNewrelicEntityConfig struct {
 	// tag block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#tag DataNewrelicEntity#tag}
-	Tag *DataNewrelicEntityTag `field:"optional" json:"tag" yaml:"tag"`
+	Tag interface{} `field:"optional" json:"tag" yaml:"tag"`
 	// The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, and WORKLOAD.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#type DataNewrelicEntity#type}

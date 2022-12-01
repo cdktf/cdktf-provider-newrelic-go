@@ -14,9 +14,9 @@ type NrqlAlertConditionWarning struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#operator NrqlAlertCondition#operator}
 	Operator *string `field:"optional" json:"operator" yaml:"operator"`
-	// The duration, in seconds, that the threshold must violate in order to create a violation.
+	// The duration, in seconds, that the threshold must violate in order to create an incident.
 	//
-	// Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, within 120-7200 seconds for static conditions with the sum value function, and within 60-7200 seconds for static conditions with the single_value value function.
+	// Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, and within 60-7200 seconds for static conditions with the single_value value function.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
 	ThresholdDuration *float64 `field:"optional" json:"thresholdDuration" yaml:"thresholdDuration"`

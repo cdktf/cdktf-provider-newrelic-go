@@ -41,7 +41,7 @@ type NrqlAlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#aggregation_delay NrqlAlertCondition#aggregation_delay}
 	AggregationDelay *string `field:"optional" json:"aggregationDelay" yaml:"aggregationDelay"`
-	// The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for violations.
+	// The method that determines when we consider an aggregation window to be complete so that we can evaluate the signal for incidents.
 	//
 	// Default is EVENT_FLOW.
 	//
@@ -61,7 +61,7 @@ type NrqlAlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#baseline_direction NrqlAlertCondition#baseline_direction}
 	BaselineDirection *string `field:"optional" json:"baselineDirection" yaml:"baselineDirection"`
-	// Whether to close all open violations when the signal expires.
+	// Whether to close all open incidents when the signal expires.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#close_violations_on_expiration NrqlAlertCondition#close_violations_on_expiration}
 	CloseViolationsOnExpiration interface{} `field:"optional" json:"closeViolationsOnExpiration" yaml:"closeViolationsOnExpiration"`
@@ -98,7 +98,7 @@ type NrqlAlertConditionConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Whether to create a new violation to capture that the signal expired.
+	// Whether to create a new incident to capture that the signal expired.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#open_violation_on_expiration NrqlAlertCondition#open_violation_on_expiration}
 	OpenViolationOnExpiration interface{} `field:"optional" json:"openViolationOnExpiration" yaml:"openViolationOnExpiration"`
@@ -128,13 +128,13 @@ type NrqlAlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#value_function NrqlAlertCondition#value_function}
 	ValueFunction *string `field:"optional" json:"valueFunction" yaml:"valueFunction"`
-	// Sets a time limit, in hours, that will automatically force-close a long-lasting violation after the time limit you select.
+	// Sets a time limit, in hours, that will automatically force-close a long-lasting incident after the time limit you select.
 	//
 	// Possible values are 'ONE_HOUR', 'TWO_HOURS', 'FOUR_HOURS', 'EIGHT_HOURS', 'TWELVE_HOURS', 'TWENTY_FOUR_HOURS', 'THIRTY_DAYS' (case insensitive).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#violation_time_limit NrqlAlertCondition#violation_time_limit}
 	ViolationTimeLimit *string `field:"optional" json:"violationTimeLimit" yaml:"violationTimeLimit"`
-	// Sets a time limit, in seconds, that will automatically force-close a long-lasting violation after the time limit you select.
+	// Sets a time limit, in seconds, that will automatically force-close a long-lasting incident after the time limit you select.
 	//
 	// Must be in the range of 300 to 2592000 (inclusive)
 	//

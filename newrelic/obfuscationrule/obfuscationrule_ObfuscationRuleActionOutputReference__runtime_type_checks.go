@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package datanewrelicentity
+package obfuscationrule
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetAnyMapAttrib
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetBooleanAttri
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetBooleanMapAt
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetListAttribut
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetNumberAttrib
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetNumberListAt
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetNumberMapAtt
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetStringAttrib
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateInterpolationFo
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,15 @@ func (d *jsiiProxy_DataNewrelicEntityTagOutputReference) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_ObfuscationRuleActionOutputReference) validateSetAttributeParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObfuscationRuleActionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -155,7 +163,7 @@ func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_ObfuscationRuleActionOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -163,15 +171,23 @@ func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ObfuscationRuleActionOutputReference) validateSetExpressionIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ObfuscationRuleActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case *DataNewrelicEntityTag:
-		val := val.(*DataNewrelicEntityTag)
+	case *ObfuscationRuleAction:
+		val := val.(*ObfuscationRuleAction)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case DataNewrelicEntityTag:
-		val_ := val.(DataNewrelicEntityTag)
+	case ObfuscationRuleAction:
+		val_ := val.(ObfuscationRuleAction)
 		val := &val_
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
@@ -180,14 +196,14 @@ func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetInternalValu
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataNewrelicEntityTag, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *ObfuscationRuleAction, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetKeyParameters(val *string) error {
+func (j *jsiiProxy_ObfuscationRuleActionOutputReference) validateSetMethodParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -195,7 +211,7 @@ func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetKeyParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_ObfuscationRuleActionOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +219,7 @@ func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ObfuscationRuleActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,15 +227,7 @@ func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetTerraformRes
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetValueParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func validateNewDataNewrelicEntityTagOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewObfuscationRuleActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

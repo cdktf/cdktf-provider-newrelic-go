@@ -27,8 +27,8 @@ type DataNewrelicEntityTagOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataNewrelicEntityTag
-	SetInternalValue(val *DataNewrelicEntityTag)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Key() *string
 	SetKey(val *string)
 	KeyInput() *string
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) InternalValue() *DataNewrelicEntityTag {
-	var returns *DataNewrelicEntityTag
+func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,29 +193,29 @@ func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) ValueInput() *string {
 }
 
 
-func NewDataNewrelicEntityTagOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataNewrelicEntityTagOutputReference {
+func NewDataNewrelicEntityTagOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataNewrelicEntityTagOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataNewrelicEntityTagOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataNewrelicEntityTagOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataNewrelicEntityTagOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityTagOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataNewrelicEntityTagOutputReference_Override(d DataNewrelicEntityTagOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataNewrelicEntityTagOutputReference_Override(d DataNewrelicEntityTagOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-newrelic.dataNewrelicEntity.DataNewrelicEntityTagOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
@@ -242,7 +242,7 @@ func (j *jsiiProxy_DataNewrelicEntityTagOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicEntityTagOutputReference)SetInternalValue(val *DataNewrelicEntityTag) {
+func (j *jsiiProxy_DataNewrelicEntityTagOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

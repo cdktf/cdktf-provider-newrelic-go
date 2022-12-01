@@ -52,7 +52,7 @@ func (d *jsiiProxy_DataNewrelicEntity) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicEntity) validatePutTagParameters(value *DataNewrelicEntityTag) error {
+func (d *jsiiProxy_DataNewrelicEntity) validatePutTagParameters(value interface{}) error {
 	return nil
 }
 

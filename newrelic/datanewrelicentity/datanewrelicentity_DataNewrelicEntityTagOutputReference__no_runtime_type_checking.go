@@ -56,7 +56,7 @@ func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetComplexObjec
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetInternalValueParameters(val *DataNewrelicEntityTag) error {
+func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DataNewrelicEntityTagOutputReference) validateSetValueParamet
 	return nil
 }
 
-func validateNewDataNewrelicEntityTagOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataNewrelicEntityTagOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

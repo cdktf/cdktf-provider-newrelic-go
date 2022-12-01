@@ -2,7 +2,7 @@ package alertmutingrule
 
 
 type AlertMutingRuleConditionConditions struct {
-	// The attribute on a violation.
+	// The attribute on an incident.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_muting_rule#attribute AlertMutingRule#attribute}
 	Attribute *string `field:"required" json:"attribute" yaml:"attribute"`

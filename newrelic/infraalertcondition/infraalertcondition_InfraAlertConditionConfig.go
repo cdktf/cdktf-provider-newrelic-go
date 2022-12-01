@@ -76,7 +76,7 @@ type InfraAlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/infra_alert_condition#select InfraAlertCondition#select}
 	Select *string `field:"optional" json:"select" yaml:"select"`
-	// Determines how much time, in hours, will pass before a violation is automatically closed.
+	// Determines how much time, in hours, will pass before an incident is automatically closed.
 	//
 	// Valid values are 1, 2, 4, 8, 12, 24, 48, or 72
 	//

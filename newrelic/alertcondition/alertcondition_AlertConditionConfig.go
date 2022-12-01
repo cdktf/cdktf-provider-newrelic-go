@@ -39,7 +39,7 @@ type AlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#term AlertCondition#term}
 	Term interface{} `field:"required" json:"term" yaml:"term"`
-	// The type of condition. One of: (browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric).
+	// The type of condition. One of: (apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric, servers_metric).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#type AlertCondition#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
@@ -74,7 +74,7 @@ type AlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/alert_condition#user_defined_value_function AlertCondition#user_defined_value_function}
 	UserDefinedValueFunction *string `field:"optional" json:"userDefinedValueFunction" yaml:"userDefinedValueFunction"`
-	// Automatically close instance-based violations, including JVM health metric violations, after the number of hours specified.
+	// Automatically close instance-based incidents, including JVM health metric incidents, after the number of hours specified.
 	//
 	// Must be: 1, 2, 4, 8, 12 or 24.
 	//
