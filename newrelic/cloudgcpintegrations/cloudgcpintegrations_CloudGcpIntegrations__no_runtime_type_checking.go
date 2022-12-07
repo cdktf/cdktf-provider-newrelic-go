@@ -52,6 +52,10 @@ func (c *jsiiProxy_CloudGcpIntegrations) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (c *jsiiProxy_CloudGcpIntegrations) validatePutAlloyDbParameters(value *CloudGcpIntegrationsAlloyDb) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudGcpIntegrations) validatePutAppEngineParameters(value *CloudGcpIntegrationsAppEngine) error {
 	return nil
 }

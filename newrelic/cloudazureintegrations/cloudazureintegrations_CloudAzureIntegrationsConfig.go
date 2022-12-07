@@ -104,10 +104,18 @@ type CloudAzureIntegrationsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#mysql CloudAzureIntegrations#mysql}
 	Mysql *CloudAzureIntegrationsMysql `field:"optional" json:"mysql" yaml:"mysql"`
+	// mysql_flexible block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#mysql_flexible CloudAzureIntegrations#mysql_flexible}
+	MysqlFlexible *CloudAzureIntegrationsMysqlFlexible `field:"optional" json:"mysqlFlexible" yaml:"mysqlFlexible"`
 	// postgresql block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#postgresql CloudAzureIntegrations#postgresql}
 	Postgresql *CloudAzureIntegrationsPostgresql `field:"optional" json:"postgresql" yaml:"postgresql"`
+	// postgresql_flexible block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#postgresql_flexible CloudAzureIntegrations#postgresql_flexible}
+	PostgresqlFlexible *CloudAzureIntegrationsPostgresqlFlexible `field:"optional" json:"postgresqlFlexible" yaml:"postgresqlFlexible"`
 	// power_bi_dedicated block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_integrations#power_bi_dedicated CloudAzureIntegrations#power_bi_dedicated}

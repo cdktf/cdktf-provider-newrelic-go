@@ -44,5 +44,9 @@ type OneDashboardConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#permissions OneDashboard#permissions}
 	Permissions *string `field:"optional" json:"permissions" yaml:"permissions"`
+	// variable block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard#variable OneDashboard#variable}
+	Variable interface{} `field:"optional" json:"variable" yaml:"variable"`
 }
 

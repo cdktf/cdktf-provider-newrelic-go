@@ -14,6 +14,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "alloyDb", GoGetter: "AlloyDb"},
+			_jsii_.MemberProperty{JsiiProperty: "alloyDbInput", GoGetter: "AlloyDbInput"},
 			_jsii_.MemberProperty{JsiiProperty: "appEngine", GoGetter: "AppEngine"},
 			_jsii_.MemberProperty{JsiiProperty: "appEngineInput", GoGetter: "AppEngineInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bigQuery", GoGetter: "BigQuery"},
@@ -75,6 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "pubSub", GoGetter: "PubSub"},
 			_jsii_.MemberProperty{JsiiProperty: "pubSubInput", GoGetter: "PubSubInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAlloyDb", GoMethod: "PutAlloyDb"},
 			_jsii_.MemberMethod{JsiiMethod: "putAppEngine", GoMethod: "PutAppEngine"},
 			_jsii_.MemberMethod{JsiiMethod: "putBigQuery", GoMethod: "PutBigQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "putBigTable", GoMethod: "PutBigTable"},
@@ -104,6 +107,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "redis", GoGetter: "Redis"},
 			_jsii_.MemberProperty{JsiiProperty: "redisInput", GoGetter: "RedisInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlloyDb", GoMethod: "ResetAlloyDb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppEngine", GoMethod: "ResetAppEngine"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBigQuery", GoMethod: "ResetBigQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBigTable", GoMethod: "ResetBigTable"},
@@ -156,6 +160,45 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_CloudGcpIntegrations{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsAlloyDb",
+		reflect.TypeOf((*CloudGcpIntegrationsAlloyDb)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.cloudGcpIntegrations.CloudGcpIntegrationsAlloyDbOutputReference",
+		reflect.TypeOf((*CloudGcpIntegrationsAlloyDbOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsPollingInterval", GoGetter: "MetricsPollingInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsPollingIntervalInput", GoGetter: "MetricsPollingIntervalInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricsPollingInterval", GoMethod: "ResetMetricsPollingInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudGcpIntegrationsAlloyDbOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

@@ -84,10 +84,14 @@ type CloudAzureIntegrations interface {
 	MariaDb() CloudAzureIntegrationsMariaDbOutputReference
 	MariaDbInput() *CloudAzureIntegrationsMariaDb
 	Mysql() CloudAzureIntegrationsMysqlOutputReference
+	MysqlFlexible() CloudAzureIntegrationsMysqlFlexibleOutputReference
+	MysqlFlexibleInput() *CloudAzureIntegrationsMysqlFlexible
 	MysqlInput() *CloudAzureIntegrationsMysql
 	// The tree node.
 	Node() constructs.Node
 	Postgresql() CloudAzureIntegrationsPostgresqlOutputReference
+	PostgresqlFlexible() CloudAzureIntegrationsPostgresqlFlexibleOutputReference
+	PostgresqlFlexibleInput() *CloudAzureIntegrationsPostgresqlFlexible
 	PostgresqlInput() *CloudAzureIntegrationsPostgresql
 	PowerBiDedicated() CloudAzureIntegrationsPowerBiDedicatedOutputReference
 	PowerBiDedicatedInput() *CloudAzureIntegrationsPowerBiDedicated
@@ -168,7 +172,9 @@ type CloudAzureIntegrations interface {
 	PutMachineLearning(value *CloudAzureIntegrationsMachineLearning)
 	PutMariaDb(value *CloudAzureIntegrationsMariaDb)
 	PutMysql(value *CloudAzureIntegrationsMysql)
+	PutMysqlFlexible(value *CloudAzureIntegrationsMysqlFlexible)
 	PutPostgresql(value *CloudAzureIntegrationsPostgresql)
+	PutPostgresqlFlexible(value *CloudAzureIntegrationsPostgresqlFlexible)
 	PutPowerBiDedicated(value *CloudAzureIntegrationsPowerBiDedicated)
 	PutRedisCache(value *CloudAzureIntegrationsRedisCache)
 	PutServiceBus(value *CloudAzureIntegrationsServiceBus)
@@ -199,10 +205,12 @@ type CloudAzureIntegrations interface {
 	ResetMachineLearning()
 	ResetMariaDb()
 	ResetMysql()
+	ResetMysqlFlexible()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPostgresql()
+	ResetPostgresqlFlexible()
 	ResetPowerBiDedicated()
 	ResetRedisCache()
 	ResetServiceBus()
@@ -728,6 +736,26 @@ func (j *jsiiProxy_CloudAzureIntegrations) Mysql() CloudAzureIntegrationsMysqlOu
 	return returns
 }
 
+func (j *jsiiProxy_CloudAzureIntegrations) MysqlFlexible() CloudAzureIntegrationsMysqlFlexibleOutputReference {
+	var returns CloudAzureIntegrationsMysqlFlexibleOutputReference
+	_jsii_.Get(
+		j,
+		"mysqlFlexible",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAzureIntegrations) MysqlFlexibleInput() *CloudAzureIntegrationsMysqlFlexible {
+	var returns *CloudAzureIntegrationsMysqlFlexible
+	_jsii_.Get(
+		j,
+		"mysqlFlexibleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudAzureIntegrations) MysqlInput() *CloudAzureIntegrationsMysql {
 	var returns *CloudAzureIntegrationsMysql
 	_jsii_.Get(
@@ -753,6 +781,26 @@ func (j *jsiiProxy_CloudAzureIntegrations) Postgresql() CloudAzureIntegrationsPo
 	_jsii_.Get(
 		j,
 		"postgresql",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAzureIntegrations) PostgresqlFlexible() CloudAzureIntegrationsPostgresqlFlexibleOutputReference {
+	var returns CloudAzureIntegrationsPostgresqlFlexibleOutputReference
+	_jsii_.Get(
+		j,
+		"postgresqlFlexible",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAzureIntegrations) PostgresqlFlexibleInput() *CloudAzureIntegrationsPostgresqlFlexible {
+	var returns *CloudAzureIntegrationsPostgresqlFlexible
+	_jsii_.Get(
+		j,
+		"postgresqlFlexibleInput",
 		&returns,
 	)
 	return returns
@@ -1620,6 +1668,17 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutMysql(value *CloudAzureIntegration
 	)
 }
 
+func (c *jsiiProxy_CloudAzureIntegrations) PutMysqlFlexible(value *CloudAzureIntegrationsMysqlFlexible) {
+	if err := c.validatePutMysqlFlexibleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMysqlFlexible",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudAzureIntegrations) PutPostgresql(value *CloudAzureIntegrationsPostgresql) {
 	if err := c.validatePutPostgresqlParameters(value); err != nil {
 		panic(err)
@@ -1627,6 +1686,17 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutPostgresql(value *CloudAzureIntegr
 	_jsii_.InvokeVoid(
 		c,
 		"putPostgresql",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAzureIntegrations) PutPostgresqlFlexible(value *CloudAzureIntegrationsPostgresqlFlexible) {
+	if err := c.validatePutPostgresqlFlexibleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPostgresqlFlexible",
 		[]interface{}{value},
 	)
 }
@@ -1901,6 +1971,14 @@ func (c *jsiiProxy_CloudAzureIntegrations) ResetMysql() {
 	)
 }
 
+func (c *jsiiProxy_CloudAzureIntegrations) ResetMysqlFlexible() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMysqlFlexible",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudAzureIntegrations) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1913,6 +1991,14 @@ func (c *jsiiProxy_CloudAzureIntegrations) ResetPostgresql() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPostgresql",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAzureIntegrations) ResetPostgresqlFlexible() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPostgresqlFlexible",
 		nil, // no parameters
 	)
 }

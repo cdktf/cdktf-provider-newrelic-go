@@ -77,6 +77,8 @@ type OneDashboard interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Variable() OneDashboardVariableList
+	VariableInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -103,6 +105,7 @@ type OneDashboard interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPage(value interface{})
+	PutVariable(value interface{})
 	ResetAccountId()
 	ResetDescription()
 	ResetId()
@@ -110,6 +113,7 @@ type OneDashboard interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPermissions()
+	ResetVariable()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -420,6 +424,26 @@ func (j *jsiiProxy_OneDashboard) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboard) Variable() OneDashboardVariableList {
+	var returns OneDashboardVariableList
+	_jsii_.Get(
+		j,
+		"variable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboard) VariableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"variableInput",
 		&returns,
 	)
 	return returns
@@ -852,6 +876,17 @@ func (o *jsiiProxy_OneDashboard) PutPage(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OneDashboard) PutVariable(value interface{}) {
+	if err := o.validatePutVariableParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putVariable",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboard) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		o,
@@ -888,6 +923,14 @@ func (o *jsiiProxy_OneDashboard) ResetPermissions() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetPermissions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboard) ResetVariable() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetVariable",
 		nil, // no parameters
 	)
 }

@@ -56,6 +56,10 @@ func (o *jsiiProxy_OneDashboard) validatePutPageParameters(value interface{}) er
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboard) validatePutVariableParameters(value interface{}) error {
+	return nil
+}
+
 func validateOneDashboard_IsConstructParameters(x interface{}) error {
 	return nil
 }

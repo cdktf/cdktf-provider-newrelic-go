@@ -27,6 +27,10 @@ type CloudGcpIntegrationsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#account_id CloudGcpIntegrations#account_id}
 	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
+	// alloy_db block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#alloy_db CloudGcpIntegrations#alloy_db}
+	AlloyDb *CloudGcpIntegrationsAlloyDb `field:"optional" json:"alloyDb" yaml:"alloyDb"`
 	// app_engine block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_gcp_integrations#app_engine CloudGcpIntegrations#app_engine}

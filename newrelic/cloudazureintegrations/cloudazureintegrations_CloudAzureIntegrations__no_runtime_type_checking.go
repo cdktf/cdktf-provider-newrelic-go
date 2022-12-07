@@ -124,7 +124,15 @@ func (c *jsiiProxy_CloudAzureIntegrations) validatePutMysqlParameters(value *Clo
 	return nil
 }
 
+func (c *jsiiProxy_CloudAzureIntegrations) validatePutMysqlFlexibleParameters(value *CloudAzureIntegrationsMysqlFlexible) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAzureIntegrations) validatePutPostgresqlParameters(value *CloudAzureIntegrationsPostgresql) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAzureIntegrations) validatePutPostgresqlFlexibleParameters(value *CloudAzureIntegrationsPostgresqlFlexible) error {
 	return nil
 }
 

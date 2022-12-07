@@ -15,6 +15,8 @@ type CloudGcpIntegrations interface {
 	AccountId() *float64
 	SetAccountId(val *float64)
 	AccountIdInput() *float64
+	AlloyDb() CloudGcpIntegrationsAlloyDbOutputReference
+	AlloyDbInput() *CloudGcpIntegrationsAlloyDb
 	AppEngine() CloudGcpIntegrationsAppEngineOutputReference
 	AppEngineInput() *CloudGcpIntegrationsAppEngine
 	BigQuery() CloudGcpIntegrationsBigQueryOutputReference
@@ -142,6 +144,7 @@ type CloudGcpIntegrations interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAlloyDb(value *CloudGcpIntegrationsAlloyDb)
 	PutAppEngine(value *CloudGcpIntegrationsAppEngine)
 	PutBigQuery(value *CloudGcpIntegrationsBigQuery)
 	PutBigTable(value *CloudGcpIntegrationsBigTable)
@@ -168,6 +171,7 @@ type CloudGcpIntegrations interface {
 	PutVirtualMachines(value *CloudGcpIntegrationsVirtualMachines)
 	PutVpcAccess(value *CloudGcpIntegrationsVpcAccess)
 	ResetAccountId()
+	ResetAlloyDb()
 	ResetAppEngine()
 	ResetBigQuery()
 	ResetBigTable()
@@ -227,6 +231,26 @@ func (j *jsiiProxy_CloudGcpIntegrations) AccountIdInput() *float64 {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudGcpIntegrations) AlloyDb() CloudGcpIntegrationsAlloyDbOutputReference {
+	var returns CloudGcpIntegrationsAlloyDbOutputReference
+	_jsii_.Get(
+		j,
+		"alloyDb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudGcpIntegrations) AlloyDbInput() *CloudGcpIntegrationsAlloyDb {
+	var returns *CloudGcpIntegrationsAlloyDb
+	_jsii_.Get(
+		j,
+		"alloyDbInput",
 		&returns,
 	)
 	return returns
@@ -1326,6 +1350,17 @@ func (c *jsiiProxy_CloudGcpIntegrations) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (c *jsiiProxy_CloudGcpIntegrations) PutAlloyDb(value *CloudGcpIntegrationsAlloyDb) {
+	if err := c.validatePutAlloyDbParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAlloyDb",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudGcpIntegrations) PutAppEngine(value *CloudGcpIntegrationsAppEngine) {
 	if err := c.validatePutAppEngineParameters(value); err != nil {
 		panic(err)
@@ -1605,6 +1640,14 @@ func (c *jsiiProxy_CloudGcpIntegrations) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudGcpIntegrations) ResetAlloyDb() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAlloyDb",
 		nil, // no parameters
 	)
 }

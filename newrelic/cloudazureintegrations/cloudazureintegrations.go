@@ -72,10 +72,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mariaDb", GoGetter: "MariaDb"},
 			_jsii_.MemberProperty{JsiiProperty: "mariaDbInput", GoGetter: "MariaDbInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mysql", GoGetter: "Mysql"},
+			_jsii_.MemberProperty{JsiiProperty: "mysqlFlexible", GoGetter: "MysqlFlexible"},
+			_jsii_.MemberProperty{JsiiProperty: "mysqlFlexibleInput", GoGetter: "MysqlFlexibleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mysqlInput", GoGetter: "MysqlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "postgresql", GoGetter: "Postgresql"},
+			_jsii_.MemberProperty{JsiiProperty: "postgresqlFlexible", GoGetter: "PostgresqlFlexible"},
+			_jsii_.MemberProperty{JsiiProperty: "postgresqlFlexibleInput", GoGetter: "PostgresqlFlexibleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "postgresqlInput", GoGetter: "PostgresqlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "powerBiDedicated", GoGetter: "PowerBiDedicated"},
 			_jsii_.MemberProperty{JsiiProperty: "powerBiDedicatedInput", GoGetter: "PowerBiDedicatedInput"},
@@ -99,7 +103,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMachineLearning", GoMethod: "PutMachineLearning"},
 			_jsii_.MemberMethod{JsiiMethod: "putMariaDb", GoMethod: "PutMariaDb"},
 			_jsii_.MemberMethod{JsiiMethod: "putMysql", GoMethod: "PutMysql"},
+			_jsii_.MemberMethod{JsiiMethod: "putMysqlFlexible", GoMethod: "PutMysqlFlexible"},
 			_jsii_.MemberMethod{JsiiMethod: "putPostgresql", GoMethod: "PutPostgresql"},
+			_jsii_.MemberMethod{JsiiMethod: "putPostgresqlFlexible", GoMethod: "PutPostgresqlFlexible"},
 			_jsii_.MemberMethod{JsiiMethod: "putPowerBiDedicated", GoMethod: "PutPowerBiDedicated"},
 			_jsii_.MemberMethod{JsiiMethod: "putRedisCache", GoMethod: "PutRedisCache"},
 			_jsii_.MemberMethod{JsiiMethod: "putServiceBus", GoMethod: "PutServiceBus"},
@@ -133,8 +139,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetMachineLearning", GoMethod: "ResetMachineLearning"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMariaDb", GoMethod: "ResetMariaDb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMysql", GoMethod: "ResetMysql"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMysqlFlexible", GoMethod: "ResetMysqlFlexible"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPostgresql", GoMethod: "ResetPostgresql"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPostgresqlFlexible", GoMethod: "ResetPostgresqlFlexible"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPowerBiDedicated", GoMethod: "ResetPowerBiDedicated"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRedisCache", GoMethod: "ResetRedisCache"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceBus", GoMethod: "ResetServiceBus"},
@@ -897,6 +905,48 @@ func init() {
 		"@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysql",
 		reflect.TypeOf((*CloudAzureIntegrationsMysql)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysqlFlexible",
+		reflect.TypeOf((*CloudAzureIntegrationsMysqlFlexible)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysqlFlexibleOutputReference",
+		reflect.TypeOf((*CloudAzureIntegrationsMysqlFlexibleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsPollingInterval", GoGetter: "MetricsPollingInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsPollingIntervalInput", GoGetter: "MetricsPollingIntervalInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricsPollingInterval", GoMethod: "ResetMetricsPollingInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceGroups", GoMethod: "ResetResourceGroups"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroups", GoGetter: "ResourceGroups"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroupsInput", GoGetter: "ResourceGroupsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudAzureIntegrationsMysqlFlexibleOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMysqlOutputReference",
 		reflect.TypeOf((*CloudAzureIntegrationsMysqlOutputReference)(nil)).Elem(),
@@ -938,6 +988,48 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresql",
 		reflect.TypeOf((*CloudAzureIntegrationsPostgresql)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlFlexible",
+		reflect.TypeOf((*CloudAzureIntegrationsPostgresqlFlexible)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlFlexibleOutputReference",
+		reflect.TypeOf((*CloudAzureIntegrationsPostgresqlFlexibleOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsPollingInterval", GoGetter: "MetricsPollingInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsPollingIntervalInput", GoGetter: "MetricsPollingIntervalInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricsPollingInterval", GoMethod: "ResetMetricsPollingInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceGroups", GoMethod: "ResetResourceGroups"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroups", GoGetter: "ResourceGroups"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroupsInput", GoGetter: "ResourceGroupsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudAzureIntegrationsPostgresqlFlexibleOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsPostgresqlOutputReference",
