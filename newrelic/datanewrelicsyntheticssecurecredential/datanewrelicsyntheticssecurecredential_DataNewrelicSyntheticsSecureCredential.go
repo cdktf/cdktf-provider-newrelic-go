@@ -13,6 +13,8 @@ import (
 type DataNewrelicSyntheticsSecureCredential interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
+	SetAccountId(val *float64)
+	AccountIdInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -84,6 +86,7 @@ type DataNewrelicSyntheticsSecureCredential interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -108,6 +111,16 @@ func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) AccountId() *float64 
 	_jsii_.Get(
 		j,
 		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) AccountIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"accountIdInput",
 		&returns,
 	)
 	return returns
@@ -340,6 +353,17 @@ func NewDataNewrelicSyntheticsSecureCredential_Override(d DataNewrelicSynthetics
 		"@cdktf/provider-newrelic.dataNewrelicSyntheticsSecureCredential.DataNewrelicSyntheticsSecureCredential",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 
@@ -671,6 +695,14 @@ func (d *jsiiProxy_DataNewrelicSyntheticsSecureCredential) OverrideLogicalId(new
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataNewrelicSyntheticsSecureCredential) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 

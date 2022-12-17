@@ -25,6 +25,10 @@ type DataNewrelicSyntheticsSecureCredentialConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential#key DataNewrelicSyntheticsSecureCredential#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
+	// The New Relic account ID associated with this secure credential.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential#account_id DataNewrelicSyntheticsSecureCredential#account_id}
+	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential#id DataNewrelicSyntheticsSecureCredential#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

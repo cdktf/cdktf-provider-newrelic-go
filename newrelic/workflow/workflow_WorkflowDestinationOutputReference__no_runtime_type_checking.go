@@ -64,6 +64,10 @@ func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetInternalValueP
 	return nil
 }
 
+func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetNotificationTriggersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

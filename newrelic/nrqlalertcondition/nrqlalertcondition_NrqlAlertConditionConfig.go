@@ -124,10 +124,6 @@ type NrqlAlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#type NrqlAlertCondition#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
-	// Values are: 'single_value' (deprecated) or 'sum' (deprecated).
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#value_function NrqlAlertCondition#value_function}
-	ValueFunction *string `field:"optional" json:"valueFunction" yaml:"valueFunction"`
 	// Sets a time limit, in hours, that will automatically force-close a long-lasting incident after the time limit you select.
 	//
 	// Possible values are 'ONE_HOUR', 'TWO_HOURS', 'FOUR_HOURS', 'EIGHT_HOURS', 'TWELVE_HOURS', 'TWENTY_FOUR_HOURS', 'THIRTY_DAYS' (case insensitive).

@@ -124,9 +124,6 @@ type NrqlAlertCondition interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	ValueFunction() *string
-	SetValueFunction(val *string)
-	ValueFunctionInput() *string
 	ViolationTimeLimit() *string
 	SetViolationTimeLimit(val *string)
 	ViolationTimeLimitInput() *string
@@ -188,7 +185,6 @@ type NrqlAlertCondition interface {
 	ResetTerm()
 	ResetTimeouts()
 	ResetType()
-	ResetValueFunction()
 	ResetViolationTimeLimit()
 	ResetViolationTimeLimitSeconds()
 	ResetWarning()
@@ -837,26 +833,6 @@ func (j *jsiiProxy_NrqlAlertCondition) TypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) ValueFunction() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"valueFunction",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NrqlAlertCondition) ValueFunctionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"valueFunctionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_NrqlAlertCondition) ViolationTimeLimit() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1217,17 +1193,6 @@ func (j *jsiiProxy_NrqlAlertCondition)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NrqlAlertCondition)SetValueFunction(val *string) {
-	if err := j.validateSetValueFunctionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"valueFunction",
 		val,
 	)
 }
@@ -1739,14 +1704,6 @@ func (n *jsiiProxy_NrqlAlertCondition) ResetType() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetType",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NrqlAlertCondition) ResetValueFunction() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetValueFunction",
 		nil, // no parameters
 	)
 }

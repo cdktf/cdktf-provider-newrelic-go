@@ -73,6 +73,8 @@ type SyntheticsSecureCredential interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() SyntheticsSecureCredentialTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -101,6 +103,7 @@ type SyntheticsSecureCredential interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *SyntheticsSecureCredentialTimeouts)
 	ResetAccountId()
 	ResetDescription()
 	ResetId()
@@ -108,6 +111,7 @@ type SyntheticsSecureCredential interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -378,6 +382,26 @@ func (j *jsiiProxy_SyntheticsSecureCredential) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsSecureCredential) Timeouts() SyntheticsSecureCredentialTimeoutsOutputReference {
+	var returns SyntheticsSecureCredentialTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsSecureCredential) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -830,6 +854,17 @@ func (s *jsiiProxy_SyntheticsSecureCredential) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (s *jsiiProxy_SyntheticsSecureCredential) PutTimeouts(value *SyntheticsSecureCredentialTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SyntheticsSecureCredential) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -866,6 +901,14 @@ func (s *jsiiProxy_SyntheticsSecureCredential) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsSecureCredential) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

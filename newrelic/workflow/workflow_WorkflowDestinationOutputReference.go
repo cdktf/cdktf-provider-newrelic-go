@@ -33,6 +33,9 @@ type WorkflowDestinationOutputReference interface {
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
+	NotificationTriggers() *[]*string
+	SetNotificationTriggers(val *[]*string)
+	NotificationTriggersInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,6 +69,7 @@ type WorkflowDestinationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetNotificationTriggers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -156,6 +160,26 @@ func (j *jsiiProxy_WorkflowDestinationOutputReference) Name() *string {
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkflowDestinationOutputReference) NotificationTriggers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notificationTriggers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkflowDestinationOutputReference) NotificationTriggersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"notificationTriggersInput",
 		&returns,
 	)
 	return returns
@@ -259,6 +283,17 @@ func (j *jsiiProxy_WorkflowDestinationOutputReference)SetInternalValue(val inter
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkflowDestinationOutputReference)SetNotificationTriggers(val *[]*string) {
+	if err := j.validateSetNotificationTriggersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notificationTriggers",
 		val,
 	)
 }
@@ -469,6 +504,14 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) InterpolationForAttribute
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WorkflowDestinationOutputReference) ResetNotificationTriggers() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetNotificationTriggers",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_WorkflowDestinationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -46,5 +46,9 @@ type SyntheticsSecureCredentialConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#last_updated SyntheticsSecureCredential#last_updated}
 	LastUpdated *string `field:"optional" json:"lastUpdated" yaml:"lastUpdated"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/synthetics_secure_credential#timeouts SyntheticsSecureCredential#timeouts}
+	Timeouts *SyntheticsSecureCredentialTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

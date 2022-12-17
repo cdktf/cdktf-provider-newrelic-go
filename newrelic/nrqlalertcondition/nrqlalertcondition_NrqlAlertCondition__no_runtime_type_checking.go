@@ -172,10 +172,6 @@ func (j *jsiiProxy_NrqlAlertCondition) validateSetTypeParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_NrqlAlertCondition) validateSetValueFunctionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_NrqlAlertCondition) validateSetViolationTimeLimitParameters(val *string) error {
 	return nil
 }

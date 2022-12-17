@@ -52,6 +52,10 @@ func (s *jsiiProxy_SyntheticsSecureCredential) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsSecureCredential) validatePutTimeoutsParameters(value *SyntheticsSecureCredentialTimeouts) error {
+	return nil
+}
+
 func validateSyntheticsSecureCredential_IsConstructParameters(x interface{}) error {
 	return nil
 }

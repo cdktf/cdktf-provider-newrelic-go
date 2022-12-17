@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package workflow
+package syntheticssecurecredential
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetAnyMapAttribut
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetBooleanAttribu
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetBooleanMapAttr
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetListAttributeP
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetNumberAttribut
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetNumberListAttr
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetNumberMapAttri
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetStringAttribut
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (s *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) validateInterpolationForA
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,15 +98,7 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetChannelIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -163,7 +155,7 @@ func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetComplexObjectI
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -171,15 +163,15 @@ func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetComplexObjectI
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case *WorkflowDestination:
-		val := val.(*WorkflowDestination)
+	case *SyntheticsSecureCredentialTimeouts:
+		val := val.(*SyntheticsSecureCredentialTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case WorkflowDestination:
-		val_ := val.(WorkflowDestination)
+	case SyntheticsSecureCredentialTimeouts:
+		val_ := val.(SyntheticsSecureCredentialTimeouts)
 		val := &val_
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
@@ -188,14 +180,14 @@ func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetInternalValueP
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *WorkflowDestination, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *SyntheticsSecureCredentialTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetNotificationTriggersParameters(val *[]*string) error {
+func (j *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateSetReadParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +195,7 @@ func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetNotificationTr
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +203,7 @@ func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SyntheticsSecureCredentialTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,21 +211,13 @@ func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetTerraformResou
 	return nil
 }
 
-func validateNewWorkflowDestinationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSyntheticsSecureCredentialTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

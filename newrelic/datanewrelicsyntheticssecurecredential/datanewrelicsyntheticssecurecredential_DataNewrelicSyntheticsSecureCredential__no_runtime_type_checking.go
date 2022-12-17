@@ -64,6 +64,10 @@ func validateDataNewrelicSyntheticsSecureCredential_IsTerraformElementParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) validateSetAccountIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) validateSetIdParameters(val *string) error {
 	return nil
 }
