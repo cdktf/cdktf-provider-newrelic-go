@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package onedashboardjson
+package logparsingrule
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (o *jsiiProxy_OneDashboardJson) validateAddOverrideParameters(path *string, value interface{}) error {
+func (l *jsiiProxy_LogParsingRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (o *jsiiProxy_OneDashboardJson) validateAddOverrideParameters(path *string,
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJson) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LogParsingRule) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -31,7 +31,7 @@ func (o *jsiiProxy_OneDashboardJson) validateGetAnyMapAttributeParameters(terraf
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJson) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LogParsingRule) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -39,7 +39,7 @@ func (o *jsiiProxy_OneDashboardJson) validateGetBooleanAttributeParameters(terra
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJson) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LogParsingRule) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func (o *jsiiProxy_OneDashboardJson) validateGetBooleanMapAttributeParameters(te
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJson) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LogParsingRule) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OneDashboardJson) validateGetListAttributeParameters(terrafor
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJson) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LogParsingRule) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func (o *jsiiProxy_OneDashboardJson) validateGetNumberAttributeParameters(terraf
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJson) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LogParsingRule) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func (o *jsiiProxy_OneDashboardJson) validateGetNumberListAttributeParameters(te
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJson) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LogParsingRule) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -79,7 +79,7 @@ func (o *jsiiProxy_OneDashboardJson) validateGetNumberMapAttributeParameters(ter
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJson) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LogParsingRule) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -87,7 +87,7 @@ func (o *jsiiProxy_OneDashboardJson) validateGetStringAttributeParameters(terraf
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJson) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LogParsingRule) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -95,7 +95,7 @@ func (o *jsiiProxy_OneDashboardJson) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJson) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (l *jsiiProxy_LogParsingRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -103,7 +103,7 @@ func (o *jsiiProxy_OneDashboardJson) validateInterpolationForAttributeParameters
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJson) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (l *jsiiProxy_LogParsingRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -111,18 +111,7 @@ func (o *jsiiProxy_OneDashboardJson) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJson) validatePutTimeoutsParameters(value *OneDashboardJsonTimeouts) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func validateOneDashboardJson_IsConstructParameters(x interface{}) error {
+func validateLogParsingRule_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -130,7 +119,7 @@ func validateOneDashboardJson_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateOneDashboardJson_IsTerraformElementParameters(x interface{}) error {
+func validateLogParsingRule_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -138,7 +127,7 @@ func validateOneDashboardJson_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
-func validateOneDashboardJson_IsTerraformResourceParameters(x interface{}) error {
+func validateLogParsingRule_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -146,7 +135,7 @@ func validateOneDashboardJson_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardJson) validateSetAccountIdParameters(val *float64) error {
+func (j *jsiiProxy_LogParsingRule) validateSetAccountIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -154,7 +143,15 @@ func (j *jsiiProxy_OneDashboardJson) validateSetAccountIdParameters(val *float64
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardJson) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_LogParsingRule) validateSetAttributeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LogParsingRule) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -187,7 +184,27 @@ func (j *jsiiProxy_OneDashboardJson) validateSetConnectionParameters(val interfa
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardJson) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_LogParsingRule) validateSetEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LogParsingRule) validateSetGrokParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -195,7 +212,7 @@ func (j *jsiiProxy_OneDashboardJson) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardJson) validateSetJsonParameters(val *string) error {
+func (j *jsiiProxy_LogParsingRule) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -203,7 +220,7 @@ func (j *jsiiProxy_OneDashboardJson) validateSetJsonParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardJson) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LogParsingRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -211,7 +228,51 @@ func (j *jsiiProxy_OneDashboardJson) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardJson) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_LogParsingRule) validateSetLuceneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LogParsingRule) validateSetMatchedParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LogParsingRule) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LogParsingRule) validateSetNrqlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LogParsingRule) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -257,7 +318,7 @@ func (j *jsiiProxy_OneDashboardJson) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
-func validateNewOneDashboardJsonParameters(scope constructs.Construct, id *string, config *OneDashboardJsonConfig) error {
+func validateNewLogParsingRuleParameters(scope constructs.Construct, id *string, config *LogParsingRuleConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}

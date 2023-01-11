@@ -52,6 +52,10 @@ func (o *jsiiProxy_OneDashboardJson) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardJson) validatePutTimeoutsParameters(value *OneDashboardJsonTimeouts) error {
+	return nil
+}
+
 func validateOneDashboardJson_IsConstructParameters(x interface{}) error {
 	return nil
 }

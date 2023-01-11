@@ -1,26 +1,22 @@
-package onedashboardjson
+package datanewrelictestgrokpattern
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/onedashboardjson/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/datanewrelictestgrokpattern/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_json newrelic_one_dashboard_json}.
-type OneDashboardJson interface {
-	cdktf.TerraformResource
+// Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/test_grok_pattern newrelic_test_grok_pattern}.
+type DataNewrelicTestGrokPattern interface {
+	cdktf.TerraformDataSource
 	AccountId() *float64
 	SetAccountId(val *float64)
 	AccountIdInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	// Experimental.
-	Connection() interface{}
-	// Experimental.
-	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -39,28 +35,25 @@ type OneDashboardJson interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Guid() *string
+	Grok() *string
+	SetGrok(val *string)
+	GrokInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Json() *string
-	SetJson(val *string)
-	JsonInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogLines() *[]*string
+	SetLogLines(val *[]*string)
+	LogLinesInput() *[]*string
 	// The tree node.
 	Node() constructs.Node
-	Permalink() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
-	// Experimental.
-	Provisioners() *[]interface{}
-	// Experimental.
-	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -69,9 +62,7 @@ type OneDashboardJson interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Timeouts() OneDashboardJsonTimeoutsOutputReference
-	TimeoutsInput() interface{}
-	UpdatedAt() *string
+	TestGrok() DataNewrelicTestGrokPatternTestGrokList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -97,13 +88,11 @@ type OneDashboardJson interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTimeouts(value *OneDashboardJsonTimeouts)
 	ResetAccountId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -114,12 +103,12 @@ type OneDashboardJson interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for OneDashboardJson
-type jsiiProxy_OneDashboardJson struct {
-	internal.Type__cdktfTerraformResource
+// The jsii proxy struct for DataNewrelicTestGrokPattern
+type jsiiProxy_DataNewrelicTestGrokPattern struct {
+	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_OneDashboardJson) AccountId() *float64 {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) AccountId() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -129,7 +118,7 @@ func (j *jsiiProxy_OneDashboardJson) AccountId() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) AccountIdInput() *float64 {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) AccountIdInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -139,7 +128,7 @@ func (j *jsiiProxy_OneDashboardJson) AccountIdInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -149,17 +138,7 @@ func (j *jsiiProxy_OneDashboardJson) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) Connection() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"connection",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OneDashboardJson) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -169,7 +148,7 @@ func (j *jsiiProxy_OneDashboardJson) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) Count() *float64 {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -179,7 +158,7 @@ func (j *jsiiProxy_OneDashboardJson) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) DependsOn() *[]*string {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -189,7 +168,7 @@ func (j *jsiiProxy_OneDashboardJson) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -199,7 +178,7 @@ func (j *jsiiProxy_OneDashboardJson) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) Fqn() *string {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -209,7 +188,7 @@ func (j *jsiiProxy_OneDashboardJson) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) FriendlyUniqueId() *string {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -219,17 +198,27 @@ func (j *jsiiProxy_OneDashboardJson) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) Guid() *string {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) Grok() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"guid",
+		"grok",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) Id() *string {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) GrokInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"grokInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -239,7 +228,7 @@ func (j *jsiiProxy_OneDashboardJson) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) IdInput() *string {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -249,27 +238,7 @@ func (j *jsiiProxy_OneDashboardJson) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) Json() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"json",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OneDashboardJson) JsonInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"jsonInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OneDashboardJson) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -279,7 +248,27 @@ func (j *jsiiProxy_OneDashboardJson) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) Node() constructs.Node {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) LogLines() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"logLines",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) LogLinesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"logLinesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -289,17 +278,7 @@ func (j *jsiiProxy_OneDashboardJson) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) Permalink() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"permalink",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OneDashboardJson) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -309,17 +288,7 @@ func (j *jsiiProxy_OneDashboardJson) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) Provisioners() *[]interface{} {
-	var returns *[]interface{}
-	_jsii_.Get(
-		j,
-		"provisioners",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OneDashboardJson) RawOverrides() interface{} {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -329,7 +298,7 @@ func (j *jsiiProxy_OneDashboardJson) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -339,7 +308,7 @@ func (j *jsiiProxy_OneDashboardJson) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -349,7 +318,7 @@ func (j *jsiiProxy_OneDashboardJson) TerraformMetaArguments() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) TerraformResourceType() *string {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -359,48 +328,28 @@ func (j *jsiiProxy_OneDashboardJson) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardJson) Timeouts() OneDashboardJsonTimeoutsOutputReference {
-	var returns OneDashboardJsonTimeoutsOutputReference
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) TestGrok() DataNewrelicTestGrokPatternTestGrokList {
+	var returns DataNewrelicTestGrokPatternTestGrokList
 	_jsii_.Get(
 		j,
-		"timeouts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OneDashboardJson) TimeoutsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeoutsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OneDashboardJson) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
+		"testGrok",
 		&returns,
 	)
 	return returns
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_json newrelic_one_dashboard_json} Resource.
-func NewOneDashboardJson(scope constructs.Construct, id *string, config *OneDashboardJsonConfig) OneDashboardJson {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/test_grok_pattern newrelic_test_grok_pattern} Data Source.
+func NewDataNewrelicTestGrokPattern(scope constructs.Construct, id *string, config *DataNewrelicTestGrokPatternConfig) DataNewrelicTestGrokPattern {
 	_init_.Initialize()
 
-	if err := validateNewOneDashboardJsonParameters(scope, id, config); err != nil {
+	if err := validateNewDataNewrelicTestGrokPatternParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_OneDashboardJson{}
+	j := jsiiProxy_DataNewrelicTestGrokPattern{}
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJson",
+		"@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -408,18 +357,18 @@ func NewOneDashboardJson(scope constructs.Construct, id *string, config *OneDash
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/one_dashboard_json newrelic_one_dashboard_json} Resource.
-func NewOneDashboardJson_Override(o OneDashboardJson, scope constructs.Construct, id *string, config *OneDashboardJsonConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/test_grok_pattern newrelic_test_grok_pattern} Data Source.
+func NewDataNewrelicTestGrokPattern_Override(d DataNewrelicTestGrokPattern, scope constructs.Construct, id *string, config *DataNewrelicTestGrokPatternConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJson",
+		"@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern",
 		[]interface{}{scope, id, config},
-		o,
+		d,
 	)
 }
 
-func (j *jsiiProxy_OneDashboardJson)SetAccountId(val *float64) {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern)SetAccountId(val *float64) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -430,18 +379,7 @@ func (j *jsiiProxy_OneDashboardJson)SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OneDashboardJson)SetConnection(val interface{}) {
-	if err := j.validateSetConnectionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"connection",
-		val,
-	)
-}
-
-func (j *jsiiProxy_OneDashboardJson)SetCount(val *float64) {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -449,7 +387,7 @@ func (j *jsiiProxy_OneDashboardJson)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_OneDashboardJson)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -457,7 +395,7 @@ func (j *jsiiProxy_OneDashboardJson)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_OneDashboardJson)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -465,7 +403,18 @@ func (j *jsiiProxy_OneDashboardJson)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_OneDashboardJson)SetId(val *string) {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern)SetGrok(val *string) {
+	if err := j.validateSetGrokParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"grok",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataNewrelicTestGrokPattern)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -476,18 +425,7 @@ func (j *jsiiProxy_OneDashboardJson)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_OneDashboardJson)SetJson(val *string) {
-	if err := j.validateSetJsonParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"json",
-		val,
-	)
-}
-
-func (j *jsiiProxy_OneDashboardJson)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,21 +436,21 @@ func (j *jsiiProxy_OneDashboardJson)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_OneDashboardJson)SetProvider(val cdktf.TerraformProvider) {
-	_jsii_.Set(
-		j,
-		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_OneDashboardJson)SetProvisioners(val *[]interface{}) {
-	if err := j.validateSetProvisionersParameters(val); err != nil {
+func (j *jsiiProxy_DataNewrelicTestGrokPattern)SetLogLines(val *[]*string) {
+	if err := j.validateSetLogLinesParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"provisioners",
+		"logLines",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataNewrelicTestGrokPattern)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
 		val,
 	)
 }
@@ -534,16 +472,16 @@ func (j *jsiiProxy_OneDashboardJson)SetProvisioners(val *[]interface{}) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func OneDashboardJson_IsConstruct(x interface{}) *bool {
+func DataNewrelicTestGrokPattern_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateOneDashboardJson_IsConstructParameters(x); err != nil {
+	if err := validateDataNewrelicTestGrokPattern_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJson",
+		"@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,17 +491,17 @@ func OneDashboardJson_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func OneDashboardJson_IsTerraformElement(x interface{}) *bool {
+func DataNewrelicTestGrokPattern_IsTerraformDataSource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateOneDashboardJson_IsTerraformElementParameters(x); err != nil {
+	if err := validateDataNewrelicTestGrokPattern_IsTerraformDataSourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJson",
-		"isTerraformElement",
+		"@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern",
+		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
 	)
@@ -572,17 +510,17 @@ func OneDashboardJson_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func OneDashboardJson_IsTerraformResource(x interface{}) *bool {
+func DataNewrelicTestGrokPattern_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateOneDashboardJson_IsTerraformResourceParameters(x); err != nil {
+	if err := validateDataNewrelicTestGrokPattern_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJson",
-		"isTerraformResource",
+		"@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)
@@ -590,36 +528,36 @@ func OneDashboardJson_IsTerraformResource(x interface{}) *bool {
 	return returns
 }
 
-func OneDashboardJson_TfResourceType() *string {
+func DataNewrelicTestGrokPattern_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-newrelic.oneDashboardJson.OneDashboardJson",
+		"@cdktf/provider-newrelic.dataNewrelicTestGrokPattern.DataNewrelicTestGrokPattern",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) AddOverride(path *string, value interface{}) {
-	if err := o.validateAddOverrideParameters(path, value); err != nil {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		o,
+		d,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (o *jsiiProxy_OneDashboardJson) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := o.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -628,14 +566,14 @@ func (o *jsiiProxy_OneDashboardJson) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -644,14 +582,14 @@ func (o *jsiiProxy_OneDashboardJson) GetBooleanAttribute(terraformAttribute *str
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := o.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -660,14 +598,14 @@ func (o *jsiiProxy_OneDashboardJson) GetBooleanMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := o.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -676,14 +614,14 @@ func (o *jsiiProxy_OneDashboardJson) GetListAttribute(terraformAttribute *string
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := o.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -692,14 +630,14 @@ func (o *jsiiProxy_OneDashboardJson) GetNumberAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := o.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -708,14 +646,14 @@ func (o *jsiiProxy_OneDashboardJson) GetNumberListAttribute(terraformAttribute *
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := o.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -724,14 +662,14 @@ func (o *jsiiProxy_OneDashboardJson) GetNumberMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) GetStringAttribute(terraformAttribute *string) *string {
-	if err := o.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -740,14 +678,14 @@ func (o *jsiiProxy_OneDashboardJson) GetStringAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := o.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -756,14 +694,14 @@ func (o *jsiiProxy_OneDashboardJson) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -772,65 +710,46 @@ func (o *jsiiProxy_OneDashboardJson) InterpolationForAttribute(terraformAttribut
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) OverrideLogicalId(newLogicalId *string) {
-	if err := o.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		o,
+		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (o *jsiiProxy_OneDashboardJson) PutTimeouts(value *OneDashboardJsonTimeouts) {
-	if err := o.validatePutTimeoutsParameters(value); err != nil {
-		panic(err)
-	}
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) ResetAccountId() {
 	_jsii_.InvokeVoid(
-		o,
-		"putTimeouts",
-		[]interface{}{value},
-	)
-}
-
-func (o *jsiiProxy_OneDashboardJson) ResetAccountId() {
-	_jsii_.InvokeVoid(
-		o,
+		d,
 		"resetAccountId",
 		nil, // no parameters
 	)
 }
 
-func (o *jsiiProxy_OneDashboardJson) ResetId() {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) ResetId() {
 	_jsii_.InvokeVoid(
-		o,
+		d,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (o *jsiiProxy_OneDashboardJson) ResetOverrideLogicalId() {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		o,
+		d,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (o *jsiiProxy_OneDashboardJson) ResetTimeouts() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OneDashboardJson) SynthesizeAttributes() *map[string]interface{} {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -839,11 +758,11 @@ func (o *jsiiProxy_OneDashboardJson) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) ToMetadata() interface{} {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -852,11 +771,11 @@ func (o *jsiiProxy_OneDashboardJson) ToMetadata() interface{} {
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) ToString() *string {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -865,11 +784,11 @@ func (o *jsiiProxy_OneDashboardJson) ToString() *string {
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardJson) ToTerraform() interface{} {
+func (d *jsiiProxy_DataNewrelicTestGrokPattern) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		o,
+		d,
 		"toTerraform",
 		nil, // no parameters
 		&returns,
