@@ -2,10 +2,10 @@ package syntheticsalertcondition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v5/syntheticsalertcondition/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/syntheticsalertcondition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
