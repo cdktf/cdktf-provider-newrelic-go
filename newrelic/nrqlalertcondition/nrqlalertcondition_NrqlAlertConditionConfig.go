@@ -77,6 +77,10 @@ type NrqlAlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#enabled NrqlAlertCondition#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	// How long we wait until the signal starts evaluating. The maximum delay is 7200 seconds (120 minutes).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#evaluation_delay NrqlAlertCondition#evaluation_delay}
+	EvaluationDelay *float64 `field:"optional" json:"evaluationDelay" yaml:"evaluationDelay"`
 	// The amount of time (in seconds) to wait before considering the signal expired.
 	//
 	// Must be in the range of 30 to 172800 (inclusive)

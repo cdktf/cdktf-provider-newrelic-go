@@ -27,7 +27,7 @@ type DataNewrelicEntityConfig struct {
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The entity's domain.
 	//
-	// Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and VIZ. If not specified, all domains are searched.
+	// Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and EXT. If not specified, all domains are searched.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#domain DataNewrelicEntity#domain}
 	Domain *string `field:"optional" json:"domain" yaml:"domain"`
@@ -44,7 +44,7 @@ type DataNewrelicEntityConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#tag DataNewrelicEntity#tag}
 	Tag interface{} `field:"optional" json:"tag" yaml:"tag"`
-	// The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, and WORKLOAD.
+	// The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, SERVICE and WORKLOAD.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#type DataNewrelicEntity#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`

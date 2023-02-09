@@ -20,7 +20,7 @@ type NrqlAlertConditionTerm struct {
 	Priority *string `field:"optional" json:"priority" yaml:"priority"`
 	// The duration, in seconds, that the threshold must violate in order to create an incident.
 	//
-	// Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-3600 seconds for baseline conditions, and within 60-7200 seconds for static conditions
+	// Value must be a multiple of the 'aggregation_window' (which has a default of 60 seconds). Value must be within 120-86400 seconds for baseline conditions, and within 60-86400 seconds for static conditions
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/nrql_alert_condition#threshold_duration NrqlAlertCondition#threshold_duration}
 	ThresholdDuration *float64 `field:"optional" json:"thresholdDuration" yaml:"thresholdDuration"`

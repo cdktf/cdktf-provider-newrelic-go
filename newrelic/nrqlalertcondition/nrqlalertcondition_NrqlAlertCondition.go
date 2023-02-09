@@ -58,6 +58,9 @@ type NrqlAlertCondition interface {
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
 	EntityGuid() *string
+	EvaluationDelay() *float64
+	SetEvaluationDelay(val *float64)
+	EvaluationDelayInput() *float64
 	ExpirationDuration() *float64
 	SetExpirationDuration(val *float64)
 	ExpirationDurationInput() *float64
@@ -172,6 +175,7 @@ type NrqlAlertCondition interface {
 	ResetCritical()
 	ResetDescription()
 	ResetEnabled()
+	ResetEvaluationDelay()
 	ResetExpirationDuration()
 	ResetFillOption()
 	ResetFillValue()
@@ -458,6 +462,26 @@ func (j *jsiiProxy_NrqlAlertCondition) EntityGuid() *string {
 	_jsii_.Get(
 		j,
 		"entityGuid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertCondition) EvaluationDelay() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"evaluationDelay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertCondition) EvaluationDelayInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"evaluationDelayInput",
 		&returns,
 	)
 	return returns
@@ -1049,6 +1073,17 @@ func (j *jsiiProxy_NrqlAlertCondition)SetEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_NrqlAlertCondition)SetEvaluationDelay(val *float64) {
+	if err := j.validateSetEvaluationDelayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"evaluationDelay",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NrqlAlertCondition)SetExpirationDuration(val *float64) {
 	if err := j.validateSetExpirationDurationParameters(val); err != nil {
 		panic(err)
@@ -1616,6 +1651,14 @@ func (n *jsiiProxy_NrqlAlertCondition) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NrqlAlertCondition) ResetEvaluationDelay() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEvaluationDelay",
 		nil, // no parameters
 	)
 }

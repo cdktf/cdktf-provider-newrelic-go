@@ -339,6 +339,14 @@ func (j *jsiiProxy_NrqlAlertCondition) validateSetEnabledParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_NrqlAlertCondition) validateSetEvaluationDelayParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NrqlAlertCondition) validateSetExpirationDurationParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
