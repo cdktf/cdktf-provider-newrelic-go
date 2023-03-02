@@ -15,13 +15,7 @@ type DataNewrelicNotificationDestination interface {
 	AccountId() *float64
 	SetAccountId(val *float64)
 	AccountIdInput() *float64
-	Active() interface{}
-	SetActive(val interface{})
-	ActiveInput() interface{}
-	AuthBasic() DataNewrelicNotificationDestinationAuthBasicOutputReference
-	AuthBasicInput() *DataNewrelicNotificationDestinationAuthBasic
-	AuthToken() DataNewrelicNotificationDestinationAuthTokenOutputReference
-	AuthTokenInput() *DataNewrelicNotificationDestinationAuthToken
+	Active() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -45,18 +39,14 @@ type DataNewrelicNotificationDestination interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	LastSent() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Property() DataNewrelicNotificationDestinationPropertyList
-	PropertyInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -71,8 +61,6 @@ type DataNewrelicNotificationDestination interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
-	SetType(val *string)
-	TypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -98,19 +86,10 @@ type DataNewrelicNotificationDestination interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAuthBasic(value *DataNewrelicNotificationDestinationAuthBasic)
-	PutAuthToken(value *DataNewrelicNotificationDestinationAuthToken)
-	PutProperty(value interface{})
 	ResetAccountId()
-	ResetActive()
-	ResetAuthBasic()
-	ResetAuthToken()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetProperty()
-	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -146,61 +125,11 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) AccountIdInput() *float6
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestination) Active() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataNewrelicNotificationDestination) Active() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"active",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestination) ActiveInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"activeInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestination) AuthBasic() DataNewrelicNotificationDestinationAuthBasicOutputReference {
-	var returns DataNewrelicNotificationDestinationAuthBasicOutputReference
-	_jsii_.Get(
-		j,
-		"authBasic",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestination) AuthBasicInput() *DataNewrelicNotificationDestinationAuthBasic {
-	var returns *DataNewrelicNotificationDestinationAuthBasic
-	_jsii_.Get(
-		j,
-		"authBasicInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestination) AuthToken() DataNewrelicNotificationDestinationAuthTokenOutputReference {
-	var returns DataNewrelicNotificationDestinationAuthTokenOutputReference
-	_jsii_.Get(
-		j,
-		"authToken",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestination) AuthTokenInput() *DataNewrelicNotificationDestinationAuthToken {
-	var returns *DataNewrelicNotificationDestinationAuthToken
-	_jsii_.Get(
-		j,
-		"authTokenInput",
 		&returns,
 	)
 	return returns
@@ -296,16 +225,6 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestination) LastSent() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"lastSent",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataNewrelicNotificationDestination) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -326,16 +245,6 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestination) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataNewrelicNotificationDestination) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -351,16 +260,6 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) Property() DataNewrelicN
 	_jsii_.Get(
 		j,
 		"property",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestination) PropertyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"propertyInput",
 		&returns,
 	)
 	return returns
@@ -436,16 +335,6 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) Type() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestination) TypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"typeInput",
-		&returns,
-	)
-	return returns
-}
-
 
 // Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/notification_destination newrelic_notification_destination} Data Source.
 func NewDataNewrelicNotificationDestination(scope constructs.Construct, id *string, config *DataNewrelicNotificationDestinationConfig) DataNewrelicNotificationDestination {
@@ -483,17 +372,6 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination)SetAccountId(val *float64
 	_jsii_.Set(
 		j,
 		"accountId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestination)SetActive(val interface{}) {
-	if err := j.validateSetActiveParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"active",
 		val,
 	)
 }
@@ -544,32 +422,10 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination)SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestination)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataNewrelicNotificationDestination)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestination)SetType(val *string) {
-	if err := j.validateSetTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"type",
 		val,
 	)
 }
@@ -840,39 +696,6 @@ func (d *jsiiProxy_DataNewrelicNotificationDestination) OverrideLogicalId(newLog
 	)
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestination) PutAuthBasic(value *DataNewrelicNotificationDestinationAuthBasic) {
-	if err := d.validatePutAuthBasicParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putAuthBasic",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataNewrelicNotificationDestination) PutAuthToken(value *DataNewrelicNotificationDestinationAuthToken) {
-	if err := d.validatePutAuthTokenParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putAuthToken",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataNewrelicNotificationDestination) PutProperty(value interface{}) {
-	if err := d.validatePutPropertyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putProperty",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -881,58 +704,10 @@ func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetAccountId() {
 	)
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetActive() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetActive",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetAuthBasic() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAuthBasic",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetAuthToken() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetAuthToken",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetProperty() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetProperty",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetType",
 		nil, // no parameters
 	)
 }

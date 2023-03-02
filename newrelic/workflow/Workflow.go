@@ -52,6 +52,7 @@ type Workflow interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Guid() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -334,6 +335,16 @@ func (j *jsiiProxy_Workflow) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Workflow) Guid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"guid",
 		&returns,
 	)
 	return returns

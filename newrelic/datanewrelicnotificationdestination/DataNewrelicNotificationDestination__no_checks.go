@@ -52,18 +52,6 @@ func (d *jsiiProxy_DataNewrelicNotificationDestination) validateOverrideLogicalI
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestination) validatePutAuthBasicParameters(value *DataNewrelicNotificationDestinationAuthBasic) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataNewrelicNotificationDestination) validatePutAuthTokenParameters(value *DataNewrelicNotificationDestinationAuthToken) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataNewrelicNotificationDestination) validatePutPropertyParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataNewrelicNotificationDestination_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -80,23 +68,11 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) validateSetAccountIdPara
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestination) validateSetActiveParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataNewrelicNotificationDestination) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataNewrelicNotificationDestination) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestination) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestination) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

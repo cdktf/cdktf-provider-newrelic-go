@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -155,7 +155,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateSetInternalValueParameters(val *DataNewrelicNotificationDestinationAuthToken) error {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateSetInternalValueParameters(val *DataNewrelicNotificationDestinationProperty) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateSetPrefixParameters(val *string) error {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -187,21 +187,21 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func validateNewDataNewrelicNotificationDestinationAuthTokenOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataNewrelicNotificationDestinationPropertyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

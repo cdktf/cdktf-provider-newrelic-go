@@ -56,19 +56,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateSetDisplayValueParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateSetKeyParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateSetLabelParameters(val *string) error {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateSetInternalValueParameters(val *DataNewrelicNotificationDestinationProperty) error {
 	return nil
 }
 
@@ -77,10 +65,6 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) v
 }
 
 func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateSetValueParameters(val *string) error {
 	return nil
 }
 

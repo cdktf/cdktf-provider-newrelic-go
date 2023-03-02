@@ -12,10 +12,6 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyList) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

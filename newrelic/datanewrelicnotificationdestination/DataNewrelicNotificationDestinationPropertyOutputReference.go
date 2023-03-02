@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataNewrelicNotificationDestinationAuthTokenOutputReference interface {
+type DataNewrelicNotificationDestinationPropertyOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -25,13 +25,13 @@ type DataNewrelicNotificationDestinationAuthTokenOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisplayValue() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataNewrelicNotificationDestinationAuthToken
-	SetInternalValue(val *DataNewrelicNotificationDestinationAuthToken)
-	Prefix() *string
-	SetPrefix(val *string)
-	PrefixInput() *string
+	InternalValue() *DataNewrelicNotificationDestinationProperty
+	SetInternalValue(val *DataNewrelicNotificationDestinationProperty)
+	Key() *string
+	Label() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,6 +40,7 @@ type DataNewrelicNotificationDestinationAuthTokenOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -64,7 +65,6 @@ type DataNewrelicNotificationDestinationAuthTokenOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -75,12 +75,12 @@ type DataNewrelicNotificationDestinationAuthTokenOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataNewrelicNotificationDestinationAuthTokenOutputReference
-type jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference struct {
+// The jsii proxy struct for DataNewrelicNotificationDestinationPropertyOutputReference
+type jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -90,7 +90,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -100,7 +100,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -110,7 +110,17 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) Fqn() *string {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) DisplayValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -120,8 +130,8 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) InternalValue() *DataNewrelicNotificationDestinationAuthToken {
-	var returns *DataNewrelicNotificationDestinationAuthToken
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) InternalValue() *DataNewrelicNotificationDestinationProperty {
+	var returns *DataNewrelicNotificationDestinationProperty
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -130,27 +140,27 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) Prefix() *string {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) Key() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"prefix",
+		"key",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) PrefixInput() *string {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) Label() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"prefixInput",
+		"label",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -160,7 +170,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -170,35 +180,45 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"value",
+		&returns,
+	)
+	return returns
+}
 
-func NewDataNewrelicNotificationDestinationAuthTokenOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataNewrelicNotificationDestinationAuthTokenOutputReference {
+
+func NewDataNewrelicNotificationDestinationPropertyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataNewrelicNotificationDestinationPropertyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataNewrelicNotificationDestinationAuthTokenOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataNewrelicNotificationDestinationPropertyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference{}
+	j := jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationAuthTokenOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		"@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationPropertyOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataNewrelicNotificationDestinationAuthTokenOutputReference_Override(d DataNewrelicNotificationDestinationAuthTokenOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataNewrelicNotificationDestinationPropertyOutputReference_Override(d DataNewrelicNotificationDestinationPropertyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationAuthTokenOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		"@cdktf/provider-newrelic.dataNewrelicNotificationDestination.DataNewrelicNotificationDestinationPropertyOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -209,7 +229,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -220,7 +240,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference)SetInternalValue(val *DataNewrelicNotificationDestinationAuthToken) {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference)SetInternalValue(val *DataNewrelicNotificationDestinationProperty) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -231,18 +251,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference)SetPrefix(val *string) {
-	if err := j.validateSetPrefixParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"prefix",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -253,7 +262,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -264,7 +273,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference)S
 	)
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) ComputeFqn() *string {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -277,7 +286,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -293,7 +302,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -309,7 +318,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -325,7 +334,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -341,7 +350,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -357,7 +366,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -373,7 +382,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -389,7 +398,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -405,7 +414,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -421,7 +430,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -434,7 +443,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -450,15 +459,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) ResetPrefix() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetPrefix",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -474,7 +475,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationAuthTokenOutputReference) ToString() *string {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
