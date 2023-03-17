@@ -44,6 +44,18 @@ func (o *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validateInterp
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validatePutColorsParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validatePutNullValuesParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validatePutUnitsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -60,6 +72,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validateSetFacetShowOtherSeriesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validateSetHeightParameters(val *float64) error {
 	return nil
 }
@@ -69,6 +85,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validateSetIgn
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validateSetLegendEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -93,6 +113,14 @@ func (j *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validateSetTit
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validateSetWidthParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validateSetYAxisLeftMaxParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validateSetYAxisLeftMinParameters(val *float64) error {
 	return nil
 }
 

@@ -10,6 +10,8 @@ import (
 
 type OneDashboardPageWidgetJsonOutputReference interface {
 	cdktf.ComplexObject
+	Colors() OneDashboardPageWidgetJsonColorsList
+	ColorsInput() interface{}
 	Column() *float64
 	SetColumn(val *float64)
 	ColumnInput() *float64
@@ -28,6 +30,9 @@ type OneDashboardPageWidgetJsonOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FacetShowOtherSeries() interface{}
+	SetFacetShowOtherSeries(val interface{})
+	FacetShowOtherSeriesInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Height() *float64
@@ -39,8 +44,13 @@ type OneDashboardPageWidgetJsonOutputReference interface {
 	IgnoreTimeRangeInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LegendEnabled() interface{}
+	SetLegendEnabled(val interface{})
+	LegendEnabledInput() interface{}
 	NrqlQuery() OneDashboardPageWidgetJsonNrqlQueryList
 	NrqlQueryInput() interface{}
+	NullValues() OneDashboardPageWidgetJsonNullValuesList
+	NullValuesInput() interface{}
 	Row() *float64
 	SetRow(val *float64)
 	RowInput() *float64
@@ -55,9 +65,17 @@ type OneDashboardPageWidgetJsonOutputReference interface {
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
+	Units() OneDashboardPageWidgetJsonUnitsList
+	UnitsInput() interface{}
 	Width() *float64
 	SetWidth(val *float64)
 	WidthInput() *float64
+	YAxisLeftMax() *float64
+	SetYAxisLeftMax(val *float64)
+	YAxisLeftMaxInput() *float64
+	YAxisLeftMin() *float64
+	SetYAxisLeftMin(val *float64)
+	YAxisLeftMinInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -82,10 +100,20 @@ type OneDashboardPageWidgetJsonOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutColors(value interface{})
 	PutNrqlQuery(value interface{})
+	PutNullValues(value interface{})
+	PutUnits(value interface{})
+	ResetColors()
+	ResetFacetShowOtherSeries()
 	ResetHeight()
 	ResetIgnoreTimeRange()
+	ResetLegendEnabled()
+	ResetNullValues()
+	ResetUnits()
 	ResetWidth()
+	ResetYAxisLeftMax()
+	ResetYAxisLeftMin()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -99,6 +127,26 @@ type OneDashboardPageWidgetJsonOutputReference interface {
 // The jsii proxy struct for OneDashboardPageWidgetJsonOutputReference
 type jsiiProxy_OneDashboardPageWidgetJsonOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) Colors() OneDashboardPageWidgetJsonColorsList {
+	var returns OneDashboardPageWidgetJsonColorsList
+	_jsii_.Get(
+		j,
+		"colors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) ColorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"colorsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) Column() *float64 {
@@ -146,6 +194,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) CreationStack() *[
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) FacetShowOtherSeries() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"facetShowOtherSeries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) FacetShowOtherSeriesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"facetShowOtherSeriesInput",
 		&returns,
 	)
 	return returns
@@ -221,6 +289,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) InternalValue() in
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) LegendEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"legendEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) LegendEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"legendEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) NrqlQuery() OneDashboardPageWidgetJsonNrqlQueryList {
 	var returns OneDashboardPageWidgetJsonNrqlQueryList
 	_jsii_.Get(
@@ -236,6 +324,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) NrqlQueryInput() i
 	_jsii_.Get(
 		j,
 		"nrqlQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) NullValues() OneDashboardPageWidgetJsonNullValuesList {
+	var returns OneDashboardPageWidgetJsonNullValuesList
+	_jsii_.Get(
+		j,
+		"nullValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) NullValuesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nullValuesInput",
 		&returns,
 	)
 	return returns
@@ -301,6 +409,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) TitleInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) Units() OneDashboardPageWidgetJsonUnitsList {
+	var returns OneDashboardPageWidgetJsonUnitsList
+	_jsii_.Get(
+		j,
+		"units",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) UnitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unitsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) Width() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -316,6 +444,46 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) WidthInput() *floa
 	_jsii_.Get(
 		j,
 		"widthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) YAxisLeftMax() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"yAxisLeftMax",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) YAxisLeftMaxInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"yAxisLeftMaxInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) YAxisLeftMin() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"yAxisLeftMin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) YAxisLeftMinInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"yAxisLeftMinInput",
 		&returns,
 	)
 	return returns
@@ -382,6 +550,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference)SetComplexObjectIsF
 	)
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference)SetFacetShowOtherSeries(val interface{}) {
+	if err := j.validateSetFacetShowOtherSeriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"facetShowOtherSeries",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference)SetHeight(val *float64) {
 	if err := j.validateSetHeightParameters(val); err != nil {
 		panic(err)
@@ -411,6 +590,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference)SetInternalValue(va
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference)SetLegendEnabled(val interface{}) {
+	if err := j.validateSetLegendEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"legendEnabled",
 		val,
 	)
 }
@@ -466,6 +656,28 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference)SetWidth(val *float
 	_jsii_.Set(
 		j,
 		"width",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference)SetYAxisLeftMax(val *float64) {
+	if err := j.validateSetYAxisLeftMaxParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"yAxisLeftMax",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference)SetYAxisLeftMin(val *float64) {
+	if err := j.validateSetYAxisLeftMinParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"yAxisLeftMin",
 		val,
 	)
 }
@@ -656,6 +868,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) InterpolationForAt
 	return returns
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) PutColors(value interface{}) {
+	if err := o.validatePutColorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putColors",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) PutNrqlQuery(value interface{}) {
 	if err := o.validatePutNrqlQueryParameters(value); err != nil {
 		panic(err)
@@ -664,6 +887,44 @@ func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) PutNrqlQuery(value
 		o,
 		"putNrqlQuery",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) PutNullValues(value interface{}) {
+	if err := o.validatePutNullValuesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putNullValues",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) PutUnits(value interface{}) {
+	if err := o.validatePutUnitsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putUnits",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) ResetColors() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetColors",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) ResetFacetShowOtherSeries() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFacetShowOtherSeries",
+		nil, // no parameters
 	)
 }
 
@@ -683,10 +944,50 @@ func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) ResetIgnoreTimeRan
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) ResetLegendEnabled() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLegendEnabled",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) ResetNullValues() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetNullValues",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) ResetUnits() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUnits",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) ResetWidth() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetWidth",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) ResetYAxisLeftMax() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetYAxisLeftMax",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) ResetYAxisLeftMin() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetYAxisLeftMin",
 		nil, // no parameters
 	)
 }

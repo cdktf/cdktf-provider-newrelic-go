@@ -90,6 +90,37 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateInterpo
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutColorsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*OneDashboardPageWidgetHeatmapColors:
+		value := value.(*[]*OneDashboardPageWidgetHeatmapColors)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*OneDashboardPageWidgetHeatmapColors:
+		value_ := value.([]*OneDashboardPageWidgetHeatmapColors)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OneDashboardPageWidgetHeatmapColors; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutNrqlQueryParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -115,6 +146,68 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutNrql
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OneDashboardPageWidgetHeatmapNrqlQuery; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutNullValuesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*OneDashboardPageWidgetHeatmapNullValues:
+		value := value.(*[]*OneDashboardPageWidgetHeatmapNullValues)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*OneDashboardPageWidgetHeatmapNullValues:
+		value_ := value.([]*OneDashboardPageWidgetHeatmapNullValues)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OneDashboardPageWidgetHeatmapNullValues; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutUnitsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*OneDashboardPageWidgetHeatmapUnits:
+		value := value.(*[]*OneDashboardPageWidgetHeatmapUnits)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*OneDashboardPageWidgetHeatmapUnits:
+		value_ := value.([]*OneDashboardPageWidgetHeatmapUnits)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OneDashboardPageWidgetHeatmapUnits; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -202,6 +295,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetFacetShowOtherSeriesParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetFilterCurrentDashboardParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -274,6 +387,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetInte
 	return nil
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetLegendEnabledParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetLinkedEntityGuidsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -315,6 +448,22 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetTitl
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetWidthParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetYAxisLeftMaxParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetYAxisLeftMinParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

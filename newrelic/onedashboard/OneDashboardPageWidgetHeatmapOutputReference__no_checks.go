@@ -44,7 +44,19 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateInterpo
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutColorsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutNrqlQueryParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutNullValuesParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutUnitsParameters(value interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetComp
 	return nil
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetFacetShowOtherSeriesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetFilterCurrentDashboardParameters(val interface{}) error {
 	return nil
 }
@@ -77,6 +93,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetIgno
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetLegendEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -101,6 +121,14 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetTitl
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetWidthParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetYAxisLeftMaxParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetYAxisLeftMinParameters(val *float64) error {
 	return nil
 }
 

@@ -10,6 +10,8 @@ import (
 
 type OneDashboardPageWidgetHistogramOutputReference interface {
 	cdktf.ComplexObject
+	Colors() OneDashboardPageWidgetHistogramColorsList
+	ColorsInput() interface{}
 	Column() *float64
 	SetColumn(val *float64)
 	ColumnInput() *float64
@@ -28,6 +30,9 @@ type OneDashboardPageWidgetHistogramOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FacetShowOtherSeries() interface{}
+	SetFacetShowOtherSeries(val interface{})
+	FacetShowOtherSeriesInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Height() *float64
@@ -39,8 +44,13 @@ type OneDashboardPageWidgetHistogramOutputReference interface {
 	IgnoreTimeRangeInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LegendEnabled() interface{}
+	SetLegendEnabled(val interface{})
+	LegendEnabledInput() interface{}
 	NrqlQuery() OneDashboardPageWidgetHistogramNrqlQueryList
 	NrqlQueryInput() interface{}
+	NullValues() OneDashboardPageWidgetHistogramNullValuesList
+	NullValuesInput() interface{}
 	Row() *float64
 	SetRow(val *float64)
 	RowInput() *float64
@@ -55,9 +65,17 @@ type OneDashboardPageWidgetHistogramOutputReference interface {
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
+	Units() OneDashboardPageWidgetHistogramUnitsList
+	UnitsInput() interface{}
 	Width() *float64
 	SetWidth(val *float64)
 	WidthInput() *float64
+	YAxisLeftMax() *float64
+	SetYAxisLeftMax(val *float64)
+	YAxisLeftMaxInput() *float64
+	YAxisLeftMin() *float64
+	SetYAxisLeftMin(val *float64)
+	YAxisLeftMinInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -82,10 +100,20 @@ type OneDashboardPageWidgetHistogramOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutColors(value interface{})
 	PutNrqlQuery(value interface{})
+	PutNullValues(value interface{})
+	PutUnits(value interface{})
+	ResetColors()
+	ResetFacetShowOtherSeries()
 	ResetHeight()
 	ResetIgnoreTimeRange()
+	ResetLegendEnabled()
+	ResetNullValues()
+	ResetUnits()
 	ResetWidth()
+	ResetYAxisLeftMax()
+	ResetYAxisLeftMin()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -99,6 +127,26 @@ type OneDashboardPageWidgetHistogramOutputReference interface {
 // The jsii proxy struct for OneDashboardPageWidgetHistogramOutputReference
 type jsiiProxy_OneDashboardPageWidgetHistogramOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) Colors() OneDashboardPageWidgetHistogramColorsList {
+	var returns OneDashboardPageWidgetHistogramColorsList
+	_jsii_.Get(
+		j,
+		"colors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ColorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"colorsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) Column() *float64 {
@@ -146,6 +194,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) CreationStack
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) FacetShowOtherSeries() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"facetShowOtherSeries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) FacetShowOtherSeriesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"facetShowOtherSeriesInput",
 		&returns,
 	)
 	return returns
@@ -221,6 +289,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) InternalValue
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) LegendEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"legendEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) LegendEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"legendEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) NrqlQuery() OneDashboardPageWidgetHistogramNrqlQueryList {
 	var returns OneDashboardPageWidgetHistogramNrqlQueryList
 	_jsii_.Get(
@@ -236,6 +324,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) NrqlQueryInpu
 	_jsii_.Get(
 		j,
 		"nrqlQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) NullValues() OneDashboardPageWidgetHistogramNullValuesList {
+	var returns OneDashboardPageWidgetHistogramNullValuesList
+	_jsii_.Get(
+		j,
+		"nullValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) NullValuesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nullValuesInput",
 		&returns,
 	)
 	return returns
@@ -301,6 +409,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) TitleInput() 
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) Units() OneDashboardPageWidgetHistogramUnitsList {
+	var returns OneDashboardPageWidgetHistogramUnitsList
+	_jsii_.Get(
+		j,
+		"units",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) UnitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unitsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) Width() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -316,6 +444,46 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) WidthInput() 
 	_jsii_.Get(
 		j,
 		"widthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) YAxisLeftMax() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"yAxisLeftMax",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) YAxisLeftMaxInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"yAxisLeftMaxInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) YAxisLeftMin() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"yAxisLeftMin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) YAxisLeftMinInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"yAxisLeftMinInput",
 		&returns,
 	)
 	return returns
@@ -382,6 +550,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetComplexObje
 	)
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetFacetShowOtherSeries(val interface{}) {
+	if err := j.validateSetFacetShowOtherSeriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"facetShowOtherSeries",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetHeight(val *float64) {
 	if err := j.validateSetHeightParameters(val); err != nil {
 		panic(err)
@@ -411,6 +590,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetInternalVal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetLegendEnabled(val interface{}) {
+	if err := j.validateSetLegendEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"legendEnabled",
 		val,
 	)
 }
@@ -466,6 +656,28 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetWidth(val *
 	_jsii_.Set(
 		j,
 		"width",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetYAxisLeftMax(val *float64) {
+	if err := j.validateSetYAxisLeftMaxParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"yAxisLeftMax",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetYAxisLeftMin(val *float64) {
+	if err := j.validateSetYAxisLeftMinParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"yAxisLeftMin",
 		val,
 	)
 }
@@ -656,6 +868,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) Interpolation
 	return returns
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) PutColors(value interface{}) {
+	if err := o.validatePutColorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putColors",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) PutNrqlQuery(value interface{}) {
 	if err := o.validatePutNrqlQueryParameters(value); err != nil {
 		panic(err)
@@ -664,6 +887,44 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) PutNrqlQuery(
 		o,
 		"putNrqlQuery",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) PutNullValues(value interface{}) {
+	if err := o.validatePutNullValuesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putNullValues",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) PutUnits(value interface{}) {
+	if err := o.validatePutUnitsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putUnits",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetColors() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetColors",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetFacetShowOtherSeries() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFacetShowOtherSeries",
+		nil, // no parameters
 	)
 }
 
@@ -683,10 +944,50 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetIgnoreTi
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetLegendEnabled() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLegendEnabled",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetNullValues() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetNullValues",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetUnits() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUnits",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetWidth() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetWidth",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetYAxisLeftMax() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetYAxisLeftMax",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetYAxisLeftMin() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetYAxisLeftMin",
 		nil, // no parameters
 	)
 }

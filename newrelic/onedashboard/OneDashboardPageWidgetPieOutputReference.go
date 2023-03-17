@@ -10,6 +10,8 @@ import (
 
 type OneDashboardPageWidgetPieOutputReference interface {
 	cdktf.ComplexObject
+	Colors() OneDashboardPageWidgetPieColorsList
+	ColorsInput() interface{}
 	Column() *float64
 	SetColumn(val *float64)
 	ColumnInput() *float64
@@ -28,6 +30,9 @@ type OneDashboardPageWidgetPieOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FacetShowOtherSeries() interface{}
+	SetFacetShowOtherSeries(val interface{})
+	FacetShowOtherSeriesInput() interface{}
 	FilterCurrentDashboard() interface{}
 	SetFilterCurrentDashboard(val interface{})
 	FilterCurrentDashboardInput() interface{}
@@ -42,11 +47,16 @@ type OneDashboardPageWidgetPieOutputReference interface {
 	IgnoreTimeRangeInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LegendEnabled() interface{}
+	SetLegendEnabled(val interface{})
+	LegendEnabledInput() interface{}
 	LinkedEntityGuids() *[]*string
 	SetLinkedEntityGuids(val *[]*string)
 	LinkedEntityGuidsInput() *[]*string
 	NrqlQuery() OneDashboardPageWidgetPieNrqlQueryList
 	NrqlQueryInput() interface{}
+	NullValues() OneDashboardPageWidgetPieNullValuesList
+	NullValuesInput() interface{}
 	Row() *float64
 	SetRow(val *float64)
 	RowInput() *float64
@@ -61,9 +71,17 @@ type OneDashboardPageWidgetPieOutputReference interface {
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
+	Units() OneDashboardPageWidgetPieUnitsList
+	UnitsInput() interface{}
 	Width() *float64
 	SetWidth(val *float64)
 	WidthInput() *float64
+	YAxisLeftMax() *float64
+	SetYAxisLeftMax(val *float64)
+	YAxisLeftMaxInput() *float64
+	YAxisLeftMin() *float64
+	SetYAxisLeftMin(val *float64)
+	YAxisLeftMinInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -88,12 +106,22 @@ type OneDashboardPageWidgetPieOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutColors(value interface{})
 	PutNrqlQuery(value interface{})
+	PutNullValues(value interface{})
+	PutUnits(value interface{})
+	ResetColors()
+	ResetFacetShowOtherSeries()
 	ResetFilterCurrentDashboard()
 	ResetHeight()
 	ResetIgnoreTimeRange()
+	ResetLegendEnabled()
 	ResetLinkedEntityGuids()
+	ResetNullValues()
+	ResetUnits()
 	ResetWidth()
+	ResetYAxisLeftMax()
+	ResetYAxisLeftMin()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +135,26 @@ type OneDashboardPageWidgetPieOutputReference interface {
 // The jsii proxy struct for OneDashboardPageWidgetPieOutputReference
 type jsiiProxy_OneDashboardPageWidgetPieOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) Colors() OneDashboardPageWidgetPieColorsList {
+	var returns OneDashboardPageWidgetPieColorsList
+	_jsii_.Get(
+		j,
+		"colors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) ColorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"colorsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) Column() *float64 {
@@ -154,6 +202,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) CreationStack() *[]
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) FacetShowOtherSeries() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"facetShowOtherSeries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) FacetShowOtherSeriesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"facetShowOtherSeriesInput",
 		&returns,
 	)
 	return returns
@@ -249,6 +317,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) InternalValue() int
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) LegendEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"legendEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) LegendEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"legendEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) LinkedEntityGuids() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -284,6 +372,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) NrqlQueryInput() in
 	_jsii_.Get(
 		j,
 		"nrqlQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) NullValues() OneDashboardPageWidgetPieNullValuesList {
+	var returns OneDashboardPageWidgetPieNullValuesList
+	_jsii_.Get(
+		j,
+		"nullValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) NullValuesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nullValuesInput",
 		&returns,
 	)
 	return returns
@@ -349,6 +457,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) TitleInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) Units() OneDashboardPageWidgetPieUnitsList {
+	var returns OneDashboardPageWidgetPieUnitsList
+	_jsii_.Get(
+		j,
+		"units",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) UnitsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unitsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) Width() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -364,6 +492,46 @@ func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) WidthInput() *float
 	_jsii_.Get(
 		j,
 		"widthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) YAxisLeftMax() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"yAxisLeftMax",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) YAxisLeftMaxInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"yAxisLeftMaxInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) YAxisLeftMin() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"yAxisLeftMin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference) YAxisLeftMinInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"yAxisLeftMinInput",
 		&returns,
 	)
 	return returns
@@ -430,6 +598,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference)SetComplexObjectIsFr
 	)
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference)SetFacetShowOtherSeries(val interface{}) {
+	if err := j.validateSetFacetShowOtherSeriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"facetShowOtherSeries",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference)SetFilterCurrentDashboard(val interface{}) {
 	if err := j.validateSetFilterCurrentDashboardParameters(val); err != nil {
 		panic(err)
@@ -470,6 +649,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference)SetInternalValue(val
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference)SetLegendEnabled(val interface{}) {
+	if err := j.validateSetLegendEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"legendEnabled",
 		val,
 	)
 }
@@ -536,6 +726,28 @@ func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference)SetWidth(val *float6
 	_jsii_.Set(
 		j,
 		"width",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference)SetYAxisLeftMax(val *float64) {
+	if err := j.validateSetYAxisLeftMaxParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"yAxisLeftMax",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetPieOutputReference)SetYAxisLeftMin(val *float64) {
+	if err := j.validateSetYAxisLeftMinParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"yAxisLeftMin",
 		val,
 	)
 }
@@ -726,6 +938,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) PutColors(value interface{}) {
+	if err := o.validatePutColorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putColors",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) PutNrqlQuery(value interface{}) {
 	if err := o.validatePutNrqlQueryParameters(value); err != nil {
 		panic(err)
@@ -734,6 +957,44 @@ func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) PutNrqlQuery(value 
 		o,
 		"putNrqlQuery",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) PutNullValues(value interface{}) {
+	if err := o.validatePutNullValuesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putNullValues",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) PutUnits(value interface{}) {
+	if err := o.validatePutUnitsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putUnits",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) ResetColors() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetColors",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) ResetFacetShowOtherSeries() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetFacetShowOtherSeries",
+		nil, // no parameters
 	)
 }
 
@@ -761,6 +1022,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) ResetIgnoreTimeRang
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) ResetLegendEnabled() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLegendEnabled",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) ResetLinkedEntityGuids() {
 	_jsii_.InvokeVoid(
 		o,
@@ -769,10 +1038,42 @@ func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) ResetLinkedEntityGu
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) ResetNullValues() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetNullValues",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) ResetUnits() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUnits",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) ResetWidth() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetWidth",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) ResetYAxisLeftMax() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetYAxisLeftMax",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetPieOutputReference) ResetYAxisLeftMin() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetYAxisLeftMin",
 		nil, // no parameters
 	)
 }

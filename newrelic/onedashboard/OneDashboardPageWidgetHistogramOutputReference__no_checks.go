@@ -44,7 +44,19 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateInter
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validatePutColorsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validatePutNrqlQueryParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validatePutNullValuesParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validatePutUnitsParameters(value interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetFacetShowOtherSeriesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetHeightParameters(val *float64) error {
 	return nil
 }
@@ -73,6 +89,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetIg
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetLegendEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -93,6 +113,14 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetTi
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetWidthParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetYAxisLeftMaxParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetYAxisLeftMinParameters(val *float64) error {
 	return nil
 }
 
