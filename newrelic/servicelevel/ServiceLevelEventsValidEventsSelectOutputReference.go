@@ -43,6 +43,9 @@ type ServiceLevelEventsValidEventsSelectOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Threshold() *float64
+	SetThreshold(val *float64)
+	ThresholdInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type ServiceLevelEventsValidEventsSelectOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAttribute()
+	ResetThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -193,6 +197,26 @@ func (j *jsiiProxy_ServiceLevelEventsValidEventsSelectOutputReference) Terraform
 	return returns
 }
 
+func (j *jsiiProxy_ServiceLevelEventsValidEventsSelectOutputReference) Threshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"threshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceLevelEventsValidEventsSelectOutputReference) ThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"thresholdInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewServiceLevelEventsValidEventsSelectOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServiceLevelEventsValidEventsSelectOutputReference {
 	_init_.Initialize()
@@ -294,6 +318,17 @@ func (j *jsiiProxy_ServiceLevelEventsValidEventsSelectOutputReference)SetTerrafo
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceLevelEventsValidEventsSelectOutputReference)SetThreshold(val *float64) {
+	if err := j.validateSetThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"threshold",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (s *jsiiProxy_ServiceLevelEventsValidEventsSelectOutputReference) ResetAttr
 	_jsii_.InvokeVoid(
 		s,
 		"resetAttribute",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceLevelEventsValidEventsSelectOutputReference) ResetThreshold() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetThreshold",
 		nil, // no parameters
 	)
 }

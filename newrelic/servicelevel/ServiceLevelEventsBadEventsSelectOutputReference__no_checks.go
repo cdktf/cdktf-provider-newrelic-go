@@ -76,6 +76,10 @@ func (j *jsiiProxy_ServiceLevelEventsBadEventsSelectOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ServiceLevelEventsBadEventsSelectOutputReference) validateSetThresholdParameters(val *float64) error {
+	return nil
+}
+
 func validateNewServiceLevelEventsBadEventsSelectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
