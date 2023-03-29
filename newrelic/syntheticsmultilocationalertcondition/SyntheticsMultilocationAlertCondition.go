@@ -36,6 +36,7 @@ type SyntheticsMultilocationAlertCondition interface {
 	Entities() *[]*string
 	SetEntities(val *[]*string)
 	EntitiesInput() *[]*string
+	EntityGuid() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -237,6 +238,16 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) EntitiesInput() *[]*st
 	_jsii_.Get(
 		j,
 		"entitiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) EntityGuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"entityGuid",
 		&returns,
 	)
 	return returns

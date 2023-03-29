@@ -37,6 +37,7 @@ type AlertCondition interface {
 	Entities() *[]*float64
 	SetEntities(val *[]*float64)
 	EntitiesInput() *[]*float64
+	EntityGuid() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -256,6 +257,16 @@ func (j *jsiiProxy_AlertCondition) EntitiesInput() *[]*float64 {
 	_jsii_.Get(
 		j,
 		"entitiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertCondition) EntityGuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"entityGuid",
 		&returns,
 	)
 	return returns

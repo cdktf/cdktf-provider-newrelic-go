@@ -40,6 +40,7 @@ type InfraAlertCondition interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	EntityGuid() *string
 	Event() *string
 	SetEvent(val *string)
 	EventInput() *string
@@ -299,6 +300,16 @@ func (j *jsiiProxy_InfraAlertCondition) EnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InfraAlertCondition) EntityGuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"entityGuid",
 		&returns,
 	)
 	return returns
