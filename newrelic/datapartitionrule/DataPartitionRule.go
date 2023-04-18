@@ -2,14 +2,14 @@ package datapartitionrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datapartitionrule/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datapartitionrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/data_partition_rule newrelic_data_partition_rule}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/data_partition_rule newrelic_data_partition_rule}.
 type DataPartitionRule interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -24,9 +24,9 @@ type DataPartitionRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Deleted() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DataPartitionRule) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataPartitionRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataPartitionRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -461,7 +461,7 @@ func (j *jsiiProxy_DataPartitionRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/data_partition_rule newrelic_data_partition_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/data_partition_rule newrelic_data_partition_rule} Resource.
 func NewDataPartitionRule(scope constructs.Construct, id *string, config *DataPartitionRuleConfig) DataPartitionRule {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewDataPartitionRule(scope constructs.Construct, id *string, config *DataPa
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/data_partition_rule newrelic_data_partition_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/data_partition_rule newrelic_data_partition_rule} Resource.
 func NewDataPartitionRule_Override(d DataPartitionRule, scope constructs.Construct, id *string, config *DataPartitionRuleConfig) {
 	_init_.Initialize()
 
@@ -512,7 +512,10 @@ func (j *jsiiProxy_DataPartitionRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataPartitionRule)SetCount(val *float64) {
+func (j *jsiiProxy_DataPartitionRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

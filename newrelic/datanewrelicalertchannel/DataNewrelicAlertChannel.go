@@ -2,14 +2,14 @@ package datanewrelicalertchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicalertchannel/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicalertchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel newrelic_alert_channel}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/alert_channel newrelic_alert_channel}.
 type DataNewrelicAlertChannel interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -21,9 +21,9 @@ type DataNewrelicAlertChannel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataNewrelicAlertChannel) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicAlertChannel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataNewrelicAlertChannel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -338,7 +338,7 @@ func (j *jsiiProxy_DataNewrelicAlertChannel) Type() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel newrelic_alert_channel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/alert_channel newrelic_alert_channel} Data Source.
 func NewDataNewrelicAlertChannel(scope constructs.Construct, id *string, config *DataNewrelicAlertChannelConfig) DataNewrelicAlertChannel {
 	_init_.Initialize()
 
@@ -356,7 +356,7 @@ func NewDataNewrelicAlertChannel(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/alert_channel newrelic_alert_channel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/alert_channel newrelic_alert_channel} Data Source.
 func NewDataNewrelicAlertChannel_Override(d DataNewrelicAlertChannel, scope constructs.Construct, id *string, config *DataNewrelicAlertChannelConfig) {
 	_init_.Initialize()
 
@@ -378,7 +378,10 @@ func (j *jsiiProxy_DataNewrelicAlertChannel)SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicAlertChannel)SetCount(val *float64) {
+func (j *jsiiProxy_DataNewrelicAlertChannel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

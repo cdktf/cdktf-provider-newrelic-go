@@ -80,6 +80,10 @@ func (j *jsiiProxy_OneDashboard) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_OneDashboard) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OneDashboard) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

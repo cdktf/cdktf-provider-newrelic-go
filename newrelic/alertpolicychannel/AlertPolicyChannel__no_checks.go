@@ -80,6 +80,10 @@ func (j *jsiiProxy_AlertPolicyChannel) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_AlertPolicyChannel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertPolicyChannel) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_CloudAwsLinkAccount) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_CloudAwsLinkAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAwsLinkAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

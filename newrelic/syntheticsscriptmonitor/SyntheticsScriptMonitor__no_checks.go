@@ -80,6 +80,10 @@ func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetEnableScreenshotOnFailureAndScriptParameters(val interface{}) error {
 	return nil
 }

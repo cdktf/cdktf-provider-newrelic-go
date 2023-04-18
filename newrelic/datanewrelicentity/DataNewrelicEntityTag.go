@@ -4,11 +4,11 @@ package datanewrelicentity
 type DataNewrelicEntityTag struct {
 	// The tag key.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#key DataNewrelicEntity#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/entity#key DataNewrelicEntity#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// The tag value.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/d/entity#value DataNewrelicEntity#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/entity#value DataNewrelicEntity#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

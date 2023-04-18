@@ -76,6 +76,10 @@ func (j *jsiiProxy_SyntheticsSecureCredential) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsSecureCredential) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsSecureCredential) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

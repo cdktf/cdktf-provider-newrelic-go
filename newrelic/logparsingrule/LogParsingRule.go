@@ -2,14 +2,14 @@ package logparsingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/logparsingrule/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/logparsingrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/log_parsing_rule newrelic_log_parsing_rule}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/log_parsing_rule newrelic_log_parsing_rule}.
 type LogParsingRule interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -27,9 +27,9 @@ type LogParsingRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Deleted() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -203,8 +203,8 @@ func (j *jsiiProxy_LogParsingRule) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_LogParsingRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LogParsingRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -484,7 +484,7 @@ func (j *jsiiProxy_LogParsingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/log_parsing_rule newrelic_log_parsing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/log_parsing_rule newrelic_log_parsing_rule} Resource.
 func NewLogParsingRule(scope constructs.Construct, id *string, config *LogParsingRuleConfig) LogParsingRule {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewLogParsingRule(scope constructs.Construct, id *string, config *LogParsin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/log_parsing_rule newrelic_log_parsing_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/log_parsing_rule newrelic_log_parsing_rule} Resource.
 func NewLogParsingRule_Override(l LogParsingRule, scope constructs.Construct, id *string, config *LogParsingRuleConfig) {
 	_init_.Initialize()
 
@@ -546,7 +546,10 @@ func (j *jsiiProxy_LogParsingRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LogParsingRule)SetCount(val *float64) {
+func (j *jsiiProxy_LogParsingRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

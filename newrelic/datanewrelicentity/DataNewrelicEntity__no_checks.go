@@ -68,6 +68,10 @@ func validateDataNewrelicEntity_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicEntity) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicEntity) validateSetDomainParameters(val *string) error {
 	return nil
 }

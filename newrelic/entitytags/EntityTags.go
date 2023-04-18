@@ -2,14 +2,14 @@ package entitytags
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/entitytags/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/entitytags/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags newrelic_entity_tags}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/entity_tags newrelic_entity_tags}.
 type EntityTags interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type EntityTags interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_EntityTags) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_EntityTags) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EntityTags) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_EntityTags) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags newrelic_entity_tags} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/entity_tags newrelic_entity_tags} Resource.
 func NewEntityTags(scope constructs.Construct, id *string, config *EntityTagsConfig) EntityTags {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewEntityTags(scope constructs.Construct, id *string, config *EntityTagsCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/entity_tags newrelic_entity_tags} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/entity_tags newrelic_entity_tags} Resource.
 func NewEntityTags_Override(e EntityTags, scope constructs.Construct, id *string, config *EntityTagsConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_EntityTags)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EntityTags)SetCount(val *float64) {
+func (j *jsiiProxy_EntityTags)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

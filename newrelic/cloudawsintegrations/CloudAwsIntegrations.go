@@ -2,14 +2,14 @@ package cloudawsintegrations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/cloudawsintegrations/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsintegrations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations newrelic_cloud_aws_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations}.
 type CloudAwsIntegrations interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -28,9 +28,9 @@ type CloudAwsIntegrations interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -234,8 +234,8 @@ func (j *jsiiProxy_CloudAwsIntegrations) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_CloudAwsIntegrations) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudAwsIntegrations) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -525,7 +525,7 @@ func (j *jsiiProxy_CloudAwsIntegrations) XRayInput() *CloudAwsIntegrationsXRay {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource.
 func NewCloudAwsIntegrations(scope constructs.Construct, id *string, config *CloudAwsIntegrationsConfig) CloudAwsIntegrations {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewCloudAwsIntegrations(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource.
 func NewCloudAwsIntegrations_Override(c CloudAwsIntegrations, scope constructs.Construct, id *string, config *CloudAwsIntegrationsConfig) {
 	_init_.Initialize()
 
@@ -576,7 +576,10 @@ func (j *jsiiProxy_CloudAwsIntegrations)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsIntegrations)SetCount(val *float64) {
+func (j *jsiiProxy_CloudAwsIntegrations)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package accountmanagement
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/accountmanagement/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/accountmanagement/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/account_management newrelic_account_management}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/account_management newrelic_account_management}.
 type AccountManagement interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type AccountManagement interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_AccountManagement) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_AccountManagement) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AccountManagement) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_AccountManagement) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/account_management newrelic_account_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/account_management newrelic_account_management} Resource.
 func NewAccountManagement(scope constructs.Construct, id *string, config *AccountManagementConfig) AccountManagement {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewAccountManagement(scope constructs.Construct, id *string, config *Accoun
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/account_management newrelic_account_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/account_management newrelic_account_management} Resource.
 func NewAccountManagement_Override(a AccountManagement, scope constructs.Construct, id *string, config *AccountManagementConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_AccountManagement)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AccountManagement)SetCount(val *float64) {
+func (j *jsiiProxy_AccountManagement)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

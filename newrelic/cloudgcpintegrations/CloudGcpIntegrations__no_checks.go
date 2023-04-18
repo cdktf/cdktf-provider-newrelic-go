@@ -176,6 +176,10 @@ func (j *jsiiProxy_CloudGcpIntegrations) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_CloudGcpIntegrations) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudGcpIntegrations) validateSetIdParameters(val *string) error {
 	return nil
 }

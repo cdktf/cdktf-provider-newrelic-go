@@ -76,6 +76,10 @@ func (j *jsiiProxy_BrowserApplication) validateSetCookiesEnabledParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_BrowserApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BrowserApplication) validateSetDistributedTracingEnabledParameters(val interface{}) error {
 	return nil
 }

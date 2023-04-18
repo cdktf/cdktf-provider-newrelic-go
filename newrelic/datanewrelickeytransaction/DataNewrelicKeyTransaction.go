@@ -2,14 +2,14 @@ package datanewrelickeytransaction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelickeytransaction/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelickeytransaction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction newrelic_key_transaction}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/key_transaction newrelic_key_transaction}.
 type DataNewrelicKeyTransaction interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataNewrelicKeyTransaction interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -120,8 +120,8 @@ func (j *jsiiProxy_DataNewrelicKeyTransaction) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicKeyTransaction) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataNewrelicKeyTransaction) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -281,7 +281,7 @@ func (j *jsiiProxy_DataNewrelicKeyTransaction) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction newrelic_key_transaction} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
 func NewDataNewrelicKeyTransaction(scope constructs.Construct, id *string, config *DataNewrelicKeyTransactionConfig) DataNewrelicKeyTransaction {
 	_init_.Initialize()
 
@@ -299,7 +299,7 @@ func NewDataNewrelicKeyTransaction(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/key_transaction newrelic_key_transaction} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
 func NewDataNewrelicKeyTransaction_Override(d DataNewrelicKeyTransaction, scope constructs.Construct, id *string, config *DataNewrelicKeyTransactionConfig) {
 	_init_.Initialize()
 
@@ -310,7 +310,10 @@ func NewDataNewrelicKeyTransaction_Override(d DataNewrelicKeyTransaction, scope 
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicKeyTransaction)SetCount(val *float64) {
+func (j *jsiiProxy_DataNewrelicKeyTransaction)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

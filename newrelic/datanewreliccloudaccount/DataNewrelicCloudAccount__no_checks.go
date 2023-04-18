@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataNewrelicCloudAccount) validateSetCloudProviderParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicCloudAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicCloudAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

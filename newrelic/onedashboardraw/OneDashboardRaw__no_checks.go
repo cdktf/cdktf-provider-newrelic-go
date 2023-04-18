@@ -76,6 +76,10 @@ func (j *jsiiProxy_OneDashboardRaw) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_OneDashboardRaw) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OneDashboardRaw) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

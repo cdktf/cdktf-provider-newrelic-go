@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataNewrelicAlertChannel) validateSetAccountIdParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicAlertChannel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicAlertChannel) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -104,6 +104,10 @@ func (j *jsiiProxy_CloudAwsIntegrations) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_CloudAwsIntegrations) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAwsIntegrations) validateSetIdParameters(val *string) error {
 	return nil
 }

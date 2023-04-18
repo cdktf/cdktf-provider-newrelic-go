@@ -80,6 +80,10 @@ func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetDomainParameters(val *string) error {
 	return nil
 }

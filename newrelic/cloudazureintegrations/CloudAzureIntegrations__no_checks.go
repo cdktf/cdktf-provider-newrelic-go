@@ -196,6 +196,10 @@ func (j *jsiiProxy_CloudAzureIntegrations) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CloudAzureIntegrations) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAzureIntegrations) validateSetIdParameters(val *string) error {
 	return nil
 }

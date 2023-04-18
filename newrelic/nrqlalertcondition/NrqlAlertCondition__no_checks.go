@@ -116,6 +116,10 @@ func (j *jsiiProxy_NrqlAlertCondition) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_NrqlAlertCondition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NrqlAlertCondition) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

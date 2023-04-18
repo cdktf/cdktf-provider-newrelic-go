@@ -68,6 +68,10 @@ func (j *jsiiProxy_SyntheticsAlertCondition) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsAlertCondition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsAlertCondition) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package cloudazurelinkaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/cloudazurelinkaccount/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudazurelinkaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account newrelic_cloud_azure_link_account}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account}.
 type CloudAzureLinkAccount interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -30,9 +30,9 @@ type CloudAzureLinkAccount interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -214,8 +214,8 @@ func (j *jsiiProxy_CloudAzureLinkAccount) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudAzureLinkAccount) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_CloudAzureLinkAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account newrelic_cloud_azure_link_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account} Resource.
 func NewCloudAzureLinkAccount(scope constructs.Construct, id *string, config *CloudAzureLinkAccountConfig) CloudAzureLinkAccount {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewCloudAzureLinkAccount(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_azure_link_account newrelic_cloud_azure_link_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account} Resource.
 func NewCloudAzureLinkAccount_Override(c CloudAzureLinkAccount, scope constructs.Construct, id *string, config *CloudAzureLinkAccountConfig) {
 	_init_.Initialize()
 
@@ -498,7 +498,10 @@ func (j *jsiiProxy_CloudAzureLinkAccount)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudAzureLinkAccount)SetCount(val *float64) {
+func (j *jsiiProxy_CloudAzureLinkAccount)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

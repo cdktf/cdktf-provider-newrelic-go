@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) validateSetAccountIdP
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) validateSetIdParameters(val *string) error {
 	return nil
 }

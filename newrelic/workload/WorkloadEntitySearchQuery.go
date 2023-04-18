@@ -4,7 +4,7 @@ package workload
 type WorkloadEntitySearchQuery struct {
 	// The query.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/newrelic/r/workload#query Workload#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/workload#query Workload#query}
 	Query *string `field:"required" json:"query" yaml:"query"`
 }
 

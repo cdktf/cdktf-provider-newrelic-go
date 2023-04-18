@@ -2,14 +2,14 @@ package datanewrelicentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicentity/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicentity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/entity newrelic_entity}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/entity newrelic_entity}.
 type DataNewrelicEntity interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -19,9 +19,9 @@ type DataNewrelicEntity interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DataNewrelicEntity) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicEntity) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataNewrelicEntity) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DataNewrelicEntity) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/entity newrelic_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/entity newrelic_entity} Data Source.
 func NewDataNewrelicEntity(scope constructs.Construct, id *string, config *DataNewrelicEntityConfig) DataNewrelicEntity {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewDataNewrelicEntity(scope constructs.Construct, id *string, config *DataN
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/entity newrelic_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/entity newrelic_entity} Data Source.
 func NewDataNewrelicEntity_Override(d DataNewrelicEntity, scope constructs.Construct, id *string, config *DataNewrelicEntityConfig) {
 	_init_.Initialize()
 
@@ -450,7 +450,10 @@ func NewDataNewrelicEntity_Override(d DataNewrelicEntity, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicEntity)SetCount(val *float64) {
+func (j *jsiiProxy_DataNewrelicEntity)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

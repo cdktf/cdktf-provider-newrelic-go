@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataNewrelicTestGrokPattern) validateSetAccountIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicTestGrokPattern) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicTestGrokPattern) validateSetGrokParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_ObfuscationRule) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_ObfuscationRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObfuscationRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

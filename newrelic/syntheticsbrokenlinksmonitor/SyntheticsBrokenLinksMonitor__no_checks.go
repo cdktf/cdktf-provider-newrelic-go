@@ -76,6 +76,10 @@ func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) validateSetIdParameters(val *string) error {
 	return nil
 }

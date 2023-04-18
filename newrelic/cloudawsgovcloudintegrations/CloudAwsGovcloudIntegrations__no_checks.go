@@ -152,6 +152,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAwsGovcloudIntegrations) validateSetIdParameters(val *string) error {
 	return nil
 }

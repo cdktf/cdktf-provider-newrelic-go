@@ -2,14 +2,14 @@ package insightsevent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/insightsevent/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/insightsevent/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event newrelic_insights_event}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/insights_event newrelic_insights_event}.
 type InsightsEvent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type InsightsEvent interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_InsightsEvent) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_InsightsEvent) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_InsightsEvent) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,7 +309,7 @@ func (j *jsiiProxy_InsightsEvent) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event newrelic_insights_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/insights_event newrelic_insights_event} Resource.
 func NewInsightsEvent(scope constructs.Construct, id *string, config *InsightsEventConfig) InsightsEvent {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewInsightsEvent(scope constructs.Construct, id *string, config *InsightsEv
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/insights_event newrelic_insights_event} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/insights_event newrelic_insights_event} Resource.
 func NewInsightsEvent_Override(i InsightsEvent, scope constructs.Construct, id *string, config *InsightsEventConfig) {
 	_init_.Initialize()
 
@@ -349,7 +349,10 @@ func (j *jsiiProxy_InsightsEvent)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_InsightsEvent)SetCount(val *float64) {
+func (j *jsiiProxy_InsightsEvent)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

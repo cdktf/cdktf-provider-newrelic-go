@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) validateSetAccountIdPa
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) validateSetIdParameters(val *string) error {
 	return nil
 }

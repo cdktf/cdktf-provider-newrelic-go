@@ -80,6 +80,10 @@ func (j *jsiiProxy_InfraAlertCondition) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_InfraAlertCondition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_InfraAlertCondition) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

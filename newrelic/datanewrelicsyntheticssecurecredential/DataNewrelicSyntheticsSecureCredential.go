@@ -2,14 +2,14 @@ package datanewrelicsyntheticssecurecredential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicsyntheticssecurecredential/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicsyntheticssecurecredential/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential newrelic_synthetics_secure_credential}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential}.
 type DataNewrelicSyntheticsSecureCredential interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -20,9 +20,9 @@ type DataNewrelicSyntheticsSecureCredential interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -327,7 +327,7 @@ func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) TerraformResourceType
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential newrelic_synthetics_secure_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential} Data Source.
 func NewDataNewrelicSyntheticsSecureCredential(scope constructs.Construct, id *string, config *DataNewrelicSyntheticsSecureCredentialConfig) DataNewrelicSyntheticsSecureCredential {
 	_init_.Initialize()
 
@@ -345,7 +345,7 @@ func NewDataNewrelicSyntheticsSecureCredential(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_secure_credential newrelic_synthetics_secure_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential} Data Source.
 func NewDataNewrelicSyntheticsSecureCredential_Override(d DataNewrelicSyntheticsSecureCredential, scope constructs.Construct, id *string, config *DataNewrelicSyntheticsSecureCredentialConfig) {
 	_init_.Initialize()
 
@@ -367,7 +367,10 @@ func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential)SetAccountId(val *floa
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential)SetCount(val *float64) {
+func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

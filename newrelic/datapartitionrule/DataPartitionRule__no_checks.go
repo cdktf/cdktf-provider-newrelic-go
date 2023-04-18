@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataPartitionRule) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_DataPartitionRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataPartitionRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

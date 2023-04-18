@@ -2,14 +2,14 @@ package datanewrelicsyntheticsprivatelocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/datanewrelicsyntheticsprivatelocation/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/datanewrelicsyntheticsprivatelocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_private_location newrelic_synthetics_private_location}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location}.
 type DataNewrelicSyntheticsPrivateLocation interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -20,9 +20,9 @@ type DataNewrelicSyntheticsPrivateLocation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) TerraformResourceType(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_private_location newrelic_synthetics_private_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location} Data Source.
 func NewDataNewrelicSyntheticsPrivateLocation(scope constructs.Construct, id *string, config *DataNewrelicSyntheticsPrivateLocationConfig) DataNewrelicSyntheticsPrivateLocation {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataNewrelicSyntheticsPrivateLocation(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/d/synthetics_private_location newrelic_synthetics_private_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location} Data Source.
 func NewDataNewrelicSyntheticsPrivateLocation_Override(d DataNewrelicSyntheticsPrivateLocation, scope constructs.Construct, id *string, config *DataNewrelicSyntheticsPrivateLocationConfig) {
 	_init_.Initialize()
 
@@ -345,7 +345,10 @@ func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation)SetAccountId(val *float
 	)
 }
 
-func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation)SetCount(val *float64) {
+func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

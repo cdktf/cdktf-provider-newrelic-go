@@ -72,6 +72,10 @@ func (j *jsiiProxy_EventsToMetricsRule) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_EventsToMetricsRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventsToMetricsRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_CloudAzureLinkAccount) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_CloudAzureLinkAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAzureLinkAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

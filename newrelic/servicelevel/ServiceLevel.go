@@ -2,14 +2,14 @@ package servicelevel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/servicelevel/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/servicelevel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/service_level newrelic_service_level}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/service_level newrelic_service_level}.
 type ServiceLevel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ServiceLevel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_ServiceLevel) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_ServiceLevel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServiceLevel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -424,7 +424,7 @@ func (j *jsiiProxy_ServiceLevel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/service_level newrelic_service_level} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/service_level newrelic_service_level} Resource.
 func NewServiceLevel(scope constructs.Construct, id *string, config *ServiceLevelConfig) ServiceLevel {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewServiceLevel(scope constructs.Construct, id *string, config *ServiceLeve
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/service_level newrelic_service_level} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/service_level newrelic_service_level} Resource.
 func NewServiceLevel_Override(s ServiceLevel, scope constructs.Construct, id *string, config *ServiceLevelConfig) {
 	_init_.Initialize()
 
@@ -464,7 +464,10 @@ func (j *jsiiProxy_ServiceLevel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceLevel)SetCount(val *float64) {
+func (j *jsiiProxy_ServiceLevel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

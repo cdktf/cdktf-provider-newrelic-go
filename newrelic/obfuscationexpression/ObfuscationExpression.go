@@ -2,14 +2,14 @@ package obfuscationexpression
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/obfuscationexpression/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/obfuscationexpression/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/obfuscation_expression newrelic_obfuscation_expression}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/obfuscation_expression newrelic_obfuscation_expression}.
 type ObfuscationExpression interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -24,9 +24,9 @@ type ObfuscationExpression interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ObfuscationExpression) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ObfuscationExpression) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ObfuscationExpression) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ObfuscationExpression) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/obfuscation_expression newrelic_obfuscation_expression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/obfuscation_expression newrelic_obfuscation_expression} Resource.
 func NewObfuscationExpression(scope constructs.Construct, id *string, config *ObfuscationExpressionConfig) ObfuscationExpression {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewObfuscationExpression(scope constructs.Construct, id *string, config *Ob
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/obfuscation_expression newrelic_obfuscation_expression} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/obfuscation_expression newrelic_obfuscation_expression} Resource.
 func NewObfuscationExpression_Override(o ObfuscationExpression, scope constructs.Construct, id *string, config *ObfuscationExpressionConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_ObfuscationExpression)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ObfuscationExpression)SetCount(val *float64) {
+func (j *jsiiProxy_ObfuscationExpression)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

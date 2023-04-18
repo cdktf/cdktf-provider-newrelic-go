@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataNewrelicObfuscationExpression) validateSetAccountIdParame
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicObfuscationExpression) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicObfuscationExpression) validateSetIdParameters(val *string) error {
 	return nil
 }

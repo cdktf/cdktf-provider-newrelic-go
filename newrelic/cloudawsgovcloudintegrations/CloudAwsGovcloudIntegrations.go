@@ -2,14 +2,14 @@ package cloudawsgovcloudintegrations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v6/cloudawsgovcloudintegrations/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v7/cloudawsgovcloudintegrations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations}.
 type CloudAwsGovcloudIntegrations interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -36,9 +36,9 @@ type CloudAwsGovcloudIntegrations interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -362,8 +362,8 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrations) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -813,7 +813,7 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations} Resource.
 func NewCloudAwsGovcloudIntegrations(scope constructs.Construct, id *string, config *CloudAwsGovcloudIntegrationsConfig) CloudAwsGovcloudIntegrations {
 	_init_.Initialize()
 
@@ -831,7 +831,7 @@ func NewCloudAwsGovcloudIntegrations(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/newrelic/r/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/cloud_aws_govcloud_integrations newrelic_cloud_aws_govcloud_integrations} Resource.
 func NewCloudAwsGovcloudIntegrations_Override(c CloudAwsGovcloudIntegrations, scope constructs.Construct, id *string, config *CloudAwsGovcloudIntegrationsConfig) {
 	_init_.Initialize()
 
@@ -864,7 +864,10 @@ func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetCount(val *float64) {
+func (j *jsiiProxy_CloudAwsGovcloudIntegrations)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
