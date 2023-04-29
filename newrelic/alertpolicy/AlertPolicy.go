@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/alert_policy newrelic_alert_policy}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/alert_policy newrelic_alert_policy}.
 type AlertPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -381,7 +381,7 @@ func (j *jsiiProxy_AlertPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/alert_policy newrelic_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/alert_policy newrelic_alert_policy} Resource.
 func NewAlertPolicy(scope constructs.Construct, id *string, config *AlertPolicyConfig) AlertPolicy {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewAlertPolicy(scope constructs.Construct, id *string, config *AlertPolicyC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/alert_policy newrelic_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/alert_policy newrelic_alert_policy} Resource.
 func NewAlertPolicy_Override(a AlertPolicy, scope constructs.Construct, id *string, config *AlertPolicyConfig) {
 	_init_.Initialize()
 

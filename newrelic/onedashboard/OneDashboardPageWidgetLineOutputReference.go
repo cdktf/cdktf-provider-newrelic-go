@@ -76,6 +76,9 @@ type OneDashboardPageWidgetLineOutputReference interface {
 	YAxisLeftMin() *float64
 	SetYAxisLeftMin(val *float64)
 	YAxisLeftMinInput() *float64
+	YAxisLeftZero() interface{}
+	SetYAxisLeftZero(val interface{})
+	YAxisLeftZeroInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -114,6 +117,7 @@ type OneDashboardPageWidgetLineOutputReference interface {
 	ResetWidth()
 	ResetYAxisLeftMax()
 	ResetYAxisLeftMin()
+	ResetYAxisLeftZero()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -489,6 +493,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) YAxisLeftMinInput(
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) YAxisLeftZero() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"yAxisLeftZero",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) YAxisLeftZeroInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"yAxisLeftZeroInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewOneDashboardPageWidgetLineOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLineOutputReference {
 	_init_.Initialize()
@@ -678,6 +702,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference)SetYAxisLeftMin(val
 	_jsii_.Set(
 		j,
 		"yAxisLeftMin",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference)SetYAxisLeftZero(val interface{}) {
+	if err := j.validateSetYAxisLeftZeroParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"yAxisLeftZero",
 		val,
 	)
 }
@@ -988,6 +1023,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) ResetYAxisLeftMin(
 	_jsii_.InvokeVoid(
 		o,
 		"resetYAxisLeftMin",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) ResetYAxisLeftZero() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetYAxisLeftZero",
 		nil, // no parameters
 	)
 }

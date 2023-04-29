@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/alert_muting_rule newrelic_alert_muting_rule}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/alert_muting_rule newrelic_alert_muting_rule}.
 type AlertMutingRule interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -427,7 +427,7 @@ func (j *jsiiProxy_AlertMutingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource.
 func NewAlertMutingRule(scope constructs.Construct, id *string, config *AlertMutingRuleConfig) AlertMutingRule {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewAlertMutingRule(scope constructs.Construct, id *string, config *AlertMut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource.
 func NewAlertMutingRule_Override(a AlertMutingRule, scope constructs.Construct, id *string, config *AlertMutingRuleConfig) {
 	_init_.Initialize()
 

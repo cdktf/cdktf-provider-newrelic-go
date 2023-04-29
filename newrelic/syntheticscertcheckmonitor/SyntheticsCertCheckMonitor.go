@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor}.
 type SyntheticsCertCheckMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -65,6 +65,7 @@ type SyntheticsCertCheckMonitor interface {
 	Node() constructs.Node
 	Period() *string
 	SetPeriod(val *string)
+	PeriodInMinutes() *float64
 	PeriodInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -386,6 +387,16 @@ func (j *jsiiProxy_SyntheticsCertCheckMonitor) Period() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) PeriodInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"periodInMinutes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsCertCheckMonitor) PeriodInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -497,7 +508,7 @@ func (j *jsiiProxy_SyntheticsCertCheckMonitor) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
 func NewSyntheticsCertCheckMonitor(scope constructs.Construct, id *string, config *SyntheticsCertCheckMonitorConfig) SyntheticsCertCheckMonitor {
 	_init_.Initialize()
 
@@ -515,7 +526,7 @@ func NewSyntheticsCertCheckMonitor(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
 func NewSyntheticsCertCheckMonitor_Override(s SyntheticsCertCheckMonitor, scope constructs.Construct, id *string, config *SyntheticsCertCheckMonitorConfig) {
 	_init_.Initialize()
 

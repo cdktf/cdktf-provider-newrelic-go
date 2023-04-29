@@ -4954,6 +4954,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetWidth", GoMethod: "ResetWidth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetYAxisLeftMax", GoMethod: "ResetYAxisLeftMax"},
 			_jsii_.MemberMethod{JsiiMethod: "resetYAxisLeftMin", GoMethod: "ResetYAxisLeftMin"},
+			_jsii_.MemberMethod{JsiiMethod: "resetYAxisLeftZero", GoMethod: "ResetYAxisLeftZero"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "row", GoGetter: "Row"},
 			_jsii_.MemberProperty{JsiiProperty: "rowInput", GoGetter: "RowInput"},
@@ -4970,6 +4971,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "yAxisLeftMaxInput", GoGetter: "YAxisLeftMaxInput"},
 			_jsii_.MemberProperty{JsiiProperty: "yAxisLeftMin", GoGetter: "YAxisLeftMin"},
 			_jsii_.MemberProperty{JsiiProperty: "yAxisLeftMinInput", GoGetter: "YAxisLeftMinInput"},
+			_jsii_.MemberProperty{JsiiProperty: "yAxisLeftZero", GoGetter: "YAxisLeftZero"},
+			_jsii_.MemberProperty{JsiiProperty: "yAxisLeftZeroInput", GoGetter: "YAxisLeftZeroInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_OneDashboardPageWidgetLineOutputReference{}

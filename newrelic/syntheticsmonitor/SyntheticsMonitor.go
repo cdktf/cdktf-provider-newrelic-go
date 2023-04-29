@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_monitor newrelic_synthetics_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_monitor newrelic_synthetics_monitor}.
 type SyntheticsMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -67,6 +67,7 @@ type SyntheticsMonitor interface {
 	Node() constructs.Node
 	Period() *string
 	SetPeriod(val *string)
+	PeriodInMinutes() *float64
 	PeriodInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -444,6 +445,16 @@ func (j *jsiiProxy_SyntheticsMonitor) Period() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsMonitor) PeriodInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"periodInMinutes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsMonitor) PeriodInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -715,7 +726,7 @@ func (j *jsiiProxy_SyntheticsMonitor) VerifySslInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
 func NewSyntheticsMonitor(scope constructs.Construct, id *string, config *SyntheticsMonitorConfig) SyntheticsMonitor {
 	_init_.Initialize()
 
@@ -733,7 +744,7 @@ func NewSyntheticsMonitor(scope constructs.Construct, id *string, config *Synthe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
 func NewSyntheticsMonitor_Override(s SyntheticsMonitor, scope constructs.Construct, id *string, config *SyntheticsMonitorConfig) {
 	_init_.Initialize()
 

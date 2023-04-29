@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor}.
 type SyntheticsScriptMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -31,6 +31,12 @@ type SyntheticsScriptMonitor interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeviceOrientation() *string
+	SetDeviceOrientation(val *string)
+	DeviceOrientationInput() *string
+	DeviceType() *string
+	SetDeviceType(val *string)
+	DeviceTypeInput() *string
 	EnableScreenshotOnFailureAndScript() interface{}
 	SetEnableScreenshotOnFailureAndScript(val interface{})
 	EnableScreenshotOnFailureAndScriptInput() interface{}
@@ -62,6 +68,7 @@ type SyntheticsScriptMonitor interface {
 	Node() constructs.Node
 	Period() *string
 	SetPeriod(val *string)
+	PeriodInMinutes() *float64
 	PeriodInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -127,6 +134,8 @@ type SyntheticsScriptMonitor interface {
 	PutLocationPrivate(value interface{})
 	PutTag(value interface{})
 	ResetAccountId()
+	ResetDeviceOrientation()
+	ResetDeviceType()
 	ResetEnableScreenshotOnFailureAndScript()
 	ResetId()
 	ResetLocationPrivate()
@@ -219,6 +228,46 @@ func (j *jsiiProxy_SyntheticsScriptMonitor) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsScriptMonitor) DeviceOrientation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceOrientation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsScriptMonitor) DeviceOrientationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceOrientationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsScriptMonitor) DeviceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsScriptMonitor) DeviceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceTypeInput",
 		&returns,
 	)
 	return returns
@@ -389,6 +438,16 @@ func (j *jsiiProxy_SyntheticsScriptMonitor) Period() *string {
 	_jsii_.Get(
 		j,
 		"period",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsScriptMonitor) PeriodInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"periodInMinutes",
 		&returns,
 	)
 	return returns
@@ -605,7 +664,7 @@ func (j *jsiiProxy_SyntheticsScriptMonitor) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource.
 func NewSyntheticsScriptMonitor(scope constructs.Construct, id *string, config *SyntheticsScriptMonitorConfig) SyntheticsScriptMonitor {
 	_init_.Initialize()
 
@@ -623,7 +682,7 @@ func NewSyntheticsScriptMonitor(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource.
 func NewSyntheticsScriptMonitor_Override(s SyntheticsScriptMonitor, scope constructs.Construct, id *string, config *SyntheticsScriptMonitorConfig) {
 	_init_.Initialize()
 
@@ -671,6 +730,28 @@ func (j *jsiiProxy_SyntheticsScriptMonitor)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsScriptMonitor)SetDeviceOrientation(val *string) {
+	if err := j.validateSetDeviceOrientationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deviceOrientation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsScriptMonitor)SetDeviceType(val *string) {
+	if err := j.validateSetDeviceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deviceType",
 		val,
 	)
 }
@@ -1126,6 +1207,22 @@ func (s *jsiiProxy_SyntheticsScriptMonitor) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsScriptMonitor) ResetDeviceOrientation() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDeviceOrientation",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsScriptMonitor) ResetDeviceType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDeviceType",
 		nil, // no parameters
 	)
 }

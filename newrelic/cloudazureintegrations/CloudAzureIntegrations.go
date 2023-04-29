@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations}.
 type CloudAzureIntegrations interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -1077,7 +1077,7 @@ func (j *jsiiProxy_CloudAzureIntegrations) VpnGatewayInput() *CloudAzureIntegrat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations} Resource.
 func NewCloudAzureIntegrations(scope constructs.Construct, id *string, config *CloudAzureIntegrationsConfig) CloudAzureIntegrations {
 	_init_.Initialize()
 
@@ -1095,7 +1095,7 @@ func NewCloudAzureIntegrations(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.20.2/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations} Resource.
 func NewCloudAzureIntegrations_Override(c CloudAzureIntegrations, scope constructs.Construct, id *string, config *CloudAzureIntegrationsConfig) {
 	_init_.Initialize()
 
