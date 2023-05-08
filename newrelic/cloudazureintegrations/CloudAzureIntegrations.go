@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations}.
 type CloudAzureIntegrations interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -83,6 +83,8 @@ type CloudAzureIntegrations interface {
 	MachineLearningInput() *CloudAzureIntegrationsMachineLearning
 	MariaDb() CloudAzureIntegrationsMariaDbOutputReference
 	MariaDbInput() *CloudAzureIntegrationsMariaDb
+	Monitor() CloudAzureIntegrationsMonitorOutputReference
+	MonitorInput() *CloudAzureIntegrationsMonitor
 	Mysql() CloudAzureIntegrationsMysqlOutputReference
 	MysqlFlexible() CloudAzureIntegrationsMysqlFlexibleOutputReference
 	MysqlFlexibleInput() *CloudAzureIntegrationsMysqlFlexible
@@ -171,6 +173,7 @@ type CloudAzureIntegrations interface {
 	PutLogicApps(value *CloudAzureIntegrationsLogicApps)
 	PutMachineLearning(value *CloudAzureIntegrationsMachineLearning)
 	PutMariaDb(value *CloudAzureIntegrationsMariaDb)
+	PutMonitor(value *CloudAzureIntegrationsMonitor)
 	PutMysql(value *CloudAzureIntegrationsMysql)
 	PutMysqlFlexible(value *CloudAzureIntegrationsMysqlFlexible)
 	PutPostgresql(value *CloudAzureIntegrationsPostgresql)
@@ -204,6 +207,7 @@ type CloudAzureIntegrations interface {
 	ResetLogicApps()
 	ResetMachineLearning()
 	ResetMariaDb()
+	ResetMonitor()
 	ResetMysql()
 	ResetMysqlFlexible()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -726,6 +730,26 @@ func (j *jsiiProxy_CloudAzureIntegrations) MariaDbInput() *CloudAzureIntegration
 	return returns
 }
 
+func (j *jsiiProxy_CloudAzureIntegrations) Monitor() CloudAzureIntegrationsMonitorOutputReference {
+	var returns CloudAzureIntegrationsMonitorOutputReference
+	_jsii_.Get(
+		j,
+		"monitor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAzureIntegrations) MonitorInput() *CloudAzureIntegrationsMonitor {
+	var returns *CloudAzureIntegrationsMonitor
+	_jsii_.Get(
+		j,
+		"monitorInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudAzureIntegrations) Mysql() CloudAzureIntegrationsMysqlOutputReference {
 	var returns CloudAzureIntegrationsMysqlOutputReference
 	_jsii_.Get(
@@ -1077,7 +1101,7 @@ func (j *jsiiProxy_CloudAzureIntegrations) VpnGatewayInput() *CloudAzureIntegrat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations} Resource.
 func NewCloudAzureIntegrations(scope constructs.Construct, id *string, config *CloudAzureIntegrationsConfig) CloudAzureIntegrations {
 	_init_.Initialize()
 
@@ -1095,7 +1119,7 @@ func NewCloudAzureIntegrations(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations} Resource.
 func NewCloudAzureIntegrations_Override(c CloudAzureIntegrations, scope constructs.Construct, id *string, config *CloudAzureIntegrationsConfig) {
 	_init_.Initialize()
 
@@ -1660,6 +1684,17 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutMariaDb(value *CloudAzureIntegrati
 	)
 }
 
+func (c *jsiiProxy_CloudAzureIntegrations) PutMonitor(value *CloudAzureIntegrationsMonitor) {
+	if err := c.validatePutMonitorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMonitor",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudAzureIntegrations) PutMysql(value *CloudAzureIntegrationsMysql) {
 	if err := c.validatePutMysqlParameters(value); err != nil {
 		panic(err)
@@ -1962,6 +1997,14 @@ func (c *jsiiProxy_CloudAzureIntegrations) ResetMariaDb() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMariaDb",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAzureIntegrations) ResetMonitor() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMonitor",
 		nil, // no parameters
 	)
 }

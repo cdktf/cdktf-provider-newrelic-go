@@ -120,6 +120,10 @@ func (c *jsiiProxy_CloudAzureIntegrations) validatePutMariaDbParameters(value *C
 	return nil
 }
 
+func (c *jsiiProxy_CloudAzureIntegrations) validatePutMonitorParameters(value *CloudAzureIntegrationsMonitor) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAzureIntegrations) validatePutMysqlParameters(value *CloudAzureIntegrationsMysql) error {
 	return nil
 }

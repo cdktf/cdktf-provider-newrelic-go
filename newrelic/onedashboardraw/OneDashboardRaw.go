@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_raw newrelic_one_dashboard_raw}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw newrelic_one_dashboard_raw}.
 type OneDashboardRaw interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -426,7 +426,7 @@ func (j *jsiiProxy_OneDashboardRaw) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_raw newrelic_one_dashboard_raw} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw newrelic_one_dashboard_raw} Resource.
 func NewOneDashboardRaw(scope constructs.Construct, id *string, config *OneDashboardRawConfig) OneDashboardRaw {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewOneDashboardRaw(scope constructs.Construct, id *string, config *OneDashb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.21.3/docs/resources/one_dashboard_raw newrelic_one_dashboard_raw} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/one_dashboard_raw newrelic_one_dashboard_raw} Resource.
 func NewOneDashboardRaw_Override(o OneDashboardRaw, scope constructs.Construct, id *string, config *OneDashboardRawConfig) {
 	_init_.Initialize()
 

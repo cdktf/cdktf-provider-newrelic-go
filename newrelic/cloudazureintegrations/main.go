@@ -71,6 +71,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "machineLearningInput", GoGetter: "MachineLearningInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mariaDb", GoGetter: "MariaDb"},
 			_jsii_.MemberProperty{JsiiProperty: "mariaDbInput", GoGetter: "MariaDbInput"},
+			_jsii_.MemberProperty{JsiiProperty: "monitor", GoGetter: "Monitor"},
+			_jsii_.MemberProperty{JsiiProperty: "monitorInput", GoGetter: "MonitorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mysql", GoGetter: "Mysql"},
 			_jsii_.MemberProperty{JsiiProperty: "mysqlFlexible", GoGetter: "MysqlFlexible"},
 			_jsii_.MemberProperty{JsiiProperty: "mysqlFlexibleInput", GoGetter: "MysqlFlexibleInput"},
@@ -102,6 +104,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLogicApps", GoMethod: "PutLogicApps"},
 			_jsii_.MemberMethod{JsiiMethod: "putMachineLearning", GoMethod: "PutMachineLearning"},
 			_jsii_.MemberMethod{JsiiMethod: "putMariaDb", GoMethod: "PutMariaDb"},
+			_jsii_.MemberMethod{JsiiMethod: "putMonitor", GoMethod: "PutMonitor"},
 			_jsii_.MemberMethod{JsiiMethod: "putMysql", GoMethod: "PutMysql"},
 			_jsii_.MemberMethod{JsiiMethod: "putMysqlFlexible", GoMethod: "PutMysqlFlexible"},
 			_jsii_.MemberMethod{JsiiMethod: "putPostgresql", GoMethod: "PutPostgresql"},
@@ -138,6 +141,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLogicApps", GoMethod: "ResetLogicApps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMachineLearning", GoMethod: "ResetMachineLearning"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMariaDb", GoMethod: "ResetMariaDb"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMonitor", GoMethod: "ResetMonitor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMysql", GoMethod: "ResetMysql"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMysqlFlexible", GoMethod: "ResetMysqlFlexible"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -897,6 +901,60 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudAzureIntegrationsMariaDbOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMonitor",
+		reflect.TypeOf((*CloudAzureIntegrationsMonitor)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsMonitorOutputReference",
+		reflect.TypeOf((*CloudAzureIntegrationsMonitorOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeTags", GoGetter: "ExcludeTags"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeTagsInput", GoGetter: "ExcludeTagsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "includeTags", GoGetter: "IncludeTags"},
+			_jsii_.MemberProperty{JsiiProperty: "includeTagsInput", GoGetter: "IncludeTagsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsPollingInterval", GoGetter: "MetricsPollingInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsPollingIntervalInput", GoGetter: "MetricsPollingIntervalInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludeTags", GoMethod: "ResetExcludeTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncludeTags", GoMethod: "ResetIncludeTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricsPollingInterval", GoMethod: "ResetMetricsPollingInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceGroups", GoMethod: "ResetResourceGroups"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceTypes", GoMethod: "ResetResourceTypes"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroups", GoGetter: "ResourceGroups"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroupsInput", GoGetter: "ResourceGroupsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceTypes", GoGetter: "ResourceTypes"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceTypesInput", GoGetter: "ResourceTypesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudAzureIntegrationsMonitorOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
