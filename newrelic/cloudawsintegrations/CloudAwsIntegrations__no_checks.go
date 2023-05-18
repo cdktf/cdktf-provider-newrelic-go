@@ -52,6 +52,42 @@ func (c *jsiiProxy_CloudAwsIntegrations) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAlbParameters(value *CloudAwsIntegrationsAlb) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutApiGatewayParameters(value *CloudAwsIntegrationsApiGateway) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAutoScalingParameters(value *CloudAwsIntegrationsAutoScaling) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsAppSyncParameters(value *CloudAwsIntegrationsAwsAppSync) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsAthenaParameters(value *CloudAwsIntegrationsAwsAthena) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsCognitoParameters(value *CloudAwsIntegrationsAwsCognito) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsConnectParameters(value *CloudAwsIntegrationsAwsConnect) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsDirectConnectParameters(value *CloudAwsIntegrationsAwsDirectConnect) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsFsxParameters(value *CloudAwsIntegrationsAwsFsx) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutBillingParameters(value *CloudAwsIntegrationsBilling) error {
 	return nil
 }
@@ -64,11 +100,23 @@ func (c *jsiiProxy_CloudAwsIntegrations) validatePutDocDbParameters(value *Cloud
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutEbsParameters(value *CloudAwsIntegrationsEbs) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutElasticacheParameters(value *CloudAwsIntegrationsElasticache) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutHealthParameters(value *CloudAwsIntegrationsHealth) error {
 	return nil
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutS3Parameters(value *CloudAwsIntegrationsS3) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutSqsParameters(value *CloudAwsIntegrationsSqs) error {
 	return nil
 }
 

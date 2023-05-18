@@ -48,6 +48,10 @@ func (c *jsiiProxy_CloudAwsIntegrationsDocDbOutputReference) validateResolvePara
 	return nil
 }
 
+func (j *jsiiProxy_CloudAwsIntegrationsDocDbOutputReference) validateSetAwsRegionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAwsIntegrationsDocDbOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

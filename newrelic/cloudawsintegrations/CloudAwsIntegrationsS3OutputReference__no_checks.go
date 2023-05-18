@@ -56,11 +56,27 @@ func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetComplexObje
 	return nil
 }
 
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetFetchExtendedInventoryParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetFetchTagsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetInternalValueParameters(val *CloudAwsIntegrationsS3) error {
 	return nil
 }
 
 func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetMetricsPollingIntervalParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetTagKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetTagValueParameters(val *string) error {
 	return nil
 }
 

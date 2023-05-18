@@ -9,12 +9,30 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations}.
 type CloudAwsIntegrations interface {
 	cdktf.TerraformResource
 	AccountId() *float64
 	SetAccountId(val *float64)
 	AccountIdInput() *float64
+	Alb() CloudAwsIntegrationsAlbOutputReference
+	AlbInput() *CloudAwsIntegrationsAlb
+	ApiGateway() CloudAwsIntegrationsApiGatewayOutputReference
+	ApiGatewayInput() *CloudAwsIntegrationsApiGateway
+	AutoScaling() CloudAwsIntegrationsAutoScalingOutputReference
+	AutoScalingInput() *CloudAwsIntegrationsAutoScaling
+	AwsAppSync() CloudAwsIntegrationsAwsAppSyncOutputReference
+	AwsAppSyncInput() *CloudAwsIntegrationsAwsAppSync
+	AwsAthena() CloudAwsIntegrationsAwsAthenaOutputReference
+	AwsAthenaInput() *CloudAwsIntegrationsAwsAthena
+	AwsCognito() CloudAwsIntegrationsAwsCognitoOutputReference
+	AwsCognitoInput() *CloudAwsIntegrationsAwsCognito
+	AwsConnect() CloudAwsIntegrationsAwsConnectOutputReference
+	AwsConnectInput() *CloudAwsIntegrationsAwsConnect
+	AwsDirectConnect() CloudAwsIntegrationsAwsDirectConnectOutputReference
+	AwsDirectConnectInput() *CloudAwsIntegrationsAwsDirectConnect
+	AwsFsx() CloudAwsIntegrationsAwsFsxOutputReference
+	AwsFsxInput() *CloudAwsIntegrationsAwsFsx
 	Billing() CloudAwsIntegrationsBillingOutputReference
 	BillingInput() *CloudAwsIntegrationsBilling
 	// Experimental.
@@ -37,6 +55,10 @@ type CloudAwsIntegrations interface {
 	SetDependsOn(val *[]*string)
 	DocDb() CloudAwsIntegrationsDocDbOutputReference
 	DocDbInput() *CloudAwsIntegrationsDocDb
+	Ebs() CloudAwsIntegrationsEbsOutputReference
+	EbsInput() *CloudAwsIntegrationsEbs
+	Elasticache() CloudAwsIntegrationsElasticacheOutputReference
+	ElasticacheInput() *CloudAwsIntegrationsElasticache
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -71,6 +93,8 @@ type CloudAwsIntegrations interface {
 	RawOverrides() interface{}
 	S3() CloudAwsIntegrationsS3OutputReference
 	S3Input() *CloudAwsIntegrationsS3
+	Sqs() CloudAwsIntegrationsSqsOutputReference
+	SqsInput() *CloudAwsIntegrationsSqs
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -108,24 +132,48 @@ type CloudAwsIntegrations interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAlb(value *CloudAwsIntegrationsAlb)
+	PutApiGateway(value *CloudAwsIntegrationsApiGateway)
+	PutAutoScaling(value *CloudAwsIntegrationsAutoScaling)
+	PutAwsAppSync(value *CloudAwsIntegrationsAwsAppSync)
+	PutAwsAthena(value *CloudAwsIntegrationsAwsAthena)
+	PutAwsCognito(value *CloudAwsIntegrationsAwsCognito)
+	PutAwsConnect(value *CloudAwsIntegrationsAwsConnect)
+	PutAwsDirectConnect(value *CloudAwsIntegrationsAwsDirectConnect)
+	PutAwsFsx(value *CloudAwsIntegrationsAwsFsx)
 	PutBilling(value *CloudAwsIntegrationsBilling)
 	PutCloudtrail(value *CloudAwsIntegrationsCloudtrail)
 	PutDocDb(value *CloudAwsIntegrationsDocDb)
+	PutEbs(value *CloudAwsIntegrationsEbs)
+	PutElasticache(value *CloudAwsIntegrationsElasticache)
 	PutHealth(value *CloudAwsIntegrationsHealth)
 	PutS3(value *CloudAwsIntegrationsS3)
+	PutSqs(value *CloudAwsIntegrationsSqs)
 	PutTrustedAdvisor(value *CloudAwsIntegrationsTrustedAdvisor)
 	PutVpc(value *CloudAwsIntegrationsVpc)
 	PutXRay(value *CloudAwsIntegrationsXRay)
 	ResetAccountId()
+	ResetAlb()
+	ResetApiGateway()
+	ResetAutoScaling()
+	ResetAwsAppSync()
+	ResetAwsAthena()
+	ResetAwsCognito()
+	ResetAwsConnect()
+	ResetAwsDirectConnect()
+	ResetAwsFsx()
 	ResetBilling()
 	ResetCloudtrail()
 	ResetDocDb()
+	ResetEbs()
+	ResetElasticache()
 	ResetHealth()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetS3()
+	ResetSqs()
 	ResetTrustedAdvisor()
 	ResetVpc()
 	ResetXRay()
@@ -159,6 +207,186 @@ func (j *jsiiProxy_CloudAwsIntegrations) AccountIdInput() *float64 {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) Alb() CloudAwsIntegrationsAlbOutputReference {
+	var returns CloudAwsIntegrationsAlbOutputReference
+	_jsii_.Get(
+		j,
+		"alb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AlbInput() *CloudAwsIntegrationsAlb {
+	var returns *CloudAwsIntegrationsAlb
+	_jsii_.Get(
+		j,
+		"albInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) ApiGateway() CloudAwsIntegrationsApiGatewayOutputReference {
+	var returns CloudAwsIntegrationsApiGatewayOutputReference
+	_jsii_.Get(
+		j,
+		"apiGateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) ApiGatewayInput() *CloudAwsIntegrationsApiGateway {
+	var returns *CloudAwsIntegrationsApiGateway
+	_jsii_.Get(
+		j,
+		"apiGatewayInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AutoScaling() CloudAwsIntegrationsAutoScalingOutputReference {
+	var returns CloudAwsIntegrationsAutoScalingOutputReference
+	_jsii_.Get(
+		j,
+		"autoScaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AutoScalingInput() *CloudAwsIntegrationsAutoScaling {
+	var returns *CloudAwsIntegrationsAutoScaling
+	_jsii_.Get(
+		j,
+		"autoScalingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsAppSync() CloudAwsIntegrationsAwsAppSyncOutputReference {
+	var returns CloudAwsIntegrationsAwsAppSyncOutputReference
+	_jsii_.Get(
+		j,
+		"awsAppSync",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsAppSyncInput() *CloudAwsIntegrationsAwsAppSync {
+	var returns *CloudAwsIntegrationsAwsAppSync
+	_jsii_.Get(
+		j,
+		"awsAppSyncInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsAthena() CloudAwsIntegrationsAwsAthenaOutputReference {
+	var returns CloudAwsIntegrationsAwsAthenaOutputReference
+	_jsii_.Get(
+		j,
+		"awsAthena",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsAthenaInput() *CloudAwsIntegrationsAwsAthena {
+	var returns *CloudAwsIntegrationsAwsAthena
+	_jsii_.Get(
+		j,
+		"awsAthenaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsCognito() CloudAwsIntegrationsAwsCognitoOutputReference {
+	var returns CloudAwsIntegrationsAwsCognitoOutputReference
+	_jsii_.Get(
+		j,
+		"awsCognito",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsCognitoInput() *CloudAwsIntegrationsAwsCognito {
+	var returns *CloudAwsIntegrationsAwsCognito
+	_jsii_.Get(
+		j,
+		"awsCognitoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsConnect() CloudAwsIntegrationsAwsConnectOutputReference {
+	var returns CloudAwsIntegrationsAwsConnectOutputReference
+	_jsii_.Get(
+		j,
+		"awsConnect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsConnectInput() *CloudAwsIntegrationsAwsConnect {
+	var returns *CloudAwsIntegrationsAwsConnect
+	_jsii_.Get(
+		j,
+		"awsConnectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsDirectConnect() CloudAwsIntegrationsAwsDirectConnectOutputReference {
+	var returns CloudAwsIntegrationsAwsDirectConnectOutputReference
+	_jsii_.Get(
+		j,
+		"awsDirectConnect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsDirectConnectInput() *CloudAwsIntegrationsAwsDirectConnect {
+	var returns *CloudAwsIntegrationsAwsDirectConnect
+	_jsii_.Get(
+		j,
+		"awsDirectConnectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsFsx() CloudAwsIntegrationsAwsFsxOutputReference {
+	var returns CloudAwsIntegrationsAwsFsxOutputReference
+	_jsii_.Get(
+		j,
+		"awsFsx",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsFsxInput() *CloudAwsIntegrationsAwsFsx {
+	var returns *CloudAwsIntegrationsAwsFsx
+	_jsii_.Get(
+		j,
+		"awsFsxInput",
 		&returns,
 	)
 	return returns
@@ -269,6 +497,46 @@ func (j *jsiiProxy_CloudAwsIntegrations) DocDbInput() *CloudAwsIntegrationsDocDb
 	_jsii_.Get(
 		j,
 		"docDbInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) Ebs() CloudAwsIntegrationsEbsOutputReference {
+	var returns CloudAwsIntegrationsEbsOutputReference
+	_jsii_.Get(
+		j,
+		"ebs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) EbsInput() *CloudAwsIntegrationsEbs {
+	var returns *CloudAwsIntegrationsEbs
+	_jsii_.Get(
+		j,
+		"ebsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) Elasticache() CloudAwsIntegrationsElasticacheOutputReference {
+	var returns CloudAwsIntegrationsElasticacheOutputReference
+	_jsii_.Get(
+		j,
+		"elasticache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) ElasticacheInput() *CloudAwsIntegrationsElasticache {
+	var returns *CloudAwsIntegrationsElasticache
+	_jsii_.Get(
+		j,
+		"elasticacheInput",
 		&returns,
 	)
 	return returns
@@ -434,6 +702,26 @@ func (j *jsiiProxy_CloudAwsIntegrations) S3Input() *CloudAwsIntegrationsS3 {
 	return returns
 }
 
+func (j *jsiiProxy_CloudAwsIntegrations) Sqs() CloudAwsIntegrationsSqsOutputReference {
+	var returns CloudAwsIntegrationsSqsOutputReference
+	_jsii_.Get(
+		j,
+		"sqs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) SqsInput() *CloudAwsIntegrationsSqs {
+	var returns *CloudAwsIntegrationsSqs
+	_jsii_.Get(
+		j,
+		"sqsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudAwsIntegrations) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -525,7 +813,7 @@ func (j *jsiiProxy_CloudAwsIntegrations) XRayInput() *CloudAwsIntegrationsXRay {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource.
 func NewCloudAwsIntegrations(scope constructs.Construct, id *string, config *CloudAwsIntegrationsConfig) CloudAwsIntegrations {
 	_init_.Initialize()
 
@@ -543,7 +831,7 @@ func NewCloudAwsIntegrations(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.22.0/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.23.0/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource.
 func NewCloudAwsIntegrations_Override(c CloudAwsIntegrations, scope constructs.Construct, id *string, config *CloudAwsIntegrationsConfig) {
 	_init_.Initialize()
 
@@ -921,6 +1209,105 @@ func (c *jsiiProxy_CloudAwsIntegrations) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) PutAlb(value *CloudAwsIntegrationsAlb) {
+	if err := c.validatePutAlbParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAlb",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) PutApiGateway(value *CloudAwsIntegrationsApiGateway) {
+	if err := c.validatePutApiGatewayParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putApiGateway",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) PutAutoScaling(value *CloudAwsIntegrationsAutoScaling) {
+	if err := c.validatePutAutoScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAutoScaling",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) PutAwsAppSync(value *CloudAwsIntegrationsAwsAppSync) {
+	if err := c.validatePutAwsAppSyncParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAwsAppSync",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) PutAwsAthena(value *CloudAwsIntegrationsAwsAthena) {
+	if err := c.validatePutAwsAthenaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAwsAthena",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) PutAwsCognito(value *CloudAwsIntegrationsAwsCognito) {
+	if err := c.validatePutAwsCognitoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAwsCognito",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) PutAwsConnect(value *CloudAwsIntegrationsAwsConnect) {
+	if err := c.validatePutAwsConnectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAwsConnect",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) PutAwsDirectConnect(value *CloudAwsIntegrationsAwsDirectConnect) {
+	if err := c.validatePutAwsDirectConnectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAwsDirectConnect",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) PutAwsFsx(value *CloudAwsIntegrationsAwsFsx) {
+	if err := c.validatePutAwsFsxParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAwsFsx",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) PutBilling(value *CloudAwsIntegrationsBilling) {
 	if err := c.validatePutBillingParameters(value); err != nil {
 		panic(err)
@@ -954,6 +1341,28 @@ func (c *jsiiProxy_CloudAwsIntegrations) PutDocDb(value *CloudAwsIntegrationsDoc
 	)
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) PutEbs(value *CloudAwsIntegrationsEbs) {
+	if err := c.validatePutEbsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEbs",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) PutElasticache(value *CloudAwsIntegrationsElasticache) {
+	if err := c.validatePutElasticacheParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putElasticache",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) PutHealth(value *CloudAwsIntegrationsHealth) {
 	if err := c.validatePutHealthParameters(value); err != nil {
 		panic(err)
@@ -972,6 +1381,17 @@ func (c *jsiiProxy_CloudAwsIntegrations) PutS3(value *CloudAwsIntegrationsS3) {
 	_jsii_.InvokeVoid(
 		c,
 		"putS3",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) PutSqs(value *CloudAwsIntegrationsSqs) {
+	if err := c.validatePutSqsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSqs",
 		[]interface{}{value},
 	)
 }
@@ -1017,6 +1437,78 @@ func (c *jsiiProxy_CloudAwsIntegrations) ResetAccountId() {
 	)
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) ResetAlb() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAlb",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetApiGateway() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetApiGateway",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetAutoScaling() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoScaling",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetAwsAppSync() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAwsAppSync",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetAwsAthena() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAwsAthena",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetAwsCognito() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAwsCognito",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetAwsConnect() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAwsConnect",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetAwsDirectConnect() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAwsDirectConnect",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetAwsFsx() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAwsFsx",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) ResetBilling() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1037,6 +1529,22 @@ func (c *jsiiProxy_CloudAwsIntegrations) ResetDocDb() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDocDb",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetEbs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEbs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetElasticache() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetElasticache",
 		nil, // no parameters
 	)
 }
@@ -1069,6 +1577,14 @@ func (c *jsiiProxy_CloudAwsIntegrations) ResetS3() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetS3",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetSqs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSqs",
 		nil, // no parameters
 	)
 }

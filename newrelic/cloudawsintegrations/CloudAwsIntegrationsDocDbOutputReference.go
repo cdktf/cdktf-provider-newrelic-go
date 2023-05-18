@@ -10,6 +10,9 @@ import (
 
 type CloudAwsIntegrationsDocDbOutputReference interface {
 	cdktf.ComplexObject
+	AwsRegions() *[]*string
+	SetAwsRegions(val *[]*string)
+	AwsRegionsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -64,6 +67,7 @@ type CloudAwsIntegrationsDocDbOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAwsRegions()
 	ResetMetricsPollingInterval()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -78,6 +82,26 @@ type CloudAwsIntegrationsDocDbOutputReference interface {
 // The jsii proxy struct for CloudAwsIntegrationsDocDbOutputReference
 type jsiiProxy_CloudAwsIntegrationsDocDbOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsDocDbOutputReference) AwsRegions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"awsRegions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsDocDbOutputReference) AwsRegionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"awsRegionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudAwsIntegrationsDocDbOutputReference) ComplexObjectIndex() interface{} {
@@ -195,6 +219,17 @@ func NewCloudAwsIntegrationsDocDbOutputReference_Override(c CloudAwsIntegrations
 		"@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsDocDbOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsDocDbOutputReference)SetAwsRegions(val *[]*string) {
+	if err := j.validateSetAwsRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"awsRegions",
+		val,
 	)
 }
 
@@ -448,6 +483,14 @@ func (c *jsiiProxy_CloudAwsIntegrationsDocDbOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudAwsIntegrationsDocDbOutputReference) ResetAwsRegions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAwsRegions",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudAwsIntegrationsDocDbOutputReference) ResetMetricsPollingInterval() {

@@ -25,6 +25,12 @@ type CloudAwsIntegrationsS3OutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FetchExtendedInventory() interface{}
+	SetFetchExtendedInventory(val interface{})
+	FetchExtendedInventoryInput() interface{}
+	FetchTags() interface{}
+	SetFetchTags(val interface{})
+	FetchTagsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CloudAwsIntegrationsS3
@@ -32,6 +38,12 @@ type CloudAwsIntegrationsS3OutputReference interface {
 	MetricsPollingInterval() *float64
 	SetMetricsPollingInterval(val *float64)
 	MetricsPollingIntervalInput() *float64
+	TagKey() *string
+	SetTagKey(val *string)
+	TagKeyInput() *string
+	TagValue() *string
+	SetTagValue(val *string)
+	TagValueInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +76,11 @@ type CloudAwsIntegrationsS3OutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetFetchExtendedInventory()
+	ResetFetchTags()
 	ResetMetricsPollingInterval()
+	ResetTagKey()
+	ResetTagValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -110,6 +126,46 @@ func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) CreationStack() *[]*st
 	return returns
 }
 
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) FetchExtendedInventory() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fetchExtendedInventory",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) FetchExtendedInventoryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fetchExtendedInventoryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) FetchTags() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fetchTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) FetchTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fetchTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -145,6 +201,46 @@ func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) MetricsPollingInterval
 	_jsii_.Get(
 		j,
 		"metricsPollingIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) TagKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) TagKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) TagValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) TagValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagValueInput",
 		&returns,
 	)
 	return returns
@@ -220,6 +316,28 @@ func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference)SetComplexObjectIsFromS
 	)
 }
 
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference)SetFetchExtendedInventory(val interface{}) {
+	if err := j.validateSetFetchExtendedInventoryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fetchExtendedInventory",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference)SetFetchTags(val interface{}) {
+	if err := j.validateSetFetchTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fetchTags",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference)SetInternalValue(val *CloudAwsIntegrationsS3) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -238,6 +356,28 @@ func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference)SetMetricsPollingInterv
 	_jsii_.Set(
 		j,
 		"metricsPollingInterval",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference)SetTagKey(val *string) {
+	if err := j.validateSetTagKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference)SetTagValue(val *string) {
+	if err := j.validateSetTagValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagValue",
 		val,
 	)
 }
@@ -450,10 +590,42 @@ func (c *jsiiProxy_CloudAwsIntegrationsS3OutputReference) InterpolationForAttrib
 	return returns
 }
 
+func (c *jsiiProxy_CloudAwsIntegrationsS3OutputReference) ResetFetchExtendedInventory() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFetchExtendedInventory",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrationsS3OutputReference) ResetFetchTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFetchTags",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudAwsIntegrationsS3OutputReference) ResetMetricsPollingInterval() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMetricsPollingInterval",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrationsS3OutputReference) ResetTagKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTagKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrationsS3OutputReference) ResetTagValue() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTagValue",
 		nil, // no parameters
 	)
 }

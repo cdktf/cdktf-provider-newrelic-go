@@ -163,6 +163,46 @@ func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetComplexObje
 	return nil
 }
 
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetFetchExtendedInventoryParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetFetchTagsParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetInternalValueParameters(val *CloudAwsIntegrationsS3) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -172,6 +212,22 @@ func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetInternalVal
 }
 
 func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetMetricsPollingIntervalParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetTagKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CloudAwsIntegrationsS3OutputReference) validateSetTagValueParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
