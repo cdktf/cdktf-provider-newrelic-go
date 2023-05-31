@@ -88,7 +88,63 @@ func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsFsxParameters(value *Clou
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsGlueParameters(value *CloudAwsIntegrationsAwsGlue) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsKinesisAnalyticsParameters(value *CloudAwsIntegrationsAwsKinesisAnalytics) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsMediaConvertParameters(value *CloudAwsIntegrationsAwsMediaConvert) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsMediaPackageVodParameters(value *CloudAwsIntegrationsAwsMediaPackageVod) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsMqParameters(value *CloudAwsIntegrationsAwsMq) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsMskParameters(value *CloudAwsIntegrationsAwsMsk) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsNeptuneParameters(value *CloudAwsIntegrationsAwsNeptune) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsQldbParameters(value *CloudAwsIntegrationsAwsQldb) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsRoute53ResolverParameters(value *CloudAwsIntegrationsAwsRoute53Resolver) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsStatesParameters(value *CloudAwsIntegrationsAwsStates) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsTransitGatewayParameters(value *CloudAwsIntegrationsAwsTransitGateway) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsWafParameters(value *CloudAwsIntegrationsAwsWaf) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsWafv2Parameters(value *CloudAwsIntegrationsAwsWafv2) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutBillingParameters(value *CloudAwsIntegrationsBilling) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutCloudfrontParameters(value *CloudAwsIntegrationsCloudfront) error {
 	return nil
 }
 
@@ -100,7 +156,23 @@ func (c *jsiiProxy_CloudAwsIntegrations) validatePutDocDbParameters(value *Cloud
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutDynamodbParameters(value *CloudAwsIntegrationsDynamodb) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutEbsParameters(value *CloudAwsIntegrationsEbs) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutEc2Parameters(value *CloudAwsIntegrationsEc2) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutEcsParameters(value *CloudAwsIntegrationsEcs) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutEfsParameters(value *CloudAwsIntegrationsEfs) error {
 	return nil
 }
 
@@ -108,11 +180,67 @@ func (c *jsiiProxy_CloudAwsIntegrations) validatePutElasticacheParameters(value 
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutElasticbeanstalkParameters(value *CloudAwsIntegrationsElasticbeanstalk) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutElasticsearchParameters(value *CloudAwsIntegrationsElasticsearch) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutElbParameters(value *CloudAwsIntegrationsElb) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutEmrParameters(value *CloudAwsIntegrationsEmr) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutHealthParameters(value *CloudAwsIntegrationsHealth) error {
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutIamParameters(value *CloudAwsIntegrationsIam) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutIotParameters(value *CloudAwsIntegrationsIot) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutKinesisParameters(value *CloudAwsIntegrationsKinesis) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutKinesisFirehoseParameters(value *CloudAwsIntegrationsKinesisFirehose) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutLambdaParameters(value *CloudAwsIntegrationsLambda) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutRdsParameters(value *CloudAwsIntegrationsRds) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutRedshiftParameters(value *CloudAwsIntegrationsRedshift) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutRoute53Parameters(value *CloudAwsIntegrationsRoute53) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutS3Parameters(value *CloudAwsIntegrationsS3) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutSesParameters(value *CloudAwsIntegrationsSes) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutSnsParameters(value *CloudAwsIntegrationsSns) error {
 	return nil
 }
 

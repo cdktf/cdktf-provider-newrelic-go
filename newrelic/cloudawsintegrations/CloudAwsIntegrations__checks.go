@@ -210,7 +210,161 @@ func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsFsxParameters(value *Clou
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsGlueParameters(value *CloudAwsIntegrationsAwsGlue) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsKinesisAnalyticsParameters(value *CloudAwsIntegrationsAwsKinesisAnalytics) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsMediaConvertParameters(value *CloudAwsIntegrationsAwsMediaConvert) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsMediaPackageVodParameters(value *CloudAwsIntegrationsAwsMediaPackageVod) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsMqParameters(value *CloudAwsIntegrationsAwsMq) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsMskParameters(value *CloudAwsIntegrationsAwsMsk) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsNeptuneParameters(value *CloudAwsIntegrationsAwsNeptune) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsQldbParameters(value *CloudAwsIntegrationsAwsQldb) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsRoute53ResolverParameters(value *CloudAwsIntegrationsAwsRoute53Resolver) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsStatesParameters(value *CloudAwsIntegrationsAwsStates) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsTransitGatewayParameters(value *CloudAwsIntegrationsAwsTransitGateway) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsWafParameters(value *CloudAwsIntegrationsAwsWaf) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsWafv2Parameters(value *CloudAwsIntegrationsAwsWafv2) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutBillingParameters(value *CloudAwsIntegrationsBilling) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutCloudfrontParameters(value *CloudAwsIntegrationsCloudfront) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -243,7 +397,51 @@ func (c *jsiiProxy_CloudAwsIntegrations) validatePutDocDbParameters(value *Cloud
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutDynamodbParameters(value *CloudAwsIntegrationsDynamodb) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutEbsParameters(value *CloudAwsIntegrationsEbs) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutEc2Parameters(value *CloudAwsIntegrationsEc2) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutEcsParameters(value *CloudAwsIntegrationsEcs) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutEfsParameters(value *CloudAwsIntegrationsEfs) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -265,6 +463,50 @@ func (c *jsiiProxy_CloudAwsIntegrations) validatePutElasticacheParameters(value 
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutElasticbeanstalkParameters(value *CloudAwsIntegrationsElasticbeanstalk) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutElasticsearchParameters(value *CloudAwsIntegrationsElasticsearch) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutElbParameters(value *CloudAwsIntegrationsElb) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutEmrParameters(value *CloudAwsIntegrationsEmr) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutHealthParameters(value *CloudAwsIntegrationsHealth) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -276,7 +518,117 @@ func (c *jsiiProxy_CloudAwsIntegrations) validatePutHealthParameters(value *Clou
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutIamParameters(value *CloudAwsIntegrationsIam) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutIotParameters(value *CloudAwsIntegrationsIot) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutKinesisParameters(value *CloudAwsIntegrationsKinesis) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutKinesisFirehoseParameters(value *CloudAwsIntegrationsKinesisFirehose) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutLambdaParameters(value *CloudAwsIntegrationsLambda) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutRdsParameters(value *CloudAwsIntegrationsRds) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutRedshiftParameters(value *CloudAwsIntegrationsRedshift) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutRoute53Parameters(value *CloudAwsIntegrationsRoute53) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutS3Parameters(value *CloudAwsIntegrationsS3) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutSesParameters(value *CloudAwsIntegrationsSes) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutSnsParameters(value *CloudAwsIntegrationsSns) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
