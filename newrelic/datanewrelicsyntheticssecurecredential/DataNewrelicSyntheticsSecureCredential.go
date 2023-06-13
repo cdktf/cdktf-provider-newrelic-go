@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential}.
 type DataNewrelicSyntheticsSecureCredential interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -327,7 +327,7 @@ func (j *jsiiProxy_DataNewrelicSyntheticsSecureCredential) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential} Data Source.
 func NewDataNewrelicSyntheticsSecureCredential(scope constructs.Construct, id *string, config *DataNewrelicSyntheticsSecureCredentialConfig) DataNewrelicSyntheticsSecureCredential {
 	_init_.Initialize()
 
@@ -345,7 +345,7 @@ func NewDataNewrelicSyntheticsSecureCredential(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/synthetics_secure_credential newrelic_synthetics_secure_credential} Data Source.
 func NewDataNewrelicSyntheticsSecureCredential_Override(d DataNewrelicSyntheticsSecureCredential, scope constructs.Construct, id *string, config *DataNewrelicSyntheticsSecureCredentialConfig) {
 	_init_.Initialize()
 

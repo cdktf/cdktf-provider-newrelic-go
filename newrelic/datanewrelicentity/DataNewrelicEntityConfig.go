@@ -23,30 +23,30 @@ type DataNewrelicEntityConfig struct {
 	//
 	// The first entity matching this name for the given search parameters will be returned.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#name DataNewrelicEntity#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#name DataNewrelicEntity#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The entity's domain.
 	//
 	// Valid values are APM, BROWSER, INFRA, MOBILE, SYNTH, and EXT. If not specified, all domains are searched.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#domain DataNewrelicEntity#domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#domain DataNewrelicEntity#domain}
 	Domain *string `field:"optional" json:"domain" yaml:"domain"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#id DataNewrelicEntity#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#id DataNewrelicEntity#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Ignore case when searching the entity name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#ignore_case DataNewrelicEntity#ignore_case}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#ignore_case DataNewrelicEntity#ignore_case}
 	IgnoreCase interface{} `field:"optional" json:"ignoreCase" yaml:"ignoreCase"`
 	// tag block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#tag DataNewrelicEntity#tag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#tag DataNewrelicEntity#tag}
 	Tag interface{} `field:"optional" json:"tag" yaml:"tag"`
 	// The entity's type. Valid values are APPLICATION, DASHBOARD, HOST, MONITOR, SERVICE and WORKLOAD.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/data-sources/entity#type DataNewrelicEntity#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/entity#type DataNewrelicEntity#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

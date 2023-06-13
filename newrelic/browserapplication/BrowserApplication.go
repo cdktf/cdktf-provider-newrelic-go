@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/browser_application newrelic_browser_application}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/browser_application newrelic_browser_application}.
 type BrowserApplication interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -416,7 +416,7 @@ func (j *jsiiProxy_BrowserApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/browser_application newrelic_browser_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/browser_application newrelic_browser_application} Resource.
 func NewBrowserApplication(scope constructs.Construct, id *string, config *BrowserApplicationConfig) BrowserApplication {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewBrowserApplication(scope constructs.Construct, id *string, config *Brows
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.1/docs/resources/browser_application newrelic_browser_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/browser_application newrelic_browser_application} Resource.
 func NewBrowserApplication_Override(b BrowserApplication, scope constructs.Construct, id *string, config *BrowserApplicationConfig) {
 	_init_.Initialize()
 
