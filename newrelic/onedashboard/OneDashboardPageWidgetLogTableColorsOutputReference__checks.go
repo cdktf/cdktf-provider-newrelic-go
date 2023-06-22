@@ -204,6 +204,8 @@ func (j *jsiiProxy_OneDashboardPageWidgetLogTableColorsOutputReference) validate
 
 func (j *jsiiProxy_OneDashboardPageWidgetLogTableColorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *OneDashboardPageWidgetLogTableColors:
 		val := val.(*OneDashboardPageWidgetLogTableColors)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -215,11 +217,9 @@ func (j *jsiiProxy_OneDashboardPageWidgetLogTableColorsOutputReference) validate
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *OneDashboardPageWidgetLogTableColors, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OneDashboardPageWidgetLogTableColors; received %#v (a %T)", val, val)
 		}
 	}
 

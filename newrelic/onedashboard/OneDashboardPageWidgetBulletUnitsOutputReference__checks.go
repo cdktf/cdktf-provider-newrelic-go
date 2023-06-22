@@ -196,6 +196,8 @@ func (j *jsiiProxy_OneDashboardPageWidgetBulletUnitsOutputReference) validateSet
 
 func (j *jsiiProxy_OneDashboardPageWidgetBulletUnitsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *OneDashboardPageWidgetBulletUnits:
 		val := val.(*OneDashboardPageWidgetBulletUnits)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_OneDashboardPageWidgetBulletUnitsOutputReference) validateSet
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *OneDashboardPageWidgetBulletUnits, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OneDashboardPageWidgetBulletUnits; received %#v (a %T)", val, val)
 		}
 	}
 

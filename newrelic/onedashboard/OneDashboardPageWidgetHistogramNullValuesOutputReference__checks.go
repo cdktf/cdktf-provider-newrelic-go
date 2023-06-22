@@ -196,6 +196,8 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramNullValuesOutputReference) val
 
 func (j *jsiiProxy_OneDashboardPageWidgetHistogramNullValuesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *OneDashboardPageWidgetHistogramNullValues:
 		val := val.(*OneDashboardPageWidgetHistogramNullValues)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramNullValuesOutputReference) val
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *OneDashboardPageWidgetHistogramNullValues, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OneDashboardPageWidgetHistogramNullValues; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package syntheticsmultilocationalertcondition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/syntheticsmultilocationalertcondition/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/syntheticsmultilocationalertcondition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_multilocation_alert_condition newrelic_synthetics_multilocation_alert_condition}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_multilocation_alert_condition newrelic_synthetics_multilocation_alert_condition}.
 type SyntheticsMultilocationAlertCondition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -484,7 +484,7 @@ func (j *jsiiProxy_SyntheticsMultilocationAlertCondition) WarningInput() *Synthe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_multilocation_alert_condition newrelic_synthetics_multilocation_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_multilocation_alert_condition newrelic_synthetics_multilocation_alert_condition} Resource.
 func NewSyntheticsMultilocationAlertCondition(scope constructs.Construct, id *string, config *SyntheticsMultilocationAlertConditionConfig) SyntheticsMultilocationAlertCondition {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewSyntheticsMultilocationAlertCondition(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/synthetics_multilocation_alert_condition newrelic_synthetics_multilocation_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/synthetics_multilocation_alert_condition newrelic_synthetics_multilocation_alert_condition} Resource.
 func NewSyntheticsMultilocationAlertCondition_Override(s SyntheticsMultilocationAlertCondition, scope constructs.Construct, id *string, config *SyntheticsMultilocationAlertConditionConfig) {
 	_init_.Initialize()
 

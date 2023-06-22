@@ -204,6 +204,8 @@ func (j *jsiiProxy_OneDashboardPageWidgetFunnelColorsOutputReference) validateSe
 
 func (j *jsiiProxy_OneDashboardPageWidgetFunnelColorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *OneDashboardPageWidgetFunnelColors:
 		val := val.(*OneDashboardPageWidgetFunnelColors)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -215,11 +217,9 @@ func (j *jsiiProxy_OneDashboardPageWidgetFunnelColorsOutputReference) validateSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *OneDashboardPageWidgetFunnelColors, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OneDashboardPageWidgetFunnelColors; received %#v (a %T)", val, val)
 		}
 	}
 

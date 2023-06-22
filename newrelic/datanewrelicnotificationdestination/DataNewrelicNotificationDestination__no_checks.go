@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) validateSetLifecyclePara
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicNotificationDestination) validateSetNameParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataNewrelicNotificationDestinationParameters(scope constructs.Construct, id *string, config *DataNewrelicNotificationDestinationConfig) error {
 	return nil
 }

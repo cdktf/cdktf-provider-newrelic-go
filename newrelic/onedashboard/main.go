@@ -5974,7 +5974,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetIgnoreTimeRange", GoMethod: "ResetIgnoreTimeRange"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLegendEnabled", GoMethod: "ResetLegendEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNullValues", GoMethod: "ResetNullValues"},
-			_jsii_.MemberMethod{JsiiMethod: "resetText", GoMethod: "ResetText"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUnits", GoMethod: "ResetUnits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWidth", GoMethod: "ResetWidth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetYAxisLeftMax", GoMethod: "ResetYAxisLeftMax"},

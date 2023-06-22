@@ -345,6 +345,8 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) validateSetIgnoreT
 
 func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *OneDashboardPageWidgetJson:
 		val := val.(*OneDashboardPageWidgetJson)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -356,11 +358,9 @@ func (j *jsiiProxy_OneDashboardPageWidgetJsonOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *OneDashboardPageWidgetJson, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OneDashboardPageWidgetJson; received %#v (a %T)", val, val)
 		}
 	}
 

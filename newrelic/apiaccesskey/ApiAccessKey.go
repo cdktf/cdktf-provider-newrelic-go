@@ -2,14 +2,14 @@ package apiaccesskey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/apiaccesskey/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/apiaccesskey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/api_access_key newrelic_api_access_key}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/api_access_key newrelic_api_access_key}.
 type ApiAccessKey interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -439,7 +439,7 @@ func (j *jsiiProxy_ApiAccessKey) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/api_access_key newrelic_api_access_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/api_access_key newrelic_api_access_key} Resource.
 func NewApiAccessKey(scope constructs.Construct, id *string, config *ApiAccessKeyConfig) ApiAccessKey {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewApiAccessKey(scope constructs.Construct, id *string, config *ApiAccessKe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/api_access_key newrelic_api_access_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/api_access_key newrelic_api_access_key} Resource.
 func NewApiAccessKey_Override(a ApiAccessKey, scope constructs.Construct, id *string, config *ApiAccessKeyConfig) {
 	_init_.Initialize()
 

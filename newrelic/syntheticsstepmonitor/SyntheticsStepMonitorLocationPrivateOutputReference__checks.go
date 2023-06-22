@@ -173,6 +173,8 @@ func (j *jsiiProxy_SyntheticsStepMonitorLocationPrivateOutputReference) validate
 
 func (j *jsiiProxy_SyntheticsStepMonitorLocationPrivateOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SyntheticsStepMonitorLocationPrivate:
 		val := val.(*SyntheticsStepMonitorLocationPrivate)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_SyntheticsStepMonitorLocationPrivateOutputReference) validate
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SyntheticsStepMonitorLocationPrivate, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SyntheticsStepMonitorLocationPrivate; received %#v (a %T)", val, val)
 		}
 	}
 

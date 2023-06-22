@@ -2,14 +2,14 @@ package datanewrelickeytransaction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/datanewrelickeytransaction/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/datanewrelickeytransaction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/key_transaction newrelic_key_transaction}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/key_transaction newrelic_key_transaction}.
 type DataNewrelicKeyTransaction interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -281,7 +281,7 @@ func (j *jsiiProxy_DataNewrelicKeyTransaction) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
 func NewDataNewrelicKeyTransaction(scope constructs.Construct, id *string, config *DataNewrelicKeyTransactionConfig) DataNewrelicKeyTransaction {
 	_init_.Initialize()
 
@@ -299,7 +299,7 @@ func NewDataNewrelicKeyTransaction(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
 func NewDataNewrelicKeyTransaction_Override(d DataNewrelicKeyTransaction, scope constructs.Construct, id *string, config *DataNewrelicKeyTransactionConfig) {
 	_init_.Initialize()
 

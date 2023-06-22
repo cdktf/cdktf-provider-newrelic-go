@@ -2,14 +2,14 @@ package datanewrelicnotificationdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/datanewrelicnotificationdestination/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/datanewrelicnotificationdestination/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/notification_destination newrelic_notification_destination}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/notification_destination newrelic_notification_destination}.
 type DataNewrelicNotificationDestination interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -44,6 +44,8 @@ type DataNewrelicNotificationDestination interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Property() DataNewrelicNotificationDestinationPropertyList
@@ -87,6 +89,8 @@ type DataNewrelicNotificationDestination interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
+	ResetId()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -245,6 +249,16 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) Name() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataNewrelicNotificationDestination) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNewrelicNotificationDestination) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -336,7 +350,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/notification_destination newrelic_notification_destination} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/notification_destination newrelic_notification_destination} Data Source.
 func NewDataNewrelicNotificationDestination(scope constructs.Construct, id *string, config *DataNewrelicNotificationDestinationConfig) DataNewrelicNotificationDestination {
 	_init_.Initialize()
 
@@ -354,7 +368,7 @@ func NewDataNewrelicNotificationDestination(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/data-sources/notification_destination newrelic_notification_destination} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/notification_destination newrelic_notification_destination} Data Source.
 func NewDataNewrelicNotificationDestination_Override(d DataNewrelicNotificationDestination, scope constructs.Construct, id *string, config *DataNewrelicNotificationDestinationConfig) {
 	_init_.Initialize()
 
@@ -421,6 +435,17 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination)SetLifecycle(val *cdktf.T
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataNewrelicNotificationDestination)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -703,6 +728,22 @@ func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
 		nil, // no parameters
 	)
 }

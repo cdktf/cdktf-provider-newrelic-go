@@ -2,9 +2,9 @@ package servicelevel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/servicelevel/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/servicelevel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

@@ -2,14 +2,14 @@ package workload
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/workload/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/workload/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/workload newrelic_workload}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/workload newrelic_workload}.
 type Workload interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -521,7 +521,7 @@ func (j *jsiiProxy_Workload) WorkloadId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/workload newrelic_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/workload newrelic_workload} Resource.
 func NewWorkload(scope constructs.Construct, id *string, config *WorkloadConfig) Workload {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewWorkload(scope constructs.Construct, id *string, config *WorkloadConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/workload newrelic_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/workload newrelic_workload} Resource.
 func NewWorkload_Override(w Workload, scope constructs.Construct, id *string, config *WorkloadConfig) {
 	_init_.Initialize()
 

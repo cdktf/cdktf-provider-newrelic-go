@@ -2,14 +2,14 @@ package infraalertcondition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v8/infraalertcondition/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/infraalertcondition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/infra_alert_condition newrelic_infra_alert_condition}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/infra_alert_condition newrelic_infra_alert_condition}.
 type InfraAlertCondition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -676,7 +676,7 @@ func (j *jsiiProxy_InfraAlertCondition) WhereInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/infra_alert_condition newrelic_infra_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/infra_alert_condition newrelic_infra_alert_condition} Resource.
 func NewInfraAlertCondition(scope constructs.Construct, id *string, config *InfraAlertConditionConfig) InfraAlertCondition {
 	_init_.Initialize()
 
@@ -694,7 +694,7 @@ func NewInfraAlertCondition(scope constructs.Construct, id *string, config *Infr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.24.2/docs/resources/infra_alert_condition newrelic_infra_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/resources/infra_alert_condition newrelic_infra_alert_condition} Resource.
 func NewInfraAlertCondition_Override(i InfraAlertCondition, scope constructs.Construct, id *string, config *InfraAlertConditionConfig) {
 	_init_.Initialize()
 
