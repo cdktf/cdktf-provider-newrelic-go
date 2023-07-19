@@ -21,13 +21,13 @@ type DataNewrelicSyntheticsPrivateLocationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the Synthetics monitor private location.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/synthetics_private_location#name DataNewrelicSyntheticsPrivateLocation#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/data-sources/synthetics_private_location#name DataNewrelicSyntheticsPrivateLocation#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The ID of the account in New Relic.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/synthetics_private_location#account_id DataNewrelicSyntheticsPrivateLocation#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/data-sources/synthetics_private_location#account_id DataNewrelicSyntheticsPrivateLocation#account_id}
 	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/synthetics_private_location#id DataNewrelicSyntheticsPrivateLocation#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/data-sources/synthetics_private_location#id DataNewrelicSyntheticsPrivateLocation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

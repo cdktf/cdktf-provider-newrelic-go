@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/service_level_alert_helper newrelic_service_level_alert_helper}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/data-sources/service_level_alert_helper newrelic_service_level_alert_helper}.
 type DataNewrelicServiceLevelAlertHelper interface {
 	cdktf.TerraformDataSource
 	AlertType() *string
@@ -45,6 +45,9 @@ type DataNewrelicServiceLevelAlertHelper interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsBadEvents() interface{}
+	SetIsBadEvents(val interface{})
+	IsBadEventsInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -103,6 +106,7 @@ type DataNewrelicServiceLevelAlertHelper interface {
 	ResetCustomEvaluationPeriod()
 	ResetCustomToleratedBudgetConsumption()
 	ResetId()
+	ResetIsBadEvents()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -281,6 +285,26 @@ func (j *jsiiProxy_DataNewrelicServiceLevelAlertHelper) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataNewrelicServiceLevelAlertHelper) IsBadEvents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isBadEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicServiceLevelAlertHelper) IsBadEventsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isBadEventsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNewrelicServiceLevelAlertHelper) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -442,7 +466,7 @@ func (j *jsiiProxy_DataNewrelicServiceLevelAlertHelper) ToleratedBudgetConsumpti
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/service_level_alert_helper newrelic_service_level_alert_helper} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/data-sources/service_level_alert_helper newrelic_service_level_alert_helper} Data Source.
 func NewDataNewrelicServiceLevelAlertHelper(scope constructs.Construct, id *string, config *DataNewrelicServiceLevelAlertHelperConfig) DataNewrelicServiceLevelAlertHelper {
 	_init_.Initialize()
 
@@ -460,7 +484,7 @@ func NewDataNewrelicServiceLevelAlertHelper(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.0/docs/data-sources/service_level_alert_helper newrelic_service_level_alert_helper} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/data-sources/service_level_alert_helper newrelic_service_level_alert_helper} Data Source.
 func NewDataNewrelicServiceLevelAlertHelper_Override(d DataNewrelicServiceLevelAlertHelper, scope constructs.Construct, id *string, config *DataNewrelicServiceLevelAlertHelperConfig) {
 	_init_.Initialize()
 
@@ -538,6 +562,17 @@ func (j *jsiiProxy_DataNewrelicServiceLevelAlertHelper)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataNewrelicServiceLevelAlertHelper)SetIsBadEvents(val interface{}) {
+	if err := j.validateSetIsBadEventsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isBadEvents",
 		val,
 	)
 }
@@ -880,6 +915,14 @@ func (d *jsiiProxy_DataNewrelicServiceLevelAlertHelper) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataNewrelicServiceLevelAlertHelper) ResetIsBadEvents() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIsBadEvents",
 		nil, // no parameters
 	)
 }

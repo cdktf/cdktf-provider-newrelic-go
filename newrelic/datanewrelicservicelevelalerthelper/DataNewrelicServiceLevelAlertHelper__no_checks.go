@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataNewrelicServiceLevelAlertHelper) validateSetIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicServiceLevelAlertHelper) validateSetIsBadEventsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicServiceLevelAlertHelper) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
