@@ -52,10 +52,6 @@ func (a *jsiiProxy_AccountManagement) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
-func (a *jsiiProxy_AccountManagement) validatePutTimeoutsParameters(value *AccountManagementTimeouts) error {
-	return nil
-}
-
 func validateAccountManagement_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor}.
 type SyntheticsScriptMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -664,7 +664,7 @@ func (j *jsiiProxy_SyntheticsScriptMonitor) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource.
 func NewSyntheticsScriptMonitor(scope constructs.Construct, id *string, config *SyntheticsScriptMonitorConfig) SyntheticsScriptMonitor {
 	_init_.Initialize()
 
@@ -682,7 +682,7 @@ func NewSyntheticsScriptMonitor(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource.
 func NewSyntheticsScriptMonitor_Override(s SyntheticsScriptMonitor, scope constructs.Construct, id *string, config *SyntheticsScriptMonitorConfig) {
 	_init_.Initialize()
 

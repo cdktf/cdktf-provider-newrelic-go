@@ -52,10 +52,6 @@ func (c *jsiiProxy_CloudAwsLinkAccount) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsLinkAccount) validatePutTimeoutsParameters(value *CloudAwsLinkAccountTimeouts) error {
-	return nil
-}
-
 func validateCloudAwsLinkAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

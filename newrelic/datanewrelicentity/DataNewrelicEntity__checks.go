@@ -166,6 +166,14 @@ func validateDataNewrelicEntity_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicEntity) validateSetAccountIdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicEntity) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:

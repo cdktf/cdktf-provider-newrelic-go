@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account}.
 type CloudAwsLinkAccount interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -73,8 +73,6 @@ type CloudAwsLinkAccount interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Timeouts() CloudAwsLinkAccountTimeoutsOutputReference
-	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -100,14 +98,12 @@ type CloudAwsLinkAccount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutTimeouts(value *CloudAwsLinkAccountTimeouts)
 	ResetAccountId()
 	ResetId()
 	ResetMetricCollectionMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -383,28 +379,8 @@ func (j *jsiiProxy_CloudAwsLinkAccount) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudAwsLinkAccount) Timeouts() CloudAwsLinkAccountTimeoutsOutputReference {
-	var returns CloudAwsLinkAccountTimeoutsOutputReference
-	_jsii_.Get(
-		j,
-		"timeouts",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_CloudAwsLinkAccount) TimeoutsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"timeoutsInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account} Resource.
 func NewCloudAwsLinkAccount(scope constructs.Construct, id *string, config *CloudAwsLinkAccountConfig) CloudAwsLinkAccount {
 	_init_.Initialize()
 
@@ -422,7 +398,7 @@ func NewCloudAwsLinkAccount(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.25.2/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.0/docs/resources/cloud_aws_link_account newrelic_cloud_aws_link_account} Resource.
 func NewCloudAwsLinkAccount_Override(c CloudAwsLinkAccount, scope constructs.Construct, id *string, config *CloudAwsLinkAccountConfig) {
 	_init_.Initialize()
 
@@ -822,17 +798,6 @@ func (c *jsiiProxy_CloudAwsLinkAccount) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
-func (c *jsiiProxy_CloudAwsLinkAccount) PutTimeouts(value *CloudAwsLinkAccountTimeouts) {
-	if err := c.validatePutTimeoutsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		c,
-		"putTimeouts",
-		[]interface{}{value},
-	)
-}
-
 func (c *jsiiProxy_CloudAwsLinkAccount) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -861,14 +826,6 @@ func (c *jsiiProxy_CloudAwsLinkAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CloudAwsLinkAccount) ResetTimeouts() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetTimeouts",
 		nil, // no parameters
 	)
 }
