@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datanewrelicentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v9/datanewrelicentity/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/datanewrelicentity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

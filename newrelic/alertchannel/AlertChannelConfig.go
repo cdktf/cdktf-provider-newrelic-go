@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package alertchannel
 
 import (
@@ -23,7 +26,7 @@ type AlertChannelConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/alert_channel#name AlertChannel#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// (Required) The type of channel. One of: (pagerduty, slack, user, victorops, webhook, email, opsgenie).
+	// (Required) The type of channel. One of: (email, opsgenie, pagerduty, slack, user, victorops, webhook).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/alert_channel#type AlertChannel#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
