@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location}.
 type DataNewrelicSyntheticsPrivateLocation interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -41,6 +41,9 @@ type DataNewrelicSyntheticsPrivateLocation interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Key() *[]*string
+	SetKey(val *[]*string)
+	KeyInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -89,6 +92,7 @@ type DataNewrelicSyntheticsPrivateLocation interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
 	ResetId()
+	ResetKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -217,6 +221,26 @@ func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) Key() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"key",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) KeyInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -308,7 +332,7 @@ func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location} Data Source.
 func NewDataNewrelicSyntheticsPrivateLocation(scope constructs.Construct, id *string, config *DataNewrelicSyntheticsPrivateLocationConfig) DataNewrelicSyntheticsPrivateLocation {
 	_init_.Initialize()
 
@@ -326,7 +350,7 @@ func NewDataNewrelicSyntheticsPrivateLocation(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/data-sources/synthetics_private_location newrelic_synthetics_private_location} Data Source.
 func NewDataNewrelicSyntheticsPrivateLocation_Override(d DataNewrelicSyntheticsPrivateLocation, scope constructs.Construct, id *string, config *DataNewrelicSyntheticsPrivateLocationConfig) {
 	_init_.Initialize()
 
@@ -382,6 +406,17 @@ func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation)SetKey(val *[]*string) {
+	if err := j.validateSetKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"key",
 		val,
 	)
 }
@@ -694,6 +729,14 @@ func (d *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) ResetKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKey",
 		nil, // no parameters
 	)
 }

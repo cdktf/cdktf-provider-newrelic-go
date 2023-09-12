@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/synthetics_monitor newrelic_synthetics_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/synthetics_monitor newrelic_synthetics_monitor}.
 type SyntheticsMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -39,6 +39,12 @@ type SyntheticsMonitor interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeviceOrientation() *string
+	SetDeviceOrientation(val *string)
+	DeviceOrientationInput() *string
+	DeviceType() *string
+	SetDeviceType(val *string)
+	DeviceTypeInput() *string
 	EnableScreenshotOnFailureAndScript() interface{}
 	SetEnableScreenshotOnFailureAndScript(val interface{})
 	EnableScreenshotOnFailureAndScriptInput() interface{}
@@ -147,6 +153,8 @@ type SyntheticsMonitor interface {
 	ResetAccountId()
 	ResetBypassHeadRequest()
 	ResetCustomHeader()
+	ResetDeviceOrientation()
+	ResetDeviceType()
 	ResetEnableScreenshotOnFailureAndScript()
 	ResetId()
 	ResetLocationsPrivate()
@@ -283,6 +291,46 @@ func (j *jsiiProxy_SyntheticsMonitor) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) DeviceOrientation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceOrientation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) DeviceOrientationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceOrientationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) DeviceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) DeviceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceTypeInput",
 		&returns,
 	)
 	return returns
@@ -729,7 +777,7 @@ func (j *jsiiProxy_SyntheticsMonitor) VerifySslInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
 func NewSyntheticsMonitor(scope constructs.Construct, id *string, config *SyntheticsMonitorConfig) SyntheticsMonitor {
 	_init_.Initialize()
 
@@ -747,7 +795,7 @@ func NewSyntheticsMonitor(scope constructs.Construct, id *string, config *Synthe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.26.1/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
 func NewSyntheticsMonitor_Override(s SyntheticsMonitor, scope constructs.Construct, id *string, config *SyntheticsMonitorConfig) {
 	_init_.Initialize()
 
@@ -806,6 +854,28 @@ func (j *jsiiProxy_SyntheticsMonitor)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsMonitor)SetDeviceOrientation(val *string) {
+	if err := j.validateSetDeviceOrientationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deviceOrientation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsMonitor)SetDeviceType(val *string) {
+	if err := j.validateSetDeviceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deviceType",
 		val,
 	)
 }
@@ -1321,6 +1391,22 @@ func (s *jsiiProxy_SyntheticsMonitor) ResetCustomHeader() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCustomHeader",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) ResetDeviceOrientation() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDeviceOrientation",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) ResetDeviceType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDeviceType",
 		nil, // no parameters
 	)
 }

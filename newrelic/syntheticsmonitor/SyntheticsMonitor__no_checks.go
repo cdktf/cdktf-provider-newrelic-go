@@ -91,6 +91,14 @@ func (j *jsiiProxy_SyntheticsMonitor) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsMonitor) validateSetDeviceOrientationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) validateSetDeviceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsMonitor) validateSetEnableScreenshotOnFailureAndScriptParameters(val interface{}) error {
 	return nil
 }

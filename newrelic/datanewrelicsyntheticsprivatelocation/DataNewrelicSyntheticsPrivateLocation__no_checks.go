@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) validateSetIdParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) validateSetKeyParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicSyntheticsPrivateLocation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
