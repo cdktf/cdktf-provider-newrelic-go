@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/workflow newrelic_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/workflow newrelic_workflow}.
 type Workflow interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -534,7 +534,7 @@ func (j *jsiiProxy_Workflow) WorkflowId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/workflow newrelic_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/workflow newrelic_workflow} Resource.
 func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig) Workflow {
 	_init_.Initialize()
 
@@ -552,7 +552,7 @@ func NewWorkflow(scope constructs.Construct, id *string, config *WorkflowConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.0/docs/resources/workflow newrelic_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.1/docs/resources/workflow newrelic_workflow} Resource.
 func NewWorkflow_Override(w Workflow, scope constructs.Construct, id *string, config *WorkflowConfig) {
 	_init_.Initialize()
 
