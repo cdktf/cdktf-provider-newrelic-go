@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataNewrelicApplication) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func validateDataNewrelicApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataNewrelicApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }

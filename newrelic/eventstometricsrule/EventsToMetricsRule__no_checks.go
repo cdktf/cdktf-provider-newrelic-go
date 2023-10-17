@@ -7,6 +7,10 @@ package eventstometricsrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EventsToMetricsRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventsToMetricsRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EventsToMetricsRule) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_EventsToMetricsRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventsToMetricsRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EventsToMetricsRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EventsToMetricsRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEventsToMetricsRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

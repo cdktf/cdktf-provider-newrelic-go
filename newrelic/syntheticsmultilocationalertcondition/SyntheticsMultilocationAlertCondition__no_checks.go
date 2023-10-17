@@ -7,6 +7,10 @@ package syntheticsmultilocationalertcondition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) validateGetStringMapAt
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) validatePutCriticalPar
 }
 
 func (s *jsiiProxy_SyntheticsMultilocationAlertCondition) validatePutWarningParameters(value *SyntheticsMultilocationAlertConditionWarning) error {
+	return nil
+}
+
+func validateSyntheticsMultilocationAlertCondition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

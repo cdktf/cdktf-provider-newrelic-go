@@ -7,6 +7,10 @@ package alertpolicychannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlertPolicyChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertPolicyChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AlertPolicyChannel) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AlertPolicyChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertPolicyChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertPolicyChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AlertPolicyChannel) validateOverrideLogicalIdParameters(newLo
 }
 
 func (a *jsiiProxy_AlertPolicyChannel) validatePutTimeoutsParameters(value *AlertPolicyChannelTimeouts) error {
+	return nil
+}
+
+func validateAlertPolicyChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

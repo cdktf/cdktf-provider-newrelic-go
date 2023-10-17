@@ -7,6 +7,10 @@ package cloudgcpintegrations
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudGcpIntegrations) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudGcpIntegrations) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudGcpIntegrations) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_CloudGcpIntegrations) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudGcpIntegrations) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudGcpIntegrations) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -156,6 +168,10 @@ func (c *jsiiProxy_CloudGcpIntegrations) validatePutVirtualMachinesParameters(va
 }
 
 func (c *jsiiProxy_CloudGcpIntegrations) validatePutVpcAccessParameters(value *CloudGcpIntegrationsVpcAccess) error {
+	return nil
+}
+
+func validateCloudGcpIntegrations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

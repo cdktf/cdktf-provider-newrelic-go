@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataNewrelicEntity) validatePutTagParameters(value interface{
 	return nil
 }
 
+func validateDataNewrelicEntity_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataNewrelicEntity_IsConstructParameters(x interface{}) error {
 	return nil
 }

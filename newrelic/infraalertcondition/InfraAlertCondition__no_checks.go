@@ -7,6 +7,10 @@ package infraalertcondition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_InfraAlertCondition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InfraAlertCondition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_InfraAlertCondition) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (i *jsiiProxy_InfraAlertCondition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InfraAlertCondition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_InfraAlertCondition) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_InfraAlertCondition) validatePutCriticalParameters(value *Inf
 }
 
 func (i *jsiiProxy_InfraAlertCondition) validatePutWarningParameters(value *InfraAlertConditionWarning) error {
+	return nil
+}
+
+func validateInfraAlertCondition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

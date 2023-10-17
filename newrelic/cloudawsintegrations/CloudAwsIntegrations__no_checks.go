@@ -7,6 +7,10 @@ package cloudawsintegrations
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudAwsIntegrations) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudAwsIntegrations) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -260,6 +272,10 @@ func (c *jsiiProxy_CloudAwsIntegrations) validatePutVpcParameters(value *CloudAw
 }
 
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutXRayParameters(value *CloudAwsIntegrationsXRay) error {
+	return nil
+}
+
+func validateCloudAwsIntegrations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

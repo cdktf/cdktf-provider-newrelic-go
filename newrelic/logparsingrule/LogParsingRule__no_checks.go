@@ -7,6 +7,10 @@ package logparsingrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LogParsingRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogParsingRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LogParsingRule) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LogParsingRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogParsingRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LogParsingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LogParsingRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLogParsingRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

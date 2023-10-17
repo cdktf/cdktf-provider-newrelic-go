@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataNewrelicObfuscationExpression) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataNewrelicObfuscationExpression_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataNewrelicObfuscationExpression_IsConstructParameters(x interface{}) error {
 	return nil
 }

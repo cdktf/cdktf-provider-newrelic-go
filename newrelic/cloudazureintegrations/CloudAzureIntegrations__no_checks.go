@@ -7,6 +7,10 @@ package cloudazureintegrations
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudAzureIntegrations) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAzureIntegrations) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudAzureIntegrations) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_CloudAzureIntegrations) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAzureIntegrations) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAzureIntegrations) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -180,6 +192,10 @@ func (c *jsiiProxy_CloudAzureIntegrations) validatePutVmsParameters(value *Cloud
 }
 
 func (c *jsiiProxy_CloudAzureIntegrations) validatePutVpnGatewayParameters(value *CloudAzureIntegrationsVpnGateway) error {
+	return nil
+}
+
+func validateCloudAzureIntegrations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

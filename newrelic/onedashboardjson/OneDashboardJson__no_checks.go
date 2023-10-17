@@ -7,6 +7,10 @@ package onedashboardjson
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OneDashboardJson) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardJson) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OneDashboardJson) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardJson) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardJson) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboardJson) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (o *jsiiProxy_OneDashboardJson) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (o *jsiiProxy_OneDashboardJson) validatePutTimeoutsParameters(value *OneDashboardJsonTimeouts) error {
+	return nil
+}
+
+func validateOneDashboardJson_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

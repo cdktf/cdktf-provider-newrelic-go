@@ -7,6 +7,10 @@ package onedashboard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OneDashboard) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboard) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OneDashboard) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboard) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboard) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboard) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (o *jsiiProxy_OneDashboard) validatePutPageParameters(value interface{}) er
 }
 
 func (o *jsiiProxy_OneDashboard) validatePutVariableParameters(value interface{}) error {
+	return nil
+}
+
+func validateOneDashboard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -5,9 +5,9 @@ package onedashboardraw
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/onedashboardraw/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/onedashboardraw/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

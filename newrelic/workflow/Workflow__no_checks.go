@@ -7,6 +7,10 @@ package workflow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_Workflow) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Workflow) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_Workflow) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (w *jsiiProxy_Workflow) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Workflow) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Workflow) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (w *jsiiProxy_Workflow) validatePutEnrichmentsParameters(value *WorkflowEnr
 }
 
 func (w *jsiiProxy_Workflow) validatePutIssuesFilterParameters(value *WorkflowIssuesFilter) error {
+	return nil
+}
+
+func validateWorkflow_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

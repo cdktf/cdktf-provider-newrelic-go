@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataNewrelicServiceLevelAlertHelper) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataNewrelicServiceLevelAlertHelper_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataNewrelicServiceLevelAlertHelper_IsConstructParameters(x interface{}) error {
 	return nil
 }

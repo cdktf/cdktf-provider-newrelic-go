@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "accountIdInput", GoGetter: "AccountIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "apiManagement", GoGetter: "ApiManagement"},
 			_jsii_.MemberProperty{JsiiProperty: "apiManagementInput", GoGetter: "ApiManagementInput"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "keyVault", GoGetter: "KeyVault"},
 			_jsii_.MemberProperty{JsiiProperty: "keyVaultInput", GoGetter: "KeyVaultInput"},
@@ -76,6 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mariaDbInput", GoGetter: "MariaDbInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitor", GoGetter: "Monitor"},
 			_jsii_.MemberProperty{JsiiProperty: "monitorInput", GoGetter: "MonitorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "mysql", GoGetter: "Mysql"},
 			_jsii_.MemberProperty{JsiiProperty: "mysqlFlexible", GoGetter: "MysqlFlexible"},
 			_jsii_.MemberProperty{JsiiProperty: "mysqlFlexibleInput", GoGetter: "MysqlFlexibleInput"},

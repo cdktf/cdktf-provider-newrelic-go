@@ -5,10 +5,10 @@ package datanewrelickeytransaction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v10/datanewrelickeytransaction/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/datanewrelickeytransaction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -379,6 +379,25 @@ func (j *jsiiProxy_DataNewrelicKeyTransaction)SetProvider(val cdktf.TerraformPro
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataNewrelicKeyTransaction resource upon running "cdktf plan <stack-name>".
+func DataNewrelicKeyTransaction_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataNewrelicKeyTransaction_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

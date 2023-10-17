@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataNewrelicSyntheticsSecureCredential) validateOverrideLogic
 	return nil
 }
 
+func validateDataNewrelicSyntheticsSecureCredential_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataNewrelicSyntheticsSecureCredential_IsConstructParameters(x interface{}) error {
 	return nil
 }

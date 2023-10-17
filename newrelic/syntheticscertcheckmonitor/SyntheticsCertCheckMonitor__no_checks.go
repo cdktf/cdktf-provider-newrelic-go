@@ -7,6 +7,10 @@ package syntheticscertcheckmonitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsCertCheckMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SyntheticsCertCheckMonitor) validateGetStringMapAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsCertCheckMonitor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SyntheticsCertCheckMonitor) validateOverrideLogicalIdParamete
 }
 
 func (s *jsiiProxy_SyntheticsCertCheckMonitor) validatePutTagParameters(value interface{}) error {
+	return nil
+}
+
+func validateSyntheticsCertCheckMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

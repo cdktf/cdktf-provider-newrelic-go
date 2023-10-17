@@ -7,6 +7,10 @@ package syntheticsmonitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SyntheticsMonitor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SyntheticsMonitor) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsMonitor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsMonitor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SyntheticsMonitor) validatePutCustomHeaderParameters(value in
 }
 
 func (s *jsiiProxy_SyntheticsMonitor) validatePutTagParameters(value interface{}) error {
+	return nil
+}
+
+func validateSyntheticsMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package notificationdestination
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotificationDestination) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationDestination) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NotificationDestination) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (n *jsiiProxy_NotificationDestination) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationDestination) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationDestination) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (n *jsiiProxy_NotificationDestination) validatePutAuthTokenParameters(value
 }
 
 func (n *jsiiProxy_NotificationDestination) validatePutPropertyParameters(value interface{}) error {
+	return nil
+}
+
+func validateNotificationDestination_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

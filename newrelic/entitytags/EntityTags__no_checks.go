@@ -7,6 +7,10 @@ package entitytags
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EntityTags) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EntityTags) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EntityTags) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (e *jsiiProxy_EntityTags) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EntityTags) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EntityTags) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (e *jsiiProxy_EntityTags) validatePutTagParameters(value interface{}) error
 }
 
 func (e *jsiiProxy_EntityTags) validatePutTimeoutsParameters(value *EntityTagsTimeouts) error {
+	return nil
+}
+
+func validateEntityTags_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -42,7 +42,7 @@ type AlertConditionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/alert_condition#term AlertCondition#term}
 	Term interface{} `field:"required" json:"term" yaml:"term"`
-	// The type of condition. One of: (apm_kt_metric, browser_metric, mobile_metric, servers_metric, apm_app_metric, apm_jvm_metric).
+	// The type of condition. One of: (servers_metric, apm_app_metric, apm_jvm_metric, apm_kt_metric, browser_metric, mobile_metric).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/alert_condition#type AlertCondition#type}
 	Type *string `field:"required" json:"type" yaml:"type"`

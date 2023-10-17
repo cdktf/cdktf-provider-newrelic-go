@@ -7,6 +7,10 @@ package datapartitionrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataPartitionRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataPartitionRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataPartitionRule) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DataPartitionRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataPartitionRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataPartitionRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataPartitionRule) validateOverrideLogicalIdParameters(newLog
 }
 
 func (d *jsiiProxy_DataPartitionRule) validatePutTimeoutsParameters(value *DataPartitionRuleTimeouts) error {
+	return nil
+}
+
+func validateDataPartitionRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
