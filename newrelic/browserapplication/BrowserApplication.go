@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/browser_application newrelic_browser_application}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/browser_application newrelic_browser_application}.
 type BrowserApplication interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -52,6 +52,7 @@ type BrowserApplication interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	JsConfig() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -306,6 +307,16 @@ func (j *jsiiProxy_BrowserApplication) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BrowserApplication) JsConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jsConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BrowserApplication) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -427,7 +438,7 @@ func (j *jsiiProxy_BrowserApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/browser_application newrelic_browser_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/browser_application newrelic_browser_application} Resource.
 func NewBrowserApplication(scope constructs.Construct, id *string, config *BrowserApplicationConfig) BrowserApplication {
 	_init_.Initialize()
 
@@ -445,7 +456,7 @@ func NewBrowserApplication(scope constructs.Construct, id *string, config *Brows
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.2/docs/resources/browser_application newrelic_browser_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.3/docs/resources/browser_application newrelic_browser_application} Resource.
 func NewBrowserApplication_Override(b BrowserApplication, scope constructs.Construct, id *string, config *BrowserApplicationConfig) {
 	_init_.Initialize()
 
