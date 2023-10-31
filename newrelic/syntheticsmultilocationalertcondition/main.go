@@ -61,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRunbookUrl", GoMethod: "ResetRunbookUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetViolationTimeLimitSeconds", GoMethod: "ResetViolationTimeLimitSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWarning", GoMethod: "ResetWarning"},
 			_jsii_.MemberProperty{JsiiProperty: "runbookUrl", GoGetter: "RunbookUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "runbookUrlInput", GoGetter: "RunbookUrlInput"},
