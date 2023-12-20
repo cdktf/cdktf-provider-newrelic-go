@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload newrelic_workload}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload newrelic_workload}.
 type Workload interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -113,12 +113,22 @@ type Workload interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -532,7 +542,7 @@ func (j *jsiiProxy_Workload) WorkloadId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload newrelic_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload newrelic_workload} Resource.
 func NewWorkload(scope constructs.Construct, id *string, config *WorkloadConfig) Workload {
 	_init_.Initialize()
 
@@ -550,7 +560,7 @@ func NewWorkload(scope constructs.Construct, id *string, config *WorkloadConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/workload newrelic_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/workload newrelic_workload} Resource.
 func NewWorkload_Override(w Workload, scope constructs.Construct, id *string, config *WorkloadConfig) {
 	_init_.Initialize()
 
@@ -964,6 +974,19 @@ func (w *jsiiProxy_Workload) GetStringMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
+func (w *jsiiProxy_Workload) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		w,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (w *jsiiProxy_Workload) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := w.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -991,6 +1014,17 @@ func (w *jsiiProxy_Workload) InterpolationForAttribute(terraformAttribute *strin
 	return returns
 }
 
+func (w *jsiiProxy_Workload) MoveFromId(id *string) {
+	if err := w.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (w *jsiiProxy_Workload) MoveTo(moveTarget *string, index interface{}) {
 	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -999,6 +1033,17 @@ func (w *jsiiProxy_Workload) MoveTo(moveTarget *string, index interface{}) {
 		w,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (w *jsiiProxy_Workload) MoveToId(id *string) {
+	if err := w.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (o *jsiiProxy_OneDashboardRaw) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardRaw) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardRaw) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboardRaw) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

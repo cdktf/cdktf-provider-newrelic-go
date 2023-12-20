@@ -59,7 +59,15 @@ func (s *jsiiProxy_SyntheticsAlertCondition) validateInterpolationForAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsAlertCondition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsAlertCondition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsAlertCondition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_SyntheticsScriptMonitor) validateInterpolationForAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsScriptMonitor) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsScriptMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsScriptMonitor) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

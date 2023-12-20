@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule newrelic_obfuscation_rule}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule newrelic_obfuscation_rule}.
 type ObfuscationRule interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -105,12 +105,22 @@ type ObfuscationRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -437,7 +447,7 @@ func (j *jsiiProxy_ObfuscationRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule newrelic_obfuscation_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule newrelic_obfuscation_rule} Resource.
 func NewObfuscationRule(scope constructs.Construct, id *string, config *ObfuscationRuleConfig) ObfuscationRule {
 	_init_.Initialize()
 
@@ -455,7 +465,7 @@ func NewObfuscationRule(scope constructs.Construct, id *string, config *Obfuscat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/obfuscation_rule newrelic_obfuscation_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/obfuscation_rule newrelic_obfuscation_rule} Resource.
 func NewObfuscationRule_Override(o ObfuscationRule, scope constructs.Construct, id *string, config *ObfuscationRuleConfig) {
 	_init_.Initialize()
 
@@ -869,6 +879,19 @@ func (o *jsiiProxy_ObfuscationRule) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (o *jsiiProxy_ObfuscationRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_ObfuscationRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -896,6 +919,17 @@ func (o *jsiiProxy_ObfuscationRule) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (o *jsiiProxy_ObfuscationRule) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_ObfuscationRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -904,6 +938,17 @@ func (o *jsiiProxy_ObfuscationRule) MoveTo(moveTarget *string, index interface{}
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_ObfuscationRule) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

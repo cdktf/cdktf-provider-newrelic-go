@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}.
 type NrqlAlertCondition interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -162,12 +162,22 @@ type NrqlAlertCondition interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -929,7 +939,7 @@ func (j *jsiiProxy_NrqlAlertCondition) WarningInput() *NrqlAlertConditionWarning
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
 func NewNrqlAlertCondition(scope constructs.Construct, id *string, config *NrqlAlertConditionConfig) NrqlAlertCondition {
 	_init_.Initialize()
 
@@ -947,7 +957,7 @@ func NewNrqlAlertCondition(scope constructs.Construct, id *string, config *NrqlA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
 func NewNrqlAlertCondition_Override(n NrqlAlertCondition, scope constructs.Construct, id *string, config *NrqlAlertConditionConfig) {
 	_init_.Initialize()
 
@@ -1537,6 +1547,19 @@ func (n *jsiiProxy_NrqlAlertCondition) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (n *jsiiProxy_NrqlAlertCondition) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NrqlAlertCondition) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1564,6 +1587,17 @@ func (n *jsiiProxy_NrqlAlertCondition) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (n *jsiiProxy_NrqlAlertCondition) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NrqlAlertCondition) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1572,6 +1606,17 @@ func (n *jsiiProxy_NrqlAlertCondition) MoveTo(moveTarget *string, index interfac
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NrqlAlertCondition) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

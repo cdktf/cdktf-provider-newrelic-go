@@ -59,7 +59,15 @@ func (s *jsiiProxy_SyntheticsPrivateLocation) validateInterpolationForAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsPrivateLocation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsPrivateLocation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsPrivateLocation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

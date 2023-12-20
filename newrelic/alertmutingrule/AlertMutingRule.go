@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule newrelic_alert_muting_rule}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule newrelic_alert_muting_rule}.
 type AlertMutingRule interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -104,12 +104,22 @@ type AlertMutingRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -438,7 +448,7 @@ func (j *jsiiProxy_AlertMutingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource.
 func NewAlertMutingRule(scope constructs.Construct, id *string, config *AlertMutingRuleConfig) AlertMutingRule {
 	_init_.Initialize()
 
@@ -456,7 +466,7 @@ func NewAlertMutingRule(scope constructs.Construct, id *string, config *AlertMut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource.
 func NewAlertMutingRule_Override(a AlertMutingRule, scope constructs.Construct, id *string, config *AlertMutingRuleConfig) {
 	_init_.Initialize()
 
@@ -859,6 +869,19 @@ func (a *jsiiProxy_AlertMutingRule) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (a *jsiiProxy_AlertMutingRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_AlertMutingRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -886,6 +909,17 @@ func (a *jsiiProxy_AlertMutingRule) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (a *jsiiProxy_AlertMutingRule) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_AlertMutingRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -894,6 +928,17 @@ func (a *jsiiProxy_AlertMutingRule) MoveTo(moveTarget *string, index interface{}
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AlertMutingRule) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

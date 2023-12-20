@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule}.
 type EventsToMetricsRule interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -104,12 +104,22 @@ type EventsToMetricsRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -426,7 +436,7 @@ func (j *jsiiProxy_EventsToMetricsRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule} Resource.
 func NewEventsToMetricsRule(scope constructs.Construct, id *string, config *EventsToMetricsRuleConfig) EventsToMetricsRule {
 	_init_.Initialize()
 
@@ -444,7 +454,7 @@ func NewEventsToMetricsRule(scope constructs.Construct, id *string, config *Even
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/events_to_metrics_rule newrelic_events_to_metrics_rule} Resource.
 func NewEventsToMetricsRule_Override(e EventsToMetricsRule, scope constructs.Construct, id *string, config *EventsToMetricsRuleConfig) {
 	_init_.Initialize()
 
@@ -858,6 +868,19 @@ func (e *jsiiProxy_EventsToMetricsRule) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (e *jsiiProxy_EventsToMetricsRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_EventsToMetricsRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -885,6 +908,17 @@ func (e *jsiiProxy_EventsToMetricsRule) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (e *jsiiProxy_EventsToMetricsRule) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_EventsToMetricsRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -893,6 +927,17 @@ func (e *jsiiProxy_EventsToMetricsRule) MoveTo(moveTarget *string, index interfa
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_EventsToMetricsRule) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

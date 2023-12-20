@@ -59,7 +59,15 @@ func (s *jsiiProxy_SyntheticsCertCheckMonitor) validateInterpolationForAttribute
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsCertCheckMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/browser_application newrelic_browser_application}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/browser_application newrelic_browser_application}.
 type BrowserApplication interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -105,12 +105,22 @@ type BrowserApplication interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -438,7 +448,7 @@ func (j *jsiiProxy_BrowserApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/browser_application newrelic_browser_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/browser_application newrelic_browser_application} Resource.
 func NewBrowserApplication(scope constructs.Construct, id *string, config *BrowserApplicationConfig) BrowserApplication {
 	_init_.Initialize()
 
@@ -456,7 +466,7 @@ func NewBrowserApplication(scope constructs.Construct, id *string, config *Brows
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/browser_application newrelic_browser_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/browser_application newrelic_browser_application} Resource.
 func NewBrowserApplication_Override(b BrowserApplication, scope constructs.Construct, id *string, config *BrowserApplicationConfig) {
 	_init_.Initialize()
 
@@ -870,6 +880,19 @@ func (b *jsiiProxy_BrowserApplication) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (b *jsiiProxy_BrowserApplication) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (b *jsiiProxy_BrowserApplication) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := b.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -897,6 +920,17 @@ func (b *jsiiProxy_BrowserApplication) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (b *jsiiProxy_BrowserApplication) MoveFromId(id *string) {
+	if err := b.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (b *jsiiProxy_BrowserApplication) MoveTo(moveTarget *string, index interface{}) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -905,6 +939,17 @@ func (b *jsiiProxy_BrowserApplication) MoveTo(moveTarget *string, index interfac
 		b,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (b *jsiiProxy_BrowserApplication) MoveToId(id *string) {
+	if err := b.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

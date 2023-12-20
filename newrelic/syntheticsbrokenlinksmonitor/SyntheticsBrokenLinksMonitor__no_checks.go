@@ -59,7 +59,15 @@ func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) validateInterpolationForAttribu
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

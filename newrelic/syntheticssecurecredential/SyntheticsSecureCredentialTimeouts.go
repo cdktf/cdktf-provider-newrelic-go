@@ -5,7 +5,7 @@ package syntheticssecurecredential
 
 
 type SyntheticsSecureCredentialTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/synthetics_secure_credential#read SyntheticsSecureCredential#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_secure_credential#read SyntheticsSecureCredential#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -122,6 +122,14 @@ func (o *jsiiProxy_OneDashboardJson) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardJson) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardJson) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -178,6 +186,14 @@ func (o *jsiiProxy_OneDashboardJson) validateMoveToParameters(moveTarget *string
 		// ok
 	default:
 		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboardJson) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil

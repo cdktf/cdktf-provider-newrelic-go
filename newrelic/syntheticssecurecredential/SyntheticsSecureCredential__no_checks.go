@@ -59,7 +59,15 @@ func (s *jsiiProxy_SyntheticsSecureCredential) validateInterpolationForAttribute
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsSecureCredential) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsSecureCredential) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsSecureCredential) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

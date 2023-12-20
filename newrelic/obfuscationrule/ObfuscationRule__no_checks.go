@@ -59,7 +59,15 @@ func (o *jsiiProxy_ObfuscationRule) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (o *jsiiProxy_ObfuscationRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_ObfuscationRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_ObfuscationRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

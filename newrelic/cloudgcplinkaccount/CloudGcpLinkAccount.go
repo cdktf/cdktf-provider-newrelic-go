@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account}.
 type CloudGcpLinkAccount interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -97,12 +97,22 @@ type CloudGcpLinkAccount interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -367,7 +377,7 @@ func (j *jsiiProxy_CloudGcpLinkAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account} Resource.
 func NewCloudGcpLinkAccount(scope constructs.Construct, id *string, config *CloudGcpLinkAccountConfig) CloudGcpLinkAccount {
 	_init_.Initialize()
 
@@ -385,7 +395,7 @@ func NewCloudGcpLinkAccount(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/cloud_gcp_link_account newrelic_cloud_gcp_link_account} Resource.
 func NewCloudGcpLinkAccount_Override(c CloudGcpLinkAccount, scope constructs.Construct, id *string, config *CloudGcpLinkAccountConfig) {
 	_init_.Initialize()
 
@@ -777,6 +787,19 @@ func (c *jsiiProxy_CloudGcpLinkAccount) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (c *jsiiProxy_CloudGcpLinkAccount) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CloudGcpLinkAccount) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -804,6 +827,17 @@ func (c *jsiiProxy_CloudGcpLinkAccount) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (c *jsiiProxy_CloudGcpLinkAccount) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_CloudGcpLinkAccount) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -812,6 +846,17 @@ func (c *jsiiProxy_CloudGcpLinkAccount) MoveTo(moveTarget *string, index interfa
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CloudGcpLinkAccount) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

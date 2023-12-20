@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAwsGovcloudLinkAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

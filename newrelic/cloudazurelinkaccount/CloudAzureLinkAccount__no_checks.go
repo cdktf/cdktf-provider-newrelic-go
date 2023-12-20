@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudAzureLinkAccount) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CloudAzureLinkAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAzureLinkAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAzureLinkAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

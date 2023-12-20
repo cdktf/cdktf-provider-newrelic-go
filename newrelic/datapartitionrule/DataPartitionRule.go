@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule newrelic_data_partition_rule}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule newrelic_data_partition_rule}.
 type DataPartitionRule interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -109,12 +109,22 @@ type DataPartitionRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -472,7 +482,7 @@ func (j *jsiiProxy_DataPartitionRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule newrelic_data_partition_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule newrelic_data_partition_rule} Resource.
 func NewDataPartitionRule(scope constructs.Construct, id *string, config *DataPartitionRuleConfig) DataPartitionRule {
 	_init_.Initialize()
 
@@ -490,7 +500,7 @@ func NewDataPartitionRule(scope constructs.Construct, id *string, config *DataPa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.27.7/docs/resources/data_partition_rule newrelic_data_partition_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/data_partition_rule newrelic_data_partition_rule} Resource.
 func NewDataPartitionRule_Override(d DataPartitionRule, scope constructs.Construct, id *string, config *DataPartitionRuleConfig) {
 	_init_.Initialize()
 
@@ -915,6 +925,19 @@ func (d *jsiiProxy_DataPartitionRule) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (d *jsiiProxy_DataPartitionRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DataPartitionRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -942,6 +965,17 @@ func (d *jsiiProxy_DataPartitionRule) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (d *jsiiProxy_DataPartitionRule) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DataPartitionRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -950,6 +984,17 @@ func (d *jsiiProxy_DataPartitionRule) MoveTo(moveTarget *string, index interface
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DataPartitionRule) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
