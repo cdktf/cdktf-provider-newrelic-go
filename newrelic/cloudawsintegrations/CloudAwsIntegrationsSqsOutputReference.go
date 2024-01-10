@@ -5,9 +5,9 @@ package cloudawsintegrations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v11/cloudawsintegrations/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/cloudawsintegrations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

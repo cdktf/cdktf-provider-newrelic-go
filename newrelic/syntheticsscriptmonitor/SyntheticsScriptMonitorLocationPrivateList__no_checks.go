@@ -7,6 +7,10 @@ package syntheticsscriptmonitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SyntheticsScriptMonitorLocationPrivateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsScriptMonitorLocationPrivateList) validateGetParameters(index *float64) error {
 	return nil
 }

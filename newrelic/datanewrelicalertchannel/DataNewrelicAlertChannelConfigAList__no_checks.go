@@ -7,6 +7,10 @@ package datanewrelicalertchannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataNewrelicAlertChannelConfigAList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataNewrelicAlertChannelConfigAList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package onedashboard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package notificationdestination
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotificationDestinationPropertyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationDestinationPropertyList) validateGetParameters(index *float64) error {
 	return nil
 }
