@@ -24,46 +24,46 @@ type SyntheticsStepMonitorConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The title of this monitor.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_step_monitor#name SyntheticsStepMonitor#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/synthetics_step_monitor#name SyntheticsStepMonitor#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The interval at which this monitor should run.
 	//
 	// Valid values are EVERY_MINUTE, EVERY_5_MINUTES, EVERY_10_MINUTES, EVERY_15_MINUTES, EVERY_30_MINUTES, EVERY_HOUR, EVERY_6_HOURS, EVERY_12_HOURS, or EVERY_DAY.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_step_monitor#period SyntheticsStepMonitor#period}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/synthetics_step_monitor#period SyntheticsStepMonitor#period}
 	Period *string `field:"required" json:"period" yaml:"period"`
 	// The monitor status (i.e. ENABLED, MUTED, DISABLED). Note: The 'MUTED' status is now deprecated, and support for this value will soon be removed from the Terraform Provider in an upcoming release. It is highly recommended for users to refrain from using this value and shift to alternatives.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_step_monitor#status SyntheticsStepMonitor#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/synthetics_step_monitor#status SyntheticsStepMonitor#status}
 	Status *string `field:"required" json:"status" yaml:"status"`
 	// steps block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_step_monitor#steps SyntheticsStepMonitor#steps}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/synthetics_step_monitor#steps SyntheticsStepMonitor#steps}
 	Steps interface{} `field:"required" json:"steps" yaml:"steps"`
 	// ID of the newrelic account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_step_monitor#account_id SyntheticsStepMonitor#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/synthetics_step_monitor#account_id SyntheticsStepMonitor#account_id}
 	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
 	// Capture a screenshot during job execution.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_step_monitor#enable_screenshot_on_failure_and_script SyntheticsStepMonitor#enable_screenshot_on_failure_and_script}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/synthetics_step_monitor#enable_screenshot_on_failure_and_script SyntheticsStepMonitor#enable_screenshot_on_failure_and_script}
 	EnableScreenshotOnFailureAndScript interface{} `field:"optional" json:"enableScreenshotOnFailureAndScript" yaml:"enableScreenshotOnFailureAndScript"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_step_monitor#id SyntheticsStepMonitor#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/synthetics_step_monitor#id SyntheticsStepMonitor#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// location_private block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_step_monitor#location_private SyntheticsStepMonitor#location_private}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/synthetics_step_monitor#location_private SyntheticsStepMonitor#location_private}
 	LocationPrivate interface{} `field:"optional" json:"locationPrivate" yaml:"locationPrivate"`
 	// The public location(s) that the monitor will run jobs from.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_step_monitor#locations_public SyntheticsStepMonitor#locations_public}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/synthetics_step_monitor#locations_public SyntheticsStepMonitor#locations_public}
 	LocationsPublic *[]*string `field:"optional" json:"locationsPublic" yaml:"locationsPublic"`
 	// tag block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs/resources/synthetics_step_monitor#tag SyntheticsStepMonitor#tag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/synthetics_step_monitor#tag SyntheticsStepMonitor#tag}
 	Tag interface{} `field:"optional" json:"tag" yaml:"tag"`
 }
 

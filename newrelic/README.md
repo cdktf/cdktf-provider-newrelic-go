@@ -1,12 +1,15 @@
-# CDKTF Go bindings for newrelic/newrelic provider version 3.28.1
+# CDKTF Go bindings for newrelic/newrelic provider version 3.29.0
 
-This repo builds and publishes the [Terraform newrelic provider](https://registry.terraform.io/providers/newrelic/newrelic/3.28.1/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform newrelic provider](https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-newrelic-go`](https://github.com/cdktf/cdktf-provider-newrelic-go) package.
 
-`go get github.com/cdktf/cdktf-provider-newrelic-go/newrelic`
+`go get github.com/cdktf/cdktf-provider-newrelic-go/newrelic/<version>`
+
+Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
+within the [go.mod](https://github.com/cdktf/cdktf-provider-newrelic-go/blob/main/newrelic/go.mod#L1) file.
 
 ## Docs
 
@@ -20,7 +23,7 @@ This project is explicitly not tracking the Terraform newrelic provider version 
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform newrelic provider](https://registry.terraform.io/providers/newrelic/newrelic/3.28.1)
+* [Terraform newrelic provider](https://registry.terraform.io/providers/newrelic/newrelic/3.29.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
