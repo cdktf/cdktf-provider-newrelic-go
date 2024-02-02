@@ -12,12 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/monitor_downtime newrelic_monitor_downtime}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.30.0/docs/resources/monitor_downtime newrelic_monitor_downtime}.
 type MonitorDowntime interface {
 	cdktf.TerraformResource
-	AccountId() *string
-	SetAccountId(val *string)
-	AccountIdInput() *string
+	AccountId() *float64
+	SetAccountId(val *float64)
+	AccountIdInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -164,8 +164,8 @@ type jsiiProxy_MonitorDowntime struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_MonitorDowntime) AccountId() *string {
-	var returns *string
+func (j *jsiiProxy_MonitorDowntime) AccountId() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"accountId",
@@ -174,8 +174,8 @@ func (j *jsiiProxy_MonitorDowntime) AccountId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorDowntime) AccountIdInput() *string {
-	var returns *string
+func (j *jsiiProxy_MonitorDowntime) AccountIdInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"accountIdInput",
@@ -545,7 +545,7 @@ func (j *jsiiProxy_MonitorDowntime) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/monitor_downtime newrelic_monitor_downtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.30.0/docs/resources/monitor_downtime newrelic_monitor_downtime} Resource.
 func NewMonitorDowntime(scope constructs.Construct, id *string, config *MonitorDowntimeConfig) MonitorDowntime {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewMonitorDowntime(scope constructs.Construct, id *string, config *MonitorD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/resources/monitor_downtime newrelic_monitor_downtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.30.0/docs/resources/monitor_downtime newrelic_monitor_downtime} Resource.
 func NewMonitorDowntime_Override(m MonitorDowntime, scope constructs.Construct, id *string, config *MonitorDowntimeConfig) {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewMonitorDowntime_Override(m MonitorDowntime, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_MonitorDowntime)SetAccountId(val *string) {
+func (j *jsiiProxy_MonitorDowntime)SetAccountId(val *float64) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}

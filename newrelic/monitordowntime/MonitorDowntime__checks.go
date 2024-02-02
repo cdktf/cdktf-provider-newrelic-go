@@ -269,7 +269,7 @@ func validateMonitorDowntime_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_MonitorDowntime) validateSetAccountIdParameters(val *string) error {
+func (j *jsiiProxy_MonitorDowntime) validateSetAccountIdParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

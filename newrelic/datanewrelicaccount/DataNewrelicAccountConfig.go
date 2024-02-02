@@ -24,20 +24,20 @@ type DataNewrelicAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the account in New Relic.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/data-sources/account#account_id DataNewrelicAccount#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.30.0/docs/data-sources/account#account_id DataNewrelicAccount#account_id}
 	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/data-sources/account#id DataNewrelicAccount#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.30.0/docs/data-sources/account#id DataNewrelicAccount#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The name of the account in New Relic.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/data-sources/account#name DataNewrelicAccount#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.30.0/docs/data-sources/account#name DataNewrelicAccount#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The scope of the account in New Relic.  Valid values are "global" and "in_region".  Defaults to "in_region".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.29.0/docs/data-sources/account#scope DataNewrelicAccount#scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.30.0/docs/data-sources/account#scope DataNewrelicAccount#scope}
 	Scope *string `field:"optional" json:"scope" yaml:"scope"`
 }
 
