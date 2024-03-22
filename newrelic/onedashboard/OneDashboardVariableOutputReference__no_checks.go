@@ -55,6 +55,10 @@ func (o *jsiiProxy_OneDashboardVariableOutputReference) validatePutNrqlQueryPara
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardVariableOutputReference) validatePutOptionsParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardVariableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

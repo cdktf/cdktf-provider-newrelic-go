@@ -24,13 +24,13 @@ type AccountManagementConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the account to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.32.0/docs/resources/account_management#name AccountManagement#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/account_management#name AccountManagement#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A description of what this parsing rule represents.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.32.0/docs/resources/account_management#region AccountManagement#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/account_management#region AccountManagement#region}
 	Region *string `field:"required" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.32.0/docs/resources/account_management#id AccountManagement#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/account_management#id AccountManagement#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.32.0/docs/data-sources/notification_destination newrelic_notification_destination}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/data-sources/notification_destination newrelic_notification_destination}.
 type DataNewrelicNotificationDestination interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -39,6 +39,7 @@ type DataNewrelicNotificationDestination interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Guid() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -216,6 +217,16 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) FriendlyUniqueId() *stri
 	return returns
 }
 
+func (j *jsiiProxy_DataNewrelicNotificationDestination) Guid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"guid",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNewrelicNotificationDestination) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -357,7 +368,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.32.0/docs/data-sources/notification_destination newrelic_notification_destination} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/data-sources/notification_destination newrelic_notification_destination} Data Source.
 func NewDataNewrelicNotificationDestination(scope constructs.Construct, id *string, config *DataNewrelicNotificationDestinationConfig) DataNewrelicNotificationDestination {
 	_init_.Initialize()
 
@@ -375,7 +386,7 @@ func NewDataNewrelicNotificationDestination(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.32.0/docs/data-sources/notification_destination newrelic_notification_destination} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/data-sources/notification_destination newrelic_notification_destination} Data Source.
 func NewDataNewrelicNotificationDestination_Override(d DataNewrelicNotificationDestination, scope constructs.Construct, id *string, config *DataNewrelicNotificationDestinationConfig) {
 	_init_.Initialize()
 

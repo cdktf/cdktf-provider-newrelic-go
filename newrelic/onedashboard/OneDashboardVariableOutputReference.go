@@ -45,6 +45,8 @@ type OneDashboardVariableOutputReference interface {
 	NameInput() *string
 	NrqlQuery() OneDashboardVariableNrqlQueryOutputReference
 	NrqlQueryInput() *OneDashboardVariableNrqlQuery
+	Options() OneDashboardVariableOptionsList
+	OptionsInput() interface{}
 	ReplacementStrategy() *string
 	SetReplacementStrategy(val *string)
 	ReplacementStrategyInput() *string
@@ -88,10 +90,12 @@ type OneDashboardVariableOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutItem(value interface{})
 	PutNrqlQuery(value *OneDashboardVariableNrqlQuery)
+	PutOptions(value interface{})
 	ResetDefaultValues()
 	ResetIsMultiSelection()
 	ResetItem()
 	ResetNrqlQuery()
+	ResetOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -252,6 +256,26 @@ func (j *jsiiProxy_OneDashboardVariableOutputReference) NrqlQueryInput() *OneDas
 	_jsii_.Get(
 		j,
 		"nrqlQueryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardVariableOutputReference) Options() OneDashboardVariableOptionsList {
+	var returns OneDashboardVariableOptionsList
+	_jsii_.Get(
+		j,
+		"options",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardVariableOutputReference) OptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optionsInput",
 		&returns,
 	)
 	return returns
@@ -694,6 +718,17 @@ func (o *jsiiProxy_OneDashboardVariableOutputReference) PutNrqlQuery(value *OneD
 	)
 }
 
+func (o *jsiiProxy_OneDashboardVariableOutputReference) PutOptions(value interface{}) {
+	if err := o.validatePutOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putOptions",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardVariableOutputReference) ResetDefaultValues() {
 	_jsii_.InvokeVoid(
 		o,
@@ -722,6 +757,14 @@ func (o *jsiiProxy_OneDashboardVariableOutputReference) ResetNrqlQuery() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetNrqlQuery",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardVariableOutputReference) ResetOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOptions",
 		nil, // no parameters
 	)
 }
