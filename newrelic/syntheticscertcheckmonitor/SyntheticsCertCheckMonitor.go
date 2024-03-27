@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor}.
 type SyntheticsCertCheckMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -80,6 +80,12 @@ type SyntheticsCertCheckMonitor interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RuntimeType() *string
+	SetRuntimeType(val *string)
+	RuntimeTypeInput() *string
+	RuntimeTypeVersion() *string
+	SetRuntimeTypeVersion(val *string)
+	RuntimeTypeVersionInput() *string
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -142,6 +148,8 @@ type SyntheticsCertCheckMonitor interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRuntimeType()
+	ResetRuntimeTypeVersion()
 	ResetTag()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -461,6 +469,46 @@ func (j *jsiiProxy_SyntheticsCertCheckMonitor) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) RuntimeType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) RuntimeTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) RuntimeTypeVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeTypeVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) RuntimeTypeVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeTypeVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsCertCheckMonitor) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -532,7 +580,7 @@ func (j *jsiiProxy_SyntheticsCertCheckMonitor) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
 func NewSyntheticsCertCheckMonitor(scope constructs.Construct, id *string, config *SyntheticsCertCheckMonitorConfig) SyntheticsCertCheckMonitor {
 	_init_.Initialize()
 
@@ -550,7 +598,7 @@ func NewSyntheticsCertCheckMonitor(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
 func NewSyntheticsCertCheckMonitor_Override(s SyntheticsCertCheckMonitor, scope constructs.Construct, id *string, config *SyntheticsCertCheckMonitorConfig) {
 	_init_.Initialize()
 
@@ -713,6 +761,28 @@ func (j *jsiiProxy_SyntheticsCertCheckMonitor)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor)SetRuntimeType(val *string) {
+	if err := j.validateSetRuntimeTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor)SetRuntimeTypeVersion(val *string) {
+	if err := j.validateSetRuntimeTypeVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeTypeVersion",
 		val,
 	)
 }
@@ -1128,6 +1198,22 @@ func (s *jsiiProxy_SyntheticsCertCheckMonitor) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) ResetRuntimeType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRuntimeType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) ResetRuntimeTypeVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRuntimeTypeVersion",
 		nil, // no parameters
 	)
 }

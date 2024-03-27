@@ -143,6 +143,14 @@ func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetRuntimeTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetRuntimeTypeVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetStatusParameters(val *string) error {
 	return nil
 }

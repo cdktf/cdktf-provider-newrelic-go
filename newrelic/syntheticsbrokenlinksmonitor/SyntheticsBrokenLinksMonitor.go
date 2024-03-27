@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor}.
 type SyntheticsBrokenLinksMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -75,6 +75,12 @@ type SyntheticsBrokenLinksMonitor interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RuntimeType() *string
+	SetRuntimeType(val *string)
+	RuntimeTypeInput() *string
+	RuntimeTypeVersion() *string
+	SetRuntimeTypeVersion(val *string)
+	RuntimeTypeVersionInput() *string
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
@@ -140,6 +146,8 @@ type SyntheticsBrokenLinksMonitor interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRuntimeType()
+	ResetRuntimeTypeVersion()
 	ResetTag()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -429,6 +437,46 @@ func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) RuntimeType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) RuntimeTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) RuntimeTypeVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeTypeVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) RuntimeTypeVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeTypeVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -520,7 +568,7 @@ func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) UriInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor} Resource.
 func NewSyntheticsBrokenLinksMonitor(scope constructs.Construct, id *string, config *SyntheticsBrokenLinksMonitorConfig) SyntheticsBrokenLinksMonitor {
 	_init_.Initialize()
 
@@ -538,7 +586,7 @@ func NewSyntheticsBrokenLinksMonitor(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor} Resource.
 func NewSyntheticsBrokenLinksMonitor_Override(s SyntheticsBrokenLinksMonitor, scope constructs.Construct, id *string, config *SyntheticsBrokenLinksMonitorConfig) {
 	_init_.Initialize()
 
@@ -679,6 +727,28 @@ func (j *jsiiProxy_SyntheticsBrokenLinksMonitor)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor)SetRuntimeType(val *string) {
+	if err := j.validateSetRuntimeTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor)SetRuntimeTypeVersion(val *string) {
+	if err := j.validateSetRuntimeTypeVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeTypeVersion",
 		val,
 	)
 }
@@ -1105,6 +1175,22 @@ func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ResetRuntimeType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRuntimeType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ResetRuntimeTypeVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRuntimeTypeVersion",
 		nil, // no parameters
 	)
 }

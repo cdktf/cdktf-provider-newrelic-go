@@ -486,6 +486,22 @@ func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetRuntimeTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetRuntimeTypeVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

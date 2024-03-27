@@ -135,6 +135,14 @@ func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) validateSetRuntimeTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) validateSetRuntimeTypeVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) validateSetStatusParameters(val *string) error {
 	return nil
 }

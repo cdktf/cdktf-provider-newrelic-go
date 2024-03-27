@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/notification_destination newrelic_notification_destination}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/notification_destination newrelic_notification_destination}.
 type NotificationDestination interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -508,7 +508,7 @@ func (j *jsiiProxy_NotificationDestination) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/notification_destination newrelic_notification_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/notification_destination newrelic_notification_destination} Resource.
 func NewNotificationDestination(scope constructs.Construct, id *string, config *NotificationDestinationConfig) NotificationDestination {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewNotificationDestination(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.33.0/docs/resources/notification_destination newrelic_notification_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/notification_destination newrelic_notification_destination} Resource.
 func NewNotificationDestination_Override(n NotificationDestination, scope constructs.Construct, id *string, config *NotificationDestinationConfig) {
 	_init_.Initialize()
 
