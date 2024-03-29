@@ -9,7 +9,7 @@ type OneDashboardVariableOptions struct {
 	//
 	// With this turned on, the time range for the NRQL query will override the time picker on dashboards and other pages. Turn this off to use the time picker as normal.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/one_dashboard#ignore_time_range OneDashboard#ignore_time_range}
 	IgnoreTimeRange interface{} `field:"optional" json:"ignoreTimeRange" yaml:"ignoreTimeRange"`
 }
 

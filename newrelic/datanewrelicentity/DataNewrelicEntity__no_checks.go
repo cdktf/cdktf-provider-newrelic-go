@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataNewrelicEntity) validateSetIgnoreCaseParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicEntity) validateSetIgnoreNotFoundParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicEntity) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

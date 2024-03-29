@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/data-sources/entity newrelic_entity}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/data-sources/entity newrelic_entity}.
 type DataNewrelicEntity interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -49,6 +49,9 @@ type DataNewrelicEntity interface {
 	IgnoreCase() interface{}
 	SetIgnoreCase(val interface{})
 	IgnoreCaseInput() interface{}
+	IgnoreNotFound() interface{}
+	SetIgnoreNotFound(val interface{})
+	IgnoreNotFoundInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -106,6 +109,7 @@ type DataNewrelicEntity interface {
 	ResetDomain()
 	ResetId()
 	ResetIgnoreCase()
+	ResetIgnoreNotFound()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -300,6 +304,26 @@ func (j *jsiiProxy_DataNewrelicEntity) IgnoreCaseInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataNewrelicEntity) IgnoreNotFound() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreNotFound",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicEntity) IgnoreNotFoundInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreNotFoundInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNewrelicEntity) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -441,7 +465,7 @@ func (j *jsiiProxy_DataNewrelicEntity) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/data-sources/entity newrelic_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/data-sources/entity newrelic_entity} Data Source.
 func NewDataNewrelicEntity(scope constructs.Construct, id *string, config *DataNewrelicEntityConfig) DataNewrelicEntity {
 	_init_.Initialize()
 
@@ -459,7 +483,7 @@ func NewDataNewrelicEntity(scope constructs.Construct, id *string, config *DataN
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.0/docs/data-sources/entity newrelic_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/data-sources/entity newrelic_entity} Data Source.
 func NewDataNewrelicEntity_Override(d DataNewrelicEntity, scope constructs.Construct, id *string, config *DataNewrelicEntityConfig) {
 	_init_.Initialize()
 
@@ -537,6 +561,17 @@ func (j *jsiiProxy_DataNewrelicEntity)SetIgnoreCase(val interface{}) {
 	_jsii_.Set(
 		j,
 		"ignoreCase",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataNewrelicEntity)SetIgnoreNotFound(val interface{}) {
+	if err := j.validateSetIgnoreNotFoundParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreNotFound",
 		val,
 	)
 }
@@ -906,6 +941,14 @@ func (d *jsiiProxy_DataNewrelicEntity) ResetIgnoreCase() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIgnoreCase",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataNewrelicEntity) ResetIgnoreNotFound() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIgnoreNotFound",
 		nil, // no parameters
 	)
 }
