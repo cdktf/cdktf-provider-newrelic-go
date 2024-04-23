@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination newrelic_notification_destination}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination newrelic_notification_destination}.
 type NotificationDestination interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -23,6 +23,8 @@ type NotificationDestination interface {
 	ActiveInput() interface{}
 	AuthBasic() NotificationDestinationAuthBasicOutputReference
 	AuthBasicInput() *NotificationDestinationAuthBasic
+	AuthCustomHeader() NotificationDestinationAuthCustomHeaderList
+	AuthCustomHeaderInput() interface{}
 	AuthToken() NotificationDestinationAuthTokenOutputReference
 	AuthTokenInput() *NotificationDestinationAuthToken
 	// Experimental.
@@ -75,6 +77,8 @@ type NotificationDestination interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SecureUrl() NotificationDestinationSecureUrlOutputReference
+	SecureUrlInput() *NotificationDestinationSecureUrl
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -129,16 +133,20 @@ type NotificationDestination interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthBasic(value *NotificationDestinationAuthBasic)
+	PutAuthCustomHeader(value interface{})
 	PutAuthToken(value *NotificationDestinationAuthToken)
 	PutProperty(value interface{})
+	PutSecureUrl(value *NotificationDestinationSecureUrl)
 	ResetAccountId()
 	ResetActive()
 	ResetAuthBasic()
+	ResetAuthCustomHeader()
 	ResetAuthToken()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecureUrl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -212,6 +220,26 @@ func (j *jsiiProxy_NotificationDestination) AuthBasicInput() *NotificationDestin
 	_jsii_.Get(
 		j,
 		"authBasicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) AuthCustomHeader() NotificationDestinationAuthCustomHeaderList {
+	var returns NotificationDestinationAuthCustomHeaderList
+	_jsii_.Get(
+		j,
+		"authCustomHeader",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) AuthCustomHeaderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authCustomHeaderInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +475,26 @@ func (j *jsiiProxy_NotificationDestination) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NotificationDestination) SecureUrl() NotificationDestinationSecureUrlOutputReference {
+	var returns NotificationDestinationSecureUrlOutputReference
+	_jsii_.Get(
+		j,
+		"secureUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) SecureUrlInput() *NotificationDestinationSecureUrl {
+	var returns *NotificationDestinationSecureUrl
+	_jsii_.Get(
+		j,
+		"secureUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationDestination) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -508,7 +556,7 @@ func (j *jsiiProxy_NotificationDestination) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination newrelic_notification_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination newrelic_notification_destination} Resource.
 func NewNotificationDestination(scope constructs.Construct, id *string, config *NotificationDestinationConfig) NotificationDestination {
 	_init_.Initialize()
 
@@ -526,7 +574,7 @@ func NewNotificationDestination(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/resources/notification_destination newrelic_notification_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/resources/notification_destination newrelic_notification_destination} Resource.
 func NewNotificationDestination_Override(n NotificationDestination, scope constructs.Construct, id *string, config *NotificationDestinationConfig) {
 	_init_.Initialize()
 
@@ -1024,6 +1072,17 @@ func (n *jsiiProxy_NotificationDestination) PutAuthBasic(value *NotificationDest
 	)
 }
 
+func (n *jsiiProxy_NotificationDestination) PutAuthCustomHeader(value interface{}) {
+	if err := n.validatePutAuthCustomHeaderParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putAuthCustomHeader",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NotificationDestination) PutAuthToken(value *NotificationDestinationAuthToken) {
 	if err := n.validatePutAuthTokenParameters(value); err != nil {
 		panic(err)
@@ -1042,6 +1101,17 @@ func (n *jsiiProxy_NotificationDestination) PutProperty(value interface{}) {
 	_jsii_.InvokeVoid(
 		n,
 		"putProperty",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) PutSecureUrl(value *NotificationDestinationSecureUrl) {
+	if err := n.validatePutSecureUrlParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putSecureUrl",
 		[]interface{}{value},
 	)
 }
@@ -1070,6 +1140,14 @@ func (n *jsiiProxy_NotificationDestination) ResetAuthBasic() {
 	)
 }
 
+func (n *jsiiProxy_NotificationDestination) ResetAuthCustomHeader() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAuthCustomHeader",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NotificationDestination) ResetAuthToken() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1090,6 +1168,14 @@ func (n *jsiiProxy_NotificationDestination) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) ResetSecureUrl() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSecureUrl",
 		nil, // no parameters
 	)
 }

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataNewrelicNotificationDestination) validateOverrideLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DataNewrelicNotificationDestination) validatePutSecureUrlParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataNewrelicNotificationDestination_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

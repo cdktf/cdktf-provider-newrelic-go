@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/data-sources/notification_destination newrelic_notification_destination}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/data-sources/notification_destination newrelic_notification_destination}.
 type DataNewrelicNotificationDestination interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -59,6 +59,8 @@ type DataNewrelicNotificationDestination interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SecureUrl() DataNewrelicNotificationDestinationSecureUrlList
+	SecureUrlInput() interface{}
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -92,12 +94,14 @@ type DataNewrelicNotificationDestination interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSecureUrl(value interface{})
 	ResetAccountId()
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecureUrl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -317,6 +321,26 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_DataNewrelicNotificationDestination) SecureUrl() DataNewrelicNotificationDestinationSecureUrlList {
+	var returns DataNewrelicNotificationDestinationSecureUrlList
+	_jsii_.Get(
+		j,
+		"secureUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicNotificationDestination) SecureUrlInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secureUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNewrelicNotificationDestination) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -368,7 +392,7 @@ func (j *jsiiProxy_DataNewrelicNotificationDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/data-sources/notification_destination newrelic_notification_destination} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/data-sources/notification_destination newrelic_notification_destination} Data Source.
 func NewDataNewrelicNotificationDestination(scope constructs.Construct, id *string, config *DataNewrelicNotificationDestinationConfig) DataNewrelicNotificationDestination {
 	_init_.Initialize()
 
@@ -386,7 +410,7 @@ func NewDataNewrelicNotificationDestination(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.34.1/docs/data-sources/notification_destination newrelic_notification_destination} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.0/docs/data-sources/notification_destination newrelic_notification_destination} Data Source.
 func NewDataNewrelicNotificationDestination_Override(d DataNewrelicNotificationDestination, scope constructs.Construct, id *string, config *DataNewrelicNotificationDestinationConfig) {
 	_init_.Initialize()
 
@@ -761,6 +785,17 @@ func (d *jsiiProxy_DataNewrelicNotificationDestination) OverrideLogicalId(newLog
 	)
 }
 
+func (d *jsiiProxy_DataNewrelicNotificationDestination) PutSecureUrl(value interface{}) {
+	if err := d.validatePutSecureUrlParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSecureUrl",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -789,6 +824,14 @@ func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataNewrelicNotificationDestination) ResetSecureUrl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecureUrl",
 		nil, // no parameters
 	)
 }

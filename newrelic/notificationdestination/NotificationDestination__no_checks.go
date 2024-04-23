@@ -79,11 +79,19 @@ func (n *jsiiProxy_NotificationDestination) validatePutAuthBasicParameters(value
 	return nil
 }
 
+func (n *jsiiProxy_NotificationDestination) validatePutAuthCustomHeaderParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotificationDestination) validatePutAuthTokenParameters(value *NotificationDestinationAuthToken) error {
 	return nil
 }
 
 func (n *jsiiProxy_NotificationDestination) validatePutPropertyParameters(value interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotificationDestination) validatePutSecureUrlParameters(value *NotificationDestinationSecureUrl) error {
 	return nil
 }
 
