@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.1/docs/resources/obfuscation_rule newrelic_obfuscation_rule}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.2/docs/resources/obfuscation_rule newrelic_obfuscation_rule}.
 type ObfuscationRule interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -450,7 +450,7 @@ func (j *jsiiProxy_ObfuscationRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.1/docs/resources/obfuscation_rule newrelic_obfuscation_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.2/docs/resources/obfuscation_rule newrelic_obfuscation_rule} Resource.
 func NewObfuscationRule(scope constructs.Construct, id *string, config *ObfuscationRuleConfig) ObfuscationRule {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewObfuscationRule(scope constructs.Construct, id *string, config *Obfuscat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.1/docs/resources/obfuscation_rule newrelic_obfuscation_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.35.2/docs/resources/obfuscation_rule newrelic_obfuscation_rule} Resource.
 func NewObfuscationRule_Override(o ObfuscationRule, scope constructs.Construct, id *string, config *ObfuscationRuleConfig) {
 	_init_.Initialize()
 
