@@ -59,7 +59,15 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) validatePutNullVal
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) validatePutThresholdParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) validatePutUnitsParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) validatePutYAxisRightParameters(value *OneDashboardPageWidgetLineYAxisRight) error {
 	return nil
 }
 
@@ -92,6 +100,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) validateSetIgnoreT
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) validateSetIsLabelVisibleParameters(val interface{}) error {
 	return nil
 }
 

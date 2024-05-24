@@ -5016,6 +5016,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "isLabelVisible", GoGetter: "IsLabelVisible"},
+			_jsii_.MemberProperty{JsiiProperty: "isLabelVisibleInput", GoGetter: "IsLabelVisibleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "legendEnabled", GoGetter: "LegendEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "legendEnabledInput", GoGetter: "LegendEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nrqlQuery", GoGetter: "NrqlQuery"},
@@ -5025,23 +5027,30 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putColors", GoMethod: "PutColors"},
 			_jsii_.MemberMethod{JsiiMethod: "putNrqlQuery", GoMethod: "PutNrqlQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "putNullValues", GoMethod: "PutNullValues"},
+			_jsii_.MemberMethod{JsiiMethod: "putThreshold", GoMethod: "PutThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "putUnits", GoMethod: "PutUnits"},
+			_jsii_.MemberMethod{JsiiMethod: "putYAxisRight", GoMethod: "PutYAxisRight"},
 			_jsii_.MemberMethod{JsiiMethod: "resetColors", GoMethod: "ResetColors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFacetShowOtherSeries", GoMethod: "ResetFacetShowOtherSeries"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHeight", GoMethod: "ResetHeight"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIgnoreTimeRange", GoMethod: "ResetIgnoreTimeRange"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIsLabelVisible", GoMethod: "ResetIsLabelVisible"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLegendEnabled", GoMethod: "ResetLegendEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNullValues", GoMethod: "ResetNullValues"},
+			_jsii_.MemberMethod{JsiiMethod: "resetThreshold", GoMethod: "ResetThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUnits", GoMethod: "ResetUnits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWidth", GoMethod: "ResetWidth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetYAxisLeftMax", GoMethod: "ResetYAxisLeftMax"},
 			_jsii_.MemberMethod{JsiiMethod: "resetYAxisLeftMin", GoMethod: "ResetYAxisLeftMin"},
 			_jsii_.MemberMethod{JsiiMethod: "resetYAxisLeftZero", GoMethod: "ResetYAxisLeftZero"},
+			_jsii_.MemberMethod{JsiiMethod: "resetYAxisRight", GoMethod: "ResetYAxisRight"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "row", GoGetter: "Row"},
 			_jsii_.MemberProperty{JsiiProperty: "rowInput", GoGetter: "RowInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "threshold", GoGetter: "Threshold"},
+			_jsii_.MemberProperty{JsiiProperty: "thresholdInput", GoGetter: "ThresholdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "title", GoGetter: "Title"},
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -5055,9 +5064,81 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "yAxisLeftMinInput", GoGetter: "YAxisLeftMinInput"},
 			_jsii_.MemberProperty{JsiiProperty: "yAxisLeftZero", GoGetter: "YAxisLeftZero"},
 			_jsii_.MemberProperty{JsiiProperty: "yAxisLeftZeroInput", GoGetter: "YAxisLeftZeroInput"},
+			_jsii_.MemberProperty{JsiiProperty: "yAxisRight", GoGetter: "YAxisRight"},
+			_jsii_.MemberProperty{JsiiProperty: "yAxisRightInput", GoGetter: "YAxisRightInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_OneDashboardPageWidgetLineOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThreshold",
+		reflect.TypeOf((*OneDashboardPageWidgetLineThreshold)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdList",
+		reflect.TypeOf((*OneDashboardPageWidgetLineThresholdList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OneDashboardPageWidgetLineThresholdList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineThresholdOutputReference",
+		reflect.TypeOf((*OneDashboardPageWidgetLineThresholdOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "from", GoGetter: "From"},
+			_jsii_.MemberProperty{JsiiProperty: "fromInput", GoGetter: "FromInput"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFrom", GoMethod: "ResetFrom"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSeverity", GoMethod: "ResetSeverity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTo", GoMethod: "ResetTo"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "severity", GoGetter: "Severity"},
+			_jsii_.MemberProperty{JsiiProperty: "severityInput", GoGetter: "SeverityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
+			_jsii_.MemberProperty{JsiiProperty: "toInput", GoGetter: "ToInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -5187,6 +5268,54 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OneDashboardPageWidgetLineUnitsSeriesOverridesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRight",
+		reflect.TypeOf((*OneDashboardPageWidgetLineYAxisRight)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineYAxisRightOutputReference",
+		reflect.TypeOf((*OneDashboardPageWidgetLineYAxisRightOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetYAxisRightMax", GoMethod: "ResetYAxisRightMax"},
+			_jsii_.MemberMethod{JsiiMethod: "resetYAxisRightMin", GoMethod: "ResetYAxisRightMin"},
+			_jsii_.MemberMethod{JsiiMethod: "resetYAxisRightSeries", GoMethod: "ResetYAxisRightSeries"},
+			_jsii_.MemberMethod{JsiiMethod: "resetYAxisRightZero", GoMethod: "ResetYAxisRightZero"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "yAxisRightMax", GoGetter: "YAxisRightMax"},
+			_jsii_.MemberProperty{JsiiProperty: "yAxisRightMaxInput", GoGetter: "YAxisRightMaxInput"},
+			_jsii_.MemberProperty{JsiiProperty: "yAxisRightMin", GoGetter: "YAxisRightMin"},
+			_jsii_.MemberProperty{JsiiProperty: "yAxisRightMinInput", GoGetter: "YAxisRightMinInput"},
+			_jsii_.MemberProperty{JsiiProperty: "yAxisRightSeries", GoGetter: "YAxisRightSeries"},
+			_jsii_.MemberProperty{JsiiProperty: "yAxisRightSeriesInput", GoGetter: "YAxisRightSeriesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "yAxisRightZero", GoGetter: "YAxisRightZero"},
+			_jsii_.MemberProperty{JsiiProperty: "yAxisRightZeroInput", GoGetter: "YAxisRightZeroInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OneDashboardPageWidgetLineYAxisRightOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -7729,6 +7858,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putColors", GoMethod: "PutColors"},
 			_jsii_.MemberMethod{JsiiMethod: "putNrqlQuery", GoMethod: "PutNrqlQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "putNullValues", GoMethod: "PutNullValues"},
+			_jsii_.MemberMethod{JsiiMethod: "putThreshold", GoMethod: "PutThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "putUnits", GoMethod: "PutUnits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetColors", GoMethod: "ResetColors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFacetShowOtherSeries", GoMethod: "ResetFacetShowOtherSeries"},
@@ -7738,6 +7868,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLegendEnabled", GoMethod: "ResetLegendEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinkedEntityGuids", GoMethod: "ResetLinkedEntityGuids"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNullValues", GoMethod: "ResetNullValues"},
+			_jsii_.MemberMethod{JsiiMethod: "resetThreshold", GoMethod: "ResetThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUnits", GoMethod: "ResetUnits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWidth", GoMethod: "ResetWidth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetYAxisLeftMax", GoMethod: "ResetYAxisLeftMax"},
@@ -7747,6 +7878,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rowInput", GoGetter: "RowInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "threshold", GoGetter: "Threshold"},
+			_jsii_.MemberProperty{JsiiProperty: "thresholdInput", GoGetter: "ThresholdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "title", GoGetter: "Title"},
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -7761,6 +7894,76 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OneDashboardPageWidgetTableOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThreshold",
+		reflect.TypeOf((*OneDashboardPageWidgetTableThreshold)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdList",
+		reflect.TypeOf((*OneDashboardPageWidgetTableThresholdList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OneDashboardPageWidgetTableThresholdList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetTableThresholdOutputReference",
+		reflect.TypeOf((*OneDashboardPageWidgetTableThresholdOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "columnName", GoGetter: "ColumnName"},
+			_jsii_.MemberProperty{JsiiProperty: "columnNameInput", GoGetter: "ColumnNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "from", GoGetter: "From"},
+			_jsii_.MemberProperty{JsiiProperty: "fromInput", GoGetter: "FromInput"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetColumnName", GoMethod: "ResetColumnName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFrom", GoMethod: "ResetFrom"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSeverity", GoMethod: "ResetSeverity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTo", GoMethod: "ResetTo"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "severity", GoGetter: "Severity"},
+			_jsii_.MemberProperty{JsiiProperty: "severityInput", GoGetter: "SeverityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
+			_jsii_.MemberProperty{JsiiProperty: "toInput", GoGetter: "ToInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OneDashboardPageWidgetTableThresholdOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

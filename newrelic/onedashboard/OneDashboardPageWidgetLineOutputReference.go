@@ -47,6 +47,9 @@ type OneDashboardPageWidgetLineOutputReference interface {
 	IgnoreTimeRangeInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	IsLabelVisible() interface{}
+	SetIsLabelVisible(val interface{})
+	IsLabelVisibleInput() interface{}
 	LegendEnabled() interface{}
 	SetLegendEnabled(val interface{})
 	LegendEnabledInput() interface{}
@@ -65,6 +68,8 @@ type OneDashboardPageWidgetLineOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Threshold() OneDashboardPageWidgetLineThresholdList
+	ThresholdInput() interface{}
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -82,6 +87,8 @@ type OneDashboardPageWidgetLineOutputReference interface {
 	YAxisLeftZero() interface{}
 	SetYAxisLeftZero(val interface{})
 	YAxisLeftZeroInput() interface{}
+	YAxisRight() OneDashboardPageWidgetLineYAxisRightOutputReference
+	YAxisRightInput() *OneDashboardPageWidgetLineYAxisRight
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -109,18 +116,23 @@ type OneDashboardPageWidgetLineOutputReference interface {
 	PutColors(value interface{})
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
+	PutThreshold(value interface{})
 	PutUnits(value interface{})
+	PutYAxisRight(value *OneDashboardPageWidgetLineYAxisRight)
 	ResetColors()
 	ResetFacetShowOtherSeries()
 	ResetHeight()
 	ResetIgnoreTimeRange()
+	ResetIsLabelVisible()
 	ResetLegendEnabled()
 	ResetNullValues()
+	ResetThreshold()
 	ResetUnits()
 	ResetWidth()
 	ResetYAxisLeftMax()
 	ResetYAxisLeftMin()
 	ResetYAxisLeftZero()
+	ResetYAxisRight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -296,6 +308,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) InternalValue() in
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) IsLabelVisible() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isLabelVisible",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) IsLabelVisibleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isLabelVisibleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) LegendEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -391,6 +423,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) TerraformResource(
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) Threshold() OneDashboardPageWidgetLineThresholdList {
+	var returns OneDashboardPageWidgetLineThresholdList
+	_jsii_.Get(
+		j,
+		"threshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) ThresholdInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"thresholdInput",
 		&returns,
 	)
 	return returns
@@ -516,6 +568,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) YAxisLeftZeroInput
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) YAxisRight() OneDashboardPageWidgetLineYAxisRightOutputReference {
+	var returns OneDashboardPageWidgetLineYAxisRightOutputReference
+	_jsii_.Get(
+		j,
+		"yAxisRight",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) YAxisRightInput() *OneDashboardPageWidgetLineYAxisRight {
+	var returns *OneDashboardPageWidgetLineYAxisRight
+	_jsii_.Get(
+		j,
+		"yAxisRightInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewOneDashboardPageWidgetLineOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OneDashboardPageWidgetLineOutputReference {
 	_init_.Initialize()
@@ -617,6 +689,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference)SetInternalValue(va
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference)SetIsLabelVisible(val interface{}) {
+	if err := j.validateSetIsLabelVisibleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isLabelVisible",
 		val,
 	)
 }
@@ -939,6 +1022,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) PutNullValues(valu
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) PutThreshold(value interface{}) {
+	if err := o.validatePutThresholdParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putThreshold",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) PutUnits(value interface{}) {
 	if err := o.validatePutUnitsParameters(value); err != nil {
 		panic(err)
@@ -946,6 +1040,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) PutUnits(value int
 	_jsii_.InvokeVoid(
 		o,
 		"putUnits",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) PutYAxisRight(value *OneDashboardPageWidgetLineYAxisRight) {
+	if err := o.validatePutYAxisRightParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putYAxisRight",
 		[]interface{}{value},
 	)
 }
@@ -982,6 +1087,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) ResetIgnoreTimeRan
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) ResetIsLabelVisible() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetIsLabelVisible",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) ResetLegendEnabled() {
 	_jsii_.InvokeVoid(
 		o,
@@ -994,6 +1107,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) ResetNullValues() 
 	_jsii_.InvokeVoid(
 		o,
 		"resetNullValues",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) ResetThreshold() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetThreshold",
 		nil, // no parameters
 	)
 }
@@ -1034,6 +1155,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) ResetYAxisLeftZero
 	_jsii_.InvokeVoid(
 		o,
 		"resetYAxisLeftZero",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) ResetYAxisRight() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetYAxisRight",
 		nil, // no parameters
 	)
 }

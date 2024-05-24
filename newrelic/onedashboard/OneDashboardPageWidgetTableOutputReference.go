@@ -71,6 +71,8 @@ type OneDashboardPageWidgetTableOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Threshold() OneDashboardPageWidgetTableThresholdList
+	ThresholdInput() interface{}
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -112,6 +114,7 @@ type OneDashboardPageWidgetTableOutputReference interface {
 	PutColors(value interface{})
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
+	PutThreshold(value interface{})
 	PutUnits(value interface{})
 	ResetColors()
 	ResetFacetShowOtherSeries()
@@ -121,6 +124,7 @@ type OneDashboardPageWidgetTableOutputReference interface {
 	ResetLegendEnabled()
 	ResetLinkedEntityGuids()
 	ResetNullValues()
+	ResetThreshold()
 	ResetUnits()
 	ResetWidth()
 	ResetYAxisLeftMax()
@@ -435,6 +439,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference) TerraformResource
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference) Threshold() OneDashboardPageWidgetTableThresholdList {
+	var returns OneDashboardPageWidgetTableThresholdList
+	_jsii_.Get(
+		j,
+		"threshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference) ThresholdInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"thresholdInput",
 		&returns,
 	)
 	return returns
@@ -974,6 +998,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) PutNullValues(val
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) PutThreshold(value interface{}) {
+	if err := o.validatePutThresholdParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putThreshold",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) PutUnits(value interface{}) {
 	if err := o.validatePutUnitsParameters(value); err != nil {
 		panic(err)
@@ -1045,6 +1080,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) ResetNullValues()
 	_jsii_.InvokeVoid(
 		o,
 		"resetNullValues",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) ResetThreshold() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetThreshold",
 		nil, // no parameters
 	)
 }

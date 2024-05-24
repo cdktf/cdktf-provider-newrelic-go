@@ -59,6 +59,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) validatePutNullVa
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) validatePutThresholdParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) validatePutUnitsParameters(value interface{}) error {
 	return nil
 }
