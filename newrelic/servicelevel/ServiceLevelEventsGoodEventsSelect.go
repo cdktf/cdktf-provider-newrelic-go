@@ -5,13 +5,13 @@ package servicelevel
 
 
 type ServiceLevelEventsGoodEventsSelect struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/service_level#function ServiceLevel#function}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.1/docs/resources/service_level#function ServiceLevel#function}.
 	Function *string `field:"required" json:"function" yaml:"function"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/service_level#attribute ServiceLevel#attribute}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.1/docs/resources/service_level#attribute ServiceLevel#attribute}.
 	Attribute *string `field:"optional" json:"attribute" yaml:"attribute"`
 	// The event threshold to use in the SELECT clause.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.0/docs/resources/service_level#threshold ServiceLevel#threshold}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.1/docs/resources/service_level#threshold ServiceLevel#threshold}
 	Threshold *float64 `field:"optional" json:"threshold" yaml:"threshold"`
 }
 
