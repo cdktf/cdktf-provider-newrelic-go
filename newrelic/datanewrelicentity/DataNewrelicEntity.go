@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.1/docs/data-sources/entity newrelic_entity}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.38.0/docs/data-sources/entity newrelic_entity}.
 type DataNewrelicEntity interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -34,6 +34,9 @@ type DataNewrelicEntity interface {
 	Domain() *string
 	SetDomain(val *string)
 	DomainInput() *string
+	EntityTags() *string
+	SetEntityTags(val *string)
+	EntityTagsInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -107,6 +110,7 @@ type DataNewrelicEntity interface {
 	PutTag(value interface{})
 	ResetAccountId()
 	ResetDomain()
+	ResetEntityTags()
 	ResetId()
 	ResetIgnoreCase()
 	ResetIgnoreNotFound()
@@ -219,6 +223,26 @@ func (j *jsiiProxy_DataNewrelicEntity) DomainInput() *string {
 	_jsii_.Get(
 		j,
 		"domainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicEntity) EntityTags() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"entityTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicEntity) EntityTagsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"entityTagsInput",
 		&returns,
 	)
 	return returns
@@ -465,7 +489,7 @@ func (j *jsiiProxy_DataNewrelicEntity) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.1/docs/data-sources/entity newrelic_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.38.0/docs/data-sources/entity newrelic_entity} Data Source.
 func NewDataNewrelicEntity(scope constructs.Construct, id *string, config *DataNewrelicEntityConfig) DataNewrelicEntity {
 	_init_.Initialize()
 
@@ -483,7 +507,7 @@ func NewDataNewrelicEntity(scope constructs.Construct, id *string, config *DataN
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.37.1/docs/data-sources/entity newrelic_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.38.0/docs/data-sources/entity newrelic_entity} Data Source.
 func NewDataNewrelicEntity_Override(d DataNewrelicEntity, scope constructs.Construct, id *string, config *DataNewrelicEntityConfig) {
 	_init_.Initialize()
 
@@ -531,6 +555,17 @@ func (j *jsiiProxy_DataNewrelicEntity)SetDomain(val *string) {
 	_jsii_.Set(
 		j,
 		"domain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataNewrelicEntity)SetEntityTags(val *string) {
+	if err := j.validateSetEntityTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"entityTags",
 		val,
 	)
 }
@@ -925,6 +960,14 @@ func (d *jsiiProxy_DataNewrelicEntity) ResetDomain() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDomain",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataNewrelicEntity) ResetEntityTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEntityTags",
 		nil, // no parameters
 	)
 }

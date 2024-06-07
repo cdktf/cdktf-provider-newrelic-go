@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataNewrelicEntity) validateSetDomainParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicEntity) validateSetEntityTagsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicEntity) validateSetIdParameters(val *string) error {
 	return nil
 }
