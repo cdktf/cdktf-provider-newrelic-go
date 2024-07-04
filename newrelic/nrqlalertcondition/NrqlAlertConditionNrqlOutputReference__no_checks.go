@@ -59,6 +59,10 @@ func (j *jsiiProxy_NrqlAlertConditionNrqlOutputReference) validateSetComplexObje
 	return nil
 }
 
+func (j *jsiiProxy_NrqlAlertConditionNrqlOutputReference) validateSetDataAccountIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_NrqlAlertConditionNrqlOutputReference) validateSetEvaluationOffsetParameters(val *float64) error {
 	return nil
 }

@@ -28,6 +28,9 @@ type NrqlAlertConditionNrqlOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataAccountId() *float64
+	SetDataAccountId(val *float64)
+	DataAccountIdInput() *float64
 	EvaluationOffset() *float64
 	SetEvaluationOffset(val *float64)
 	EvaluationOffsetInput() *float64
@@ -73,6 +76,7 @@ type NrqlAlertConditionNrqlOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDataAccountId()
 	ResetEvaluationOffset()
 	ResetSinceValue()
 	// Produce the Token's value at resolution time.
@@ -115,6 +119,26 @@ func (j *jsiiProxy_NrqlAlertConditionNrqlOutputReference) CreationStack() *[]*st
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertConditionNrqlOutputReference) DataAccountId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertConditionNrqlOutputReference) DataAccountIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataAccountIdInput",
 		&returns,
 	)
 	return returns
@@ -266,6 +290,17 @@ func (j *jsiiProxy_NrqlAlertConditionNrqlOutputReference)SetComplexObjectIsFromS
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NrqlAlertConditionNrqlOutputReference)SetDataAccountId(val *float64) {
+	if err := j.validateSetDataAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataAccountId",
 		val,
 	)
 }
@@ -520,6 +555,14 @@ func (n *jsiiProxy_NrqlAlertConditionNrqlOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NrqlAlertConditionNrqlOutputReference) ResetDataAccountId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDataAccountId",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NrqlAlertConditionNrqlOutputReference) ResetEvaluationOffset() {

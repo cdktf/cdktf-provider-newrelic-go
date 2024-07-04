@@ -7,7 +7,7 @@ package workload
 type WorkloadEntitySearchQuery struct {
 	// A valid entity search query; empty, and null values are considered invalid.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.38.1/docs/resources/workload#query Workload#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.0/docs/resources/workload#query Workload#query}
 	Query *string `field:"required" json:"query" yaml:"query"`
 }
 
