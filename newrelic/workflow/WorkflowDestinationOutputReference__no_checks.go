@@ -79,6 +79,10 @@ func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetTerraformResou
 	return nil
 }
 
+func (j *jsiiProxy_WorkflowDestinationOutputReference) validateSetUpdateOriginalMessageParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewWorkflowDestinationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

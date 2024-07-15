@@ -48,6 +48,9 @@ type WorkflowDestinationOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
+	UpdateOriginalMessage() interface{}
+	SetUpdateOriginalMessage(val interface{})
+	UpdateOriginalMessageInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,6 +76,7 @@ type WorkflowDestinationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetNotificationTriggers()
+	ResetUpdateOriginalMessage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -218,6 +222,26 @@ func (j *jsiiProxy_WorkflowDestinationOutputReference) Type() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkflowDestinationOutputReference) UpdateOriginalMessage() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"updateOriginalMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkflowDestinationOutputReference) UpdateOriginalMessageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"updateOriginalMessageInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewWorkflowDestinationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkflowDestinationOutputReference {
 	_init_.Initialize()
@@ -319,6 +343,17 @@ func (j *jsiiProxy_WorkflowDestinationOutputReference)SetTerraformResource(val c
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkflowDestinationOutputReference)SetUpdateOriginalMessage(val interface{}) {
+	if err := j.validateSetUpdateOriginalMessageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updateOriginalMessage",
 		val,
 	)
 }
@@ -513,6 +548,14 @@ func (w *jsiiProxy_WorkflowDestinationOutputReference) ResetNotificationTriggers
 	_jsii_.InvokeVoid(
 		w,
 		"resetNotificationTriggers",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkflowDestinationOutputReference) ResetUpdateOriginalMessage() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetUpdateOriginalMessage",
 		nil, // no parameters
 	)
 }

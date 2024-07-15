@@ -151,11 +151,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "notificationTriggers", GoGetter: "NotificationTriggers"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationTriggersInput", GoGetter: "NotificationTriggersInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNotificationTriggers", GoMethod: "ResetNotificationTriggers"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUpdateOriginalMessage", GoMethod: "ResetUpdateOriginalMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "updateOriginalMessage", GoGetter: "UpdateOriginalMessage"},
+			_jsii_.MemberProperty{JsiiProperty: "updateOriginalMessageInput", GoGetter: "UpdateOriginalMessageInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkflowDestinationOutputReference{}

@@ -24,21 +24,21 @@ type AlertChannelConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// (Required) The name of the channel.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/alert_channel#name AlertChannel#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/alert_channel#name AlertChannel#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// (Required) The type of channel. One of: (victorops, webhook, email, opsgenie, pagerduty, slack, user).
+	// (Required) The type of channel. One of: (webhook, email, opsgenie, pagerduty, slack, user, victorops).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/alert_channel#type AlertChannel#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/alert_channel#type AlertChannel#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// The New Relic account ID where you want to create alert channels.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/alert_channel#account_id AlertChannel#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/alert_channel#account_id AlertChannel#account_id}
 	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
 	// config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/alert_channel#config AlertChannel#config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/alert_channel#config AlertChannel#config}
 	Config *AlertChannelConfigA `field:"optional" json:"config" yaml:"config"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.39.1/docs/resources/alert_channel#id AlertChannel#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/alert_channel#id AlertChannel#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
