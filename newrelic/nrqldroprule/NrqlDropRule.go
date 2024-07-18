@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule}.
 type NrqlDropRule interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -415,7 +415,7 @@ func (j *jsiiProxy_NrqlDropRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule} Resource.
 func NewNrqlDropRule(scope constructs.Construct, id *string, config *NrqlDropRuleConfig) NrqlDropRule {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewNrqlDropRule(scope constructs.Construct, id *string, config *NrqlDropRul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule} Resource.
 func NewNrqlDropRule_Override(n NrqlDropRule, scope constructs.Construct, id *string, config *NrqlDropRuleConfig) {
 	_init_.Initialize()
 

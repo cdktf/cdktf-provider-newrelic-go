@@ -26,24 +26,24 @@ type AlertPolicyChannelConfig struct {
 	//
 	// We recommended sorting channel IDs in ascending order to avoid drift your Terraform state.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/alert_policy_channel#channel_ids AlertPolicyChannel#channel_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/alert_policy_channel#channel_ids AlertPolicyChannel#channel_ids}
 	ChannelIds *[]*float64 `field:"required" json:"channelIds" yaml:"channelIds"`
 	// The ID of the policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/alert_policy_channel#policy_id AlertPolicyChannel#policy_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/alert_policy_channel#policy_id AlertPolicyChannel#policy_id}
 	PolicyId *float64 `field:"required" json:"policyId" yaml:"policyId"`
 	// The New Relic account ID where you want to link the channel to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/alert_policy_channel#account_id AlertPolicyChannel#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/alert_policy_channel#account_id AlertPolicyChannel#account_id}
 	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/alert_policy_channel#id AlertPolicyChannel#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/alert_policy_channel#id AlertPolicyChannel#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.0/docs/resources/alert_policy_channel#timeouts AlertPolicyChannel#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/alert_policy_channel#timeouts AlertPolicyChannel#timeouts}
 	Timeouts *AlertPolicyChannelTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
