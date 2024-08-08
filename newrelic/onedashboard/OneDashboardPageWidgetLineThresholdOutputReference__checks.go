@@ -166,7 +166,7 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) validateSetFromParameters(val *float64) error {
+func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) validateSetFromParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -230,7 +230,7 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) validateSetToParameters(val *float64) error {
+func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) validateSetToParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

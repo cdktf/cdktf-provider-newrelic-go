@@ -30,9 +30,9 @@ type OneDashboardPageWidgetLineThresholdOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	From() *float64
-	SetFrom(val *float64)
-	FromInput() *float64
+	From() *string
+	SetFrom(val *string)
+	FromInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
@@ -49,9 +49,9 @@ type OneDashboardPageWidgetLineThresholdOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	To() *float64
-	SetTo(val *float64)
-	ToInput() *float64
+	To() *string
+	SetTo(val *string)
+	ToInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -135,8 +135,8 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) Fqn() *st
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) From() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) From() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"from",
@@ -145,8 +145,8 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) From() *f
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) FromInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) FromInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"fromInput",
@@ -225,8 +225,8 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) To() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) To() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"to",
@@ -235,8 +235,8 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) To() *flo
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) ToInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference) ToInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"toInput",
@@ -295,7 +295,7 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference)SetComplex
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference)SetFrom(val *float64) {
+func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference)SetFrom(val *string) {
 	if err := j.validateSetFromParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,7 +361,7 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference)SetTo(val *float64) {
+func (j *jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference)SetTo(val *string) {
 	if err := j.validateSetToParameters(val); err != nil {
 		panic(err)
 	}

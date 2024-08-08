@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.41.1/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern}.
 type DataNewrelicTestGrokPattern interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataNewrelicTestGrokPattern) TestGrok() DataNewrelicTestGrokP
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.41.1/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern} Data Source.
 func NewDataNewrelicTestGrokPattern(scope constructs.Construct, id *string, config *DataNewrelicTestGrokPatternConfig) DataNewrelicTestGrokPattern {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataNewrelicTestGrokPattern(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.41.1/docs/data-sources/test_grok_pattern newrelic_test_grok_pattern} Data Source.
 func NewDataNewrelicTestGrokPattern_Override(d DataNewrelicTestGrokPattern, scope constructs.Construct, id *string, config *DataNewrelicTestGrokPatternConfig) {
 	_init_.Initialize()
 

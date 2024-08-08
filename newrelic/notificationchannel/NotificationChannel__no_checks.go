@@ -79,6 +79,10 @@ func (n *jsiiProxy_NotificationChannel) validatePutPropertyParameters(value inte
 	return nil
 }
 
+func (n *jsiiProxy_NotificationChannel) validatePutTimeoutsParameters(value *NotificationChannelTimeouts) error {
+	return nil
+}
+
 func validateNotificationChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

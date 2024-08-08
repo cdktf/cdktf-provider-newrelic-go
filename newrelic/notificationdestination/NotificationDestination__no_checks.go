@@ -95,6 +95,10 @@ func (n *jsiiProxy_NotificationDestination) validatePutSecureUrlParameters(value
 	return nil
 }
 
+func (n *jsiiProxy_NotificationDestination) validatePutTimeoutsParameters(value *NotificationDestinationTimeouts) error {
+	return nil
+}
+
 func validateNotificationDestination_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

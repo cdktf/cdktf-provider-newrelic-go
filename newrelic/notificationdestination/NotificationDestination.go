@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/notification_destination newrelic_notification_destination}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.41.1/docs/resources/notification_destination newrelic_notification_destination}.
 type NotificationDestination interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -86,6 +86,8 @@ type NotificationDestination interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() NotificationDestinationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -137,6 +139,7 @@ type NotificationDestination interface {
 	PutAuthToken(value *NotificationDestinationAuthToken)
 	PutProperty(value interface{})
 	PutSecureUrl(value *NotificationDestinationSecureUrl)
+	PutTimeouts(value *NotificationDestinationTimeouts)
 	ResetAccountId()
 	ResetActive()
 	ResetAuthBasic()
@@ -147,6 +150,7 @@ type NotificationDestination interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSecureUrl()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -535,6 +539,26 @@ func (j *jsiiProxy_NotificationDestination) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NotificationDestination) Timeouts() NotificationDestinationTimeoutsOutputReference {
+	var returns NotificationDestinationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotificationDestination) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotificationDestination) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -556,7 +580,7 @@ func (j *jsiiProxy_NotificationDestination) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/notification_destination newrelic_notification_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.41.1/docs/resources/notification_destination newrelic_notification_destination} Resource.
 func NewNotificationDestination(scope constructs.Construct, id *string, config *NotificationDestinationConfig) NotificationDestination {
 	_init_.Initialize()
 
@@ -574,7 +598,7 @@ func NewNotificationDestination(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.40.1/docs/resources/notification_destination newrelic_notification_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.41.1/docs/resources/notification_destination newrelic_notification_destination} Resource.
 func NewNotificationDestination_Override(n NotificationDestination, scope constructs.Construct, id *string, config *NotificationDestinationConfig) {
 	_init_.Initialize()
 
@@ -1116,6 +1140,17 @@ func (n *jsiiProxy_NotificationDestination) PutSecureUrl(value *NotificationDest
 	)
 }
 
+func (n *jsiiProxy_NotificationDestination) PutTimeouts(value *NotificationDestinationTimeouts) {
+	if err := n.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NotificationDestination) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1176,6 +1211,14 @@ func (n *jsiiProxy_NotificationDestination) ResetSecureUrl() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetSecureUrl",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotificationDestination) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

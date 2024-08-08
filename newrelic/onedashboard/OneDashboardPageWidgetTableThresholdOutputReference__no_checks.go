@@ -63,7 +63,7 @@ func (j *jsiiProxy_OneDashboardPageWidgetTableThresholdOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetTableThresholdOutputReference) validateSetFromParameters(val *float64) error {
+func (j *jsiiProxy_OneDashboardPageWidgetTableThresholdOutputReference) validateSetFromParameters(val *string) error {
 	return nil
 }
 
@@ -83,7 +83,7 @@ func (j *jsiiProxy_OneDashboardPageWidgetTableThresholdOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetTableThresholdOutputReference) validateSetToParameters(val *float64) error {
+func (j *jsiiProxy_OneDashboardPageWidgetTableThresholdOutputReference) validateSetToParameters(val *string) error {
 	return nil
 }
 
