@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.41.1/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}.
 type NrqlAlertCondition interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -84,6 +84,9 @@ type NrqlAlertCondition interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IgnoreOnExpectedTermination() interface{}
+	SetIgnoreOnExpectedTermination(val interface{})
+	IgnoreOnExpectedTerminationInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -127,6 +130,9 @@ type NrqlAlertCondition interface {
 	TerraformResourceType() *string
 	Timeouts() NrqlAlertConditionTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TitleTemplate() *string
+	SetTitleTemplate(val *string)
+	TitleTemplateInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -201,6 +207,7 @@ type NrqlAlertCondition interface {
 	ResetFillOption()
 	ResetFillValue()
 	ResetId()
+	ResetIgnoreOnExpectedTermination()
 	ResetOpenViolationOnExpiration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -209,6 +216,7 @@ type NrqlAlertCondition interface {
 	ResetSlideBy()
 	ResetTerm()
 	ResetTimeouts()
+	ResetTitleTemplate()
 	ResetType()
 	ResetViolationTimeLimit()
 	ResetViolationTimeLimitSeconds()
@@ -621,6 +629,26 @@ func (j *jsiiProxy_NrqlAlertCondition) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NrqlAlertCondition) IgnoreOnExpectedTermination() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreOnExpectedTermination",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertCondition) IgnoreOnExpectedTerminationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreOnExpectedTerminationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NrqlAlertCondition) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -861,6 +889,26 @@ func (j *jsiiProxy_NrqlAlertCondition) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NrqlAlertCondition) TitleTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"titleTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertCondition) TitleTemplateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"titleTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NrqlAlertCondition) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -942,7 +990,7 @@ func (j *jsiiProxy_NrqlAlertCondition) WarningInput() *NrqlAlertConditionWarning
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.41.1/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
 func NewNrqlAlertCondition(scope constructs.Construct, id *string, config *NrqlAlertConditionConfig) NrqlAlertCondition {
 	_init_.Initialize()
 
@@ -960,7 +1008,7 @@ func NewNrqlAlertCondition(scope constructs.Construct, id *string, config *NrqlA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.41.1/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
 func NewNrqlAlertCondition_Override(n NrqlAlertCondition, scope constructs.Construct, id *string, config *NrqlAlertConditionConfig) {
 	_init_.Initialize()
 
@@ -1163,6 +1211,17 @@ func (j *jsiiProxy_NrqlAlertCondition)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_NrqlAlertCondition)SetIgnoreOnExpectedTermination(val interface{}) {
+	if err := j.validateSetIgnoreOnExpectedTerminationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreOnExpectedTermination",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NrqlAlertCondition)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1244,6 +1303,17 @@ func (j *jsiiProxy_NrqlAlertCondition)SetSlideBy(val *float64) {
 	_jsii_.Set(
 		j,
 		"slideBy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NrqlAlertCondition)SetTitleTemplate(val *string) {
+	if err := j.validateSetTitleTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"titleTemplate",
 		val,
 	)
 }
@@ -1809,6 +1879,14 @@ func (n *jsiiProxy_NrqlAlertCondition) ResetId() {
 	)
 }
 
+func (n *jsiiProxy_NrqlAlertCondition) ResetIgnoreOnExpectedTermination() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIgnoreOnExpectedTermination",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NrqlAlertCondition) ResetOpenViolationOnExpiration() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1853,6 +1931,14 @@ func (n *jsiiProxy_NrqlAlertCondition) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NrqlAlertCondition) ResetTitleTemplate() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTitleTemplate",
 		nil, // no parameters
 	)
 }

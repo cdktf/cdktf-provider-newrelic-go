@@ -175,6 +175,10 @@ func (j *jsiiProxy_NrqlAlertCondition) validateSetIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_NrqlAlertCondition) validateSetIgnoreOnExpectedTerminationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NrqlAlertCondition) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -200,6 +204,10 @@ func (j *jsiiProxy_NrqlAlertCondition) validateSetRunbookUrlParameters(val *stri
 }
 
 func (j *jsiiProxy_NrqlAlertCondition) validateSetSlideByParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_NrqlAlertCondition) validateSetTitleTemplateParameters(val *string) error {
 	return nil
 }
 
