@@ -151,6 +151,10 @@ func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) validateSetUriParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) validateSetUseUnsupportedLegacyRuntimeParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewSyntheticsBrokenLinksMonitorParameters(scope constructs.Construct, id *string, config *SyntheticsBrokenLinksMonitorConfig) error {
 	return nil
 }

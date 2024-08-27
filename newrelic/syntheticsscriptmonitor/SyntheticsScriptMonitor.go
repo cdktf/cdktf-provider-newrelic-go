@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.3/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor}.
 type SyntheticsScriptMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -109,6 +109,9 @@ type SyntheticsScriptMonitor interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	UseUnsupportedLegacyRuntime() interface{}
+	SetUseUnsupportedLegacyRuntime(val interface{})
+	UseUnsupportedLegacyRuntimeInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -169,6 +172,7 @@ type SyntheticsScriptMonitor interface {
 	ResetScript()
 	ResetScriptLanguage()
 	ResetTag()
+	ResetUseUnsupportedLegacyRuntime()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -687,8 +691,28 @@ func (j *jsiiProxy_SyntheticsScriptMonitor) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsScriptMonitor) UseUnsupportedLegacyRuntime() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useUnsupportedLegacyRuntime",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.3/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource.
+func (j *jsiiProxy_SyntheticsScriptMonitor) UseUnsupportedLegacyRuntimeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useUnsupportedLegacyRuntimeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource.
 func NewSyntheticsScriptMonitor(scope constructs.Construct, id *string, config *SyntheticsScriptMonitorConfig) SyntheticsScriptMonitor {
 	_init_.Initialize()
 
@@ -706,7 +730,7 @@ func NewSyntheticsScriptMonitor(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.3/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/synthetics_script_monitor newrelic_synthetics_script_monitor} Resource.
 func NewSyntheticsScriptMonitor_Override(s SyntheticsScriptMonitor, scope constructs.Construct, id *string, config *SyntheticsScriptMonitorConfig) {
 	_init_.Initialize()
 
@@ -935,6 +959,17 @@ func (j *jsiiProxy_SyntheticsScriptMonitor)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsScriptMonitor)SetUseUnsupportedLegacyRuntime(val interface{}) {
+	if err := j.validateSetUseUnsupportedLegacyRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useUnsupportedLegacyRuntime",
 		val,
 	)
 }
@@ -1414,6 +1449,14 @@ func (s *jsiiProxy_SyntheticsScriptMonitor) ResetTag() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTag",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsScriptMonitor) ResetUseUnsupportedLegacyRuntime() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUseUnsupportedLegacyRuntime",
 		nil, // no parameters
 	)
 }

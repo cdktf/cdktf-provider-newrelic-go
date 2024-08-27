@@ -80,6 +80,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetScript", GoMethod: "ResetScript"},
 			_jsii_.MemberMethod{JsiiMethod: "resetScriptLanguage", GoMethod: "ResetScriptLanguage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTag", GoMethod: "ResetTag"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseUnsupportedLegacyRuntime", GoMethod: "ResetUseUnsupportedLegacyRuntime"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeType", GoGetter: "RuntimeType"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeTypeInput", GoGetter: "RuntimeTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeTypeVersion", GoGetter: "RuntimeTypeVersion"},
@@ -103,6 +104,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "useUnsupportedLegacyRuntime", GoGetter: "UseUnsupportedLegacyRuntime"},
+			_jsii_.MemberProperty{JsiiProperty: "useUnsupportedLegacyRuntimeInput", GoGetter: "UseUnsupportedLegacyRuntimeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsScriptMonitor{}

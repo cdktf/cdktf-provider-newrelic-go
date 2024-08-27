@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.3/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor}.
 type SyntheticsCertCheckMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -97,6 +97,9 @@ type SyntheticsCertCheckMonitor interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UseUnsupportedLegacyRuntime() interface{}
+	SetUseUnsupportedLegacyRuntime(val interface{})
+	UseUnsupportedLegacyRuntimeInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -151,6 +154,7 @@ type SyntheticsCertCheckMonitor interface {
 	ResetRuntimeType()
 	ResetRuntimeTypeVersion()
 	ResetTag()
+	ResetUseUnsupportedLegacyRuntime()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -579,8 +583,28 @@ func (j *jsiiProxy_SyntheticsCertCheckMonitor) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) UseUnsupportedLegacyRuntime() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useUnsupportedLegacyRuntime",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.3/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) UseUnsupportedLegacyRuntimeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useUnsupportedLegacyRuntimeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
 func NewSyntheticsCertCheckMonitor(scope constructs.Construct, id *string, config *SyntheticsCertCheckMonitorConfig) SyntheticsCertCheckMonitor {
 	_init_.Initialize()
 
@@ -598,7 +622,7 @@ func NewSyntheticsCertCheckMonitor(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.3/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/synthetics_cert_check_monitor newrelic_synthetics_cert_check_monitor} Resource.
 func NewSyntheticsCertCheckMonitor_Override(s SyntheticsCertCheckMonitor, scope constructs.Construct, id *string, config *SyntheticsCertCheckMonitorConfig) {
 	_init_.Initialize()
 
@@ -794,6 +818,17 @@ func (j *jsiiProxy_SyntheticsCertCheckMonitor)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsCertCheckMonitor)SetUseUnsupportedLegacyRuntime(val interface{}) {
+	if err := j.validateSetUseUnsupportedLegacyRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useUnsupportedLegacyRuntime",
 		val,
 	)
 }
@@ -1222,6 +1257,14 @@ func (s *jsiiProxy_SyntheticsCertCheckMonitor) ResetTag() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTag",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsCertCheckMonitor) ResetUseUnsupportedLegacyRuntime() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUseUnsupportedLegacyRuntime",
 		nil, // no parameters
 	)
 }

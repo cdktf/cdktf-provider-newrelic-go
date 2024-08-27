@@ -171,6 +171,10 @@ func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetTypeParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetUseUnsupportedLegacyRuntimeParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewSyntheticsScriptMonitorParameters(scope constructs.Construct, id *string, config *SyntheticsScriptMonitorConfig) error {
 	return nil
 }

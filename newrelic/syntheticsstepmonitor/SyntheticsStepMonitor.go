@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.3/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor}.
 type SyntheticsStepMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -96,6 +96,9 @@ type SyntheticsStepMonitor interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UseUnsupportedLegacyRuntime() interface{}
+	SetUseUnsupportedLegacyRuntime(val interface{})
+	UseUnsupportedLegacyRuntimeInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -153,6 +156,7 @@ type SyntheticsStepMonitor interface {
 	ResetRuntimeType()
 	ResetRuntimeTypeVersion()
 	ResetTag()
+	ResetUseUnsupportedLegacyRuntime()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -591,8 +595,28 @@ func (j *jsiiProxy_SyntheticsStepMonitor) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsStepMonitor) UseUnsupportedLegacyRuntime() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useUnsupportedLegacyRuntime",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.3/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor} Resource.
+func (j *jsiiProxy_SyntheticsStepMonitor) UseUnsupportedLegacyRuntimeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useUnsupportedLegacyRuntimeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor} Resource.
 func NewSyntheticsStepMonitor(scope constructs.Construct, id *string, config *SyntheticsStepMonitorConfig) SyntheticsStepMonitor {
 	_init_.Initialize()
 
@@ -610,7 +634,7 @@ func NewSyntheticsStepMonitor(scope constructs.Construct, id *string, config *Sy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.3/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor} Resource.
 func NewSyntheticsStepMonitor_Override(s SyntheticsStepMonitor, scope constructs.Construct, id *string, config *SyntheticsStepMonitorConfig) {
 	_init_.Initialize()
 
@@ -784,6 +808,17 @@ func (j *jsiiProxy_SyntheticsStepMonitor)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsStepMonitor)SetUseUnsupportedLegacyRuntime(val interface{}) {
+	if err := j.validateSetUseUnsupportedLegacyRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useUnsupportedLegacyRuntime",
 		val,
 	)
 }
@@ -1242,6 +1277,14 @@ func (s *jsiiProxy_SyntheticsStepMonitor) ResetTag() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTag",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsStepMonitor) ResetUseUnsupportedLegacyRuntime() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUseUnsupportedLegacyRuntime",
 		nil, // no parameters
 	)
 }

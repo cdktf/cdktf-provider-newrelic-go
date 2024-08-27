@@ -155,6 +155,10 @@ func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetStatusParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsCertCheckMonitor) validateSetUseUnsupportedLegacyRuntimeParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewSyntheticsCertCheckMonitorParameters(scope constructs.Construct, id *string, config *SyntheticsCertCheckMonitorConfig) error {
 	return nil
 }

@@ -73,6 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRuntimeType", GoMethod: "ResetRuntimeType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRuntimeTypeVersion", GoMethod: "ResetRuntimeTypeVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTag", GoMethod: "ResetTag"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseUnsupportedLegacyRuntime", GoMethod: "ResetUseUnsupportedLegacyRuntime"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeType", GoGetter: "RuntimeType"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeTypeInput", GoGetter: "RuntimeTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "runtimeTypeVersion", GoGetter: "RuntimeTypeVersion"},
@@ -92,6 +93,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "useUnsupportedLegacyRuntime", GoGetter: "UseUnsupportedLegacyRuntime"},
+			_jsii_.MemberProperty{JsiiProperty: "useUnsupportedLegacyRuntimeInput", GoGetter: "UseUnsupportedLegacyRuntimeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SyntheticsStepMonitor{}

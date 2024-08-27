@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.3/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor}.
 type SyntheticsBrokenLinksMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -95,6 +95,9 @@ type SyntheticsBrokenLinksMonitor interface {
 	Uri() *string
 	SetUri(val *string)
 	UriInput() *string
+	UseUnsupportedLegacyRuntime() interface{}
+	SetUseUnsupportedLegacyRuntime(val interface{})
+	UseUnsupportedLegacyRuntimeInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -149,6 +152,7 @@ type SyntheticsBrokenLinksMonitor interface {
 	ResetRuntimeType()
 	ResetRuntimeTypeVersion()
 	ResetTag()
+	ResetUseUnsupportedLegacyRuntime()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -567,8 +571,28 @@ func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) UriInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) UseUnsupportedLegacyRuntime() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useUnsupportedLegacyRuntime",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.3/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor} Resource.
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor) UseUnsupportedLegacyRuntimeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useUnsupportedLegacyRuntimeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor} Resource.
 func NewSyntheticsBrokenLinksMonitor(scope constructs.Construct, id *string, config *SyntheticsBrokenLinksMonitorConfig) SyntheticsBrokenLinksMonitor {
 	_init_.Initialize()
 
@@ -586,7 +610,7 @@ func NewSyntheticsBrokenLinksMonitor(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.42.3/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.43.0/docs/resources/synthetics_broken_links_monitor newrelic_synthetics_broken_links_monitor} Resource.
 func NewSyntheticsBrokenLinksMonitor_Override(s SyntheticsBrokenLinksMonitor, scope constructs.Construct, id *string, config *SyntheticsBrokenLinksMonitorConfig) {
 	_init_.Initialize()
 
@@ -771,6 +795,17 @@ func (j *jsiiProxy_SyntheticsBrokenLinksMonitor)SetUri(val *string) {
 	_jsii_.Set(
 		j,
 		"uri",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsBrokenLinksMonitor)SetUseUnsupportedLegacyRuntime(val interface{}) {
+	if err := j.validateSetUseUnsupportedLegacyRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useUnsupportedLegacyRuntime",
 		val,
 	)
 }
@@ -1199,6 +1234,14 @@ func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ResetTag() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTag",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitor) ResetUseUnsupportedLegacyRuntime() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUseUnsupportedLegacyRuntime",
 		nil, // no parameters
 	)
 }

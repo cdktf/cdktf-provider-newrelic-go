@@ -183,6 +183,10 @@ func (j *jsiiProxy_SyntheticsMonitor) validateSetUriParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsMonitor) validateSetUseUnsupportedLegacyRuntimeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsMonitor) validateSetValidationStringParameters(val *string) error {
 	return nil
 }

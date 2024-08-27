@@ -155,6 +155,10 @@ func (j *jsiiProxy_SyntheticsStepMonitor) validateSetStatusParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsStepMonitor) validateSetUseUnsupportedLegacyRuntimeParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewSyntheticsStepMonitorParameters(scope constructs.Construct, id *string, config *SyntheticsStepMonitorConfig) error {
 	return nil
 }
