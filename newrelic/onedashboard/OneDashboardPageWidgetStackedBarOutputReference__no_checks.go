@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutC
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetStackedBarInitialSorting) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutNrqlQueryParameters(value interface{}) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validateSetI
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validateSetLegendEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validateSetRefreshRateParameters(val *string) error {
 	return nil
 }
 

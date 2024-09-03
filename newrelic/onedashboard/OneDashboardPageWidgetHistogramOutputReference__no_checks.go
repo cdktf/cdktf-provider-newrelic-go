@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validatePutCo
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetHistogramInitialSorting) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validatePutNrqlQueryParameters(value interface{}) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetIn
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetLegendEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateSetRefreshRateParameters(val *string) error {
 	return nil
 }
 

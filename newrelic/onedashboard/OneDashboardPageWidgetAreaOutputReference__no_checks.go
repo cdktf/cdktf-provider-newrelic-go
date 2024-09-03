@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validatePutColorsP
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetAreaInitialSorting) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validatePutNrqlQueryParameters(value interface{}) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validateSetInterna
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validateSetLegendEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validateSetRefreshRateParameters(val *string) error {
 	return nil
 }
 

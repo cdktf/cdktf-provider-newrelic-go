@@ -48,6 +48,8 @@ type OneDashboardPageWidgetHeatmapOutputReference interface {
 	IgnoreTimeRange() interface{}
 	SetIgnoreTimeRange(val interface{})
 	IgnoreTimeRangeInput() interface{}
+	InitialSorting() OneDashboardPageWidgetHeatmapInitialSortingOutputReference
+	InitialSortingInput() *OneDashboardPageWidgetHeatmapInitialSorting
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	LegendEnabled() interface{}
@@ -60,6 +62,9 @@ type OneDashboardPageWidgetHeatmapOutputReference interface {
 	NrqlQueryInput() interface{}
 	NullValues() OneDashboardPageWidgetHeatmapNullValuesList
 	NullValuesInput() interface{}
+	RefreshRate() *string
+	SetRefreshRate(val *string)
+	RefreshRateInput() *string
 	Row() *float64
 	SetRow(val *float64)
 	RowInput() *float64
@@ -110,6 +115,7 @@ type OneDashboardPageWidgetHeatmapOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutColors(value interface{})
+	PutInitialSorting(value *OneDashboardPageWidgetHeatmapInitialSorting)
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
 	PutUnits(value interface{})
@@ -118,9 +124,11 @@ type OneDashboardPageWidgetHeatmapOutputReference interface {
 	ResetFilterCurrentDashboard()
 	ResetHeight()
 	ResetIgnoreTimeRange()
+	ResetInitialSorting()
 	ResetLegendEnabled()
 	ResetLinkedEntityGuids()
 	ResetNullValues()
+	ResetRefreshRate()
 	ResetUnits()
 	ResetWidth()
 	ResetYAxisLeftMax()
@@ -310,6 +318,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) IgnoreTimeRange
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) InitialSorting() OneDashboardPageWidgetHeatmapInitialSortingOutputReference {
+	var returns OneDashboardPageWidgetHeatmapInitialSortingOutputReference
+	_jsii_.Get(
+		j,
+		"initialSorting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) InitialSortingInput() *OneDashboardPageWidgetHeatmapInitialSorting {
+	var returns *OneDashboardPageWidgetHeatmapInitialSorting
+	_jsii_.Get(
+		j,
+		"initialSortingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -395,6 +423,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) NullValuesInput
 	_jsii_.Get(
 		j,
 		"nullValuesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) RefreshRate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"refreshRate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) RefreshRateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"refreshRateInput",
 		&returns,
 	)
 	return returns
@@ -678,6 +726,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference)SetLinkedEntityG
 	)
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference)SetRefreshRate(val *string) {
+	if err := j.validateSetRefreshRateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"refreshRate",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference)SetRow(val *float64) {
 	if err := j.validateSetRowParameters(val); err != nil {
 		panic(err)
@@ -952,6 +1011,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) PutColors(value
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) PutInitialSorting(value *OneDashboardPageWidgetHeatmapInitialSorting) {
+	if err := o.validatePutInitialSortingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putInitialSorting",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) PutNrqlQuery(value interface{}) {
 	if err := o.validatePutNrqlQueryParameters(value); err != nil {
 		panic(err)
@@ -1025,6 +1095,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) ResetIgnoreTime
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) ResetInitialSorting() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInitialSorting",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) ResetLegendEnabled() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1045,6 +1123,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) ResetNullValues
 	_jsii_.InvokeVoid(
 		o,
 		"resetNullValues",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) ResetRefreshRate() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRefreshRate",
 		nil, // no parameters
 	)
 }

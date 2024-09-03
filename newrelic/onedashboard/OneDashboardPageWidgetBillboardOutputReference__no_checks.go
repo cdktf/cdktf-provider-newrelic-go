@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) validatePutCo
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetBillboardInitialSorting) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) validatePutNrqlQueryParameters(value interface{}) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) validateSetIn
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) validateSetLegendEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) validateSetRefreshRateParameters(val *string) error {
 	return nil
 }
 

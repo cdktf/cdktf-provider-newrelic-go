@@ -45,6 +45,8 @@ type OneDashboardPageWidgetHistogramOutputReference interface {
 	IgnoreTimeRange() interface{}
 	SetIgnoreTimeRange(val interface{})
 	IgnoreTimeRangeInput() interface{}
+	InitialSorting() OneDashboardPageWidgetHistogramInitialSortingOutputReference
+	InitialSortingInput() *OneDashboardPageWidgetHistogramInitialSorting
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	LegendEnabled() interface{}
@@ -54,6 +56,9 @@ type OneDashboardPageWidgetHistogramOutputReference interface {
 	NrqlQueryInput() interface{}
 	NullValues() OneDashboardPageWidgetHistogramNullValuesList
 	NullValuesInput() interface{}
+	RefreshRate() *string
+	SetRefreshRate(val *string)
+	RefreshRateInput() *string
 	Row() *float64
 	SetRow(val *float64)
 	RowInput() *float64
@@ -104,6 +109,7 @@ type OneDashboardPageWidgetHistogramOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutColors(value interface{})
+	PutInitialSorting(value *OneDashboardPageWidgetHistogramInitialSorting)
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
 	PutUnits(value interface{})
@@ -111,8 +117,10 @@ type OneDashboardPageWidgetHistogramOutputReference interface {
 	ResetFacetShowOtherSeries()
 	ResetHeight()
 	ResetIgnoreTimeRange()
+	ResetInitialSorting()
 	ResetLegendEnabled()
 	ResetNullValues()
+	ResetRefreshRate()
 	ResetUnits()
 	ResetWidth()
 	ResetYAxisLeftMax()
@@ -282,6 +290,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) IgnoreTimeRan
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) InitialSorting() OneDashboardPageWidgetHistogramInitialSortingOutputReference {
+	var returns OneDashboardPageWidgetHistogramInitialSortingOutputReference
+	_jsii_.Get(
+		j,
+		"initialSorting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) InitialSortingInput() *OneDashboardPageWidgetHistogramInitialSorting {
+	var returns *OneDashboardPageWidgetHistogramInitialSorting
+	_jsii_.Get(
+		j,
+		"initialSortingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -347,6 +375,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) NullValuesInp
 	_jsii_.Get(
 		j,
 		"nullValuesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) RefreshRate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"refreshRate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) RefreshRateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"refreshRateInput",
 		&returns,
 	)
 	return returns
@@ -604,6 +652,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetLegendEnabl
 	_jsii_.Set(
 		j,
 		"legendEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference)SetRefreshRate(val *string) {
+	if err := j.validateSetRefreshRateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"refreshRate",
 		val,
 	)
 }
@@ -882,6 +941,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) PutColors(val
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) PutInitialSorting(value *OneDashboardPageWidgetHistogramInitialSorting) {
+	if err := o.validatePutInitialSortingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putInitialSorting",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) PutNrqlQuery(value interface{}) {
 	if err := o.validatePutNrqlQueryParameters(value); err != nil {
 		panic(err)
@@ -947,6 +1017,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetIgnoreTi
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetInitialSorting() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInitialSorting",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetLegendEnabled() {
 	_jsii_.InvokeVoid(
 		o,
@@ -959,6 +1037,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetNullValu
 	_jsii_.InvokeVoid(
 		o,
 		"resetNullValues",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) ResetRefreshRate() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRefreshRate",
 		nil, // no parameters
 	)
 }

@@ -45,6 +45,8 @@ type OneDashboardPageWidgetFunnelOutputReference interface {
 	IgnoreTimeRange() interface{}
 	SetIgnoreTimeRange(val interface{})
 	IgnoreTimeRangeInput() interface{}
+	InitialSorting() OneDashboardPageWidgetFunnelInitialSortingOutputReference
+	InitialSortingInput() *OneDashboardPageWidgetFunnelInitialSorting
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	LegendEnabled() interface{}
@@ -54,6 +56,9 @@ type OneDashboardPageWidgetFunnelOutputReference interface {
 	NrqlQueryInput() interface{}
 	NullValues() OneDashboardPageWidgetFunnelNullValuesList
 	NullValuesInput() interface{}
+	RefreshRate() *string
+	SetRefreshRate(val *string)
+	RefreshRateInput() *string
 	Row() *float64
 	SetRow(val *float64)
 	RowInput() *float64
@@ -104,6 +109,7 @@ type OneDashboardPageWidgetFunnelOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutColors(value interface{})
+	PutInitialSorting(value *OneDashboardPageWidgetFunnelInitialSorting)
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
 	PutUnits(value interface{})
@@ -111,8 +117,10 @@ type OneDashboardPageWidgetFunnelOutputReference interface {
 	ResetFacetShowOtherSeries()
 	ResetHeight()
 	ResetIgnoreTimeRange()
+	ResetInitialSorting()
 	ResetLegendEnabled()
 	ResetNullValues()
+	ResetRefreshRate()
 	ResetUnits()
 	ResetWidth()
 	ResetYAxisLeftMax()
@@ -282,6 +290,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) IgnoreTimeRangeI
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) InitialSorting() OneDashboardPageWidgetFunnelInitialSortingOutputReference {
+	var returns OneDashboardPageWidgetFunnelInitialSortingOutputReference
+	_jsii_.Get(
+		j,
+		"initialSorting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) InitialSortingInput() *OneDashboardPageWidgetFunnelInitialSorting {
+	var returns *OneDashboardPageWidgetFunnelInitialSorting
+	_jsii_.Get(
+		j,
+		"initialSortingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -347,6 +375,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) NullValuesInput(
 	_jsii_.Get(
 		j,
 		"nullValuesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) RefreshRate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"refreshRate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) RefreshRateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"refreshRateInput",
 		&returns,
 	)
 	return returns
@@ -604,6 +652,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference)SetLegendEnabled(
 	_jsii_.Set(
 		j,
 		"legendEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference)SetRefreshRate(val *string) {
+	if err := j.validateSetRefreshRateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"refreshRate",
 		val,
 	)
 }
@@ -882,6 +941,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) PutColors(value 
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) PutInitialSorting(value *OneDashboardPageWidgetFunnelInitialSorting) {
+	if err := o.validatePutInitialSortingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putInitialSorting",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) PutNrqlQuery(value interface{}) {
 	if err := o.validatePutNrqlQueryParameters(value); err != nil {
 		panic(err)
@@ -947,6 +1017,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) ResetIgnoreTimeR
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) ResetInitialSorting() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInitialSorting",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) ResetLegendEnabled() {
 	_jsii_.InvokeVoid(
 		o,
@@ -959,6 +1037,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) ResetNullValues(
 	_jsii_.InvokeVoid(
 		o,
 		"resetNullValues",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) ResetRefreshRate() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRefreshRate",
 		nil, // no parameters
 	)
 }

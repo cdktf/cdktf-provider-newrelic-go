@@ -124,6 +124,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetBulletOutputReference) validatePutColor
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetBulletOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetBulletInitialSorting) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetBulletOutputReference) validatePutNrqlQueryParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -391,6 +402,14 @@ func (j *jsiiProxy_OneDashboardPageWidgetBulletOutputReference) validateSetLegen
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetBulletOutputReference) validateSetLimitParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetBulletOutputReference) validateSetRefreshRateParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

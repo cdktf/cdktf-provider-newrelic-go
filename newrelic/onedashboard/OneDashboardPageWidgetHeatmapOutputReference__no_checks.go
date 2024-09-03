@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutColo
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetHeatmapInitialSorting) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutNrqlQueryParameters(value interface{}) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetLege
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetLinkedEntityGuidsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validateSetRefreshRateParameters(val *string) error {
 	return nil
 }
 

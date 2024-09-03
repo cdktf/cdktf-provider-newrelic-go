@@ -48,6 +48,8 @@ type OneDashboardPageWidgetTableOutputReference interface {
 	IgnoreTimeRange() interface{}
 	SetIgnoreTimeRange(val interface{})
 	IgnoreTimeRangeInput() interface{}
+	InitialSorting() OneDashboardPageWidgetTableInitialSortingOutputReference
+	InitialSortingInput() *OneDashboardPageWidgetTableInitialSorting
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	LegendEnabled() interface{}
@@ -60,6 +62,9 @@ type OneDashboardPageWidgetTableOutputReference interface {
 	NrqlQueryInput() interface{}
 	NullValues() OneDashboardPageWidgetTableNullValuesList
 	NullValuesInput() interface{}
+	RefreshRate() *string
+	SetRefreshRate(val *string)
+	RefreshRateInput() *string
 	Row() *float64
 	SetRow(val *float64)
 	RowInput() *float64
@@ -112,6 +117,7 @@ type OneDashboardPageWidgetTableOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutColors(value interface{})
+	PutInitialSorting(value *OneDashboardPageWidgetTableInitialSorting)
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
 	PutThreshold(value interface{})
@@ -121,9 +127,11 @@ type OneDashboardPageWidgetTableOutputReference interface {
 	ResetFilterCurrentDashboard()
 	ResetHeight()
 	ResetIgnoreTimeRange()
+	ResetInitialSorting()
 	ResetLegendEnabled()
 	ResetLinkedEntityGuids()
 	ResetNullValues()
+	ResetRefreshRate()
 	ResetThreshold()
 	ResetUnits()
 	ResetWidth()
@@ -314,6 +322,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference) IgnoreTimeRangeIn
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference) InitialSorting() OneDashboardPageWidgetTableInitialSortingOutputReference {
+	var returns OneDashboardPageWidgetTableInitialSortingOutputReference
+	_jsii_.Get(
+		j,
+		"initialSorting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference) InitialSortingInput() *OneDashboardPageWidgetTableInitialSorting {
+	var returns *OneDashboardPageWidgetTableInitialSorting
+	_jsii_.Get(
+		j,
+		"initialSortingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -399,6 +427,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference) NullValuesInput()
 	_jsii_.Get(
 		j,
 		"nullValuesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference) RefreshRate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"refreshRate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference) RefreshRateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"refreshRateInput",
 		&returns,
 	)
 	return returns
@@ -702,6 +750,17 @@ func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference)SetLinkedEntityGui
 	)
 }
 
+func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference)SetRefreshRate(val *string) {
+	if err := j.validateSetRefreshRateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"refreshRate",
+		val,
+	)
+}
+
 func (j *jsiiProxy_OneDashboardPageWidgetTableOutputReference)SetRow(val *float64) {
 	if err := j.validateSetRowParameters(val); err != nil {
 		panic(err)
@@ -976,6 +1035,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) PutColors(value i
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) PutInitialSorting(value *OneDashboardPageWidgetTableInitialSorting) {
+	if err := o.validatePutInitialSortingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putInitialSorting",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) PutNrqlQuery(value interface{}) {
 	if err := o.validatePutNrqlQueryParameters(value); err != nil {
 		panic(err)
@@ -1060,6 +1130,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) ResetIgnoreTimeRa
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) ResetInitialSorting() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetInitialSorting",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) ResetLegendEnabled() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1080,6 +1158,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) ResetNullValues()
 	_jsii_.InvokeVoid(
 		o,
 		"resetNullValues",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetTableOutputReference) ResetRefreshRate() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRefreshRate",
 		nil, // no parameters
 	)
 }
