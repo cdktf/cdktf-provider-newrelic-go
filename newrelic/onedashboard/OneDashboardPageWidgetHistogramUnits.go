@@ -7,9 +7,9 @@ package onedashboard
 type OneDashboardPageWidgetHistogramUnits struct {
 	// series_overrides block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.0/docs/resources/one_dashboard#series_overrides OneDashboard#series_overrides}
 	SeriesOverrides interface{} `field:"optional" json:"seriesOverrides" yaml:"seriesOverrides"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.44.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.0/docs/resources/one_dashboard#unit OneDashboard#unit}.
 	Unit *string `field:"optional" json:"unit" yaml:"unit"`
 }
 
