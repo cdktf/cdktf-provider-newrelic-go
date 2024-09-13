@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor newrelic_synthetics_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor newrelic_synthetics_monitor}.
 type SyntheticsMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
 	SetAccountId(val *float64)
 	AccountIdInput() *float64
+	Browsers() *[]*string
+	SetBrowsers(val *[]*string)
+	BrowsersInput() *[]*string
 	BypassHeadRequest() interface{}
 	SetBypassHeadRequest(val interface{})
 	BypassHeadRequestInput() interface{}
@@ -42,6 +45,9 @@ type SyntheticsMonitor interface {
 	DeviceOrientation() *string
 	SetDeviceOrientation(val *string)
 	DeviceOrientationInput() *string
+	Devices() *[]*string
+	SetDevices(val *[]*string)
+	DevicesInput() *[]*string
 	DeviceType() *string
 	SetDeviceType(val *string)
 	DeviceTypeInput() *string
@@ -172,9 +178,11 @@ type SyntheticsMonitor interface {
 	PutCustomHeader(value interface{})
 	PutTag(value interface{})
 	ResetAccountId()
+	ResetBrowsers()
 	ResetBypassHeadRequest()
 	ResetCustomHeader()
 	ResetDeviceOrientation()
+	ResetDevices()
 	ResetDeviceType()
 	ResetEnableScreenshotOnFailureAndScript()
 	ResetId()
@@ -226,6 +234,26 @@ func (j *jsiiProxy_SyntheticsMonitor) AccountIdInput() *float64 {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) Browsers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"browsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) BrowsersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"browsersInput",
 		&returns,
 	)
 	return returns
@@ -336,6 +364,26 @@ func (j *jsiiProxy_SyntheticsMonitor) DeviceOrientationInput() *string {
 	_jsii_.Get(
 		j,
 		"deviceOrientationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) Devices() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"devices",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) DevicesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"devicesInput",
 		&returns,
 	)
 	return returns
@@ -822,7 +870,7 @@ func (j *jsiiProxy_SyntheticsMonitor) VerifySslInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
 func NewSyntheticsMonitor(scope constructs.Construct, id *string, config *SyntheticsMonitorConfig) SyntheticsMonitor {
 	_init_.Initialize()
 
@@ -840,7 +888,7 @@ func NewSyntheticsMonitor(scope constructs.Construct, id *string, config *Synthe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
 func NewSyntheticsMonitor_Override(s SyntheticsMonitor, scope constructs.Construct, id *string, config *SyntheticsMonitorConfig) {
 	_init_.Initialize()
 
@@ -858,6 +906,17 @@ func (j *jsiiProxy_SyntheticsMonitor)SetAccountId(val *float64) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsMonitor)SetBrowsers(val *[]*string) {
+	if err := j.validateSetBrowsersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"browsers",
 		val,
 	)
 }
@@ -910,6 +969,17 @@ func (j *jsiiProxy_SyntheticsMonitor)SetDeviceOrientation(val *string) {
 	_jsii_.Set(
 		j,
 		"deviceOrientation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsMonitor)SetDevices(val *[]*string) {
+	if err := j.validateSetDevicesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"devices",
 		val,
 	)
 }
@@ -1522,6 +1592,14 @@ func (s *jsiiProxy_SyntheticsMonitor) ResetAccountId() {
 	)
 }
 
+func (s *jsiiProxy_SyntheticsMonitor) ResetBrowsers() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBrowsers",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SyntheticsMonitor) ResetBypassHeadRequest() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1542,6 +1620,14 @@ func (s *jsiiProxy_SyntheticsMonitor) ResetDeviceOrientation() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDeviceOrientation",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsMonitor) ResetDevices() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDevices",
 		nil, // no parameters
 	)
 }

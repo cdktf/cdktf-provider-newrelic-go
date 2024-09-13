@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor}.
 type SyntheticsStepMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
 	SetAccountId(val *float64)
 	AccountIdInput() *float64
+	Browsers() *[]*string
+	SetBrowsers(val *[]*string)
+	BrowsersInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -34,6 +37,9 @@ type SyntheticsStepMonitor interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Devices() *[]*string
+	SetDevices(val *[]*string)
+	DevicesInput() *[]*string
 	EnableScreenshotOnFailureAndScript() interface{}
 	SetEnableScreenshotOnFailureAndScript(val interface{})
 	EnableScreenshotOnFailureAndScriptInput() interface{}
@@ -146,6 +152,8 @@ type SyntheticsStepMonitor interface {
 	PutSteps(value interface{})
 	PutTag(value interface{})
 	ResetAccountId()
+	ResetBrowsers()
+	ResetDevices()
 	ResetEnableScreenshotOnFailureAndScript()
 	ResetId()
 	ResetLocationPrivate()
@@ -190,6 +198,26 @@ func (j *jsiiProxy_SyntheticsStepMonitor) AccountIdInput() *float64 {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsStepMonitor) Browsers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"browsers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsStepMonitor) BrowsersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"browsersInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +268,26 @@ func (j *jsiiProxy_SyntheticsStepMonitor) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsStepMonitor) Devices() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"devices",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SyntheticsStepMonitor) DevicesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"devicesInput",
 		&returns,
 	)
 	return returns
@@ -616,7 +664,7 @@ func (j *jsiiProxy_SyntheticsStepMonitor) UseUnsupportedLegacyRuntimeInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor} Resource.
 func NewSyntheticsStepMonitor(scope constructs.Construct, id *string, config *SyntheticsStepMonitorConfig) SyntheticsStepMonitor {
 	_init_.Initialize()
 
@@ -634,7 +682,7 @@ func NewSyntheticsStepMonitor(scope constructs.Construct, id *string, config *Sy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.45.2/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.46.0/docs/resources/synthetics_step_monitor newrelic_synthetics_step_monitor} Resource.
 func NewSyntheticsStepMonitor_Override(s SyntheticsStepMonitor, scope constructs.Construct, id *string, config *SyntheticsStepMonitorConfig) {
 	_init_.Initialize()
 
@@ -652,6 +700,17 @@ func (j *jsiiProxy_SyntheticsStepMonitor)SetAccountId(val *float64) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsStepMonitor)SetBrowsers(val *[]*string) {
+	if err := j.validateSetBrowsersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"browsers",
 		val,
 	)
 }
@@ -682,6 +741,17 @@ func (j *jsiiProxy_SyntheticsStepMonitor)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SyntheticsStepMonitor)SetDevices(val *[]*string) {
+	if err := j.validateSetDevicesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"devices",
 		val,
 	)
 }
@@ -1213,6 +1283,22 @@ func (s *jsiiProxy_SyntheticsStepMonitor) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsStepMonitor) ResetBrowsers() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBrowsers",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SyntheticsStepMonitor) ResetDevices() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDevices",
 		nil, // no parameters
 	)
 }

@@ -103,6 +103,10 @@ func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetAccountIdParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetBrowsersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetCountParameters(val inter
 }
 
 func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetDeviceOrientationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetDevicesParameters(val *[]*string) error {
 	return nil
 }
 

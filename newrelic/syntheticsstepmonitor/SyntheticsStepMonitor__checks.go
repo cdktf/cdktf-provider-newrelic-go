@@ -348,6 +348,14 @@ func (j *jsiiProxy_SyntheticsStepMonitor) validateSetAccountIdParameters(val *fl
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsStepMonitor) validateSetBrowsersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsStepMonitor) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -433,6 +441,14 @@ func (j *jsiiProxy_SyntheticsStepMonitor) validateSetCountParameters(val interfa
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsStepMonitor) validateSetDevicesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

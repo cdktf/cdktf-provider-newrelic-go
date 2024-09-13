@@ -317,6 +317,14 @@ func (j *jsiiProxy_SyntheticsMonitor) validateSetAccountIdParameters(val *float6
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsMonitor) validateSetBrowsersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsMonitor) validateSetBypassHeadRequestParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -428,6 +436,14 @@ func (j *jsiiProxy_SyntheticsMonitor) validateSetCountParameters(val interface{}
 }
 
 func (j *jsiiProxy_SyntheticsMonitor) validateSetDeviceOrientationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsMonitor) validateSetDevicesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -317,6 +317,14 @@ func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetAccountIdParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetBrowsersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -408,6 +416,14 @@ func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetCountParameters(val inter
 }
 
 func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetDeviceOrientationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsScriptMonitor) validateSetDevicesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -107,11 +107,19 @@ func (j *jsiiProxy_SyntheticsStepMonitor) validateSetAccountIdParameters(val *fl
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsStepMonitor) validateSetBrowsersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsStepMonitor) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_SyntheticsStepMonitor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SyntheticsStepMonitor) validateSetDevicesParameters(val *[]*string) error {
 	return nil
 }
 
