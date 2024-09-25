@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetBarOutputReference) validatePutColorsPa
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetBarOutputReference) validatePutDataFormatParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetBarOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetBarInitialSorting) error {
 	return nil
 }

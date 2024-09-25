@@ -124,6 +124,37 @@ func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutC
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutDataFormatParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*OneDashboardPageWidgetStackedBarDataFormat:
+		value := value.(*[]*OneDashboardPageWidgetStackedBarDataFormat)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*OneDashboardPageWidgetStackedBarDataFormat:
+		value_ := value.([]*OneDashboardPageWidgetStackedBarDataFormat)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OneDashboardPageWidgetStackedBarDataFormat; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetStackedBarInitialSorting) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

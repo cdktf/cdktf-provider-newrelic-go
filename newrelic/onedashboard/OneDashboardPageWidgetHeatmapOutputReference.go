@@ -33,6 +33,8 @@ type OneDashboardPageWidgetHeatmapOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataFormat() OneDashboardPageWidgetHeatmapDataFormatList
+	DataFormatInput() interface{}
 	FacetShowOtherSeries() interface{}
 	SetFacetShowOtherSeries(val interface{})
 	FacetShowOtherSeriesInput() interface{}
@@ -115,11 +117,13 @@ type OneDashboardPageWidgetHeatmapOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutColors(value interface{})
+	PutDataFormat(value interface{})
 	PutInitialSorting(value *OneDashboardPageWidgetHeatmapInitialSorting)
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
 	PutUnits(value interface{})
 	ResetColors()
+	ResetDataFormat()
 	ResetFacetShowOtherSeries()
 	ResetFilterCurrentDashboard()
 	ResetHeight()
@@ -213,6 +217,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) DataFormat() OneDashboardPageWidgetHeatmapDataFormatList {
+	var returns OneDashboardPageWidgetHeatmapDataFormatList
+	_jsii_.Get(
+		j,
+		"dataFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) DataFormatInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataFormatInput",
 		&returns,
 	)
 	return returns
@@ -1011,6 +1035,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) PutColors(value
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) PutDataFormat(value interface{}) {
+	if err := o.validatePutDataFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putDataFormat",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) PutInitialSorting(value *OneDashboardPageWidgetHeatmapInitialSorting) {
 	if err := o.validatePutInitialSortingParameters(value); err != nil {
 		panic(err)
@@ -1059,6 +1094,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) ResetColors() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetColors",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) ResetDataFormat() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDataFormat",
 		nil, // no parameters
 	)
 }

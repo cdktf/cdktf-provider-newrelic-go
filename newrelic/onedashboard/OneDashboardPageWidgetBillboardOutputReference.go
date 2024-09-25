@@ -36,6 +36,8 @@ type OneDashboardPageWidgetBillboardOutputReference interface {
 	Critical() *string
 	SetCritical(val *string)
 	CriticalInput() *string
+	DataFormat() OneDashboardPageWidgetBillboardDataFormatList
+	DataFormatInput() interface{}
 	FacetShowOtherSeries() interface{}
 	SetFacetShowOtherSeries(val interface{})
 	FacetShowOtherSeriesInput() interface{}
@@ -115,12 +117,14 @@ type OneDashboardPageWidgetBillboardOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutColors(value interface{})
+	PutDataFormat(value interface{})
 	PutInitialSorting(value *OneDashboardPageWidgetBillboardInitialSorting)
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
 	PutUnits(value interface{})
 	ResetColors()
 	ResetCritical()
+	ResetDataFormat()
 	ResetFacetShowOtherSeries()
 	ResetHeight()
 	ResetIgnoreTimeRange()
@@ -233,6 +237,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) CriticalInput
 	_jsii_.Get(
 		j,
 		"criticalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) DataFormat() OneDashboardPageWidgetBillboardDataFormatList {
+	var returns OneDashboardPageWidgetBillboardDataFormatList
+	_jsii_.Get(
+		j,
+		"dataFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) DataFormatInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataFormatInput",
 		&returns,
 	)
 	return returns
@@ -1011,6 +1035,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) PutColors(val
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) PutDataFormat(value interface{}) {
+	if err := o.validatePutDataFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putDataFormat",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) PutInitialSorting(value *OneDashboardPageWidgetBillboardInitialSorting) {
 	if err := o.validatePutInitialSortingParameters(value); err != nil {
 		panic(err)
@@ -1067,6 +1102,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) ResetCritical
 	_jsii_.InvokeVoid(
 		o,
 		"resetCritical",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) ResetDataFormat() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDataFormat",
 		nil, // no parameters
 	)
 }

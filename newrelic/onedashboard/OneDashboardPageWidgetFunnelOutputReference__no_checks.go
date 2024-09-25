@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) validatePutColor
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) validatePutDataFormatParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetFunnelOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetFunnelInitialSorting) error {
 	return nil
 }

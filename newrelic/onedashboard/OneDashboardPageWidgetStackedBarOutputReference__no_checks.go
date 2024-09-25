@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutC
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutDataFormatParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetStackedBarInitialSorting) error {
 	return nil
 }

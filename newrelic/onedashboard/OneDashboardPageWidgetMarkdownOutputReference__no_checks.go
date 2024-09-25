@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validatePutCol
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validatePutDataFormatParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetMarkdownOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetMarkdownInitialSorting) error {
 	return nil
 }

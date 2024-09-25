@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetLogTableOutputReference) validatePutCol
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetLogTableOutputReference) validatePutDataFormatParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetLogTableOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetLogTableInitialSorting) error {
 	return nil
 }

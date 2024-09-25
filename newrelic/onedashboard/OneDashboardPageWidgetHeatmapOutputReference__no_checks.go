@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutColo
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutDataFormatParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHeatmapOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetHeatmapInitialSorting) error {
 	return nil
 }

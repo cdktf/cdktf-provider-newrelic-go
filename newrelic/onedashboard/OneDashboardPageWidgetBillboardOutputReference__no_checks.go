@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) validatePutCo
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) validatePutDataFormatParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetBillboardInitialSorting) error {
 	return nil
 }

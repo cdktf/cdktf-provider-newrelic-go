@@ -33,6 +33,8 @@ type OneDashboardPageWidgetLogTableOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataFormat() OneDashboardPageWidgetLogTableDataFormatList
+	DataFormatInput() interface{}
 	FacetShowOtherSeries() interface{}
 	SetFacetShowOtherSeries(val interface{})
 	FacetShowOtherSeriesInput() interface{}
@@ -109,11 +111,13 @@ type OneDashboardPageWidgetLogTableOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutColors(value interface{})
+	PutDataFormat(value interface{})
 	PutInitialSorting(value *OneDashboardPageWidgetLogTableInitialSorting)
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
 	PutUnits(value interface{})
 	ResetColors()
+	ResetDataFormat()
 	ResetFacetShowOtherSeries()
 	ResetHeight()
 	ResetIgnoreTimeRange()
@@ -205,6 +209,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetLogTableOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetLogTableOutputReference) DataFormat() OneDashboardPageWidgetLogTableDataFormatList {
+	var returns OneDashboardPageWidgetLogTableDataFormatList
+	_jsii_.Get(
+		j,
+		"dataFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetLogTableOutputReference) DataFormatInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataFormatInput",
 		&returns,
 	)
 	return returns
@@ -941,6 +965,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetLogTableOutputReference) PutColors(valu
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetLogTableOutputReference) PutDataFormat(value interface{}) {
+	if err := o.validatePutDataFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putDataFormat",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetLogTableOutputReference) PutInitialSorting(value *OneDashboardPageWidgetLogTableInitialSorting) {
 	if err := o.validatePutInitialSortingParameters(value); err != nil {
 		panic(err)
@@ -989,6 +1024,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetLogTableOutputReference) ResetColors() 
 	_jsii_.InvokeVoid(
 		o,
 		"resetColors",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetLogTableOutputReference) ResetDataFormat() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDataFormat",
 		nil, // no parameters
 	)
 }

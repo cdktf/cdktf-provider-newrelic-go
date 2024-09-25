@@ -51,6 +51,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validatePutCo
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validatePutDataFormatParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validatePutInitialSortingParameters(value *OneDashboardPageWidgetHistogramInitialSorting) error {
 	return nil
 }
