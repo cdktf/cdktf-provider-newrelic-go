@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataNewrelicKeyTransaction) validateSetCountParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicKeyTransaction) validateSetGuidParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicKeyTransaction) validateSetIdParameters(val *string) error {
 	return nil
 }

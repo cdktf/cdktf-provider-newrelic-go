@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.48.0/docs/data-sources/key_transaction newrelic_key_transaction}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/key_transaction newrelic_key_transaction}.
 type DataNewrelicKeyTransaction interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataNewrelicKeyTransaction interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Domain() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -35,6 +36,9 @@ type DataNewrelicKeyTransaction interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Guid() *string
+	SetGuid(val *string)
+	GuidInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -59,6 +63,7 @@ type DataNewrelicKeyTransaction interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -84,6 +89,7 @@ type DataNewrelicKeyTransaction interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetGuid()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -147,6 +153,16 @@ func (j *jsiiProxy_DataNewrelicKeyTransaction) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataNewrelicKeyTransaction) Domain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domain",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNewrelicKeyTransaction) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -172,6 +188,26 @@ func (j *jsiiProxy_DataNewrelicKeyTransaction) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicKeyTransaction) Guid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"guid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicKeyTransaction) GuidInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"guidInput",
 		&returns,
 	)
 	return returns
@@ -287,8 +323,18 @@ func (j *jsiiProxy_DataNewrelicKeyTransaction) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataNewrelicKeyTransaction) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.48.0/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
 func NewDataNewrelicKeyTransaction(scope constructs.Construct, id *string, config *DataNewrelicKeyTransactionConfig) DataNewrelicKeyTransaction {
 	_init_.Initialize()
 
@@ -306,7 +352,7 @@ func NewDataNewrelicKeyTransaction(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.48.0/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
 func NewDataNewrelicKeyTransaction_Override(d DataNewrelicKeyTransaction, scope constructs.Construct, id *string, config *DataNewrelicKeyTransactionConfig) {
 	_init_.Initialize()
 
@@ -340,6 +386,17 @@ func (j *jsiiProxy_DataNewrelicKeyTransaction)SetForEach(val cdktf.ITerraformIte
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataNewrelicKeyTransaction)SetGuid(val *string) {
+	if err := j.validateSetGuidParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"guid",
 		val,
 	)
 }
@@ -667,6 +724,14 @@ func (d *jsiiProxy_DataNewrelicKeyTransaction) OverrideLogicalId(newLogicalId *s
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataNewrelicKeyTransaction) ResetGuid() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGuid",
+		nil, // no parameters
 	)
 }
 
