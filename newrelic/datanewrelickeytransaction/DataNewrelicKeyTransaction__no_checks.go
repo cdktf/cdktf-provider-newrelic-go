@@ -71,6 +71,10 @@ func validateDataNewrelicKeyTransaction_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataNewrelicKeyTransaction) validateSetAccountIdParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNewrelicKeyTransaction) validateSetCountParameters(val interface{}) error {
 	return nil
 }

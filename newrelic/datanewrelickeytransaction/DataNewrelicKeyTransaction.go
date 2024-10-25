@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/key_transaction newrelic_key_transaction}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/key_transaction newrelic_key_transaction}.
 type DataNewrelicKeyTransaction interface {
 	cdktf.TerraformDataSource
+	AccountId() *float64
+	SetAccountId(val *float64)
+	AccountIdInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -89,6 +92,7 @@ type DataNewrelicKeyTransaction interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetGuid()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -111,6 +115,26 @@ type DataNewrelicKeyTransaction interface {
 // The jsii proxy struct for DataNewrelicKeyTransaction
 type jsiiProxy_DataNewrelicKeyTransaction struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataNewrelicKeyTransaction) AccountId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"accountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNewrelicKeyTransaction) AccountIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"accountIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataNewrelicKeyTransaction) CdktfStack() cdktf.TerraformStack {
@@ -334,7 +358,7 @@ func (j *jsiiProxy_DataNewrelicKeyTransaction) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
 func NewDataNewrelicKeyTransaction(scope constructs.Construct, id *string, config *DataNewrelicKeyTransactionConfig) DataNewrelicKeyTransaction {
 	_init_.Initialize()
 
@@ -352,7 +376,7 @@ func NewDataNewrelicKeyTransaction(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.50.0/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/data-sources/key_transaction newrelic_key_transaction} Data Source.
 func NewDataNewrelicKeyTransaction_Override(d DataNewrelicKeyTransaction, scope constructs.Construct, id *string, config *DataNewrelicKeyTransactionConfig) {
 	_init_.Initialize()
 
@@ -360,6 +384,17 @@ func NewDataNewrelicKeyTransaction_Override(d DataNewrelicKeyTransaction, scope 
 		"@cdktf/provider-newrelic.dataNewrelicKeyTransaction.DataNewrelicKeyTransaction",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataNewrelicKeyTransaction)SetAccountId(val *float64) {
+	if err := j.validateSetAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountId",
+		val,
 	)
 }
 
@@ -724,6 +759,14 @@ func (d *jsiiProxy_DataNewrelicKeyTransaction) OverrideLogicalId(newLogicalId *s
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataNewrelicKeyTransaction) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 
