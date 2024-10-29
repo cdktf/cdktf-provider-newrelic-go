@@ -28,6 +28,9 @@ type OneDashboardVariableOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Excluded() interface{}
+	SetExcluded(val interface{})
+	ExcludedInput() interface{}
 	// Experimental.
 	Fqn() *string
 	IgnoreTimeRange() interface{}
@@ -67,6 +70,7 @@ type OneDashboardVariableOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetExcluded()
 	ResetIgnoreTimeRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) CreationStack() *
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) Excluded() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excluded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) ExcludedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"excludedInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference)SetComplexObjectIs
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference)SetExcluded(val interface{}) {
+	if err := j.validateSetExcludedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excluded",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (o *jsiiProxy_OneDashboardVariableOptionsOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OneDashboardVariableOptionsOutputReference) ResetExcluded() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetExcluded",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_OneDashboardVariableOptionsOutputReference) ResetIgnoreTimeRange() {

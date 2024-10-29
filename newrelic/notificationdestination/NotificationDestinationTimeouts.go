@@ -5,9 +5,9 @@ package notificationdestination
 
 
 type NotificationDestinationTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/notification_destination#create NotificationDestination#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/notification_destination#create NotificationDestination#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.51.0/docs/resources/notification_destination#update NotificationDestination#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/notification_destination#update NotificationDestination#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

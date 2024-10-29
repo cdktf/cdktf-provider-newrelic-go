@@ -59,6 +59,10 @@ func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) validateSetComple
 	return nil
 }
 
+func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) validateSetExcludedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) validateSetIgnoreTimeRangeParameters(val interface{}) error {
 	return nil
 }
