@@ -7,19 +7,19 @@ package onedashboard
 type OneDashboardPageWidgetLogTableDataFormat struct {
 	// The column name to be sorted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/one_dashboard#name OneDashboard#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/one_dashboard#name OneDashboard#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Defines the type of the mentioned column.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/one_dashboard#type OneDashboard#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/one_dashboard#type OneDashboard#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Defines the format of the mentioned type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/one_dashboard#format OneDashboard#format}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/one_dashboard#format OneDashboard#format}
 	Format *string `field:"optional" json:"format" yaml:"format"`
 	// The precision of the type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.0/docs/resources/one_dashboard#precision OneDashboard#precision}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.52.1/docs/resources/one_dashboard#precision OneDashboard#precision}
 	Precision *float64 `field:"optional" json:"precision" yaml:"precision"`
 }
 
