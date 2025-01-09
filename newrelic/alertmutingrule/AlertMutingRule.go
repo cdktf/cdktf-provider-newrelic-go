@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule newrelic_alert_muting_rule}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule newrelic_alert_muting_rule}.
 type AlertMutingRule interface {
 	cdktf.TerraformResource
 	AccountId() *float64
 	SetAccountId(val *float64)
 	AccountIdInput() *float64
+	ActionOnMutingRuleWindowEnded() *string
+	SetActionOnMutingRuleWindowEnded(val *string)
+	ActionOnMutingRuleWindowEndedInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Condition() AlertMutingRuleConditionOutputReference
@@ -126,6 +129,7 @@ type AlertMutingRule interface {
 	PutCondition(value *AlertMutingRuleCondition)
 	PutSchedule(value *AlertMutingRuleSchedule)
 	ResetAccountId()
+	ResetActionOnMutingRuleWindowEnded()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -165,6 +169,26 @@ func (j *jsiiProxy_AlertMutingRule) AccountIdInput() *float64 {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertMutingRule) ActionOnMutingRuleWindowEnded() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionOnMutingRuleWindowEnded",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlertMutingRule) ActionOnMutingRuleWindowEndedInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"actionOnMutingRuleWindowEndedInput",
 		&returns,
 	)
 	return returns
@@ -451,7 +475,7 @@ func (j *jsiiProxy_AlertMutingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource.
 func NewAlertMutingRule(scope constructs.Construct, id *string, config *AlertMutingRuleConfig) AlertMutingRule {
 	_init_.Initialize()
 
@@ -469,7 +493,7 @@ func NewAlertMutingRule(scope constructs.Construct, id *string, config *AlertMut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.53.0/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.0/docs/resources/alert_muting_rule newrelic_alert_muting_rule} Resource.
 func NewAlertMutingRule_Override(a AlertMutingRule, scope constructs.Construct, id *string, config *AlertMutingRuleConfig) {
 	_init_.Initialize()
 
@@ -487,6 +511,17 @@ func (j *jsiiProxy_AlertMutingRule)SetAccountId(val *float64) {
 	_jsii_.Set(
 		j,
 		"accountId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlertMutingRule)SetActionOnMutingRuleWindowEnded(val *string) {
+	if err := j.validateSetActionOnMutingRuleWindowEndedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"actionOnMutingRuleWindowEnded",
 		val,
 	)
 }
@@ -982,6 +1017,14 @@ func (a *jsiiProxy_AlertMutingRule) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlertMutingRule) ResetActionOnMutingRuleWindowEnded() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetActionOnMutingRuleWindowEnded",
 		nil, // no parameters
 	)
 }

@@ -103,6 +103,10 @@ func (j *jsiiProxy_AlertMutingRule) validateSetAccountIdParameters(val *float64)
 	return nil
 }
 
+func (j *jsiiProxy_AlertMutingRule) validateSetActionOnMutingRuleWindowEndedParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlertMutingRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
