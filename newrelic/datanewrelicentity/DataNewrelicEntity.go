@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/data-sources/entity newrelic_entity}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/data-sources/entity newrelic_entity}.
 type DataNewrelicEntity interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -489,7 +489,7 @@ func (j *jsiiProxy_DataNewrelicEntity) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/data-sources/entity newrelic_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/data-sources/entity newrelic_entity} Data Source.
 func NewDataNewrelicEntity(scope constructs.Construct, id *string, config *DataNewrelicEntityConfig) DataNewrelicEntity {
 	_init_.Initialize()
 
@@ -507,7 +507,7 @@ func NewDataNewrelicEntity(scope constructs.Construct, id *string, config *DataN
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.54.1/docs/data-sources/entity newrelic_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/data-sources/entity newrelic_entity} Data Source.
 func NewDataNewrelicEntity_Override(d DataNewrelicEntity, scope constructs.Construct, id *string, config *DataNewrelicEntityConfig) {
 	_init_.Initialize()
 
