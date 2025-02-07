@@ -24,11 +24,11 @@ type DataNewrelicGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the Authentication Domain the group being queried would belong to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/data-sources/group#authentication_domain_id DataNewrelicGroup#authentication_domain_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/data-sources/group#authentication_domain_id DataNewrelicGroup#authentication_domain_id}
 	AuthenticationDomainId *string `field:"required" json:"authenticationDomainId" yaml:"authenticationDomainId"`
 	// The name of the group to be queried.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/data-sources/group#name DataNewrelicGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/data-sources/group#name DataNewrelicGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

@@ -91,15 +91,11 @@ func validateCloudAwsGovcloudLinkAccount_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) validateSetAccessKeyIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) validateSetAccountIdParameters(val *float64) error {
 	return nil
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) validateSetAwsAccountIdParameters(val *string) error {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) validateSetArnParameters(val *string) error {
 	return nil
 }
 
@@ -128,10 +124,6 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) validateSetNameParameters(val *s
 }
 
 func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) validateSetSecretAccessKeyParameters(val *string) error {
 	return nil
 }
 

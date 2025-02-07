@@ -12,18 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/cloud_aws_govcloud_link_account newrelic_cloud_aws_govcloud_link_account}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/cloud_aws_govcloud_link_account newrelic_cloud_aws_govcloud_link_account}.
 type CloudAwsGovcloudLinkAccount interface {
 	cdktf.TerraformResource
-	AccessKeyId() *string
-	SetAccessKeyId(val *string)
-	AccessKeyIdInput() *string
 	AccountId() *float64
 	SetAccountId(val *float64)
 	AccountIdInput() *float64
-	AwsAccountId() *string
-	SetAwsAccountId(val *string)
-	AwsAccountIdInput() *string
+	Arn() *string
+	SetArn(val *string)
+	ArnInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -73,9 +70,6 @@ type CloudAwsGovcloudLinkAccount interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SecretAccessKey() *string
-	SetSecretAccessKey(val *string)
-	SecretAccessKeyInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -149,26 +143,6 @@ type jsiiProxy_CloudAwsGovcloudLinkAccount struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) AccessKeyId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accessKeyId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) AccessKeyIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"accessKeyIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) AccountId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -189,21 +163,21 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) AccountIdInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) AwsAccountId() *string {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) Arn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"awsAccountId",
+		"arn",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) AwsAccountIdInput() *string {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) ArnInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"awsAccountIdInput",
+		"arnInput",
 		&returns,
 	)
 	return returns
@@ -399,26 +373,6 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SecretAccessKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"secretAccessKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) SecretAccessKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"secretAccessKeyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -450,7 +404,7 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/cloud_aws_govcloud_link_account newrelic_cloud_aws_govcloud_link_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/cloud_aws_govcloud_link_account newrelic_cloud_aws_govcloud_link_account} Resource.
 func NewCloudAwsGovcloudLinkAccount(scope constructs.Construct, id *string, config *CloudAwsGovcloudLinkAccountConfig) CloudAwsGovcloudLinkAccount {
 	_init_.Initialize()
 
@@ -468,7 +422,7 @@ func NewCloudAwsGovcloudLinkAccount(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.55.0/docs/resources/cloud_aws_govcloud_link_account newrelic_cloud_aws_govcloud_link_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.56.0/docs/resources/cloud_aws_govcloud_link_account newrelic_cloud_aws_govcloud_link_account} Resource.
 func NewCloudAwsGovcloudLinkAccount_Override(c CloudAwsGovcloudLinkAccount, scope constructs.Construct, id *string, config *CloudAwsGovcloudLinkAccountConfig) {
 	_init_.Initialize()
 
@@ -476,17 +430,6 @@ func NewCloudAwsGovcloudLinkAccount_Override(c CloudAwsGovcloudLinkAccount, scop
 		"@cdktf/provider-newrelic.cloudAwsGovcloudLinkAccount.CloudAwsGovcloudLinkAccount",
 		[]interface{}{scope, id, config},
 		c,
-	)
-}
-
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetAccessKeyId(val *string) {
-	if err := j.validateSetAccessKeyIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"accessKeyId",
-		val,
 	)
 }
 
@@ -501,13 +444,13 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetAccountId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetAwsAccountId(val *string) {
-	if err := j.validateSetAwsAccountIdParameters(val); err != nil {
+func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetArn(val *string) {
+	if err := j.validateSetArnParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"awsAccountId",
+		"arn",
 		val,
 	)
 }
@@ -609,17 +552,6 @@ func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudAwsGovcloudLinkAccount)SetSecretAccessKey(val *string) {
-	if err := j.validateSetSecretAccessKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"secretAccessKey",
 		val,
 	)
 }
