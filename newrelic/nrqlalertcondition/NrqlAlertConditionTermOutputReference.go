@@ -38,6 +38,8 @@ type NrqlAlertConditionTermOutputReference interface {
 	Operator() *string
 	SetOperator(val *string)
 	OperatorInput() *string
+	Prediction() NrqlAlertConditionTermPredictionOutputReference
+	PredictionInput() *NrqlAlertConditionTermPrediction
 	Priority() *string
 	SetPriority(val *string)
 	PriorityInput() *string
@@ -85,8 +87,10 @@ type NrqlAlertConditionTermOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPrediction(value *NrqlAlertConditionTermPrediction)
 	ResetDuration()
 	ResetOperator()
+	ResetPrediction()
 	ResetPriority()
 	ResetThresholdDuration()
 	ResetThresholdOccurrences()
@@ -191,6 +195,26 @@ func (j *jsiiProxy_NrqlAlertConditionTermOutputReference) OperatorInput() *strin
 	_jsii_.Get(
 		j,
 		"operatorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertConditionTermOutputReference) Prediction() NrqlAlertConditionTermPredictionOutputReference {
+	var returns NrqlAlertConditionTermPredictionOutputReference
+	_jsii_.Get(
+		j,
+		"prediction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertConditionTermOutputReference) PredictionInput() *NrqlAlertConditionTermPrediction {
+	var returns *NrqlAlertConditionTermPrediction
+	_jsii_.Get(
+		j,
+		"predictionInput",
 		&returns,
 	)
 	return returns
@@ -662,6 +686,17 @@ func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) InterpolationForAttrib
 	return returns
 }
 
+func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) PutPrediction(value *NrqlAlertConditionTermPrediction) {
+	if err := n.validatePutPredictionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putPrediction",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) ResetDuration() {
 	_jsii_.InvokeVoid(
 		n,
@@ -674,6 +709,14 @@ func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) ResetOperator() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOperator",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) ResetPrediction() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetPrediction",
 		nil, // no parameters
 	)
 }

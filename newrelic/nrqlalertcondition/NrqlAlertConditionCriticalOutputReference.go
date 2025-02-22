@@ -38,6 +38,8 @@ type NrqlAlertConditionCriticalOutputReference interface {
 	Operator() *string
 	SetOperator(val *string)
 	OperatorInput() *string
+	Prediction() NrqlAlertConditionCriticalPredictionOutputReference
+	PredictionInput() *NrqlAlertConditionCriticalPrediction
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,8 +84,10 @@ type NrqlAlertConditionCriticalOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPrediction(value *NrqlAlertConditionCriticalPrediction)
 	ResetDuration()
 	ResetOperator()
+	ResetPrediction()
 	ResetThresholdDuration()
 	ResetThresholdOccurrences()
 	ResetTimeFunction()
@@ -187,6 +191,26 @@ func (j *jsiiProxy_NrqlAlertConditionCriticalOutputReference) OperatorInput() *s
 	_jsii_.Get(
 		j,
 		"operatorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertConditionCriticalOutputReference) Prediction() NrqlAlertConditionCriticalPredictionOutputReference {
+	var returns NrqlAlertConditionCriticalPredictionOutputReference
+	_jsii_.Get(
+		j,
+		"prediction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertConditionCriticalOutputReference) PredictionInput() *NrqlAlertConditionCriticalPrediction {
+	var returns *NrqlAlertConditionCriticalPrediction
+	_jsii_.Get(
+		j,
+		"predictionInput",
 		&returns,
 	)
 	return returns
@@ -627,6 +651,17 @@ func (n *jsiiProxy_NrqlAlertConditionCriticalOutputReference) InterpolationForAt
 	return returns
 }
 
+func (n *jsiiProxy_NrqlAlertConditionCriticalOutputReference) PutPrediction(value *NrqlAlertConditionCriticalPrediction) {
+	if err := n.validatePutPredictionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putPrediction",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NrqlAlertConditionCriticalOutputReference) ResetDuration() {
 	_jsii_.InvokeVoid(
 		n,
@@ -639,6 +674,14 @@ func (n *jsiiProxy_NrqlAlertConditionCriticalOutputReference) ResetOperator() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOperator",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NrqlAlertConditionCriticalOutputReference) ResetPrediction() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetPrediction",
 		nil, // no parameters
 	)
 }

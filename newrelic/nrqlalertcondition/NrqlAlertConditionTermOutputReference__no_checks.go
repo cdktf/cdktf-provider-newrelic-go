@@ -47,6 +47,10 @@ func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) validateInterpolationF
 	return nil
 }
 
+func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) validatePutPredictionParameters(value *NrqlAlertConditionTermPrediction) error {
+	return nil
+}
+
 func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

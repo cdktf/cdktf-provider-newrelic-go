@@ -185,8 +185,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
 			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "prediction", GoGetter: "Prediction"},
+			_jsii_.MemberProperty{JsiiProperty: "predictionInput", GoGetter: "PredictionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putPrediction", GoMethod: "PutPrediction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDuration", GoMethod: "ResetDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperator", GoMethod: "ResetOperator"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrediction", GoMethod: "ResetPrediction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThresholdDuration", GoMethod: "ResetThresholdDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThresholdOccurrences", GoMethod: "ResetThresholdOccurrences"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeFunction", GoMethod: "ResetTimeFunction"},
@@ -205,6 +209,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NrqlAlertConditionCriticalOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPrediction",
+		reflect.TypeOf((*NrqlAlertConditionCriticalPrediction)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionCriticalPredictionOutputReference",
+		reflect.TypeOf((*NrqlAlertConditionCriticalPredictionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "predictBy", GoGetter: "PredictBy"},
+			_jsii_.MemberProperty{JsiiProperty: "predictByInput", GoGetter: "PredictByInput"},
+			_jsii_.MemberProperty{JsiiProperty: "preferPredictionViolation", GoGetter: "PreferPredictionViolation"},
+			_jsii_.MemberProperty{JsiiProperty: "preferPredictionViolationInput", GoGetter: "PreferPredictionViolationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPredictBy", GoMethod: "ResetPredictBy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPreferPredictionViolation", GoMethod: "ResetPreferPredictionViolation"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_NrqlAlertConditionCriticalPredictionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -307,10 +353,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
 			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "prediction", GoGetter: "Prediction"},
+			_jsii_.MemberProperty{JsiiProperty: "predictionInput", GoGetter: "PredictionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "priority", GoGetter: "Priority"},
 			_jsii_.MemberProperty{JsiiProperty: "priorityInput", GoGetter: "PriorityInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putPrediction", GoMethod: "PutPrediction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDuration", GoMethod: "ResetDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperator", GoMethod: "ResetOperator"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrediction", GoMethod: "ResetPrediction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPriority", GoMethod: "ResetPriority"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThresholdDuration", GoMethod: "ResetThresholdDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThresholdOccurrences", GoMethod: "ResetThresholdOccurrences"},
@@ -330,6 +380,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NrqlAlertConditionTermOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPrediction",
+		reflect.TypeOf((*NrqlAlertConditionTermPrediction)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionTermPredictionOutputReference",
+		reflect.TypeOf((*NrqlAlertConditionTermPredictionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "predictBy", GoGetter: "PredictBy"},
+			_jsii_.MemberProperty{JsiiProperty: "predictByInput", GoGetter: "PredictByInput"},
+			_jsii_.MemberProperty{JsiiProperty: "preferPredictionViolation", GoGetter: "PreferPredictionViolation"},
+			_jsii_.MemberProperty{JsiiProperty: "preferPredictionViolationInput", GoGetter: "PreferPredictionViolationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPredictBy", GoMethod: "ResetPredictBy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPreferPredictionViolation", GoMethod: "ResetPreferPredictionViolation"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_NrqlAlertConditionTermPredictionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -402,8 +494,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "operator", GoGetter: "Operator"},
 			_jsii_.MemberProperty{JsiiProperty: "operatorInput", GoGetter: "OperatorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "prediction", GoGetter: "Prediction"},
+			_jsii_.MemberProperty{JsiiProperty: "predictionInput", GoGetter: "PredictionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putPrediction", GoMethod: "PutPrediction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDuration", GoMethod: "ResetDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOperator", GoMethod: "ResetOperator"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrediction", GoMethod: "ResetPrediction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThresholdDuration", GoMethod: "ResetThresholdDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThresholdOccurrences", GoMethod: "ResetThresholdOccurrences"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeFunction", GoMethod: "ResetTimeFunction"},
@@ -422,6 +518,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NrqlAlertConditionWarningOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPrediction",
+		reflect.TypeOf((*NrqlAlertConditionWarningPrediction)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionWarningPredictionOutputReference",
+		reflect.TypeOf((*NrqlAlertConditionWarningPredictionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "predictBy", GoGetter: "PredictBy"},
+			_jsii_.MemberProperty{JsiiProperty: "predictByInput", GoGetter: "PredictByInput"},
+			_jsii_.MemberProperty{JsiiProperty: "preferPredictionViolation", GoGetter: "PreferPredictionViolation"},
+			_jsii_.MemberProperty{JsiiProperty: "preferPredictionViolationInput", GoGetter: "PreferPredictionViolationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPredictBy", GoMethod: "ResetPredictBy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPreferPredictionViolation", GoMethod: "ResetPreferPredictionViolation"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_NrqlAlertConditionWarningPredictionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
