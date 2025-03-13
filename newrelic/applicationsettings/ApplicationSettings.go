@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/application_settings newrelic_application_settings}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings newrelic_application_settings}.
 type ApplicationSettings interface {
 	cdktf.TerraformResource
 	AppApdexThreshold() *float64
@@ -37,9 +37,17 @@ type ApplicationSettings interface {
 	EnableRealUserMonitoring() interface{}
 	SetEnableRealUserMonitoring(val interface{})
 	EnableRealUserMonitoringInput() interface{}
+	EnableSlowSql() interface{}
+	SetEnableSlowSql(val interface{})
+	EnableSlowSqlInput() interface{}
+	EnableThreadProfiler() interface{}
+	SetEnableThreadProfiler(val interface{})
+	EnableThreadProfilerInput() interface{}
 	EndUserApdexThreshold() *float64
 	SetEndUserApdexThreshold(val *float64)
 	EndUserApdexThresholdInput() *float64
+	ErrorCollector() ApplicationSettingsErrorCollectorList
+	ErrorCollectorInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -48,9 +56,13 @@ type ApplicationSettings interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Guid() *string
+	SetGuid(val *string)
+	GuidInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsImported() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -76,6 +88,14 @@ type ApplicationSettings interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TracerType() *string
+	SetTracerType(val *string)
+	TracerTypeInput() *string
+	TransactionTracer() ApplicationSettingsTransactionTracerList
+	TransactionTracerInput() interface{}
+	UseServerSideConfig() interface{}
+	SetUseServerSideConfig(val interface{})
+	UseServerSideConfigInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -119,10 +139,23 @@ type ApplicationSettings interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutErrorCollector(value interface{})
+	PutTransactionTracer(value interface{})
+	ResetAppApdexThreshold()
+	ResetEnableRealUserMonitoring()
+	ResetEnableSlowSql()
+	ResetEnableThreadProfiler()
+	ResetEndUserApdexThreshold()
+	ResetErrorCollector()
+	ResetGuid()
 	ResetId()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTracerType()
+	ResetTransactionTracer()
+	ResetUseServerSideConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -231,6 +264,46 @@ func (j *jsiiProxy_ApplicationSettings) EnableRealUserMonitoringInput() interfac
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) EnableSlowSql() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSlowSql",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) EnableSlowSqlInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSlowSqlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) EnableThreadProfiler() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableThreadProfiler",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) EnableThreadProfilerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableThreadProfilerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) EndUserApdexThreshold() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -246,6 +319,26 @@ func (j *jsiiProxy_ApplicationSettings) EndUserApdexThresholdInput() *float64 {
 	_jsii_.Get(
 		j,
 		"endUserApdexThresholdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ErrorCollector() ApplicationSettingsErrorCollectorList {
+	var returns ApplicationSettingsErrorCollectorList
+	_jsii_.Get(
+		j,
+		"errorCollector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) ErrorCollectorInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"errorCollectorInput",
 		&returns,
 	)
 	return returns
@@ -281,6 +374,26 @@ func (j *jsiiProxy_ApplicationSettings) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) Guid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"guid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) GuidInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"guidInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApplicationSettings) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -296,6 +409,16 @@ func (j *jsiiProxy_ApplicationSettings) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) IsImported() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isImported",
 		&returns,
 	)
 	return returns
@@ -401,8 +524,68 @@ func (j *jsiiProxy_ApplicationSettings) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApplicationSettings) TracerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tracerType",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/application_settings newrelic_application_settings} Resource.
+func (j *jsiiProxy_ApplicationSettings) TracerTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tracerTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) TransactionTracer() ApplicationSettingsTransactionTracerList {
+	var returns ApplicationSettingsTransactionTracerList
+	_jsii_.Get(
+		j,
+		"transactionTracer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) TransactionTracerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"transactionTracerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) UseServerSideConfig() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useServerSideConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationSettings) UseServerSideConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useServerSideConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings newrelic_application_settings} Resource.
 func NewApplicationSettings(scope constructs.Construct, id *string, config *ApplicationSettingsConfig) ApplicationSettings {
 	_init_.Initialize()
 
@@ -420,7 +603,7 @@ func NewApplicationSettings(scope constructs.Construct, id *string, config *Appl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.57.1/docs/resources/application_settings newrelic_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.58.1/docs/resources/application_settings newrelic_application_settings} Resource.
 func NewApplicationSettings_Override(a ApplicationSettings, scope constructs.Construct, id *string, config *ApplicationSettingsConfig) {
 	_init_.Initialize()
 
@@ -483,6 +666,28 @@ func (j *jsiiProxy_ApplicationSettings)SetEnableRealUserMonitoring(val interface
 	)
 }
 
+func (j *jsiiProxy_ApplicationSettings)SetEnableSlowSql(val interface{}) {
+	if err := j.validateSetEnableSlowSqlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableSlowSql",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetEnableThreadProfiler(val interface{}) {
+	if err := j.validateSetEnableThreadProfilerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableThreadProfiler",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApplicationSettings)SetEndUserApdexThreshold(val *float64) {
 	if err := j.validateSetEndUserApdexThresholdParameters(val); err != nil {
 		panic(err)
@@ -498,6 +703,17 @@ func (j *jsiiProxy_ApplicationSettings)SetForEach(val cdktf.ITerraformIterator) 
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetGuid(val *string) {
+	if err := j.validateSetGuidParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"guid",
 		val,
 	)
 }
@@ -550,6 +766,28 @@ func (j *jsiiProxy_ApplicationSettings)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetTracerType(val *string) {
+	if err := j.validateSetTracerTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tracerType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApplicationSettings)SetUseServerSideConfig(val interface{}) {
+	if err := j.validateSetUseServerSideConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useServerSideConfig",
 		val,
 	)
 }
@@ -907,6 +1145,84 @@ func (a *jsiiProxy_ApplicationSettings) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) PutErrorCollector(value interface{}) {
+	if err := a.validatePutErrorCollectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putErrorCollector",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) PutTransactionTracer(value interface{}) {
+	if err := a.validatePutTransactionTracerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTransactionTracer",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetAppApdexThreshold() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAppApdexThreshold",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetEnableRealUserMonitoring() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnableRealUserMonitoring",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetEnableSlowSql() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnableSlowSql",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetEnableThreadProfiler() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnableThreadProfiler",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetEndUserApdexThreshold() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEndUserApdexThreshold",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetErrorCollector() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetErrorCollector",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetGuid() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetGuid",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -915,10 +1231,42 @@ func (a *jsiiProxy_ApplicationSettings) ResetId() {
 	)
 }
 
+func (a *jsiiProxy_ApplicationSettings) ResetName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApplicationSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetTracerType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTracerType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetTransactionTracer() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTransactionTracer",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApplicationSettings) ResetUseServerSideConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUseServerSideConfig",
 		nil, // no parameters
 	)
 }

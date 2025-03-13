@@ -75,6 +75,14 @@ func (a *jsiiProxy_ApplicationSettings) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationSettings) validatePutErrorCollectorParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationSettings) validatePutTransactionTracerParameters(value interface{}) error {
+	return nil
+}
+
 func validateApplicationSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -107,7 +115,19 @@ func (j *jsiiProxy_ApplicationSettings) validateSetEnableRealUserMonitoringParam
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationSettings) validateSetEnableSlowSqlParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetEnableThreadProfilerParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationSettings) validateSetEndUserApdexThresholdParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetGuidParameters(val *string) error {
 	return nil
 }
 
@@ -124,6 +144,14 @@ func (j *jsiiProxy_ApplicationSettings) validateSetNameParameters(val *string) e
 }
 
 func (j *jsiiProxy_ApplicationSettings) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetTracerTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationSettings) validateSetUseServerSideConfigParameters(val interface{}) error {
 	return nil
 }
 
