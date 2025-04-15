@@ -56,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationPrivateInput", GoGetter: "LocationPrivateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "locationsPublic", GoGetter: "LocationsPublic"},
 			_jsii_.MemberProperty{JsiiProperty: "locationsPublicInput", GoGetter: "LocationsPublicInput"},
+			_jsii_.MemberProperty{JsiiProperty: "monitorId", GoGetter: "MonitorId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
