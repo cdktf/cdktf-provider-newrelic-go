@@ -24,21 +24,21 @@ type ObfuscationExpressionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of expression.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.2/docs/resources/obfuscation_expression#name ObfuscationExpression#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/obfuscation_expression#name ObfuscationExpression#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Regex of expression.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.2/docs/resources/obfuscation_expression#regex ObfuscationExpression#regex}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/obfuscation_expression#regex ObfuscationExpression#regex}
 	Regex *string `field:"required" json:"regex" yaml:"regex"`
 	// The account id associated with the obfuscation expression.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.2/docs/resources/obfuscation_expression#account_id ObfuscationExpression#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/obfuscation_expression#account_id ObfuscationExpression#account_id}
 	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
 	// Description of expression.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.2/docs/resources/obfuscation_expression#description ObfuscationExpression#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/obfuscation_expression#description ObfuscationExpression#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.2/docs/resources/obfuscation_expression#id ObfuscationExpression#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/obfuscation_expression#id ObfuscationExpression#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

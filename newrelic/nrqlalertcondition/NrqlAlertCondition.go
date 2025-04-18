@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.2/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}.
 type NrqlAlertCondition interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -117,6 +117,9 @@ type NrqlAlertCondition interface {
 	RunbookUrl() *string
 	SetRunbookUrl(val *string)
 	RunbookUrlInput() *string
+	SignalSeasonality() *string
+	SetSignalSeasonality(val *string)
+	SignalSeasonalityInput() *string
 	SlideBy() *float64
 	SetSlideBy(val *float64)
 	SlideByInput() *float64
@@ -213,6 +216,7 @@ type NrqlAlertCondition interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRunbookUrl()
+	ResetSignalSeasonality()
 	ResetSlideBy()
 	ResetTerm()
 	ResetTimeouts()
@@ -799,6 +803,26 @@ func (j *jsiiProxy_NrqlAlertCondition) RunbookUrlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NrqlAlertCondition) SignalSeasonality() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"signalSeasonality",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertCondition) SignalSeasonalityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"signalSeasonalityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NrqlAlertCondition) SlideBy() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -990,7 +1014,7 @@ func (j *jsiiProxy_NrqlAlertCondition) WarningInput() *NrqlAlertConditionWarning
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.2/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
 func NewNrqlAlertCondition(scope constructs.Construct, id *string, config *NrqlAlertConditionConfig) NrqlAlertCondition {
 	_init_.Initialize()
 
@@ -1008,7 +1032,7 @@ func NewNrqlAlertCondition(scope constructs.Construct, id *string, config *NrqlA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.2/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
 func NewNrqlAlertCondition_Override(n NrqlAlertCondition, scope constructs.Construct, id *string, config *NrqlAlertConditionConfig) {
 	_init_.Initialize()
 
@@ -1292,6 +1316,17 @@ func (j *jsiiProxy_NrqlAlertCondition)SetRunbookUrl(val *string) {
 	_jsii_.Set(
 		j,
 		"runbookUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NrqlAlertCondition)SetSignalSeasonality(val *string) {
+	if err := j.validateSetSignalSeasonalityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"signalSeasonality",
 		val,
 	)
 }
@@ -1907,6 +1942,14 @@ func (n *jsiiProxy_NrqlAlertCondition) ResetRunbookUrl() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetRunbookUrl",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NrqlAlertCondition) ResetSignalSeasonality() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSignalSeasonality",
 		nil, // no parameters
 	)
 }

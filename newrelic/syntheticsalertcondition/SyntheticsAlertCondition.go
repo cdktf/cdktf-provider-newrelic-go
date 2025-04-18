@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.2/docs/resources/synthetics_alert_condition newrelic_synthetics_alert_condition}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/synthetics_alert_condition newrelic_synthetics_alert_condition}.
 type SyntheticsAlertCondition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_SyntheticsAlertCondition) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.2/docs/resources/synthetics_alert_condition newrelic_synthetics_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/synthetics_alert_condition newrelic_synthetics_alert_condition} Resource.
 func NewSyntheticsAlertCondition(scope constructs.Construct, id *string, config *SyntheticsAlertConditionConfig) SyntheticsAlertCondition {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewSyntheticsAlertCondition(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.60.2/docs/resources/synthetics_alert_condition newrelic_synthetics_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs/resources/synthetics_alert_condition newrelic_synthetics_alert_condition} Resource.
 func NewSyntheticsAlertCondition_Override(s SyntheticsAlertCondition, scope constructs.Construct, id *string, config *SyntheticsAlertConditionConfig) {
 	_init_.Initialize()
 

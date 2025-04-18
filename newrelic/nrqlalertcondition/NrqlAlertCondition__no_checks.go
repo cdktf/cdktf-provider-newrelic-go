@@ -203,6 +203,10 @@ func (j *jsiiProxy_NrqlAlertCondition) validateSetRunbookUrlParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_NrqlAlertCondition) validateSetSignalSeasonalityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NrqlAlertCondition) validateSetSlideByParameters(val *float64) error {
 	return nil
 }
