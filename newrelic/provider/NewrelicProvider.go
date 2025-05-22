@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs newrelic}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs newrelic}.
 type NewrelicProvider interface {
 	cdktf.TerraformProvider
 	AccountId() *float64
@@ -496,7 +496,7 @@ func (j *jsiiProxy_NewrelicProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs newrelic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs newrelic} Resource.
 func NewNewrelicProvider(scope constructs.Construct, id *string, config *NewrelicProviderConfig) NewrelicProvider {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewNewrelicProvider(scope constructs.Construct, id *string, config *Newreli
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.0/docs newrelic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.61.3/docs newrelic} Resource.
 func NewNewrelicProvider_Override(n NewrelicProvider, scope constructs.Construct, id *string, config *NewrelicProviderConfig) {
 	_init_.Initialize()
 
