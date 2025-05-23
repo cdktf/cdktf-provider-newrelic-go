@@ -28,6 +28,9 @@ type NrqlAlertConditionTermOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableHealthStatusReporting() interface{}
+	SetDisableHealthStatusReporting(val interface{})
+	DisableHealthStatusReportingInput() interface{}
 	Duration() *float64
 	SetDuration(val *float64)
 	DurationInput() *float64
@@ -88,6 +91,7 @@ type NrqlAlertConditionTermOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPrediction(value *NrqlAlertConditionTermPrediction)
+	ResetDisableHealthStatusReporting()
 	ResetDuration()
 	ResetOperator()
 	ResetPrediction()
@@ -135,6 +139,26 @@ func (j *jsiiProxy_NrqlAlertConditionTermOutputReference) CreationStack() *[]*st
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertConditionTermOutputReference) DisableHealthStatusReporting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableHealthStatusReporting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertConditionTermOutputReference) DisableHealthStatusReportingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableHealthStatusReportingInput",
 		&returns,
 	)
 	return returns
@@ -386,6 +410,17 @@ func (j *jsiiProxy_NrqlAlertConditionTermOutputReference)SetComplexObjectIsFromS
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NrqlAlertConditionTermOutputReference)SetDisableHealthStatusReporting(val interface{}) {
+	if err := j.validateSetDisableHealthStatusReportingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableHealthStatusReporting",
 		val,
 	)
 }
@@ -694,6 +729,14 @@ func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) PutPrediction(value *N
 		n,
 		"putPrediction",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) ResetDisableHealthStatusReporting() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDisableHealthStatusReporting",
+		nil, // no parameters
 	)
 }
 

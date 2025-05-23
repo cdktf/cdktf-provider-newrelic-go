@@ -28,6 +28,9 @@ type NrqlAlertConditionWarningOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableHealthStatusReporting() interface{}
+	SetDisableHealthStatusReporting(val interface{})
+	DisableHealthStatusReportingInput() interface{}
 	Duration() *float64
 	SetDuration(val *float64)
 	DurationInput() *float64
@@ -85,6 +88,7 @@ type NrqlAlertConditionWarningOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPrediction(value *NrqlAlertConditionWarningPrediction)
+	ResetDisableHealthStatusReporting()
 	ResetDuration()
 	ResetOperator()
 	ResetPrediction()
@@ -131,6 +135,26 @@ func (j *jsiiProxy_NrqlAlertConditionWarningOutputReference) CreationStack() *[]
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertConditionWarningOutputReference) DisableHealthStatusReporting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableHealthStatusReporting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertConditionWarningOutputReference) DisableHealthStatusReportingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableHealthStatusReportingInput",
 		&returns,
 	)
 	return returns
@@ -362,6 +386,17 @@ func (j *jsiiProxy_NrqlAlertConditionWarningOutputReference)SetComplexObjectIsFr
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NrqlAlertConditionWarningOutputReference)SetDisableHealthStatusReporting(val interface{}) {
+	if err := j.validateSetDisableHealthStatusReportingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableHealthStatusReporting",
 		val,
 	)
 }
@@ -659,6 +694,14 @@ func (n *jsiiProxy_NrqlAlertConditionWarningOutputReference) PutPrediction(value
 		n,
 		"putPrediction",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NrqlAlertConditionWarningOutputReference) ResetDisableHealthStatusReporting() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDisableHealthStatusReporting",
+		nil, // no parameters
 	)
 }
 
