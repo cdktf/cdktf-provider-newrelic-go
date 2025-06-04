@@ -5,10 +5,10 @@ package entitytags
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v12/entitytags/internal"
+	"github.com/cdktf/cdktf-provider-newrelic-go/newrelic/v13/entitytags/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
