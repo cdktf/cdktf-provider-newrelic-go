@@ -95,6 +95,10 @@ func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsAthenaParameters(value *C
 	return nil
 }
 
+func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsAutoDiscoveryParameters(value *CloudAwsIntegrationsAwsAutoDiscovery) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAwsIntegrations) validatePutAwsCognitoParameters(value *CloudAwsIntegrationsAwsCognito) error {
 	return nil
 }

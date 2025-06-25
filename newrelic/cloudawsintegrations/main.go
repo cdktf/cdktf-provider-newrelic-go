@@ -28,6 +28,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "awsAppSyncInput", GoGetter: "AwsAppSyncInput"},
 			_jsii_.MemberProperty{JsiiProperty: "awsAthena", GoGetter: "AwsAthena"},
 			_jsii_.MemberProperty{JsiiProperty: "awsAthenaInput", GoGetter: "AwsAthenaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "awsAutoDiscovery", GoGetter: "AwsAutoDiscovery"},
+			_jsii_.MemberProperty{JsiiProperty: "awsAutoDiscoveryInput", GoGetter: "AwsAutoDiscoveryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "awsCognito", GoGetter: "AwsCognito"},
 			_jsii_.MemberProperty{JsiiProperty: "awsCognitoInput", GoGetter: "AwsCognitoInput"},
 			_jsii_.MemberProperty{JsiiProperty: "awsConnect", GoGetter: "AwsConnect"},
@@ -139,6 +141,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAutoScaling", GoMethod: "PutAutoScaling"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsAppSync", GoMethod: "PutAwsAppSync"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsAthena", GoMethod: "PutAwsAthena"},
+			_jsii_.MemberMethod{JsiiMethod: "putAwsAutoDiscovery", GoMethod: "PutAwsAutoDiscovery"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsCognito", GoMethod: "PutAwsCognito"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsConnect", GoMethod: "PutAwsConnect"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsDirectConnect", GoMethod: "PutAwsDirectConnect"},
@@ -197,6 +200,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoScaling", GoMethod: "ResetAutoScaling"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsAppSync", GoMethod: "ResetAwsAppSync"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsAthena", GoMethod: "ResetAwsAthena"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAwsAutoDiscovery", GoMethod: "ResetAwsAutoDiscovery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsCognito", GoMethod: "ResetAwsCognito"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsConnect", GoMethod: "ResetAwsConnect"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsDirectConnect", GoMethod: "ResetAwsDirectConnect"},
@@ -508,6 +512,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudAwsIntegrationsAwsAthenaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscovery",
+		reflect.TypeOf((*CloudAwsIntegrationsAwsAutoDiscovery)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.cloudAwsIntegrations.CloudAwsIntegrationsAwsAutoDiscoveryOutputReference",
+		reflect.TypeOf((*CloudAwsIntegrationsAwsAutoDiscoveryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "awsRegions", GoGetter: "AwsRegions"},
+			_jsii_.MemberProperty{JsiiProperty: "awsRegionsInput", GoGetter: "AwsRegionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsPollingInterval", GoGetter: "MetricsPollingInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsPollingIntervalInput", GoGetter: "MetricsPollingIntervalInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAwsRegions", GoMethod: "ResetAwsRegions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricsPollingInterval", GoMethod: "ResetMetricsPollingInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudAwsIntegrationsAwsAutoDiscoveryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

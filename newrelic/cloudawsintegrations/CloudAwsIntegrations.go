@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations}.
 type CloudAwsIntegrations interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -28,6 +28,8 @@ type CloudAwsIntegrations interface {
 	AwsAppSyncInput() *CloudAwsIntegrationsAwsAppSync
 	AwsAthena() CloudAwsIntegrationsAwsAthenaOutputReference
 	AwsAthenaInput() *CloudAwsIntegrationsAwsAthena
+	AwsAutoDiscovery() CloudAwsIntegrationsAwsAutoDiscoveryOutputReference
+	AwsAutoDiscoveryInput() *CloudAwsIntegrationsAwsAutoDiscovery
 	AwsCognito() CloudAwsIntegrationsAwsCognitoOutputReference
 	AwsCognitoInput() *CloudAwsIntegrationsAwsCognito
 	AwsConnect() CloudAwsIntegrationsAwsConnectOutputReference
@@ -222,6 +224,7 @@ type CloudAwsIntegrations interface {
 	PutAutoScaling(value *CloudAwsIntegrationsAutoScaling)
 	PutAwsAppSync(value *CloudAwsIntegrationsAwsAppSync)
 	PutAwsAthena(value *CloudAwsIntegrationsAwsAthena)
+	PutAwsAutoDiscovery(value *CloudAwsIntegrationsAwsAutoDiscovery)
 	PutAwsCognito(value *CloudAwsIntegrationsAwsCognito)
 	PutAwsConnect(value *CloudAwsIntegrationsAwsConnect)
 	PutAwsDirectConnect(value *CloudAwsIntegrationsAwsDirectConnect)
@@ -275,6 +278,7 @@ type CloudAwsIntegrations interface {
 	ResetAutoScaling()
 	ResetAwsAppSync()
 	ResetAwsAthena()
+	ResetAwsAutoDiscovery()
 	ResetAwsCognito()
 	ResetAwsConnect()
 	ResetAwsDirectConnect()
@@ -459,6 +463,26 @@ func (j *jsiiProxy_CloudAwsIntegrations) AwsAthenaInput() *CloudAwsIntegrationsA
 	_jsii_.Get(
 		j,
 		"awsAthenaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsAutoDiscovery() CloudAwsIntegrationsAwsAutoDiscoveryOutputReference {
+	var returns CloudAwsIntegrationsAwsAutoDiscoveryOutputReference
+	_jsii_.Get(
+		j,
+		"awsAutoDiscovery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAwsIntegrations) AwsAutoDiscoveryInput() *CloudAwsIntegrationsAwsAutoDiscovery {
+	var returns *CloudAwsIntegrationsAwsAutoDiscovery
+	_jsii_.Get(
+		j,
+		"awsAutoDiscoveryInput",
 		&returns,
 	)
 	return returns
@@ -1605,7 +1629,7 @@ func (j *jsiiProxy_CloudAwsIntegrations) XRayInput() *CloudAwsIntegrationsXRay {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource.
 func NewCloudAwsIntegrations(scope constructs.Construct, id *string, config *CloudAwsIntegrationsConfig) CloudAwsIntegrations {
 	_init_.Initialize()
 
@@ -1623,7 +1647,7 @@ func NewCloudAwsIntegrations(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.62.1/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/cloud_aws_integrations newrelic_cloud_aws_integrations} Resource.
 func NewCloudAwsIntegrations_Override(c CloudAwsIntegrations, scope constructs.Construct, id *string, config *CloudAwsIntegrationsConfig) {
 	_init_.Initialize()
 
@@ -2139,6 +2163,17 @@ func (c *jsiiProxy_CloudAwsIntegrations) PutAwsAthena(value *CloudAwsIntegration
 	_jsii_.InvokeVoid(
 		c,
 		"putAwsAthena",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) PutAwsAutoDiscovery(value *CloudAwsIntegrationsAwsAutoDiscovery) {
+	if err := c.validatePutAwsAutoDiscoveryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAwsAutoDiscovery",
 		[]interface{}{value},
 	)
 }
@@ -2704,6 +2739,14 @@ func (c *jsiiProxy_CloudAwsIntegrations) ResetAwsAthena() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAwsAthena",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAwsIntegrations) ResetAwsAutoDiscovery() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAwsAutoDiscovery",
 		nil, // no parameters
 	)
 }
