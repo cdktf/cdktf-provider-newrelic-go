@@ -75,6 +75,8 @@ type OneDashboardPageWidgetAreaOutputReference interface {
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
+	Tooltip() OneDashboardPageWidgetAreaTooltipOutputReference
+	TooltipInput() *OneDashboardPageWidgetAreaTooltip
 	Units() OneDashboardPageWidgetAreaUnitsList
 	UnitsInput() interface{}
 	Width() *float64
@@ -115,6 +117,7 @@ type OneDashboardPageWidgetAreaOutputReference interface {
 	PutInitialSorting(value *OneDashboardPageWidgetAreaInitialSorting)
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
+	PutTooltip(value *OneDashboardPageWidgetAreaTooltip)
 	PutUnits(value interface{})
 	ResetColors()
 	ResetDataFormat()
@@ -125,6 +128,7 @@ type OneDashboardPageWidgetAreaOutputReference interface {
 	ResetLegendEnabled()
 	ResetNullValues()
 	ResetRefreshRate()
+	ResetTooltip()
 	ResetUnits()
 	ResetWidth()
 	ResetYAxisLeftMax()
@@ -479,6 +483,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) TitleInput() *stri
 	_jsii_.Get(
 		j,
 		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) Tooltip() OneDashboardPageWidgetAreaTooltipOutputReference {
+	var returns OneDashboardPageWidgetAreaTooltipOutputReference
+	_jsii_.Get(
+		j,
+		"tooltip",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) TooltipInput() *OneDashboardPageWidgetAreaTooltip {
+	var returns *OneDashboardPageWidgetAreaTooltip
+	_jsii_.Get(
+		j,
+		"tooltipInput",
 		&returns,
 	)
 	return returns
@@ -1009,6 +1033,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) PutNullValues(valu
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) PutTooltip(value *OneDashboardPageWidgetAreaTooltip) {
+	if err := o.validatePutTooltipParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTooltip",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) PutUnits(value interface{}) {
 	if err := o.validatePutUnitsParameters(value); err != nil {
 		panic(err)
@@ -1088,6 +1123,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) ResetRefreshRate()
 	_jsii_.InvokeVoid(
 		o,
 		"resetRefreshRate",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) ResetTooltip() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTooltip",
 		nil, // no parameters
 	)
 }

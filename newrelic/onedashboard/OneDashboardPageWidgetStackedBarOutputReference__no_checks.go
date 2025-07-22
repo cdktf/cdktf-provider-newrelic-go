@@ -67,6 +67,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutN
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutTooltipParameters(value *OneDashboardPageWidgetStackedBarTooltip) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutUnitsParameters(value interface{}) error {
 	return nil
 }

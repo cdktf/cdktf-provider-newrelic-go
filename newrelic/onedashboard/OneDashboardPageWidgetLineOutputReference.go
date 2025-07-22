@@ -80,6 +80,8 @@ type OneDashboardPageWidgetLineOutputReference interface {
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
+	Tooltip() OneDashboardPageWidgetLineTooltipOutputReference
+	TooltipInput() *OneDashboardPageWidgetLineTooltip
 	Units() OneDashboardPageWidgetLineUnitsList
 	UnitsInput() interface{}
 	Width() *float64
@@ -126,6 +128,7 @@ type OneDashboardPageWidgetLineOutputReference interface {
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
 	PutThreshold(value interface{})
+	PutTooltip(value *OneDashboardPageWidgetLineTooltip)
 	PutUnits(value interface{})
 	PutYAxisRight(value *OneDashboardPageWidgetLineYAxisRight)
 	ResetColors()
@@ -139,6 +142,7 @@ type OneDashboardPageWidgetLineOutputReference interface {
 	ResetNullValues()
 	ResetRefreshRate()
 	ResetThreshold()
+	ResetTooltip()
 	ResetUnits()
 	ResetWidth()
 	ResetYAxisLeftMax()
@@ -535,6 +539,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) TitleInput() *stri
 	_jsii_.Get(
 		j,
 		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) Tooltip() OneDashboardPageWidgetLineTooltipOutputReference {
+	var returns OneDashboardPageWidgetLineTooltipOutputReference
+	_jsii_.Get(
+		j,
+		"tooltip",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetLineOutputReference) TooltipInput() *OneDashboardPageWidgetLineTooltip {
+	var returns *OneDashboardPageWidgetLineTooltip
+	_jsii_.Get(
+		j,
+		"tooltipInput",
 		&returns,
 	)
 	return returns
@@ -1138,6 +1162,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) PutThreshold(value
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) PutTooltip(value *OneDashboardPageWidgetLineTooltip) {
+	if err := o.validatePutTooltipParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTooltip",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) PutUnits(value interface{}) {
 	if err := o.validatePutUnitsParameters(value); err != nil {
 		panic(err)
@@ -1244,6 +1279,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) ResetThreshold() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetThreshold",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) ResetTooltip() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTooltip",
 		nil, // no parameters
 	)
 }

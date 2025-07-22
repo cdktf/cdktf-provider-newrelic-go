@@ -71,6 +71,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) validatePutThresho
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) validatePutTooltipParameters(value *OneDashboardPageWidgetLineTooltip) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetLineOutputReference) validatePutUnitsParameters(value interface{}) error {
 	return nil
 }

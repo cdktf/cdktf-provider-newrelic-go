@@ -711,6 +711,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putInitialSorting", GoMethod: "PutInitialSorting"},
 			_jsii_.MemberMethod{JsiiMethod: "putNrqlQuery", GoMethod: "PutNrqlQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "putNullValues", GoMethod: "PutNullValues"},
+			_jsii_.MemberMethod{JsiiMethod: "putTooltip", GoMethod: "PutTooltip"},
 			_jsii_.MemberMethod{JsiiMethod: "putUnits", GoMethod: "PutUnits"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshRate", GoGetter: "RefreshRate"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshRateInput", GoGetter: "RefreshRateInput"},
@@ -723,6 +724,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLegendEnabled", GoMethod: "ResetLegendEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNullValues", GoMethod: "ResetNullValues"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRefreshRate", GoMethod: "ResetRefreshRate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTooltip", GoMethod: "ResetTooltip"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUnits", GoMethod: "ResetUnits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWidth", GoMethod: "ResetWidth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetYAxisLeftMax", GoMethod: "ResetYAxisLeftMax"},
@@ -734,6 +736,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "title", GoGetter: "Title"},
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tooltip", GoGetter: "Tooltip"},
+			_jsii_.MemberProperty{JsiiProperty: "tooltipInput", GoGetter: "TooltipInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "units", GoGetter: "Units"},
 			_jsii_.MemberProperty{JsiiProperty: "unitsInput", GoGetter: "UnitsInput"},
@@ -746,6 +750,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OneDashboardPageWidgetAreaOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaTooltip",
+		reflect.TypeOf((*OneDashboardPageWidgetAreaTooltip)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetAreaTooltipOutputReference",
+		reflect.TypeOf((*OneDashboardPageWidgetAreaTooltipOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
+			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OneDashboardPageWidgetAreaTooltipOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -6094,6 +6136,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putNrqlQuery", GoMethod: "PutNrqlQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "putNullValues", GoMethod: "PutNullValues"},
 			_jsii_.MemberMethod{JsiiMethod: "putThreshold", GoMethod: "PutThreshold"},
+			_jsii_.MemberMethod{JsiiMethod: "putTooltip", GoMethod: "PutTooltip"},
 			_jsii_.MemberMethod{JsiiMethod: "putUnits", GoMethod: "PutUnits"},
 			_jsii_.MemberMethod{JsiiMethod: "putYAxisRight", GoMethod: "PutYAxisRight"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshRate", GoGetter: "RefreshRate"},
@@ -6109,6 +6152,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNullValues", GoMethod: "ResetNullValues"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRefreshRate", GoMethod: "ResetRefreshRate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThreshold", GoMethod: "ResetThreshold"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTooltip", GoMethod: "ResetTooltip"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUnits", GoMethod: "ResetUnits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWidth", GoMethod: "ResetWidth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetYAxisLeftMax", GoMethod: "ResetYAxisLeftMax"},
@@ -6124,6 +6168,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "thresholdInput", GoGetter: "ThresholdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "title", GoGetter: "Title"},
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tooltip", GoGetter: "Tooltip"},
+			_jsii_.MemberProperty{JsiiProperty: "tooltipInput", GoGetter: "TooltipInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "units", GoGetter: "Units"},
 			_jsii_.MemberProperty{JsiiProperty: "unitsInput", GoGetter: "UnitsInput"},
@@ -6210,6 +6256,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OneDashboardPageWidgetLineThresholdOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineTooltip",
+		reflect.TypeOf((*OneDashboardPageWidgetLineTooltip)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetLineTooltipOutputReference",
+		reflect.TypeOf((*OneDashboardPageWidgetLineTooltipOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
+			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OneDashboardPageWidgetLineTooltipOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -8845,6 +8929,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putInitialSorting", GoMethod: "PutInitialSorting"},
 			_jsii_.MemberMethod{JsiiMethod: "putNrqlQuery", GoMethod: "PutNrqlQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "putNullValues", GoMethod: "PutNullValues"},
+			_jsii_.MemberMethod{JsiiMethod: "putTooltip", GoMethod: "PutTooltip"},
 			_jsii_.MemberMethod{JsiiMethod: "putUnits", GoMethod: "PutUnits"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshRate", GoGetter: "RefreshRate"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshRateInput", GoGetter: "RefreshRateInput"},
@@ -8857,6 +8942,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLegendEnabled", GoMethod: "ResetLegendEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNullValues", GoMethod: "ResetNullValues"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRefreshRate", GoMethod: "ResetRefreshRate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTooltip", GoMethod: "ResetTooltip"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUnits", GoMethod: "ResetUnits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWidth", GoMethod: "ResetWidth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetYAxisLeftMax", GoMethod: "ResetYAxisLeftMax"},
@@ -8868,6 +8954,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "title", GoGetter: "Title"},
 			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tooltip", GoGetter: "Tooltip"},
+			_jsii_.MemberProperty{JsiiProperty: "tooltipInput", GoGetter: "TooltipInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "units", GoGetter: "Units"},
 			_jsii_.MemberProperty{JsiiProperty: "unitsInput", GoGetter: "UnitsInput"},
@@ -8880,6 +8968,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarTooltip",
+		reflect.TypeOf((*OneDashboardPageWidgetStackedBarTooltip)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetStackedBarTooltipOutputReference",
+		reflect.TypeOf((*OneDashboardPageWidgetStackedBarTooltipOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
+			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OneDashboardPageWidgetStackedBarTooltipOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

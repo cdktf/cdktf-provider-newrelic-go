@@ -67,6 +67,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validatePutNullVal
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validatePutTooltipParameters(value *OneDashboardPageWidgetAreaTooltip) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validatePutUnitsParameters(value interface{}) error {
 	return nil
 }

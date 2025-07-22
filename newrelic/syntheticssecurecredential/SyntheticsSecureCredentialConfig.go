@@ -26,32 +26,32 @@ type SyntheticsSecureCredentialConfig struct {
 	//
 	// Regardless of the case used in the configuration, the provider will provide an upcased key to the underlying API.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/synthetics_secure_credential#key SyntheticsSecureCredential#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/synthetics_secure_credential#key SyntheticsSecureCredential#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// The secure credential's value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/synthetics_secure_credential#value SyntheticsSecureCredential#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/synthetics_secure_credential#value SyntheticsSecureCredential#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 	// The New Relic account ID where you want to create the secure credential.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/synthetics_secure_credential#account_id SyntheticsSecureCredential#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/synthetics_secure_credential#account_id SyntheticsSecureCredential#account_id}
 	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
 	// The secure credential's description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/synthetics_secure_credential#description SyntheticsSecureCredential#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/synthetics_secure_credential#description SyntheticsSecureCredential#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/synthetics_secure_credential#id SyntheticsSecureCredential#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/synthetics_secure_credential#id SyntheticsSecureCredential#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The time the secure credential was last updated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/synthetics_secure_credential#last_updated SyntheticsSecureCredential#last_updated}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/synthetics_secure_credential#last_updated SyntheticsSecureCredential#last_updated}
 	LastUpdated *string `field:"optional" json:"lastUpdated" yaml:"lastUpdated"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/resources/synthetics_secure_credential#timeouts SyntheticsSecureCredential#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/synthetics_secure_credential#timeouts SyntheticsSecureCredential#timeouts}
 	Timeouts *SyntheticsSecureCredentialTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

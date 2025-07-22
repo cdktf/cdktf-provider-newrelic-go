@@ -24,7 +24,7 @@ type DataNewrelicAuthenticationDomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the authentication domain to be queried.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.63.0/docs/data-sources/authentication_domain#name DataNewrelicAuthenticationDomain#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/data-sources/authentication_domain#name DataNewrelicAuthenticationDomain#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

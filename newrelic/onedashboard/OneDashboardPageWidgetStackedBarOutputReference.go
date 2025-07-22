@@ -75,6 +75,8 @@ type OneDashboardPageWidgetStackedBarOutputReference interface {
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
+	Tooltip() OneDashboardPageWidgetStackedBarTooltipOutputReference
+	TooltipInput() *OneDashboardPageWidgetStackedBarTooltip
 	Units() OneDashboardPageWidgetStackedBarUnitsList
 	UnitsInput() interface{}
 	Width() *float64
@@ -115,6 +117,7 @@ type OneDashboardPageWidgetStackedBarOutputReference interface {
 	PutInitialSorting(value *OneDashboardPageWidgetStackedBarInitialSorting)
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
+	PutTooltip(value *OneDashboardPageWidgetStackedBarTooltip)
 	PutUnits(value interface{})
 	ResetColors()
 	ResetDataFormat()
@@ -125,6 +128,7 @@ type OneDashboardPageWidgetStackedBarOutputReference interface {
 	ResetLegendEnabled()
 	ResetNullValues()
 	ResetRefreshRate()
+	ResetTooltip()
 	ResetUnits()
 	ResetWidth()
 	ResetYAxisLeftMax()
@@ -479,6 +483,26 @@ func (j *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) TitleInput()
 	_jsii_.Get(
 		j,
 		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) Tooltip() OneDashboardPageWidgetStackedBarTooltipOutputReference {
+	var returns OneDashboardPageWidgetStackedBarTooltipOutputReference
+	_jsii_.Get(
+		j,
+		"tooltip",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) TooltipInput() *OneDashboardPageWidgetStackedBarTooltip {
+	var returns *OneDashboardPageWidgetStackedBarTooltip
+	_jsii_.Get(
+		j,
+		"tooltipInput",
 		&returns,
 	)
 	return returns
@@ -1009,6 +1033,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) PutNullValue
 	)
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) PutTooltip(value *OneDashboardPageWidgetStackedBarTooltip) {
+	if err := o.validatePutTooltipParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTooltip",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) PutUnits(value interface{}) {
 	if err := o.validatePutUnitsParameters(value); err != nil {
 		panic(err)
@@ -1088,6 +1123,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) ResetRefresh
 	_jsii_.InvokeVoid(
 		o,
 		"resetRefreshRate",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) ResetTooltip() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTooltip",
 		nil, // no parameters
 	)
 }
