@@ -101,7 +101,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramNrqlQueryOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramNrqlQueryOutputReference) validateSetAccountIdParameters(val *float64) error {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramNrqlQueryOutputReference) validateSetAccountIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

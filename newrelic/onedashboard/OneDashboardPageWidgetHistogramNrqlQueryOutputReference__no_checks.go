@@ -51,7 +51,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramNrqlQueryOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHistogramNrqlQueryOutputReference) validateSetAccountIdParameters(val *float64) error {
+func (j *jsiiProxy_OneDashboardPageWidgetHistogramNrqlQueryOutputReference) validateSetAccountIdParameters(val *string) error {
 	return nil
 }
 

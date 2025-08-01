@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account}.
 type CloudAzureLinkAccount interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -449,7 +449,7 @@ func (j *jsiiProxy_CloudAzureLinkAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account} Resource.
 func NewCloudAzureLinkAccount(scope constructs.Construct, id *string, config *CloudAzureLinkAccountConfig) CloudAzureLinkAccount {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewCloudAzureLinkAccount(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/cloud_azure_link_account newrelic_cloud_azure_link_account} Resource.
 func NewCloudAzureLinkAccount_Override(c CloudAzureLinkAccount, scope constructs.Construct, id *string, config *CloudAzureLinkAccountConfig) {
 	_init_.Initialize()
 

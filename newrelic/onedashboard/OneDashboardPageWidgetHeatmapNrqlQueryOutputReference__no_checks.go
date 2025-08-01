@@ -51,7 +51,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryOutputReference) validateSetAccountIdParameters(val *float64) error {
+func (j *jsiiProxy_OneDashboardPageWidgetHeatmapNrqlQueryOutputReference) validateSetAccountIdParameters(val *string) error {
 	return nil
 }
 

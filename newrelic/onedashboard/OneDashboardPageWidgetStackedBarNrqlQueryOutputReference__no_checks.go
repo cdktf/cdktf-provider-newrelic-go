@@ -51,7 +51,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetStackedBarNrqlQueryOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetStackedBarNrqlQueryOutputReference) validateSetAccountIdParameters(val *float64) error {
+func (j *jsiiProxy_OneDashboardPageWidgetStackedBarNrqlQueryOutputReference) validateSetAccountIdParameters(val *string) error {
 	return nil
 }
 

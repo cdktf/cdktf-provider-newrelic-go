@@ -13,9 +13,9 @@ import (
 
 type OneDashboardPageWidgetBulletNrqlQueryOutputReference interface {
 	cdktf.ComplexObject
-	AccountId() *float64
-	SetAccountId(val *float64)
-	AccountIdInput() *float64
+	AccountId() *string
+	SetAccountId(val *string)
+	AccountIdInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -86,8 +86,8 @@ type jsiiProxy_OneDashboardPageWidgetBulletNrqlQueryOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetBulletNrqlQueryOutputReference) AccountId() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OneDashboardPageWidgetBulletNrqlQueryOutputReference) AccountId() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"accountId",
@@ -96,8 +96,8 @@ func (j *jsiiProxy_OneDashboardPageWidgetBulletNrqlQueryOutputReference) Account
 	return returns
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetBulletNrqlQueryOutputReference) AccountIdInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OneDashboardPageWidgetBulletNrqlQueryOutputReference) AccountIdInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"accountIdInput",
@@ -224,7 +224,7 @@ func NewOneDashboardPageWidgetBulletNrqlQueryOutputReference_Override(o OneDashb
 	)
 }
 
-func (j *jsiiProxy_OneDashboardPageWidgetBulletNrqlQueryOutputReference)SetAccountId(val *float64) {
+func (j *jsiiProxy_OneDashboardPageWidgetBulletNrqlQueryOutputReference)SetAccountId(val *string) {
 	if err := j.validateSetAccountIdParameters(val); err != nil {
 		panic(err)
 	}

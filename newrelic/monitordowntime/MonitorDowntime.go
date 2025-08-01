@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/monitor_downtime newrelic_monitor_downtime}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/monitor_downtime newrelic_monitor_downtime}.
 type MonitorDowntime interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -545,7 +545,7 @@ func (j *jsiiProxy_MonitorDowntime) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/monitor_downtime newrelic_monitor_downtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/monitor_downtime newrelic_monitor_downtime} Resource.
 func NewMonitorDowntime(scope constructs.Construct, id *string, config *MonitorDowntimeConfig) MonitorDowntime {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewMonitorDowntime(scope constructs.Construct, id *string, config *MonitorD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.64.0/docs/resources/monitor_downtime newrelic_monitor_downtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/resources/monitor_downtime newrelic_monitor_downtime} Resource.
 func NewMonitorDowntime_Override(m MonitorDowntime, scope constructs.Construct, id *string, config *MonitorDowntimeConfig) {
 	_init_.Initialize()
 
