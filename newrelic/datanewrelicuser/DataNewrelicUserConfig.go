@@ -24,15 +24,15 @@ type DataNewrelicUserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the Authentication Domain the user being queried would belong to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/data-sources/user#authentication_domain_id DataNewrelicUser#authentication_domain_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/data-sources/user#authentication_domain_id DataNewrelicUser#authentication_domain_id}
 	AuthenticationDomainId *string `field:"required" json:"authenticationDomainId" yaml:"authenticationDomainId"`
 	// The email ID of the user to be queried.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/data-sources/user#email_id DataNewrelicUser#email_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/data-sources/user#email_id DataNewrelicUser#email_id}
 	EmailId *string `field:"optional" json:"emailId" yaml:"emailId"`
 	// The name of the user to be queried.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.65.0/docs/data-sources/user#name DataNewrelicUser#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/data-sources/user#name DataNewrelicUser#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 
