@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/resources/account_management newrelic_account_management}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/account_management newrelic_account_management}.
 type AccountManagement interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_AccountManagement) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/resources/account_management newrelic_account_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/account_management newrelic_account_management} Resource.
 func NewAccountManagement(scope constructs.Construct, id *string, config *AccountManagementConfig) AccountManagement {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewAccountManagement(scope constructs.Construct, id *string, config *Accoun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.66.0/docs/resources/account_management newrelic_account_management} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/account_management newrelic_account_management} Resource.
 func NewAccountManagement_Override(a AccountManagement, scope constructs.Construct, id *string, config *AccountManagementConfig) {
 	_init_.Initialize()
 
