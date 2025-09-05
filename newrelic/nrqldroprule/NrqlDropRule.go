@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule}.
 type NrqlDropRule interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -60,6 +60,7 @@ type NrqlDropRule interface {
 	Nrql() *string
 	SetNrql(val *string)
 	NrqlInput() *string
+	PipelineCloudRuleEntityId() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -77,6 +78,8 @@ type NrqlDropRule interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() NrqlDropRuleTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -120,12 +123,14 @@ type NrqlDropRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *NrqlDropRuleTimeouts)
 	ResetAccountId()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -344,6 +349,16 @@ func (j *jsiiProxy_NrqlDropRule) NrqlInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NrqlDropRule) PipelineCloudRuleEntityId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipelineCloudRuleEntityId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NrqlDropRule) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -414,8 +429,28 @@ func (j *jsiiProxy_NrqlDropRule) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NrqlDropRule) Timeouts() NrqlDropRuleTimeoutsOutputReference {
+	var returns NrqlDropRuleTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule} Resource.
+func (j *jsiiProxy_NrqlDropRule) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule} Resource.
 func NewNrqlDropRule(scope constructs.Construct, id *string, config *NrqlDropRuleConfig) NrqlDropRule {
 	_init_.Initialize()
 
@@ -433,7 +468,7 @@ func NewNrqlDropRule(scope constructs.Construct, id *string, config *NrqlDropRul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.67.0/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/nrql_drop_rule newrelic_nrql_drop_rule} Resource.
 func NewNrqlDropRule_Override(n NrqlDropRule, scope constructs.Construct, id *string, config *NrqlDropRuleConfig) {
 	_init_.Initialize()
 
@@ -920,6 +955,17 @@ func (n *jsiiProxy_NrqlDropRule) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (n *jsiiProxy_NrqlDropRule) PutTimeouts(value *NrqlDropRuleTimeouts) {
+	if err := n.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NrqlDropRule) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		n,
@@ -948,6 +994,14 @@ func (n *jsiiProxy_NrqlDropRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NrqlDropRule) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,10 @@ func (n *jsiiProxy_NrqlDropRule) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (n *jsiiProxy_NrqlDropRule) validatePutTimeoutsParameters(value *NrqlDropRuleTimeouts) error {
+	return nil
+}
+
 func validateNrqlDropRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
