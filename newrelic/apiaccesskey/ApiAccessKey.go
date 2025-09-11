@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/api_access_key newrelic_api_access_key}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.0/docs/resources/api_access_key newrelic_api_access_key}.
 type ApiAccessKey interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -126,6 +126,7 @@ type ApiAccessKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccountId()
 	ResetId()
 	ResetIngestType()
 	ResetName()
@@ -463,7 +464,7 @@ func (j *jsiiProxy_ApiAccessKey) UserIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/api_access_key newrelic_api_access_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.0/docs/resources/api_access_key newrelic_api_access_key} Resource.
 func NewApiAccessKey(scope constructs.Construct, id *string, config *ApiAccessKeyConfig) ApiAccessKey {
 	_init_.Initialize()
 
@@ -481,7 +482,7 @@ func NewApiAccessKey(scope constructs.Construct, id *string, config *ApiAccessKe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.68.0/docs/resources/api_access_key newrelic_api_access_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.69.0/docs/resources/api_access_key newrelic_api_access_key} Resource.
 func NewApiAccessKey_Override(a ApiAccessKey, scope constructs.Construct, id *string, config *ApiAccessKeyConfig) {
 	_init_.Initialize()
 
@@ -987,6 +988,14 @@ func (a *jsiiProxy_ApiAccessKey) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_ApiAccessKey) ResetAccountId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccountId",
+		nil, // no parameters
 	)
 }
 
