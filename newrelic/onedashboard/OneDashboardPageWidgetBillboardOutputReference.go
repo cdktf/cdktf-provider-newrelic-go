@@ -13,6 +13,8 @@ import (
 
 type OneDashboardPageWidgetBillboardOutputReference interface {
 	cdktf.ComplexObject
+	BillboardSettings() OneDashboardPageWidgetBillboardBillboardSettingsOutputReference
+	BillboardSettingsInput() *OneDashboardPageWidgetBillboardBillboardSettings
 	Colors() OneDashboardPageWidgetBillboardColorsList
 	ColorsInput() interface{}
 	Column() *float64
@@ -116,12 +118,14 @@ type OneDashboardPageWidgetBillboardOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBillboardSettings(value *OneDashboardPageWidgetBillboardBillboardSettings)
 	PutColors(value interface{})
 	PutDataFormat(value interface{})
 	PutInitialSorting(value *OneDashboardPageWidgetBillboardInitialSorting)
 	PutNrqlQuery(value interface{})
 	PutNullValues(value interface{})
 	PutUnits(value interface{})
+	ResetBillboardSettings()
 	ResetColors()
 	ResetCritical()
 	ResetDataFormat()
@@ -150,6 +154,26 @@ type OneDashboardPageWidgetBillboardOutputReference interface {
 // The jsii proxy struct for OneDashboardPageWidgetBillboardOutputReference
 type jsiiProxy_OneDashboardPageWidgetBillboardOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) BillboardSettings() OneDashboardPageWidgetBillboardBillboardSettingsOutputReference {
+	var returns OneDashboardPageWidgetBillboardBillboardSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"billboardSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) BillboardSettingsInput() *OneDashboardPageWidgetBillboardBillboardSettings {
+	var returns *OneDashboardPageWidgetBillboardBillboardSettings
+	_jsii_.Get(
+		j,
+		"billboardSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) Colors() OneDashboardPageWidgetBillboardColorsList {
@@ -1024,6 +1048,17 @@ func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) Interpolation
 	return returns
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) PutBillboardSettings(value *OneDashboardPageWidgetBillboardBillboardSettings) {
+	if err := o.validatePutBillboardSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putBillboardSettings",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) PutColors(value interface{}) {
 	if err := o.validatePutColorsParameters(value); err != nil {
 		panic(err)
@@ -1087,6 +1122,14 @@ func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) PutUnits(valu
 		o,
 		"putUnits",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) ResetBillboardSettings() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetBillboardSettings",
+		nil, // no parameters
 	)
 }
 

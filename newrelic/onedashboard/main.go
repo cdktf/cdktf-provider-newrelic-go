@@ -1602,6 +1602,186 @@ func init() {
 		reflect.TypeOf((*OneDashboardPageWidgetBillboard)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettings",
+		reflect.TypeOf((*OneDashboardPageWidgetBillboardBillboardSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsGridOptions",
+		reflect.TypeOf((*OneDashboardPageWidgetBillboardBillboardSettingsGridOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsGridOptionsOutputReference",
+		reflect.TypeOf((*OneDashboardPageWidgetBillboardBillboardSettingsGridOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
+			_jsii_.MemberProperty{JsiiProperty: "columnsInput", GoGetter: "ColumnsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "label", GoGetter: "Label"},
+			_jsii_.MemberProperty{JsiiProperty: "labelInput", GoGetter: "LabelInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetColumns", GoMethod: "ResetColumns"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLabel", GoMethod: "ResetLabel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValue", GoMethod: "ResetValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
+			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OneDashboardPageWidgetBillboardBillboardSettingsGridOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsLink",
+		reflect.TypeOf((*OneDashboardPageWidgetBillboardBillboardSettingsLink)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsLinkOutputReference",
+		reflect.TypeOf((*OneDashboardPageWidgetBillboardBillboardSettingsLinkOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "newTab", GoGetter: "NewTab"},
+			_jsii_.MemberProperty{JsiiProperty: "newTabInput", GoGetter: "NewTabInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNewTab", GoMethod: "ResetNewTab"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTitle", GoMethod: "ResetTitle"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "title", GoGetter: "Title"},
+			_jsii_.MemberProperty{JsiiProperty: "titleInput", GoGetter: "TitleInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
+			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OneDashboardPageWidgetBillboardBillboardSettingsLinkOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsOutputReference",
+		reflect.TypeOf((*OneDashboardPageWidgetBillboardBillboardSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "gridOptions", GoGetter: "GridOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "gridOptionsInput", GoGetter: "GridOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "link", GoGetter: "Link"},
+			_jsii_.MemberProperty{JsiiProperty: "linkInput", GoGetter: "LinkInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putGridOptions", GoMethod: "PutGridOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putLink", GoMethod: "PutLink"},
+			_jsii_.MemberMethod{JsiiMethod: "putVisual", GoMethod: "PutVisual"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGridOptions", GoMethod: "ResetGridOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLink", GoMethod: "ResetLink"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVisual", GoMethod: "ResetVisual"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "visual", GoGetter: "Visual"},
+			_jsii_.MemberProperty{JsiiProperty: "visualInput", GoGetter: "VisualInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OneDashboardPageWidgetBillboardBillboardSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsVisual",
+		reflect.TypeOf((*OneDashboardPageWidgetBillboardBillboardSettingsVisual)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardBillboardSettingsVisualOutputReference",
+		reflect.TypeOf((*OneDashboardPageWidgetBillboardBillboardSettingsVisualOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "alignment", GoGetter: "Alignment"},
+			_jsii_.MemberProperty{JsiiProperty: "alignmentInput", GoGetter: "AlignmentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "display", GoGetter: "Display"},
+			_jsii_.MemberProperty{JsiiProperty: "displayInput", GoGetter: "DisplayInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlignment", GoMethod: "ResetAlignment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDisplay", GoMethod: "ResetDisplay"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OneDashboardPageWidgetBillboardBillboardSettingsVisualOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardColors",
 		reflect.TypeOf((*OneDashboardPageWidgetBillboardColors)(nil)).Elem(),
 	)
@@ -2056,6 +2236,8 @@ func init() {
 		"@cdktf/provider-newrelic.oneDashboard.OneDashboardPageWidgetBillboardOutputReference",
 		reflect.TypeOf((*OneDashboardPageWidgetBillboardOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "billboardSettings", GoGetter: "BillboardSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "billboardSettingsInput", GoGetter: "BillboardSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "colors", GoGetter: "Colors"},
 			_jsii_.MemberProperty{JsiiProperty: "colorsInput", GoGetter: "ColorsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
@@ -2096,6 +2278,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nrqlQueryInput", GoGetter: "NrqlQueryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nullValues", GoGetter: "NullValues"},
 			_jsii_.MemberProperty{JsiiProperty: "nullValuesInput", GoGetter: "NullValuesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putBillboardSettings", GoMethod: "PutBillboardSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putColors", GoMethod: "PutColors"},
 			_jsii_.MemberMethod{JsiiMethod: "putDataFormat", GoMethod: "PutDataFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "putInitialSorting", GoMethod: "PutInitialSorting"},
@@ -2104,6 +2287,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putUnits", GoMethod: "PutUnits"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshRate", GoGetter: "RefreshRate"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshRateInput", GoGetter: "RefreshRateInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBillboardSettings", GoMethod: "ResetBillboardSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetColors", GoMethod: "ResetColors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCritical", GoMethod: "ResetCritical"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataFormat", GoMethod: "ResetDataFormat"},

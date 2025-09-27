@@ -47,6 +47,10 @@ func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) validateInter
 	return nil
 }
 
+func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) validatePutBillboardSettingsParameters(value *OneDashboardPageWidgetBillboardBillboardSettings) error {
+	return nil
+}
+
 func (o *jsiiProxy_OneDashboardPageWidgetBillboardOutputReference) validatePutColorsParameters(value interface{}) error {
 	return nil
 }
