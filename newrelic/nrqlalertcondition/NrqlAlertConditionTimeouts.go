@@ -5,7 +5,7 @@ package nrqlalertcondition
 
 
 type NrqlAlertConditionTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/nrql_alert_condition#create NrqlAlertCondition#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/nrql_alert_condition#create NrqlAlertCondition#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

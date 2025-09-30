@@ -7,11 +7,11 @@ package onedashboard
 type OneDashboardPageWidgetBillboardBillboardSettingsVisual struct {
 	// Billboard alignment type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/one_dashboard#alignment OneDashboard#alignment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/one_dashboard#alignment OneDashboard#alignment}
 	Alignment *string `field:"optional" json:"alignment" yaml:"alignment"`
 	// Billboard display type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/one_dashboard#display OneDashboard#display}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/one_dashboard#display OneDashboard#display}
 	Display *string `field:"optional" json:"display" yaml:"display"`
 }
 

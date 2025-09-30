@@ -5,7 +5,7 @@ package nrqldroprule
 
 
 type NrqlDropRuleTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.4/docs/resources/nrql_drop_rule#read NrqlDropRule#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.70.5/docs/resources/nrql_drop_rule#read NrqlDropRule#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 
