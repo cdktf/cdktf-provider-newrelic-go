@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/synthetics_monitor newrelic_synthetics_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/synthetics_monitor newrelic_synthetics_monitor}.
 type SyntheticsMonitor interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -881,7 +881,7 @@ func (j *jsiiProxy_SyntheticsMonitor) VerifySslInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
 func NewSyntheticsMonitor(scope constructs.Construct, id *string, config *SyntheticsMonitorConfig) SyntheticsMonitor {
 	_init_.Initialize()
 
@@ -899,7 +899,7 @@ func NewSyntheticsMonitor(scope constructs.Construct, id *string, config *Synthe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/synthetics_monitor newrelic_synthetics_monitor} Resource.
 func NewSyntheticsMonitor_Override(s SyntheticsMonitor, scope constructs.Construct, id *string, config *SyntheticsMonitorConfig) {
 	_init_.Initialize()
 

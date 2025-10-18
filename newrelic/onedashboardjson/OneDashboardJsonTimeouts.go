@@ -5,9 +5,9 @@ package onedashboardjson
 
 
 type OneDashboardJsonTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/one_dashboard_json#create OneDashboardJson#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/one_dashboard_json#create OneDashboardJson#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/one_dashboard_json#update OneDashboardJson#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/one_dashboard_json#update OneDashboardJson#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

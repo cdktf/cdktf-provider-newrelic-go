@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/application_settings newrelic_application_settings}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/application_settings newrelic_application_settings}.
 type ApplicationSettings interface {
 	cdktf.TerraformResource
 	AppApdexThreshold() *float64
@@ -585,7 +585,7 @@ func (j *jsiiProxy_ApplicationSettings) UseServerSideConfigInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/application_settings newrelic_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/application_settings newrelic_application_settings} Resource.
 func NewApplicationSettings(scope constructs.Construct, id *string, config *ApplicationSettingsConfig) ApplicationSettings {
 	_init_.Initialize()
 
@@ -603,7 +603,7 @@ func NewApplicationSettings(scope constructs.Construct, id *string, config *Appl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.1/docs/resources/application_settings newrelic_application_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/application_settings newrelic_application_settings} Resource.
 func NewApplicationSettings_Override(a ApplicationSettings, scope constructs.Construct, id *string, config *ApplicationSettingsConfig) {
 	_init_.Initialize()
 
