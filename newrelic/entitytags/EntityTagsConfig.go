@@ -24,20 +24,20 @@ type EntityTagsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The guid of the entity to tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/entity_tags#guid EntityTags#guid}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.73.0/docs/resources/entity_tags#guid EntityTags#guid}
 	Guid *string `field:"required" json:"guid" yaml:"guid"`
 	// tag block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/entity_tags#tag EntityTags#tag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.73.0/docs/resources/entity_tags#tag EntityTags#tag}
 	Tag interface{} `field:"required" json:"tag" yaml:"tag"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/entity_tags#id EntityTags#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.73.0/docs/resources/entity_tags#id EntityTags#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.72.3/docs/resources/entity_tags#timeouts EntityTags#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.73.0/docs/resources/entity_tags#timeouts EntityTags#timeouts}
 	Timeouts *EntityTagsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
