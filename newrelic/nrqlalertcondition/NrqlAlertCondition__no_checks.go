@@ -211,6 +211,10 @@ func (j *jsiiProxy_NrqlAlertCondition) validateSetSlideByParameters(val *float64
 	return nil
 }
 
+func (j *jsiiProxy_NrqlAlertCondition) validateSetTargetEntityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NrqlAlertCondition) validateSetTitleTemplateParameters(val *string) error {
 	return nil
 }

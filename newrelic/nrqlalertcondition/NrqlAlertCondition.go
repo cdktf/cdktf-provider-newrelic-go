@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.73.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.74.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}.
 type NrqlAlertCondition interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -123,6 +123,9 @@ type NrqlAlertCondition interface {
 	SlideBy() *float64
 	SetSlideBy(val *float64)
 	SlideByInput() *float64
+	TargetEntity() *string
+	SetTargetEntity(val *string)
+	TargetEntityInput() *string
 	Term() NrqlAlertConditionTermList
 	TermInput() interface{}
 	// Experimental.
@@ -218,6 +221,7 @@ type NrqlAlertCondition interface {
 	ResetRunbookUrl()
 	ResetSignalSeasonality()
 	ResetSlideBy()
+	ResetTargetEntity()
 	ResetTerm()
 	ResetTimeouts()
 	ResetTitleTemplate()
@@ -843,6 +847,26 @@ func (j *jsiiProxy_NrqlAlertCondition) SlideByInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_NrqlAlertCondition) TargetEntity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetEntity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertCondition) TargetEntityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetEntityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NrqlAlertCondition) Term() NrqlAlertConditionTermList {
 	var returns NrqlAlertConditionTermList
 	_jsii_.Get(
@@ -1014,7 +1038,7 @@ func (j *jsiiProxy_NrqlAlertCondition) WarningInput() *NrqlAlertConditionWarning
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.73.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.74.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
 func NewNrqlAlertCondition(scope constructs.Construct, id *string, config *NrqlAlertConditionConfig) NrqlAlertCondition {
 	_init_.Initialize()
 
@@ -1032,7 +1056,7 @@ func NewNrqlAlertCondition(scope constructs.Construct, id *string, config *NrqlA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.73.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.74.0/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
 func NewNrqlAlertCondition_Override(n NrqlAlertCondition, scope constructs.Construct, id *string, config *NrqlAlertConditionConfig) {
 	_init_.Initialize()
 
@@ -1338,6 +1362,17 @@ func (j *jsiiProxy_NrqlAlertCondition)SetSlideBy(val *float64) {
 	_jsii_.Set(
 		j,
 		"slideBy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NrqlAlertCondition)SetTargetEntity(val *string) {
+	if err := j.validateSetTargetEntityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetEntity",
 		val,
 	)
 }
@@ -1958,6 +1993,14 @@ func (n *jsiiProxy_NrqlAlertCondition) ResetSlideBy() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetSlideBy",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NrqlAlertCondition) ResetTargetEntity() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTargetEntity",
 		nil, // no parameters
 	)
 }

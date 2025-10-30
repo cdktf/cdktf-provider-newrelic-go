@@ -682,6 +682,14 @@ func (j *jsiiProxy_NrqlAlertCondition) validateSetSlideByParameters(val *float64
 	return nil
 }
 
+func (j *jsiiProxy_NrqlAlertCondition) validateSetTargetEntityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NrqlAlertCondition) validateSetTitleTemplateParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
