@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsIntegrationsEfsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsEfsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsIntegrationsEfsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsEfsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsIntegrationsEfsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

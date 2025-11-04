@@ -43,7 +43,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateGetSt
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validatePutUn
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

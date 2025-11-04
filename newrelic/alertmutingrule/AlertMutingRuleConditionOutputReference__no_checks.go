@@ -43,7 +43,7 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) validatePutCondition
 	return nil
 }
 
-func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertMutingRuleConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

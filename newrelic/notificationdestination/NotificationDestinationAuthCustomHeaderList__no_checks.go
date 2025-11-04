@@ -15,7 +15,7 @@ func (n *jsiiProxy_NotificationDestinationAuthCustomHeaderList) validateGetParam
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationAuthCustomHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationDestinationAuthCustomHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

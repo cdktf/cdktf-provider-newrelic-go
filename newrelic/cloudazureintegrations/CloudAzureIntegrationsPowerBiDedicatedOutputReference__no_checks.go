@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAzureIntegrationsPowerBiDedicatedOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsPowerBiDedicatedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAzureIntegrationsPowerBiDedicatedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsPowerBiDedicatedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAzureIntegrationsPowerBiDedicatedOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotificationDestinationAuthBasicOutputReference) validateGetS
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationAuthBasicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationDestinationAuthBasicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationAuthBasicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationDestinationAuthBasicOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

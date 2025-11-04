@@ -43,11 +43,11 @@ func (o *jsiiProxy_OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputRe
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetFunnelNullValuesSeriesOverridesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

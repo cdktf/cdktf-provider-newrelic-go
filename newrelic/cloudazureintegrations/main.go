@@ -24,6 +24,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "appGatewayInput", GoGetter: "AppGatewayInput"},
 			_jsii_.MemberProperty{JsiiProperty: "appService", GoGetter: "AppService"},
 			_jsii_.MemberProperty{JsiiProperty: "appServiceInput", GoGetter: "AppServiceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "autoDiscovery", GoGetter: "AutoDiscovery"},
+			_jsii_.MemberProperty{JsiiProperty: "autoDiscoveryInput", GoGetter: "AutoDiscoveryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -99,6 +101,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putApiManagement", GoMethod: "PutApiManagement"},
 			_jsii_.MemberMethod{JsiiMethod: "putAppGateway", GoMethod: "PutAppGateway"},
 			_jsii_.MemberMethod{JsiiMethod: "putAppService", GoMethod: "PutAppService"},
+			_jsii_.MemberMethod{JsiiMethod: "putAutoDiscovery", GoMethod: "PutAutoDiscovery"},
 			_jsii_.MemberMethod{JsiiMethod: "putContainers", GoMethod: "PutContainers"},
 			_jsii_.MemberMethod{JsiiMethod: "putCosmosDb", GoMethod: "PutCosmosDb"},
 			_jsii_.MemberMethod{JsiiMethod: "putCostManagement", GoMethod: "PutCostManagement"},
@@ -135,6 +138,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetApiManagement", GoMethod: "ResetApiManagement"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppGateway", GoMethod: "ResetAppGateway"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppService", GoMethod: "ResetAppService"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoDiscovery", GoMethod: "ResetAutoDiscovery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContainers", GoMethod: "ResetContainers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCosmosDb", GoMethod: "ResetCosmosDb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCostManagement", GoMethod: "ResetCostManagement"},
@@ -320,6 +324,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudAzureIntegrationsAppServiceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAutoDiscovery",
+		reflect.TypeOf((*CloudAzureIntegrationsAutoDiscovery)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.cloudAzureIntegrations.CloudAzureIntegrationsAutoDiscoveryOutputReference",
+		reflect.TypeOf((*CloudAzureIntegrationsAutoDiscoveryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsPollingInterval", GoGetter: "MetricsPollingInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "metricsPollingIntervalInput", GoGetter: "MetricsPollingIntervalInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetricsPollingInterval", GoMethod: "ResetMetricsPollingInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResourceGroups", GoMethod: "ResetResourceGroups"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroups", GoGetter: "ResourceGroups"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceGroupsInput", GoGetter: "ResourceGroupsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudAzureIntegrationsAutoDiscoveryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

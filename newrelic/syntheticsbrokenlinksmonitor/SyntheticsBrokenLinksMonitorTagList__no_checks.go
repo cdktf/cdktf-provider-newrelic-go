@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsBrokenLinksMonitorTagList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsBrokenLinksMonitorTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsBrokenLinksMonitorTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

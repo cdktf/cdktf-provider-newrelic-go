@@ -29,9 +29,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineNullValuesSeriesOverridesList) vali
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetLineNullValuesSeriesOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OneDashboardPageWidgetLineNullValuesSeriesOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

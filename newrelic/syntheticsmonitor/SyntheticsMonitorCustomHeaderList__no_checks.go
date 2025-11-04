@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsMonitorCustomHeaderList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsMonitorCustomHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsMonitorCustomHeaderList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

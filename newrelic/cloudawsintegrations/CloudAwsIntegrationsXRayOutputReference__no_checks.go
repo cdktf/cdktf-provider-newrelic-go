@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsIntegrationsXRayOutputReference) validateGetStringMap
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsXRayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsIntegrationsXRayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsXRayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsIntegrationsXRayOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

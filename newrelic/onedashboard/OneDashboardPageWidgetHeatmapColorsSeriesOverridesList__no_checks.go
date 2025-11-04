@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapColorsSeriesOverridesList) valid
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetHeatmapColorsSeriesOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapColorsSeriesOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

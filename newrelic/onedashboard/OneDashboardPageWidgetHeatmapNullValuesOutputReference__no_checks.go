@@ -43,7 +43,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNullValuesOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNullValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNullValuesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNullValuesOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNullValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNullValuesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramColorsSeriesOverridesList) val
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetHistogramColorsSeriesOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramColorsSeriesOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

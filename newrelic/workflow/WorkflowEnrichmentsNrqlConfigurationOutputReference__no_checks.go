@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkflowEnrichmentsNrqlConfigurationOutputReference) validate
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowEnrichmentsNrqlConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkflowEnrichmentsNrqlConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowEnrichmentsNrqlConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkflowEnrichmentsNrqlConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

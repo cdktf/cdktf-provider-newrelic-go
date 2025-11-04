@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsIntegrationsAwsMediaPackageVodOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsAwsMediaPackageVodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsIntegrationsAwsMediaPackageVodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsAwsMediaPackageVodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsIntegrationsAwsMediaPackageVodOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

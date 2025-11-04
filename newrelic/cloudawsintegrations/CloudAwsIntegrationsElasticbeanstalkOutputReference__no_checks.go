@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsIntegrationsElasticbeanstalkOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsElasticbeanstalkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsIntegrationsElasticbeanstalkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsElasticbeanstalkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsIntegrationsElasticbeanstalkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

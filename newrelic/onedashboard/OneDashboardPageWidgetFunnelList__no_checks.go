@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetFunnelList) validateGetParameters(index
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetFunnelList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetFunnelList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

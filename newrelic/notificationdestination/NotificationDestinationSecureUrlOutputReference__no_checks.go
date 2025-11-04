@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotificationDestinationSecureUrlOutputReference) validateGetS
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationSecureUrlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationDestinationSecureUrlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationSecureUrlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationDestinationSecureUrlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

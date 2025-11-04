@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsIntegrationsIotOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsIotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsIntegrationsIotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsIotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsIntegrationsIotOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

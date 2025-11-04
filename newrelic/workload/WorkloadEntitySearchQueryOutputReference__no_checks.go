@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) validateGetStringMa
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadEntitySearchQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

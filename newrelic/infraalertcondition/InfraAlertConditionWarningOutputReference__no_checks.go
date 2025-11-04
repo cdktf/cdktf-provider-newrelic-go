@@ -43,11 +43,11 @@ func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) validateGetStringM
 	return nil
 }
 
-func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InfraAlertConditionWarningOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

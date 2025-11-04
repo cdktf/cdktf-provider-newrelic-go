@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleNrqlQueryList) validateGetPa
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleNrqlQueryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleNrqlQueryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

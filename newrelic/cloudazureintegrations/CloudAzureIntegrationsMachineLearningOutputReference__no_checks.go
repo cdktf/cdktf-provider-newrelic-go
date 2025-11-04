@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAzureIntegrationsMachineLearningOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsMachineLearningOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAzureIntegrationsMachineLearningOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsMachineLearningOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAzureIntegrationsMachineLearningOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

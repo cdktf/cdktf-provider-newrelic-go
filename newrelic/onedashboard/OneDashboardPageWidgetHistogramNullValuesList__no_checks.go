@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramNullValuesList) validateGetPar
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetHistogramNullValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramNullValuesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

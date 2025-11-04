@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNullValuesList) validateGetParam
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNullValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetHeatmapNullValuesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

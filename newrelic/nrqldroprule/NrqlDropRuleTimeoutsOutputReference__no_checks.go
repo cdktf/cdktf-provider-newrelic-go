@@ -43,11 +43,11 @@ func (n *jsiiProxy_NrqlDropRuleTimeoutsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (n *jsiiProxy_NrqlDropRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NrqlDropRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NrqlDropRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NrqlDropRuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OneDashboardPageWidgetHistogramInitialSortingOutputReference)
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetHistogramInitialSortingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramInitialSortingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetHistogramInitialSortingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetHistogramInitialSortingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputRefe
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetLogTableColorsSeriesOverridesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAzureIntegrationsMariaDbOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsMariaDbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAzureIntegrationsMariaDbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsMariaDbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAzureIntegrationsMariaDbOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

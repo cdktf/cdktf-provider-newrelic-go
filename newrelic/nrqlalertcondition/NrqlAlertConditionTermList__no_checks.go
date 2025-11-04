@@ -15,7 +15,7 @@ func (n *jsiiProxy_NrqlAlertConditionTermList) validateGetParameters(index *floa
 	return nil
 }
 
-func (n *jsiiProxy_NrqlAlertConditionTermList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NrqlAlertConditionTermList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

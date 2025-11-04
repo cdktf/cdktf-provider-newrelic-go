@@ -43,11 +43,11 @@ func (n *jsiiProxy_NrqlAlertConditionNrqlOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (n *jsiiProxy_NrqlAlertConditionNrqlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NrqlAlertConditionNrqlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NrqlAlertConditionNrqlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NrqlAlertConditionNrqlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

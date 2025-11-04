@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsScriptMonitorLocationPrivateList) validateGetParame
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsScriptMonitorLocationPrivateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsScriptMonitorLocationPrivateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

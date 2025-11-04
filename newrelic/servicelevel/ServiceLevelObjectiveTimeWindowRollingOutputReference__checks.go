@@ -85,17 +85,17 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowRollingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

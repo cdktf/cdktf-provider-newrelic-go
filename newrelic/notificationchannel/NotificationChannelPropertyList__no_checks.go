@@ -15,7 +15,7 @@ func (n *jsiiProxy_NotificationChannelPropertyList) validateGetParameters(index 
 	return nil
 }
 
-func (n *jsiiProxy_NotificationChannelPropertyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationChannelPropertyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsIntegrationsAwsKinesisAnalyticsOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsAwsKinesisAnalyticsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsIntegrationsAwsKinesisAnalyticsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsAwsKinesisAnalyticsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsIntegrationsAwsKinesisAnalyticsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

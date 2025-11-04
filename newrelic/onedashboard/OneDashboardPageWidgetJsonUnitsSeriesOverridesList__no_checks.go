@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetJsonUnitsSeriesOverridesList) validateG
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetJsonUnitsSeriesOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetJsonUnitsSeriesOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

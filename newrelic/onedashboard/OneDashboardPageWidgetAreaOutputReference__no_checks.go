@@ -43,7 +43,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validateGetStringM
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validatePutUnitsPa
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetAreaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

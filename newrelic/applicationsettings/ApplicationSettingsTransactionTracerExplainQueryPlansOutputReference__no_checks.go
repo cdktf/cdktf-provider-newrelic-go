@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApplicationSettingsTransactionTracerExplainQueryPlansOutputRe
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationSettingsTransactionTracerExplainQueryPlansOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAzureIntegrationsExpressRouteOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsExpressRouteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAzureIntegrationsExpressRouteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsExpressRouteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAzureIntegrationsExpressRouteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

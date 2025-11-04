@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsStepMonitorLocationPrivateOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsStepMonitorLocationPrivateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsStepMonitorLocationPrivateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsStepMonitorLocationPrivateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsStepMonitorLocationPrivateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

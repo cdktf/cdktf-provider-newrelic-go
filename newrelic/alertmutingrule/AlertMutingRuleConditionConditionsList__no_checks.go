@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlertMutingRuleConditionConditionsList) validateGetParameters
 	return nil
 }
 
-func (a *jsiiProxy_AlertMutingRuleConditionConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertMutingRuleConditionConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

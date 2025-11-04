@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertMutingRuleScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

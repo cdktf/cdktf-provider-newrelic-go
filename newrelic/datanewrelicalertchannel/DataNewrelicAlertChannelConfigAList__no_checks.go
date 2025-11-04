@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataNewrelicAlertChannelConfigAList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicAlertChannelConfigAList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNewrelicAlertChannelConfigAList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

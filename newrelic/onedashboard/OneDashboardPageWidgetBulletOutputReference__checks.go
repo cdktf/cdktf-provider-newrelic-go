@@ -85,9 +85,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetBulletOutputReference) validateGetStrin
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetBulletOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (o *jsiiProxy_OneDashboardPageWidgetBulletOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -259,9 +259,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetBulletOutputReference) validatePutUnits
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetBulletOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OneDashboardPageWidgetBulletOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

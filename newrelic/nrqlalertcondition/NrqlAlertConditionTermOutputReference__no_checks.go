@@ -43,7 +43,7 @@ func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) validatePutPredictionP
 	return nil
 }
 
-func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NrqlAlertConditionTermOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

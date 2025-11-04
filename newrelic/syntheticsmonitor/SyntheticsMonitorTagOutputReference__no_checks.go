@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsMonitorTagOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsMonitorTagOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsMonitorTagOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsMonitorTagOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsMonitorTagOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OneDashboardJsonTimeoutsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJsonTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OneDashboardJsonTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardJsonTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardJsonTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

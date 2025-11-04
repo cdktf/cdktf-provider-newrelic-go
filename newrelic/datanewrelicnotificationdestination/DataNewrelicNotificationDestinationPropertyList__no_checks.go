@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNewrelicNotificationDestinationPropertyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

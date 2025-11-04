@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsMonitorCustomHeaderOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsMonitorCustomHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsMonitorCustomHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsMonitorCustomHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsMonitorCustomHeaderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

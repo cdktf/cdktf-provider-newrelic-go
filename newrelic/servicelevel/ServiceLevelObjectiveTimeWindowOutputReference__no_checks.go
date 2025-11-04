@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowOutputReference) validatePutRo
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceLevelObjectiveTimeWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

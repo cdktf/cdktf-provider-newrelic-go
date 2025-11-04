@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAutoScalingOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAutoScalingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAutoScalingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAutoScalingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsGovcloudIntegrationsAutoScalingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

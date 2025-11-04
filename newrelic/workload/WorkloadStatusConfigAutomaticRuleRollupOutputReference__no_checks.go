@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleRollupOutputReference) valid
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleRollupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleRollupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleRollupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleRollupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

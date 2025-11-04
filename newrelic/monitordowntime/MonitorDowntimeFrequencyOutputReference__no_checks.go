@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitorDowntimeFrequencyOutputReference) validateGetStringMap
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDowntimeFrequencyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorDowntimeFrequencyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitorDowntimeFrequencyOutputReference) validatePutDaysOfWee
 	return nil
 }
 
-func (m *jsiiProxy_MonitorDowntimeFrequencyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorDowntimeFrequencyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

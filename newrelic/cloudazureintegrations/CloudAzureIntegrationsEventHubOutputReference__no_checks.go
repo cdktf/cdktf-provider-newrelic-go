@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAzureIntegrationsEventHubOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

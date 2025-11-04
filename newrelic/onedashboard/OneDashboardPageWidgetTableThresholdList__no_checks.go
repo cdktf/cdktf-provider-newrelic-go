@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetTableThresholdList) validateGetParamete
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetTableThresholdList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetTableThresholdList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -29,9 +29,9 @@ func (o *jsiiProxy_OneDashboardPageWidgetFunnelNullValuesList) validateGetParame
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetFunnelNullValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OneDashboardPageWidgetFunnelNullValuesList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

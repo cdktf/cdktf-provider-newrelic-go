@@ -87,6 +87,10 @@ func (c *jsiiProxy_CloudAzureIntegrations) validatePutAppServiceParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_CloudAzureIntegrations) validatePutAutoDiscoveryParameters(value *CloudAzureIntegrationsAutoDiscovery) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAzureIntegrations) validatePutContainersParameters(value *CloudAzureIntegrationsContainers) error {
 	return nil
 }

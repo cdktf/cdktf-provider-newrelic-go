@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleList) validateGetParameters(
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetBillboardColorsSeriesOverridesList) val
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetBillboardColorsSeriesOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetBillboardColorsSeriesOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

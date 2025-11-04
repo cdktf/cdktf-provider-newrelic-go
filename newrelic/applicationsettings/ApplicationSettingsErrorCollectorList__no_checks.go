@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationSettingsErrorCollectorList) validateGetParameters(
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationSettingsErrorCollectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationSettingsErrorCollectorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

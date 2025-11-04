@@ -41,7 +41,7 @@ type OneDashboardRawPageList interface {
 	Get(index *float64) OneDashboardRawPageOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (o *jsiiProxy_OneDashboardRawPageList) Get(index *float64) OneDashboardRawP
 	return returns
 }
 
-func (o *jsiiProxy_OneDashboardRawPageList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OneDashboardRawPageList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (o *jsiiProxy_OneDashboardRawPageList) Resolve(_context cdktf.IResolveConte
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

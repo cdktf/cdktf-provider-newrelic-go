@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApplicationSettingsTransactionTracerExplainQueryPlansList) va
 	return nil
 }
 
-func (a *jsiiProxy_ApplicationSettingsTransactionTracerExplainQueryPlansList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApplicationSettingsTransactionTracerExplainQueryPlansList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

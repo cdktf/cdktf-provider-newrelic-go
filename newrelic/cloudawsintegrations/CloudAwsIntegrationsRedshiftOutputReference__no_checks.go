@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsIntegrationsRedshiftOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsRedshiftOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsIntegrationsRedshiftOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsRedshiftOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsIntegrationsRedshiftOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EntityTagsTagOutputReference) validateGetStringMapAttributePa
 	return nil
 }
 
-func (e *jsiiProxy_EntityTagsTagOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EntityTagsTagOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EntityTagsTagOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EntityTagsTagOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

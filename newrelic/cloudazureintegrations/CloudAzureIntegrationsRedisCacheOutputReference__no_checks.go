@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAzureIntegrationsRedisCacheOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsRedisCacheOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAzureIntegrationsRedisCacheOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsRedisCacheOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAzureIntegrationsRedisCacheOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

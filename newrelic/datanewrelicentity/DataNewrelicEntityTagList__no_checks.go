@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataNewrelicEntityTagList) validateGetParameters(index *float
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicEntityTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNewrelicEntityTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

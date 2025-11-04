@@ -43,7 +43,7 @@ func (w *jsiiProxy_WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputRefer
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputRefer
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadStatusConfigAutomaticRemainingEntitiesRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

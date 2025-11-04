@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlertMutingRuleConditionConditionsOutputReference) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_AlertMutingRuleConditionConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertMutingRuleConditionConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlertMutingRuleConditionConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertMutingRuleConditionConditionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

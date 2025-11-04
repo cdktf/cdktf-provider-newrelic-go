@@ -43,7 +43,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validateGetS
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validatePutU
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetStackedBarOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkflowIssuesFilterPredicateOutputReference) validateGetStri
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowIssuesFilterPredicateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkflowIssuesFilterPredicateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowIssuesFilterPredicateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkflowIssuesFilterPredicateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

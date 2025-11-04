@@ -43,7 +43,7 @@ func (n *jsiiProxy_NrqlAlertConditionCriticalOutputReference) validateGetStringM
 	return nil
 }
 
-func (n *jsiiProxy_NrqlAlertConditionCriticalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NrqlAlertConditionCriticalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NrqlAlertConditionCriticalOutputReference) validatePutPredict
 	return nil
 }
 
-func (n *jsiiProxy_NrqlAlertConditionCriticalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NrqlAlertConditionCriticalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

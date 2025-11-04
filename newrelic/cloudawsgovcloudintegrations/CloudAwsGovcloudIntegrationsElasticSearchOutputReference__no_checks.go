@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElasticSearchOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElasticSearchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElasticSearchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElasticSearchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsGovcloudIntegrationsElasticSearchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

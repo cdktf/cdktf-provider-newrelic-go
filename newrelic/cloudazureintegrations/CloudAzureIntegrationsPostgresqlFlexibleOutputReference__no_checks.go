@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAzureIntegrationsPostgresqlFlexibleOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsPostgresqlFlexibleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAzureIntegrationsPostgresqlFlexibleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsPostgresqlFlexibleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAzureIntegrationsPostgresqlFlexibleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

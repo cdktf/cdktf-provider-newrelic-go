@@ -43,7 +43,7 @@ func (w *jsiiProxy_WorkflowEnrichmentsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowEnrichmentsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkflowEnrichmentsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (w *jsiiProxy_WorkflowEnrichmentsOutputReference) validatePutNrqlParameters
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowEnrichmentsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkflowEnrichmentsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

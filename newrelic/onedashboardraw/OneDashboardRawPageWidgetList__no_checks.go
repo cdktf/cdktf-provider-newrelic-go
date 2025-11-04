@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardRawPageWidgetList) validateGetParameters(index *f
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardRawPageWidgetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardRawPageWidgetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

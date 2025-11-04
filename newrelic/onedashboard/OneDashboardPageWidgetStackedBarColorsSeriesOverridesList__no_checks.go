@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetStackedBarColorsSeriesOverridesList) va
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetStackedBarColorsSeriesOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetStackedBarColorsSeriesOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

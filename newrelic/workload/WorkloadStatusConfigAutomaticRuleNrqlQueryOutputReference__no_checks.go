@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference) va
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadStatusConfigAutomaticRuleNrqlQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

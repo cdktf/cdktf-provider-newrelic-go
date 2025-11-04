@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsIntegrationsKinesisFirehoseOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsKinesisFirehoseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsIntegrationsKinesisFirehoseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsKinesisFirehoseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsIntegrationsKinesisFirehoseOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

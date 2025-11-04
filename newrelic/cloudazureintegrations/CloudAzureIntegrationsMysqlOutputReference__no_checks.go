@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAzureIntegrationsMysqlOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsMysqlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAzureIntegrationsMysqlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAzureIntegrationsMysqlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAzureIntegrationsMysqlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

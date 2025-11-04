@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkflowEnrichmentsNrqlConfigurationList) validateGetParamete
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowEnrichmentsNrqlConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkflowEnrichmentsNrqlConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

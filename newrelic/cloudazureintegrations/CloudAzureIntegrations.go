@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.74.0/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.0/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations}.
 type CloudAzureIntegrations interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -24,6 +24,8 @@ type CloudAzureIntegrations interface {
 	AppGatewayInput() *CloudAzureIntegrationsAppGateway
 	AppService() CloudAzureIntegrationsAppServiceOutputReference
 	AppServiceInput() *CloudAzureIntegrationsAppService
+	AutoDiscovery() CloudAzureIntegrationsAutoDiscoveryOutputReference
+	AutoDiscoveryInput() *CloudAzureIntegrationsAutoDiscovery
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -180,6 +182,7 @@ type CloudAzureIntegrations interface {
 	PutApiManagement(value *CloudAzureIntegrationsApiManagement)
 	PutAppGateway(value *CloudAzureIntegrationsAppGateway)
 	PutAppService(value *CloudAzureIntegrationsAppService)
+	PutAutoDiscovery(value *CloudAzureIntegrationsAutoDiscovery)
 	PutContainers(value *CloudAzureIntegrationsContainers)
 	PutCosmosDb(value *CloudAzureIntegrationsCosmosDb)
 	PutCostManagement(value *CloudAzureIntegrationsCostManagement)
@@ -213,6 +216,7 @@ type CloudAzureIntegrations interface {
 	ResetApiManagement()
 	ResetAppGateway()
 	ResetAppService()
+	ResetAutoDiscovery()
 	ResetContainers()
 	ResetCosmosDb()
 	ResetCostManagement()
@@ -339,6 +343,26 @@ func (j *jsiiProxy_CloudAzureIntegrations) AppServiceInput() *CloudAzureIntegrat
 	_jsii_.Get(
 		j,
 		"appServiceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAzureIntegrations) AutoDiscovery() CloudAzureIntegrationsAutoDiscoveryOutputReference {
+	var returns CloudAzureIntegrationsAutoDiscoveryOutputReference
+	_jsii_.Get(
+		j,
+		"autoDiscovery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudAzureIntegrations) AutoDiscoveryInput() *CloudAzureIntegrationsAutoDiscovery {
+	var returns *CloudAzureIntegrationsAutoDiscovery
+	_jsii_.Get(
+		j,
+		"autoDiscoveryInput",
 		&returns,
 	)
 	return returns
@@ -1125,7 +1149,7 @@ func (j *jsiiProxy_CloudAzureIntegrations) VpnGatewayInput() *CloudAzureIntegrat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.74.0/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.0/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations} Resource.
 func NewCloudAzureIntegrations(scope constructs.Construct, id *string, config *CloudAzureIntegrationsConfig) CloudAzureIntegrations {
 	_init_.Initialize()
 
@@ -1143,7 +1167,7 @@ func NewCloudAzureIntegrations(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.74.0/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.0/docs/resources/cloud_azure_integrations newrelic_cloud_azure_integrations} Resource.
 func NewCloudAzureIntegrations_Override(c CloudAzureIntegrations, scope constructs.Construct, id *string, config *CloudAzureIntegrationsConfig) {
 	_init_.Initialize()
 
@@ -1641,6 +1665,17 @@ func (c *jsiiProxy_CloudAzureIntegrations) PutAppService(value *CloudAzureIntegr
 	)
 }
 
+func (c *jsiiProxy_CloudAzureIntegrations) PutAutoDiscovery(value *CloudAzureIntegrationsAutoDiscovery) {
+	if err := c.validatePutAutoDiscoveryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAutoDiscovery",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudAzureIntegrations) PutContainers(value *CloudAzureIntegrationsContainers) {
 	if err := c.validatePutContainersParameters(value); err != nil {
 		panic(err)
@@ -1988,6 +2023,14 @@ func (c *jsiiProxy_CloudAzureIntegrations) ResetAppService() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAppService",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudAzureIntegrations) ResetAutoDiscovery() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoDiscovery",
 		nil, // no parameters
 	)
 }

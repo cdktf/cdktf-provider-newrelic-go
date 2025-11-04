@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineList) validateGetParameters(index *
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetLineList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetLineList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

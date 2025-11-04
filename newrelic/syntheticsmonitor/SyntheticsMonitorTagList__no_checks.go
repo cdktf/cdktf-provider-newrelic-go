@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsMonitorTagList) validateGetParameters(index *float6
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsMonitorTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsMonitorTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

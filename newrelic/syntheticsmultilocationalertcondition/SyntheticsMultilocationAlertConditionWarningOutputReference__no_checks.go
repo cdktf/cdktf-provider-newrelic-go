@@ -43,11 +43,11 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertConditionWarningOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsMultilocationAlertConditionWarningOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SyntheticsMultilocationAlertConditionWarningOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsMultilocationAlertConditionWarningOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsMultilocationAlertConditionWarningOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

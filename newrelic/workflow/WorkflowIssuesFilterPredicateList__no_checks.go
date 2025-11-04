@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkflowIssuesFilterPredicateList) validateGetParameters(inde
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowIssuesFilterPredicateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkflowIssuesFilterPredicateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetTableNullValuesSeriesOverridesList) val
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetTableNullValuesSeriesOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetTableNullValuesSeriesOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

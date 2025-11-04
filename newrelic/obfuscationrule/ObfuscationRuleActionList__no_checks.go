@@ -15,7 +15,7 @@ func (o *jsiiProxy_ObfuscationRuleActionList) validateGetParameters(index *float
 	return nil
 }
 
-func (o *jsiiProxy_ObfuscationRuleActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObfuscationRuleActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

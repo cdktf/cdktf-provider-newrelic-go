@@ -15,7 +15,7 @@ func (s *jsiiProxy_SyntheticsCertCheckMonitorTagList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCertCheckMonitorTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsCertCheckMonitorTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

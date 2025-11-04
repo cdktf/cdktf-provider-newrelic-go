@@ -43,11 +43,11 @@ func (o *jsiiProxy_OneDashboardPageWidgetLineYAxisRightOutputReference) validate
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetLineYAxisRightOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OneDashboardPageWidgetLineYAxisRightOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetLineYAxisRightOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetLineYAxisRightOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

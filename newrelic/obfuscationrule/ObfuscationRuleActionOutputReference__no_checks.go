@@ -43,11 +43,11 @@ func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_ObfuscationRuleActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

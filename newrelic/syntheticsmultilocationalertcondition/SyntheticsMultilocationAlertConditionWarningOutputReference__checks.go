@@ -85,17 +85,17 @@ func (s *jsiiProxy_SyntheticsMultilocationAlertConditionWarningOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsMultilocationAlertConditionWarningOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SyntheticsMultilocationAlertConditionWarningOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsMultilocationAlertConditionWarningOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SyntheticsMultilocationAlertConditionWarningOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

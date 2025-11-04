@@ -43,7 +43,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetAreaColorsOutputReference) validateGetS
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetAreaColorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OneDashboardPageWidgetAreaColorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetAreaColorsOutputReference) validatePutS
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetAreaColorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetAreaColorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

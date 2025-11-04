@@ -43,7 +43,7 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) validatePutTimeWindowPa
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceLevelObjectiveOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

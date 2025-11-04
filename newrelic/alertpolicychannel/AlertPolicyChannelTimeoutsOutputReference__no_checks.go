@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlertPolicyChannelTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_AlertPolicyChannelTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertPolicyChannelTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlertPolicyChannelTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertPolicyChannelTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

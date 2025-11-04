@@ -43,11 +43,11 @@ func (o *jsiiProxy_OneDashboardPageWidgetStackedBarTooltipOutputReference) valid
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetStackedBarTooltipOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OneDashboardPageWidgetStackedBarTooltipOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetStackedBarTooltipOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetStackedBarTooltipOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

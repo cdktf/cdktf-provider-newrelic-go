@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetJsonColorsList) validateGetParameters(i
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetJsonColorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetJsonColorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

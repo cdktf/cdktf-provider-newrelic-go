@@ -43,11 +43,11 @@ func (o *jsiiProxy_OneDashboardPageWidgetMarkdownInitialSortingOutputReference) 
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetMarkdownInitialSortingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OneDashboardPageWidgetMarkdownInitialSortingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetMarkdownInitialSortingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetMarkdownInitialSortingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceLevelEventsBadEventsSelectOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelEventsBadEventsSelectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceLevelEventsBadEventsSelectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelEventsBadEventsSelectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceLevelEventsBadEventsSelectOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsIntegrationsAwsNeptuneOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsAwsNeptuneOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsIntegrationsAwsNeptuneOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsAwsNeptuneOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsIntegrationsAwsNeptuneOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

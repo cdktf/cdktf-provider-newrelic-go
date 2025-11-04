@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsGovcloudIntegrationsDynamoDbOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsGovcloudIntegrationsDynamoDbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsGovcloudIntegrationsDynamoDbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsGovcloudIntegrationsDynamoDbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsGovcloudIntegrationsDynamoDbOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

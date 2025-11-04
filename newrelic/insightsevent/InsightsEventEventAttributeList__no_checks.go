@@ -15,7 +15,7 @@ func (i *jsiiProxy_InsightsEventEventAttributeList) validateGetParameters(index 
 	return nil
 }
 
-func (i *jsiiProxy_InsightsEventEventAttributeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InsightsEventEventAttributeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

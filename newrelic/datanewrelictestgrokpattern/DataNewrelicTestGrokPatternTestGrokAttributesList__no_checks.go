@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataNewrelicTestGrokPatternTestGrokAttributesList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataNewrelicTestGrokPatternTestGrokAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNewrelicTestGrokPatternTestGrokAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

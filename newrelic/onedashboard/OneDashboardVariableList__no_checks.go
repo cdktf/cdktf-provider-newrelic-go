@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardVariableList) validateGetParameters(index *float6
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardVariableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardVariableList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

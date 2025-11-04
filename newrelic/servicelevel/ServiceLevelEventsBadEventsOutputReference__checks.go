@@ -85,9 +85,9 @@ func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) validateGetString
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) validatePutSelect
 	return nil
 }
 
-func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_ServiceLevelEventsBadEventsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

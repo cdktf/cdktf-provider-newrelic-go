@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkloadEntitySearchQueryList) validateGetParameters(index *f
 	return nil
 }
 
-func (w *jsiiProxy_WorkloadEntitySearchQueryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkloadEntitySearchQueryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

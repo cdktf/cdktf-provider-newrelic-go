@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotificationDestinationAuthCustomHeaderOutputReference) valid
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationAuthCustomHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationDestinationAuthCustomHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotificationDestinationAuthCustomHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationDestinationAuthCustomHeaderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

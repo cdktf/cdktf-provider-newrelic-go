@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAwsIntegrationsAwsGlueOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsAwsGlueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAwsIntegrationsAwsGlueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAwsIntegrationsAwsGlueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAwsIntegrationsAwsGlueOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

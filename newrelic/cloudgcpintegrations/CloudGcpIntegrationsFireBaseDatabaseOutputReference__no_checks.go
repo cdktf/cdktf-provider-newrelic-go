@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudGcpIntegrationsFireBaseDatabaseOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CloudGcpIntegrationsFireBaseDatabaseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudGcpIntegrationsFireBaseDatabaseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudGcpIntegrationsFireBaseDatabaseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudGcpIntegrationsFireBaseDatabaseOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

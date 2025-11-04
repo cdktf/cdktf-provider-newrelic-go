@@ -15,7 +15,7 @@ func (o *jsiiProxy_OneDashboardPageWidgetJsonNullValuesList) validateGetParamete
 	return nil
 }
 
-func (o *jsiiProxy_OneDashboardPageWidgetJsonNullValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OneDashboardPageWidgetJsonNullValuesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

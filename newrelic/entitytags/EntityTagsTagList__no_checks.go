@@ -15,7 +15,7 @@ func (e *jsiiProxy_EntityTagsTagList) validateGetParameters(index *float64) erro
 	return nil
 }
 
-func (e *jsiiProxy_EntityTagsTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EntityTagsTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
