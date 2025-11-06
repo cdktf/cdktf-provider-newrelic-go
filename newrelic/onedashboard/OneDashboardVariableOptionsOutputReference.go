@@ -38,6 +38,9 @@ type OneDashboardVariableOptionsOutputReference interface {
 	IgnoreTimeRangeInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ShowApplyAction() interface{}
+	SetShowApplyAction(val interface{})
+	ShowApplyActionInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type OneDashboardVariableOptionsOutputReference interface {
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetExcluded()
 	ResetIgnoreTimeRange()
+	ResetShowApplyAction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(context cdktf.IResolveContext) interface{}
@@ -177,6 +181,26 @@ func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) InternalValue() i
 	return returns
 }
 
+func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) ShowApplyAction() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"showApplyAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) ShowApplyActionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"showApplyActionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -276,6 +300,17 @@ func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference)SetShowApplyAction(val interface{}) {
+	if err := j.validateSetShowApplyActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"showApplyAction",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (o *jsiiProxy_OneDashboardVariableOptionsOutputReference) ResetIgnoreTimeRa
 	_jsii_.InvokeVoid(
 		o,
 		"resetIgnoreTimeRange",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OneDashboardVariableOptionsOutputReference) ResetShowApplyAction() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetShowApplyAction",
 		nil, // no parameters
 	)
 }

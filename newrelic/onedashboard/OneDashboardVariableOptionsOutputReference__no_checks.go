@@ -71,6 +71,10 @@ func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) validateSetIntern
 	return nil
 }
 
+func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) validateSetShowApplyActionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OneDashboardVariableOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
