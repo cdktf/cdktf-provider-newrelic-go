@@ -155,10 +155,6 @@ func (j *jsiiProxy_CloudOciLinkAccount) validateSetOciRegionParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_CloudOciLinkAccount) validateSetOciSvcUserNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CloudOciLinkAccount) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

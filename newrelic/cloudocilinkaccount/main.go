@@ -67,8 +67,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ociHomeRegionInput", GoGetter: "OciHomeRegionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ociRegion", GoGetter: "OciRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "ociRegionInput", GoGetter: "OciRegionInput"},
-			_jsii_.MemberProperty{JsiiProperty: "ociSvcUserName", GoGetter: "OciSvcUserName"},
-			_jsii_.MemberProperty{JsiiProperty: "ociSvcUserNameInput", GoGetter: "OciSvcUserNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},

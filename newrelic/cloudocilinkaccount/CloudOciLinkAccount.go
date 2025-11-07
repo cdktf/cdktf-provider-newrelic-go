@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.1/docs/resources/cloud_oci_link_account newrelic_cloud_oci_link_account}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.2/docs/resources/cloud_oci_link_account newrelic_cloud_oci_link_account}.
 type CloudOciLinkAccount interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -84,9 +84,6 @@ type CloudOciLinkAccount interface {
 	OciRegion() *string
 	SetOciRegion(val *string)
 	OciRegionInput() *string
-	OciSvcUserName() *string
-	SetOciSvcUserName(val *string)
-	OciSvcUserNameInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -541,26 +538,6 @@ func (j *jsiiProxy_CloudOciLinkAccount) OciRegionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudOciLinkAccount) OciSvcUserName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ociSvcUserName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CloudOciLinkAccount) OciSvcUserNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ociSvcUserNameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CloudOciLinkAccount) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -662,7 +639,7 @@ func (j *jsiiProxy_CloudOciLinkAccount) UserVaultOcidInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.1/docs/resources/cloud_oci_link_account newrelic_cloud_oci_link_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.2/docs/resources/cloud_oci_link_account newrelic_cloud_oci_link_account} Resource.
 func NewCloudOciLinkAccount(scope constructs.Construct, id *string, config *CloudOciLinkAccountConfig) CloudOciLinkAccount {
 	_init_.Initialize()
 
@@ -680,7 +657,7 @@ func NewCloudOciLinkAccount(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.1/docs/resources/cloud_oci_link_account newrelic_cloud_oci_link_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.2/docs/resources/cloud_oci_link_account newrelic_cloud_oci_link_account} Resource.
 func NewCloudOciLinkAccount_Override(c CloudOciLinkAccount, scope constructs.Construct, id *string, config *CloudOciLinkAccountConfig) {
 	_init_.Initialize()
 
@@ -879,17 +856,6 @@ func (j *jsiiProxy_CloudOciLinkAccount)SetOciRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"ociRegion",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CloudOciLinkAccount)SetOciSvcUserName(val *string) {
-	if err := j.validateSetOciSvcUserNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ociSvcUserName",
 		val,
 	)
 }
