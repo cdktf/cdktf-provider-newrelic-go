@@ -24,20 +24,20 @@ type OneDashboardJsonConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The dashboard's json.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.2/docs/resources/one_dashboard_json#json OneDashboardJson#json}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.4/docs/resources/one_dashboard_json#json OneDashboardJson#json}
 	Json *string `field:"required" json:"json" yaml:"json"`
 	// The New Relic account ID where you want to create the dashboard.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.2/docs/resources/one_dashboard_json#account_id OneDashboardJson#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.4/docs/resources/one_dashboard_json#account_id OneDashboardJson#account_id}
 	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.2/docs/resources/one_dashboard_json#id OneDashboardJson#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.4/docs/resources/one_dashboard_json#id OneDashboardJson#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.2/docs/resources/one_dashboard_json#timeouts OneDashboardJson#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.4/docs/resources/one_dashboard_json#timeouts OneDashboardJson#timeouts}
 	Timeouts *OneDashboardJsonTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
