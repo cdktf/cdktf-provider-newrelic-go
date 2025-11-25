@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.4/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition}.
 type NrqlAlertCondition interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -101,6 +101,8 @@ type NrqlAlertCondition interface {
 	OpenViolationOnExpiration() interface{}
 	SetOpenViolationOnExpiration(val interface{})
 	OpenViolationOnExpirationInput() interface{}
+	OutlierConfiguration() NrqlAlertConditionOutlierConfigurationOutputReference
+	OutlierConfigurationInput() *NrqlAlertConditionOutlierConfiguration
 	PolicyId() *float64
 	SetPolicyId(val *float64)
 	PolicyIdInput() *float64
@@ -195,6 +197,7 @@ type NrqlAlertCondition interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCritical(value *NrqlAlertConditionCritical)
 	PutNrql(value *NrqlAlertConditionNrql)
+	PutOutlierConfiguration(value *NrqlAlertConditionOutlierConfiguration)
 	PutTerm(value interface{})
 	PutTimeouts(value *NrqlAlertConditionTimeouts)
 	PutWarning(value *NrqlAlertConditionWarning)
@@ -215,6 +218,7 @@ type NrqlAlertCondition interface {
 	ResetId()
 	ResetIgnoreOnExpectedTermination()
 	ResetOpenViolationOnExpiration()
+	ResetOutlierConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -737,6 +741,26 @@ func (j *jsiiProxy_NrqlAlertCondition) OpenViolationOnExpirationInput() interfac
 	return returns
 }
 
+func (j *jsiiProxy_NrqlAlertCondition) OutlierConfiguration() NrqlAlertConditionOutlierConfigurationOutputReference {
+	var returns NrqlAlertConditionOutlierConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"outlierConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NrqlAlertCondition) OutlierConfigurationInput() *NrqlAlertConditionOutlierConfiguration {
+	var returns *NrqlAlertConditionOutlierConfiguration
+	_jsii_.Get(
+		j,
+		"outlierConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NrqlAlertCondition) PolicyId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1038,7 +1062,7 @@ func (j *jsiiProxy_NrqlAlertCondition) WarningInput() *NrqlAlertConditionWarning
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.4/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
 func NewNrqlAlertCondition(scope constructs.Construct, id *string, config *NrqlAlertConditionConfig) NrqlAlertCondition {
 	_init_.Initialize()
 
@@ -1056,7 +1080,7 @@ func NewNrqlAlertCondition(scope constructs.Construct, id *string, config *NrqlA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.4/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/nrql_alert_condition newrelic_nrql_alert_condition} Resource.
 func NewNrqlAlertCondition_Override(n NrqlAlertCondition, scope constructs.Construct, id *string, config *NrqlAlertConditionConfig) {
 	_init_.Initialize()
 
@@ -1796,6 +1820,17 @@ func (n *jsiiProxy_NrqlAlertCondition) PutNrql(value *NrqlAlertConditionNrql) {
 	)
 }
 
+func (n *jsiiProxy_NrqlAlertCondition) PutOutlierConfiguration(value *NrqlAlertConditionOutlierConfiguration) {
+	if err := n.validatePutOutlierConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putOutlierConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NrqlAlertCondition) PutTerm(value interface{}) {
 	if err := n.validatePutTermParameters(value); err != nil {
 		panic(err)
@@ -1961,6 +1996,14 @@ func (n *jsiiProxy_NrqlAlertCondition) ResetOpenViolationOnExpiration() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOpenViolationOnExpiration",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NrqlAlertCondition) ResetOutlierConfiguration() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOutlierConfiguration",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,10 @@ func (a *jsiiProxy_AccountManagement) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (a *jsiiProxy_AccountManagement) validatePutTimeoutsParameters(value *AccountManagementTimeouts) error {
+	return nil
+}
+
 func validateAccountManagement_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

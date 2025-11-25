@@ -5,7 +5,7 @@ package datanewrelicnotificationdestination
 
 
 type DataNewrelicNotificationDestinationSecureUrl struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.4/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/data-sources/notification_destination#prefix DataNewrelicNotificationDestination#prefix}.
 	Prefix *string `field:"required" json:"prefix" yaml:"prefix"`
 }
 

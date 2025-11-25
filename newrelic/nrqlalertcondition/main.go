@@ -80,6 +80,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nrqlInput", GoGetter: "NrqlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "openViolationOnExpiration", GoGetter: "OpenViolationOnExpiration"},
 			_jsii_.MemberProperty{JsiiProperty: "openViolationOnExpirationInput", GoGetter: "OpenViolationOnExpirationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "outlierConfiguration", GoGetter: "OutlierConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "outlierConfigurationInput", GoGetter: "OutlierConfigurationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "policyId", GoGetter: "PolicyId"},
 			_jsii_.MemberProperty{JsiiProperty: "policyIdInput", GoGetter: "PolicyIdInput"},
@@ -87,6 +89,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putCritical", GoMethod: "PutCritical"},
 			_jsii_.MemberMethod{JsiiMethod: "putNrql", GoMethod: "PutNrql"},
+			_jsii_.MemberMethod{JsiiMethod: "putOutlierConfiguration", GoMethod: "PutOutlierConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putTerm", GoMethod: "PutTerm"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putWarning", GoMethod: "PutWarning"},
@@ -108,6 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIgnoreOnExpectedTermination", GoMethod: "ResetIgnoreOnExpectedTermination"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOpenViolationOnExpiration", GoMethod: "ResetOpenViolationOnExpiration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOutlierConfiguration", GoMethod: "ResetOutlierConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRunbookUrl", GoMethod: "ResetRunbookUrl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSignalSeasonality", GoMethod: "ResetSignalSeasonality"},
@@ -307,6 +311,88 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NrqlAlertConditionNrqlOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfiguration",
+		reflect.TypeOf((*NrqlAlertConditionOutlierConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscan",
+		reflect.TypeOf((*NrqlAlertConditionOutlierConfigurationDbscan)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationDbscanOutputReference",
+		reflect.TypeOf((*NrqlAlertConditionOutlierConfigurationDbscanOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "epsilon", GoGetter: "Epsilon"},
+			_jsii_.MemberProperty{JsiiProperty: "epsilonInput", GoGetter: "EpsilonInput"},
+			_jsii_.MemberProperty{JsiiProperty: "evaluationGroupFacet", GoGetter: "EvaluationGroupFacet"},
+			_jsii_.MemberProperty{JsiiProperty: "evaluationGroupFacetInput", GoGetter: "EvaluationGroupFacetInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "minimumPoints", GoGetter: "MinimumPoints"},
+			_jsii_.MemberProperty{JsiiProperty: "minimumPointsInput", GoGetter: "MinimumPointsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEvaluationGroupFacet", GoMethod: "ResetEvaluationGroupFacet"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_NrqlAlertConditionOutlierConfigurationDbscanOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-newrelic.nrqlAlertCondition.NrqlAlertConditionOutlierConfigurationOutputReference",
+		reflect.TypeOf((*NrqlAlertConditionOutlierConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dbscan", GoGetter: "Dbscan"},
+			_jsii_.MemberProperty{JsiiProperty: "dbscanInput", GoGetter: "DbscanInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putDbscan", GoMethod: "PutDbscan"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_NrqlAlertConditionOutlierConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

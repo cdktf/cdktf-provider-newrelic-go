@@ -83,6 +83,10 @@ func (n *jsiiProxy_NrqlAlertCondition) validatePutNrqlParameters(value *NrqlAler
 	return nil
 }
 
+func (n *jsiiProxy_NrqlAlertCondition) validatePutOutlierConfigurationParameters(value *NrqlAlertConditionOutlierConfiguration) error {
+	return nil
+}
+
 func (n *jsiiProxy_NrqlAlertCondition) validatePutTermParameters(value interface{}) error {
 	return nil
 }

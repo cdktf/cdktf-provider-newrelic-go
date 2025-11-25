@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.4/docs/data-sources/account newrelic_account}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/data-sources/account newrelic_account}.
 type DataNewrelicAccount interface {
 	cdktf.TerraformDataSource
 	AccountId() *float64
@@ -56,6 +56,7 @@ type DataNewrelicAccount interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
@@ -286,6 +287,16 @@ func (j *jsiiProxy_DataNewrelicAccount) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataNewrelicAccount) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNewrelicAccount) Scope() *string {
 	var returns *string
 	_jsii_.Get(
@@ -337,7 +348,7 @@ func (j *jsiiProxy_DataNewrelicAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.4/docs/data-sources/account newrelic_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/data-sources/account newrelic_account} Data Source.
 func NewDataNewrelicAccount(scope constructs.Construct, id *string, config *DataNewrelicAccountConfig) DataNewrelicAccount {
 	_init_.Initialize()
 
@@ -355,7 +366,7 @@ func NewDataNewrelicAccount(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.75.4/docs/data-sources/account newrelic_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/data-sources/account newrelic_account} Data Source.
 func NewDataNewrelicAccount_Override(d DataNewrelicAccount, scope constructs.Construct, id *string, config *DataNewrelicAccountConfig) {
 	_init_.Initialize()
 
