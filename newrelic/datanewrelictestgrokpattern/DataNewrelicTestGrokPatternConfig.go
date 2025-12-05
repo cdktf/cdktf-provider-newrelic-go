@@ -24,17 +24,17 @@ type DataNewrelicTestGrokPatternConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Grok pattern to test.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/data-sources/test_grok_pattern#grok DataNewrelicTestGrokPattern#grok}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/test_grok_pattern#grok DataNewrelicTestGrokPattern#grok}
 	Grok *string `field:"required" json:"grok" yaml:"grok"`
 	// The log lines to test the Grok pattern against.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/data-sources/test_grok_pattern#log_lines DataNewrelicTestGrokPattern#log_lines}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/test_grok_pattern#log_lines DataNewrelicTestGrokPattern#log_lines}
 	LogLines *[]*string `field:"required" json:"logLines" yaml:"logLines"`
 	// The account id associated with the test grok.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/data-sources/test_grok_pattern#account_id DataNewrelicTestGrokPattern#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/test_grok_pattern#account_id DataNewrelicTestGrokPattern#account_id}
 	AccountId *float64 `field:"optional" json:"accountId" yaml:"accountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/data-sources/test_grok_pattern#id DataNewrelicTestGrokPattern#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/data-sources/test_grok_pattern#id DataNewrelicTestGrokPattern#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/notification_channel newrelic_notification_channel}.
+// Represents a {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/notification_channel newrelic_notification_channel}.
 type NotificationChannel interface {
 	cdktf.TerraformResource
 	AccountId() *float64
@@ -508,7 +508,7 @@ func (j *jsiiProxy_NotificationChannel) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/notification_channel newrelic_notification_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/notification_channel newrelic_notification_channel} Resource.
 func NewNotificationChannel(scope constructs.Construct, id *string, config *NotificationChannelConfig) NotificationChannel {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewNotificationChannel(scope constructs.Construct, id *string, config *Noti
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/notification_channel newrelic_notification_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/notification_channel newrelic_notification_channel} Resource.
 func NewNotificationChannel_Override(n NotificationChannel, scope constructs.Construct, id *string, config *NotificationChannelConfig) {
 	_init_.Initialize()
 

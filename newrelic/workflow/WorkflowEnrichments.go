@@ -7,7 +7,7 @@ package workflow
 type WorkflowEnrichments struct {
 	// nrql block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.1/docs/resources/workflow#nrql Workflow#nrql}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/newrelic/newrelic/3.76.3/docs/resources/workflow#nrql Workflow#nrql}
 	Nrql interface{} `field:"required" json:"nrql" yaml:"nrql"`
 }
 
